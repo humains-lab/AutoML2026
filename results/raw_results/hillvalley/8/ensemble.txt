@@ -1,0 +1,61 @@
+0: Pipeline(
+	0: LogisticRegression(C=0.2486879912573334, max_iter=1000, penalty=None,
+                   random_state=8)
+) -> Fitness: 0.9578858024691359
+
+1: Pipeline(
+	0: LogisticRegression(C=7.964948650488497, max_iter=1000, penalty='l2',
+                   random_state=8, solver='newton-cg')
+) -> Fitness: 0.9591975308641973
+
+2: Pipeline(
+	0: VarianceThreshold()
+	1: RobustScaler(with_centering=False)
+	2: Nystroem(coef0=0.6141057046238014, degree=2, gamma=1.2124489414875694,
+         kernel='cosine', n_components=88, random_state=8)
+	3: LogisticRegression(C=0.28977651964647033, class_weight='balanced',
+                   max_iter=1000, penalty=None, random_state=8, solver='saga')
+) -> Fitness: 0.970293209876543
+
+3: Pipeline(
+	0: VarianceThreshold()
+	1: RobustScaler(with_centering=False)
+	2: Nystroem(coef0=0.6141057046238014, degree=2, gamma=1.2124489414875694,
+         kernel='cosine', n_components=88, random_state=8)
+	3: LogisticRegression(C=2.607249820082844, max_iter=1000, penalty=None,
+                   random_state=8, solver='saga')
+) -> Fitness: 0.970293209876543
+
+4: Pipeline(
+	0: VarianceThreshold()
+	1: RobustScaler(with_centering=False)
+	2: Nystroem(coef0=-0.41223950348811855, degree=3, gamma=1.2124489414875694,
+         kernel='cosine', n_components=88, random_state=8)
+	3: LogisticRegression(C=13.781775638199708, max_iter=1000, penalty=None,
+                   random_state=8, solver='saga')
+) -> Fitness: 0.970293209876543
+
+Ensemble fitness: 0.0
+Weights: [0.987212723658052, 0.9885646123260438, 1.0, 1.0, 1.0]
+Prediction: [0 1 1 1 0 1 1 0 1 0 1 1 0 1 1 1 1 1 1 1 1 1 0 1 1 1 0 1 0 0 1 1 1 0 0 1 1
+ 0 1 1 1 1 1 0 0 0 1 1 0 0 0 0 0 1 1 0 0 1 1 0 0 1 1 1 0 1 0 0 0 0 1 0 0 1
+ 0 1 1 1 0 0 1 1 1 1 1 1 1 0 1 0 0 1 1 1 1 1 1 1 0 1 0 0 1 0 0 0 0 0 1 1 0
+ 1 1 0 0 0 0 1 1 1 0 1 1 1 0 0 1 1 1 0 1 1 0 0 1 0 1 0 0 1 1 1 0 1 1 1 1 1
+ 1 1 0 0 1 0 1 0 0 0 1 1 0 1 1 0 1 0 0 1 1 1 1 0 1 1 1 1 1 0 1 0 0 1 1 0 0
+ 0 0 0 1 1 0 0 1 0 1 0 0 1 1 1 1 0 1 0 1 0 1 0 0 1 0 1 0 1 0 1 1 1 0 1 1 1
+ 1 1 0 1 0 0 1 1 0 1 0 0 0 1 0 1 0 1 1 0 0 0 0 1 1 1 0 1 0 0 1 1 1 0 1 1 1
+ 0 1 0 0 0 0 0 1 0 1 0 0 0 1 0 1 1 1 0 0 0 1 1 1 1 0 1 0 0 0 0 0 0 0 1 1 1
+ 0 1 0 1 1 1 1 0 0 1 0 0 0 0 1 0 0 0 0 0 0 1 1 0 0 0 1 1 1 1 0 0 1 1 0 1 1
+ 0 1 0 0 0 1 1 1 1 0 0 0 1 0 0 0 0 1 1 1 1 0 1 1 1 0 1 1 1 0 0 1 1 1 1 1 1
+ 1 0 1 1 0 0 0 1 1 0 0 0 0 1 0 0 0 0 0 0 1 1 0 0 0 0 0 0 1 0 0 1 0 1 1 0 1
+ 1 0 0 1 0 0 1 1 0 1 1 0 0 0 1 0 1 0 0 0 0 1 0 1 0 1 0 0 0 0 1 1 1 0 1 0 0
+ 0 1 1 1 1 0 0 1 1 0 1 0 0 0 0 0 1 1 1 0 1 1 1 0 1 0 0 1 1 1 0 0 1 1 1 1 0
+ 0 1 0 1 1 0 1 1 0 1 0 1 1 1 0 1 0 1 0 0 1 1 1 1 0 0 1 1 0 0 0 1 0 1 1 0 0
+ 0 1 0 1 0 0 1 0 1 1 0 0 0 0 1 1 1 0 1 0 1 1 0 0 1 1 1 1 1 1 1 0 1 0 0 1 0
+ 0 0 0 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 0 1 0 0 0 0 1 1 1 0 0 1 0 1 1 0 1 0 0
+ 0 1 1 0 1 1 0 1 1 1 0 0 0 0 0 0 0 0 0 0 1 1 0 1 0 1 1 0 0 0 0 1 1 0 1 1 1
+ 1 1 1 0 0 0 0 0 1 1 0 0 1 1 0 0 0 1 0 0 0 0 0 0 1 1 1 1 0 1 0 1 0 1 0 1 0
+ 0 0 0 1 0 1 0 0 0 0 0 1 0 0 1 1 1 1 0 0 0 1 1 0 1 1 1 0 0 0 0 0 0 1 0 0 0
+ 1 1 0 0 1 0 0 0 0 1 1 1 0 0 0 0 1 1 0 0 1 1 0 1 0 1 1 1 0 0 0 0 1 1 0 1 1
+ 0 1 0 1 1 1 1 1 1 1 1 1 0 0 1 0 0 0 0 0 1 1 0 0 0 1 1 1 0 0 1 0 1 0 1 1 1
+ 1 0 0 0 0 0 0 1 0 1 0 0 0 1 0 0 1 1 1 1 0 0 0 0 0 1 1 1 1 1 0]

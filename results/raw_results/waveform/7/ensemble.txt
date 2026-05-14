@@ -1,0 +1,37 @@
+0: Pipeline(
+	0: PCA(n_components=0.5788888733152884, random_state=7, whiten=True)
+	1: QuadraticDiscriminantAnalysis(reg_param=0.30022546972358444)
+) -> Fitness: 0.8731669331337256
+
+1: Pipeline(
+	0: SelectFwe(alpha=0.008149243367439525)
+	1: PCA(n_components=0.9084404361409524, random_state=7)
+	2: AdaBoostClassifier(estimator=DecisionTreeClassifier(max_depth=29,
+                                                    max_features=0.7206772713715515,
+                                                    min_samples_leaf=16,
+                                                    min_samples_split=12,
+                                                    random_state=7),
+                   learning_rate=1.069293662410957, n_estimators=59,
+                   random_state=7)
+) -> Fitness: 0.8620421999575318
+
+2: Pipeline(
+	0: PCA(n_components=0.573785789797904, random_state=7, whiten=True)
+	1: QuadraticDiscriminantAnalysis(reg_param=0.723127961069629)
+) -> Fitness: 0.8708530466756829
+
+3: Pipeline(
+	0: PCA(n_components=0.9084404361409524, random_state=7, whiten=True)
+	1: SelectFwe(alpha=0.016135794773004558)
+	2: LogisticRegression(C=13.95242046373653, max_iter=1000, penalty='l2',
+                   random_state=7)
+) -> Fitness: 0.8700196053038696
+
+4: Pipeline(
+	0: PCA(n_components=0.9084404361409524, random_state=7)
+	1: QuadraticDiscriminantAnalysis(reg_param=0.723127961069629)
+) -> Fitness: 0.8707046883579194
+
+Ensemble fitness: 0.0
+Weights: [1.0, 0.9872593283666068, 0.9973500067739185, 0.9963955027264253, 0.9971800984641397]
+Prediction: [0 1 2 ... 0 0 0]

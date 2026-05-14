@@ -1,0 +1,50 @@
+0: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: FastICA(fun='cube', n_components=73, random_state=1)
+	2: SelectFwe(alpha=0.0326841797004676)
+	3: ExtraTreesClassifier(class_weight='balanced_subsample', max_features='log2',
+                     min_samples_leaf=15, min_samples_split=10, n_estimators=83,
+                     random_state=1)
+) -> Fitness: 0.47339845339845343
+
+1: Pipeline(
+	0: SelectPercentile(percentile=33.07110871068228)
+	1: RobustScaler()
+	2: Nystroem(coef0=-0.5536084395066585, degree=5, gamma=3.4878415009605916,
+         kernel='cosine', n_components=90, random_state=1)
+	3: ExtraTreesClassifier(class_weight='balanced_subsample', max_features='log2',
+                     min_samples_leaf=15, min_samples_split=10, n_estimators=83,
+                     random_state=1)
+) -> Fitness: 0.4413130152345839
+
+2: Pipeline(
+	0: SelectPercentile(percentile=33.07110871068228)
+	1: RobustScaler(with_centering=False)
+	2: Nystroem(coef0=-0.5536084395066585, degree=5, gamma=3.4878415009605916,
+         kernel='cosine', n_components=90, random_state=1)
+	3: ExtraTreesClassifier(class_weight='balanced_subsample', max_features='log2',
+                     min_samples_leaf=16, min_samples_split=10, n_estimators=83,
+                     random_state=1)
+) -> Fitness: 0.4365993120895082
+
+3: Pipeline(
+	0: RobustScaler()
+	1: FastICA(fun='cube', n_components=81, random_state=1)
+	2: SelectFwe(alpha=0.0326841797004676)
+	3: ExtraTreesClassifier(class_weight='balanced_subsample', max_features='log2',
+                     min_samples_leaf=15, min_samples_split=10, n_estimators=65,
+                     random_state=1)
+) -> Fitness: 0.44247192894251713
+
+4: Pipeline(
+	0: RobustScaler(with_centering=False, with_scaling=False)
+	1: FastICA(fun='cube', n_components=73, random_state=1)
+	2: SelectFwe(alpha=0.0326841797004676)
+	3: ExtraTreesClassifier(class_weight='balanced_subsample', max_features='log2',
+                     min_samples_leaf=16, min_samples_split=10, n_estimators=83,
+                     random_state=1)
+) -> Fitness: 0.48192806467316274
+
+Ensemble fitness: 0.0
+Weights: [0.9823010695994765, 0.9157238342902412, 0.9059429074453343, 0.9181285784686471, 1.0]
+Prediction: [6 1 4 ... 4 3 3]

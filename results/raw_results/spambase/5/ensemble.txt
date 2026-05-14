@@ -1,0 +1,61 @@
+0: Pipeline(
+	0: AdaBoostClassifier(estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    max_depth=19,
+                                                    max_features=0.2630615980738642,
+                                                    min_samples_leaf=18,
+                                                    min_samples_split=6,
+                                                    random_state=5),
+                   learning_rate=0.16811797768305306, n_estimators=59,
+                   random_state=5)
+) -> Fitness: 0.9504917467746697
+
+1: Pipeline(
+	0: RobustScaler()
+	1: AdaBoostClassifier(estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    max_depth=19,
+                                                    max_features=0.2630615980738642,
+                                                    min_samples_leaf=18,
+                                                    min_samples_split=6,
+                                                    random_state=5),
+                   learning_rate=0.16811797768305306, n_estimators=59,
+                   random_state=5)
+) -> Fitness: 0.9498097064298727
+
+2: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: AdaBoostClassifier(estimator=DecisionTreeClassifier(max_depth=13,
+                                                    max_features=0.7545923278333586,
+                                                    min_samples_leaf=6,
+                                                    min_samples_split=9,
+                                                    random_state=5),
+                   learning_rate=0.4919159827464124, n_estimators=59,
+                   random_state=5)
+) -> Fitness: 0.9493444916213182
+
+3: Pipeline(
+	0: RobustScaler(with_centering=False)
+	1: AdaBoostClassifier(estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    max_depth=19,
+                                                    max_features=0.2630615980738642,
+                                                    min_samples_leaf=18,
+                                                    min_samples_split=6,
+                                                    random_state=5),
+                   learning_rate=0.16811797768305306, n_estimators=59,
+                   random_state=5)
+) -> Fitness: 0.9504917467746697
+
+4: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: AdaBoostClassifier(estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    max_depth=19,
+                                                    max_features=0.2630615980738642,
+                                                    min_samples_leaf=6,
+                                                    min_samples_split=9,
+                                                    random_state=5),
+                   learning_rate=0.16811797768305306, n_estimators=59,
+                   random_state=5)
+) -> Fitness: 0.9501597099641155
+
+Ensemble fitness: 0.0
+Weights: [1.0, 0.9992824342272183, 0.9987929877800154, 1.0, 0.9996506683917236]
+Prediction: [2 1 2 ... 1 2 1]

@@ -1,0 +1,50 @@
+0: Pipeline(
+	0: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       criterion='entropy', max_features=0.505433262868637,
+                       min_samples_leaf=6, min_samples_split=12,
+                       n_estimators=79, random_state=1)
+) -> Fitness: 0.9997532312535604
+
+1: Pipeline(
+	0: MinMaxScaler()
+	1: SelectPercentile(percentile=71.7632507334871)
+	2: MaxAbsScaler()
+	3: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       criterion='entropy', max_features=0.505433262868637,
+                       min_samples_leaf=3, min_samples_split=14,
+                       n_estimators=86, random_state=1)
+) -> Fitness: 0.9998239865423002
+
+2: Pipeline(
+	0: MinMaxScaler()
+	1: SelectPercentile(percentile=69.47886364025851)
+	2: MaxAbsScaler()
+	3: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       criterion='entropy', max_features=0.505433262868637,
+                       min_samples_leaf=3, min_samples_split=14,
+                       n_estimators=86, random_state=1)
+) -> Fitness: 0.9998239865423002
+
+3: Pipeline(
+	0: MinMaxScaler()
+	1: SelectPercentile(percentile=69.47886364025851)
+	2: MaxAbsScaler()
+	3: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       criterion='entropy', max_features=0.6956345264363321,
+                       min_samples_leaf=3, min_samples_split=14,
+                       n_estimators=86, random_state=1)
+) -> Fitness: 0.9998197977974577
+
+4: Pipeline(
+	0: MinMaxScaler()
+	1: VarianceThreshold()
+	2: MaxAbsScaler()
+	3: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       criterion='entropy', max_features=0.505433262868637,
+                       min_samples_leaf=3, min_samples_split=14,
+                       n_estimators=86, random_state=1)
+) -> Fitness: 0.9997783612665945
+
+Ensemble fitness: 0.0
+Weights: [0.9999292322551847, 1.0, 1.0, 0.9999958105177522, 0.9999543666922179]
+Prediction: [2 4 1 ... 1 1 1]

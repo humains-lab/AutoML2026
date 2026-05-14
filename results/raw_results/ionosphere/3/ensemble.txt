@@ -1,0 +1,75 @@
+0: Pipeline(
+	0: MinMaxScaler()
+	1: VarianceThreshold()
+	2: FastICA(fun='exp', n_components=24, random_state=3)
+	3: AdaBoostClassifier(estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    max_depth=16,
+                                                    max_features=0.4892485912122716,
+                                                    min_samples_leaf=5,
+                                                    min_samples_split=5,
+                                                    random_state=3),
+                   learning_rate=0.44048050775718217, n_estimators=27,
+                   random_state=3)
+) -> Fitness: 0.9498039215686275
+
+1: Pipeline(
+	0: MinMaxScaler()
+	1: VarianceThreshold()
+	2: FastICA(fun='exp', n_components=24, random_state=3)
+	3: AdaBoostClassifier(estimator=DecisionTreeClassifier(max_depth=16,
+                                                    max_features=0.4892485912122716,
+                                                    min_samples_leaf=5,
+                                                    min_samples_split=18,
+                                                    random_state=3),
+                   learning_rate=0.5473840821457541, n_estimators=92,
+                   random_state=3)
+) -> Fitness: 0.949436274509804
+
+2: Pipeline(
+	0: MinMaxScaler()
+	1: VarianceThreshold()
+	2: FastICA(fun='exp', n_components=24, random_state=3)
+	3: AdaBoostClassifier(estimator=DecisionTreeClassifier(max_depth=16,
+                                                    max_features=0.4892485912122716,
+                                                    min_samples_leaf=5,
+                                                    min_samples_split=5,
+                                                    random_state=3),
+                   learning_rate=0.5473840821457541, n_estimators=92,
+                   random_state=3)
+) -> Fitness: 0.9498039215686275
+
+3: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: FastICA(algorithm='deflation', fun='exp', n_components=24, random_state=3)
+	2: AdaBoostClassifier(estimator=DecisionTreeClassifier(max_depth=9,
+                                                    max_features=0.131313347183873,
+                                                    min_samples_leaf=5,
+                                                    min_samples_split=5,
+                                                    random_state=3),
+                   learning_rate=0.5334912774697786, n_estimators=26,
+                   random_state=3)
+) -> Fitness: 0.9331372549019609
+
+4: Pipeline(
+	0: MinMaxScaler()
+	1: VarianceThreshold()
+	2: FastICA(fun='exp', n_components=24, random_state=3)
+	3: AdaBoostClassifier(estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    max_depth=14,
+                                                    max_features=0.5673374510810745,
+                                                    min_samples_leaf=2,
+                                                    min_samples_split=17,
+                                                    random_state=3),
+                   learning_rate=0.5334912774697786, n_estimators=92,
+                   random_state=3)
+) -> Fitness: 0.9464705882352942
+
+Ensemble fitness: 0.0
+Weights: [1.0, 0.9996129232039637, 1.0, 0.9824525185796863, 0.9964905037159373]
+Prediction: [2 1 2 2 2 1 2 1 2 2 2 2 1 2 2 2 2 1 2 2 2 2 1 2 1 1 2 2 2 2 2 2 2 2 2 2 2
+ 1 1 2 2 2 1 2 2 2 1 2 2 2 2 2 1 1 1 2 2 1 2 2 2 1 2 2 1 1 2 2 2 2 1 2 2 2
+ 2 2 1 2 2 1 1 2 1 2 2 2 2 2 2 2 1 2 2 2 1 2 1 1 1 2 1 2 1 1 2 1 1 1 2 2 1
+ 2 2 2 2 2 2 1 1 2 2 2 2 1 2 2 2 2 1 1 2 2 2 1 2 2 1 2 2 2 2 1 2 1 2 2 2 2
+ 2 2 2 2 1 2 2 2 2 1 1 2 1 2 1 1 2 2 1 1 1 2 1 1 2 2 1 1 2 1 1 1 1 2 2 2 2
+ 1 1 2 1 2 2 2 1 1 1 1 1 1 2 2 1 1 2 1 1 2 2 1 2 1 1 2 2 2 2 1 2 2 2 2 2 2
+ 2 1 2 1 1 2 2 2 1 1 2 2]

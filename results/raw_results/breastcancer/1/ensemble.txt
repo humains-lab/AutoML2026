@@ -1,0 +1,81 @@
+0: Pipeline(
+	0: VarianceThreshold()
+	1: Nystroem(coef0=-0.3434395284644953, degree=4, gamma=0.6168502485317933,
+         kernel='poly', n_components=18, random_state=1)
+	2: AdaBoostClassifier(estimator=DecisionTreeClassifier(criterion='entropy',
+                                                    max_depth=7,
+                                                    max_features=0.8955753946414917,
+                                                    min_samples_leaf=17,
+                                                    min_samples_split=12,
+                                                    random_state=1),
+                   learning_rate=1.3816139269756036, n_estimators=56,
+                   random_state=1)
+) -> Fitness: 0.9709528688524589
+
+1: Pipeline(
+	0: VarianceThreshold()
+	1: Nystroem(coef0=-0.3434395284644953, degree=4, gamma=0.6168502485317933,
+         kernel='poly', n_components=18, random_state=1)
+	2: AdaBoostClassifier(estimator=DecisionTreeClassifier(criterion='entropy',
+                                                    max_depth=7,
+                                                    max_features=0.8955753946414917,
+                                                    min_samples_leaf=17,
+                                                    min_samples_split=14,
+                                                    random_state=1),
+                   learning_rate=1.3816139269756036, n_estimators=56,
+                   random_state=1)
+) -> Fitness: 0.9709528688524589
+
+2: Pipeline(
+	0: VarianceThreshold()
+	1: Nystroem(coef0=-0.3434395284644953, degree=4, gamma=0.6168502485317933,
+         kernel='poly', n_components=18, random_state=1)
+	2: AdaBoostClassifier(estimator=DecisionTreeClassifier(criterion='entropy',
+                                                    max_depth=7,
+                                                    max_features=0.8955753946414917,
+                                                    min_samples_leaf=17,
+                                                    min_samples_split=12,
+                                                    random_state=1),
+                   learning_rate=1.3816139269756036, n_estimators=47,
+                   random_state=1)
+) -> Fitness: 0.9679225658221562
+
+3: Pipeline(
+	0: MaxAbsScaler()
+	1: AdaBoostClassifier(estimator=DecisionTreeClassifier(criterion='entropy',
+                                                    max_depth=7,
+                                                    max_features=0.9685067724996175,
+                                                    min_samples_leaf=2,
+                                                    min_samples_split=11,
+                                                    random_state=1),
+                   learning_rate=1.3816139269756036, n_estimators=56,
+                   random_state=1)
+) -> Fitness: 0.969561910084451
+
+4: Pipeline(
+	0: SelectFwe(alpha=0.013973276847120412)
+	1: AdaBoostClassifier(estimator=DecisionTreeClassifier(criterion='entropy',
+                                                    max_depth=7,
+                                                    max_features=0.9685067724996175,
+                                                    min_samples_leaf=2,
+                                                    min_samples_split=11,
+                                                    random_state=1),
+                   learning_rate=1.3816139269756036, n_estimators=56,
+                   random_state=1)
+) -> Fitness: 0.969561910084451
+
+Ensemble fitness: 0.0
+Weights: [1.0, 1.0, 0.9968790420961584, 0.9985674291588923, 0.9985674291588923]
+Prediction: [2 1 1 2 1 2 2 1 1 2 2 1 1 1 2 1 1 2 2 1 1 1 2 2 2 2 1 2 1 1 2 1 1 2 2 1 1
+ 1 1 1 1 1 1 1 1 2 1 1 2 2 1 1 1 1 2 1 2 1 1 1 1 1 1 2 1 2 1 2 2 1 2 1 1 1
+ 1 1 2 1 1 2 1 2 1 1 2 1 2 1 1 1 2 2 1 1 1 2 2 2 1 2 2 1 1 1 1 1 2 1 1 1 1
+ 1 1 1 2 2 2 2 2 2 1 1 1 2 2 1 1 1 2 1 1 1 1 1 1 1 1 1 2 1 1 1 1 1 2 1 1 1
+ 2 1 1 1 1 2 1 2 1 1 2 2 2 1 1 1 1 2 2 2 1 1 2 1 1 2 1 2 1 2 2 2 1 1 1 2 2
+ 1 1 2 1 1 1 1 1 1 2 2 1 1 1 1 1 1 2 2 1 1 1 2 2 1 1 1 1 1 2 1 1 1 1 1 1 1
+ 1 2 1 1 2 2 1 2 1 1 2 1 2 2 1 1 1 1 2 1 2 1 2 1 1 2 1 2 1 1 1 1 1 1 1 1 2
+ 1 1 2 2 2 2 1 2 1 2 1 2 1 2 1 1 1 1 1 1 1 2 1 2 1 1 2 2 1 2 1 2 2 2 2 1 2
+ 1 1 2 2 2 1 1 1 1 2 1 1 1 1 1 2 1 1 1 1 1 1 1 2 1 1 1 2 2 1 2 2 2 1 1 1 2
+ 1 1 1 1 1 1 1 1 1 2 2 1 2 1 1 1 1 1 2 2 1 2 1 1 2 2 2 1 2 1 1 1 1 1 1 2 1
+ 1 1 1 1 1 2 2 1 1 1 1 1 1 1 1 2 2 1 1 2 1 1 2 2 2 1 1 1 1 2 2 1 1 1 2 1 1
+ 1 1 1 1 1 1 2 2 1 1 1 1 1 2 1 2 1 1 1 2 1 1 2 1 1 1 1 1 1 1 2 1 1 2 2 2 1
+ 1 2 1 2 1 1 1 2 2 1 1 2 1 2 1 1 2 2 1 1 2 2]

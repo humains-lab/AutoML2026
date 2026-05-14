@@ -1,0 +1,57 @@
+0: Pipeline(
+	0: MinMaxScaler()
+	1: VarianceThreshold()
+	2: RobustScaler(with_scaling=False)
+	3: FastICA(algorithm='deflation', fun='cube', n_components=92, random_state=3,
+        whiten='arbitrary-variance')
+	4: MaxAbsScaler()
+	5: RandomForestClassifier(class_weight='balanced_subsample', criterion='entropy',
+                       max_features=0.628960367838272, min_samples_leaf=20,
+                       min_samples_split=3, n_estimators=47, random_state=3)
+) -> Fitness: 0.22467324503836808
+
+1: Pipeline(
+	0: MinMaxScaler()
+	1: VarianceThreshold()
+	2: RobustScaler(with_scaling=False)
+	3: FastICA(algorithm='deflation', fun='cube', n_components=92, random_state=3,
+        whiten='arbitrary-variance')
+	4: MaxAbsScaler()
+	5: RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features=0.9363835123141007, min_samples_leaf=20,
+                       min_samples_split=3, n_estimators=47, random_state=3)
+) -> Fitness: 0.2033941782436067
+
+2: Pipeline(
+	0: RandomForestClassifier(class_weight='balanced_subsample', max_features='log2',
+                       min_samples_leaf=11, min_samples_split=17,
+                       n_estimators=11, random_state=3)
+) -> Fitness: 0.21993697664570377
+
+3: Pipeline(
+	0: MinMaxScaler()
+	1: VarianceThreshold()
+	2: RobustScaler(with_scaling=False)
+	3: FastICA(algorithm='deflation', fun='cube', n_components=92, random_state=3,
+        whiten='arbitrary-variance')
+	4: MaxAbsScaler()
+	5: RandomForestClassifier(class_weight='balanced_subsample',
+                       max_features=0.9363835123141007, min_samples_leaf=20,
+                       min_samples_split=3, n_estimators=47, random_state=3)
+) -> Fitness: 0.21472744381886702
+
+4: Pipeline(
+	0: MinMaxScaler()
+	1: VarianceThreshold()
+	2: RobustScaler(with_scaling=False)
+	3: FastICA(algorithm='deflation', fun='cube', n_components=92, random_state=3,
+        whiten='arbitrary-variance')
+	4: MaxAbsScaler()
+	5: RandomForestClassifier(class_weight='balanced_subsample', criterion='entropy',
+                       max_features=0.9363835123141007, min_samples_leaf=15,
+                       min_samples_split=3, n_estimators=47, random_state=3)
+) -> Fitness: 0.21523652036168653
+
+Ensemble fitness: 0.0
+Weights: [1.0, 0.9052888260410024, 0.9789193039346742, 0.9557321512946386, 0.9579980042791921]
+Prediction: [15  7 15 ... 10 10 11]

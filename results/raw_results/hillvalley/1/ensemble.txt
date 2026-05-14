@@ -1,0 +1,93 @@
+0: Pipeline(
+	0: MaxAbsScaler()
+	1: RobustScaler(with_centering=False)
+	2: Nystroem(coef0=-0.5536084395066585, degree=5, gamma=7.556033650403374,
+         kernel='cosine', n_components=90, random_state=1)
+	3: AdaBoostClassifier(estimator=DecisionTreeClassifier(max_depth=10,
+                                                    max_features=0.8585144063565593,
+                                                    min_samples_leaf=10,
+                                                    min_samples_split=4,
+                                                    random_state=1),
+                   learning_rate=0.5888670915381928, n_estimators=30,
+                   random_state=1)
+) -> Fitness: 0.9740123456790123
+
+1: Pipeline(
+	0: MaxAbsScaler()
+	1: Nystroem(coef0=-0.5536084395066585, degree=5, gamma=7.556033650403374,
+         kernel='cosine', n_components=54, random_state=1)
+	2: AdaBoostClassifier(estimator=DecisionTreeClassifier(max_depth=10,
+                                                    max_features=0.8585144063565593,
+                                                    min_samples_leaf=10,
+                                                    min_samples_split=4,
+                                                    random_state=1),
+                   learning_rate=0.5888670915381928, n_estimators=30,
+                   random_state=1)
+) -> Fitness: 0.9802160493827159
+
+2: Pipeline(
+	0: MaxAbsScaler()
+	1: RobustScaler(with_centering=False)
+	2: Nystroem(coef0=0.3536970796999488, degree=3, gamma=2.3695199774104716,
+         kernel='cosine', n_components=90, random_state=1)
+	3: AdaBoostClassifier(estimator=DecisionTreeClassifier(criterion='entropy',
+                                                    max_depth=4,
+                                                    max_features=0.8955753946414917,
+                                                    min_samples_leaf=17,
+                                                    min_samples_split=12,
+                                                    random_state=1),
+                   learning_rate=1.4932288908626732, n_estimators=74,
+                   random_state=1)
+) -> Fitness: 0.9628395061728394
+
+3: Pipeline(
+	0: MinMaxScaler()
+	1: Nystroem(coef0=-0.5536084395066585, degree=5, gamma=7.556033650403374,
+         kernel='cosine', n_components=90, random_state=1)
+	2: AdaBoostClassifier(estimator=DecisionTreeClassifier(max_depth=10,
+                                                    max_features=0.8585144063565593,
+                                                    min_samples_leaf=10,
+                                                    min_samples_split=4,
+                                                    random_state=1),
+                   learning_rate=0.5888670915381928, n_estimators=30,
+                   random_state=1)
+) -> Fitness: 0.9418364197530863
+
+4: Pipeline(
+	0: MaxAbsScaler()
+	1: Nystroem(coef0=0.1353955099930464, degree=5, gamma=1.5637118228476141,
+         kernel='cosine', n_components=26, random_state=1)
+	2: AdaBoostClassifier(estimator=DecisionTreeClassifier(criterion='entropy',
+                                                    max_depth=10,
+                                                    max_features=0.8585144063565593,
+                                                    min_samples_leaf=11,
+                                                    min_samples_split=18,
+                                                    random_state=1),
+                   learning_rate=1.4932288908626732, n_estimators=89,
+                   random_state=1)
+) -> Fitness: 0.9987654320987656
+
+Ensemble fitness: 0.0
+Weights: [0.9752163164400492, 0.981427688504326, 0.9640296662546352, 0.9430006180469713, 1.0]
+Prediction: [0 1 1 1 0 1 1 0 1 0 1 1 0 1 1 0 1 1 1 1 1 1 0 1 1 1 0 1 0 0 1 1 1 0 0 1 1
+ 0 1 1 1 1 1 0 0 0 1 1 0 0 0 0 0 1 1 0 0 1 1 0 0 1 1 1 0 1 0 0 0 0 1 0 0 1
+ 0 1 1 1 0 1 1 1 1 1 1 1 1 0 1 0 0 1 1 1 1 1 1 1 0 1 0 0 1 0 0 0 0 0 1 1 0
+ 1 1 0 0 0 0 1 1 1 0 1 1 1 0 0 1 1 1 0 1 1 0 0 1 0 1 0 0 1 1 1 0 1 1 1 1 1
+ 1 1 0 0 1 0 1 0 0 0 1 1 0 1 1 0 1 0 0 1 1 1 1 0 1 1 1 1 1 0 1 0 0 1 1 0 0
+ 1 0 0 1 1 0 0 1 0 1 0 0 1 1 1 1 0 1 0 1 0 1 0 0 1 0 1 0 1 0 1 1 1 0 1 1 1
+ 1 1 0 1 0 0 1 1 0 1 0 0 0 1 0 1 0 1 1 0 0 0 0 1 1 1 0 1 0 0 1 1 1 0 1 1 1
+ 0 1 0 0 0 0 0 1 0 1 0 0 1 1 0 1 1 1 0 0 0 1 1 1 1 0 1 0 0 0 0 0 0 0 1 1 1
+ 0 1 0 1 1 1 1 0 0 1 0 0 0 0 1 0 0 0 0 0 0 1 1 0 0 0 1 1 1 1 0 0 1 1 0 1 1
+ 0 1 0 0 0 1 1 1 1 0 0 0 1 0 0 0 0 1 1 0 1 0 1 1 1 0 1 1 1 0 0 1 1 1 1 1 1
+ 1 0 1 1 0 0 0 1 1 0 0 0 0 1 0 0 0 0 0 0 1 1 0 0 0 0 0 0 1 0 0 1 0 1 1 0 1
+ 1 0 0 1 0 0 1 1 0 1 1 0 0 0 1 0 1 0 0 0 0 1 0 1 0 1 0 0 0 0 1 1 1 0 1 0 0
+ 0 1 1 1 1 0 0 1 1 0 1 0 0 0 0 0 1 1 1 0 1 1 0 0 1 0 0 1 1 1 0 0 1 1 1 0 0
+ 0 1 0 1 1 0 1 1 0 1 0 1 1 1 0 1 0 1 0 0 1 1 1 1 0 0 0 1 0 0 0 1 0 1 1 0 0
+ 0 1 0 1 0 0 1 0 1 1 0 0 0 0 1 1 1 0 1 0 1 1 0 0 1 1 1 1 1 0 1 0 1 0 0 1 0
+ 0 0 0 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 0 1 0 0 0 0 1 1 1 0 0 1 0 1 1 0 1 0 0
+ 0 1 1 0 1 1 0 1 1 1 0 0 0 0 0 0 0 0 0 0 1 1 0 1 0 1 1 0 0 0 0 1 1 0 1 1 1
+ 1 1 1 0 0 0 0 0 1 1 0 0 1 1 0 0 0 1 0 0 0 0 0 0 1 1 1 1 0 1 0 1 0 1 0 1 0
+ 0 0 0 1 0 1 0 0 0 0 0 1 0 0 1 1 1 1 0 0 0 1 1 0 1 1 1 0 0 0 0 0 0 1 0 0 0
+ 1 1 0 0 1 0 0 0 0 1 1 1 0 0 0 0 1 1 0 0 1 1 0 1 0 1 1 1 0 0 0 1 1 1 0 1 1
+ 0 1 0 1 1 1 1 1 1 1 1 1 0 0 1 0 0 0 0 0 1 1 0 0 0 1 1 1 0 0 1 0 1 0 1 1 1
+ 1 0 0 0 0 0 0 1 0 1 0 0 0 1 0 0 1 1 1 1 0 0 0 1 0 1 1 1 1 1 0]

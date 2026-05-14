@@ -1,0 +1,47 @@
+0: Pipeline(
+	0: PCA(n_components=0.630631734446151, random_state=8)
+	1: SelectFwe(alpha=0.009318422367572708)
+	2: MLPClassifier(activation='logistic', alpha=0.055934291641464406,
+              hidden_layer_sizes=(17, 13),
+              learning_rate_init=0.1726042875164753, random_state=8,
+              solver='lbfgs')
+) -> Fitness: 0.8753057670640967
+
+1: Pipeline(
+	0: PCA(n_components=0.9802530242961692, random_state=8)
+	1: SelectFwe(alpha=0.009318422367572708)
+	2: MLPClassifier(activation='tanh', alpha=0.031000214769746924,
+              hidden_layer_sizes=(90, 18),
+              learning_rate_init=0.03774967044136813, random_state=8,
+              solver='lbfgs')
+) -> Fitness: 0.8763840886296957
+
+2: Pipeline(
+	0: MaxAbsScaler()
+	1: MLPClassifier(activation='identity', alpha=0.031000214769746924,
+              hidden_layer_sizes=(90, 18),
+              learning_rate_init=0.062039916272437524, random_state=8,
+              solver='sgd')
+) -> Fitness: 0.8703773574668932
+
+3: Pipeline(
+	0: FastICA(algorithm='deflation', fun='exp', n_components=6, random_state=8)
+	1: SelectFwe(alpha=0.014728332010675416)
+	2: MLPClassifier(activation='logistic', alpha=0.017527728823127118,
+              hidden_layer_sizes=(47, 3),
+              learning_rate_init=0.07370059460151995, random_state=8,
+              solver='lbfgs')
+) -> Fitness: 0.8726402599289156
+
+4: Pipeline(
+	0: PCA(n_components=0.8653203001865177, random_state=8)
+	1: SelectFwe(alpha=0.0475244615224976)
+	2: MLPClassifier(activation='logistic', alpha=0.055934291641464406,
+              hidden_layer_sizes=(17, 13),
+              learning_rate_init=0.1726042875164753, random_state=8,
+              solver='lbfgs')
+) -> Fitness: 0.8753057670640967
+
+Ensemble fitness: 0.0
+Weights: [0.9987695787958849, 1.0, 0.9931460061396201, 0.9957280959919823, 0.9987695787958849]
+Prediction: [0 1 2 ... 0 0 0]

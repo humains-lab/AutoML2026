@@ -1,0 +1,45 @@
+0: Pipeline(
+	0: MinMaxScaler()
+	1: VarianceThreshold()
+	2: LogisticRegression(C=2.1281510697510493, class_weight='balanced', max_iter=1000,
+                   penalty=None, random_state=5, solver='saga')
+) -> Fitness: 0.7305555555555555
+
+1: Pipeline(
+	0: MinMaxScaler()
+	1: VarianceThreshold()
+	2: LogisticRegression(C=0.32704755922556994, class_weight='balanced',
+                   max_iter=1000, penalty=None, random_state=5, solver='saga')
+) -> Fitness: 0.7305555555555555
+
+2: Pipeline(
+	0: MaxAbsScaler()
+	1: FastICA(algorithm='deflation', n_components=79, random_state=5,
+        whiten='arbitrary-variance')
+	2: RobustScaler(with_centering=False)
+	3: LogisticRegression(C=2.1281510697510493, class_weight='balanced', max_iter=1000,
+                   penalty=None, random_state=5, solver='saga')
+) -> Fitness: 0.6901851851851852
+
+3: Pipeline(
+	0: MaxAbsScaler()
+	1: FastICA(algorithm='deflation', n_components=79, random_state=5,
+        whiten='arbitrary-variance')
+	2: RobustScaler()
+	3: LogisticRegression(C=2.1281510697510493, class_weight='balanced', max_iter=1000,
+                   penalty='l2', random_state=5, solver='saga')
+) -> Fitness: 0.7185185185185186
+
+4: Pipeline(
+	0: MinMaxScaler()
+	1: VarianceThreshold()
+	2: LogisticRegression(C=0.5494764662105261, class_weight='balanced', max_iter=1000,
+                   penalty=None, random_state=5, solver='saga')
+) -> Fitness: 0.7305555555555555
+
+Ensemble fitness: 0.0
+Weights: [1.0, 1.0, 0.9447401774397973, 0.9835234474017746, 1.0]
+Prediction: [2 2 1 3 1 2 1 3 2 2 1 2 5 6 3 1 6 4 2 1 1 2 2 2 6 1 5 2 2 2 2 2 6 4 1 2 2
+ 1 1 6 3 1 2 3 2 2 1 1 1 1 3 4 4 2 1 4 2 2 6 4 1 2 3 2 3 6 2 2 2 1 1 2 2 6
+ 3 1 6 1 6 1 1 1 6 2 3 2 3 3 2 1 3 6 3 3 6 5 6 1 3 2 3 5 3 4 2 2 1 2 1 1 6
+ 6 5 1 3 5 6 2 1 2 3 1 1 6 4 2 1 1 1 3 2 4 6 4 5 1 2 2 1 3 1 1]

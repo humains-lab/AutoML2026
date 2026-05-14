@@ -1,0 +1,42 @@
+0: Pipeline(
+	0: QuadraticDiscriminantAnalysis(reg_param=0.8504734170321603)
+) -> Fitness: 0.8681506862031233
+
+1: Pipeline(
+	0: SelectPercentile(percentile=38.73251795877139)
+	1: MinMaxScaler()
+	2: MLPClassifier(activation='identity', alpha=0.08303580865139477,
+              hidden_layer_sizes=(71, 20),
+              learning_rate_init=0.10953452303214355, random_state=4,
+              solver='sgd')
+) -> Fitness: 0.8679986565616524
+
+2: Pipeline(
+	0: SelectPercentile(percentile=79.50823769855424)
+	1: MinMaxScaler()
+	2: MLPClassifier(activation='identity', alpha=0.07698535550594701,
+              hidden_layer_sizes=(71, 20),
+              learning_rate_init=0.10953452303214355, random_state=4,
+              solver='lbfgs')
+) -> Fitness: 0.8691202977804613
+
+3: Pipeline(
+	0: SelectFwe(alpha=0.045282871663803924)
+	1: MinMaxScaler()
+	2: MLPClassifier(alpha=0.07698535550594701, hidden_layer_sizes=(71, 20),
+              learning_rate_init=0.10953452303214355, random_state=4,
+              solver='lbfgs')
+) -> Fitness: 0.8628657976085782
+
+4: Pipeline(
+	0: SelectPercentile(percentile=41.146873215816484)
+	1: MinMaxScaler()
+	2: MLPClassifier(activation='identity', alpha=0.07698535550594701,
+              hidden_layer_sizes=(71, 20),
+              learning_rate_init=0.10953452303214355, random_state=4,
+              solver='lbfgs')
+) -> Fitness: 0.8696962106973652
+
+Ensemble fitness: 0.0
+Weights: [0.9982229145358669, 0.9980481067816179, 0.9993377999009078, 0.9921462080611917, 1.0]
+Prediction: [0 1 2 ... 0 0 0]

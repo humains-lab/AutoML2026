@@ -1,0 +1,39 @@
+0: Pipeline(
+	0: PCA(n_components=0.666606655120854, random_state=0, whiten=True)
+	1: LogisticRegression(C=5.1554297203969455, class_weight='balanced', max_iter=1000,
+                   penalty=None, random_state=0, solver='newton-cg')
+) -> Fitness: 0.875153186000723
+
+1: Pipeline(
+	0: RobustScaler(with_centering=False)
+	1: SelectFwe(alpha=0.025399532508512526)
+	2: QuadraticDiscriminantAnalysis(reg_param=0.3359165544734606)
+) -> Fitness: 0.8689219424075378
+
+2: Pipeline(
+	0: SelectPercentile(percentile=39.04742449933942)
+	1: SelectFwe(alpha=0.040053251700515886)
+	2: VarianceThreshold()
+	3: LogisticRegression(C=18.832380900373128, class_weight='balanced', max_iter=1000,
+                   penalty='l2', random_state=0, solver='newton-cg')
+) -> Fitness: 0.8720115484574013
+
+3: Pipeline(
+	0: PCA(n_components=0.8063253126163166, random_state=0, whiten=True)
+	1: SelectFwe(alpha=0.008179883949050493)
+	2: RandomForestClassifier(criterion='entropy', max_features=0.7608950503603693,
+                       min_samples_leaf=7, min_samples_split=9, n_estimators=97,
+                       random_state=0)
+) -> Fitness: 0.8701362644668468
+
+4: Pipeline(
+	0: RobustScaler(with_centering=False, with_scaling=False)
+	1: FastICA(fun='cube', n_components=15, random_state=0)
+	2: MinMaxScaler()
+	3: LogisticRegression(C=4.688800378433454, max_iter=1000, penalty=None,
+                   random_state=0, solver='saga')
+) -> Fitness: 0.8759872409943048
+
+Ensemble fitness: 0.0
+Weights: [0.9990478685595522, 0.9919344731793726, 0.9954614720958825, 0.9933207057664256, 1.0]
+Prediction: [0 1 2 ... 0 0 0]

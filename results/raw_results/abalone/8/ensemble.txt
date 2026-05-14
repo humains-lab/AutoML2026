@@ -1,0 +1,51 @@
+0: Pipeline(
+	0: SelectPercentile(percentile=86.16784270581033)
+	1: ExtraTreesClassifier(bootstrap=True, class_weight='balanced',
+                     criterion='entropy', min_samples_leaf=7,
+                     min_samples_split=9, n_estimators=74, random_state=8)
+) -> Fitness: 0.20608778303875264
+
+1: Pipeline(
+	0: FastICA(algorithm='deflation', fun='exp', n_components=27, random_state=8,
+        whiten='arbitrary-variance')
+	1: ExtraTreesClassifier(bootstrap=True, class_weight='balanced',
+                     criterion='entropy', min_samples_leaf=7,
+                     min_samples_split=9, n_estimators=74, random_state=8)
+) -> Fitness: 0.17982822534720877
+
+2: Pipeline(
+	0: MaxAbsScaler()
+	1: AdaBoostClassifier(estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    criterion='entropy',
+                                                    max_depth=7,
+                                                    max_features=0.606569398646551,
+                                                    min_samples_leaf=5,
+                                                    min_samples_split=10,
+                                                    random_state=8),
+                   learning_rate=0.011326510045998361, n_estimators=76,
+                   random_state=8)
+) -> Fitness: 0.19348871107451487
+
+3: Pipeline(
+	0: PCA(n_components=0.9877255525798894, random_state=8)
+	1: MinMaxScaler()
+	2: AdaBoostClassifier(estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    max_depth=14,
+                                                    max_features=0.2343100406788743,
+                                                    min_samples_leaf=17,
+                                                    min_samples_split=11,
+                                                    random_state=8),
+                   learning_rate=0.6195418842677545, n_estimators=24,
+                   random_state=8)
+) -> Fitness: 0.14713260674535092
+
+4: Pipeline(
+	0: SelectPercentile(percentile=35.97359144031865)
+	1: ExtraTreesClassifier(bootstrap=True, class_weight='balanced',
+                     criterion='entropy', min_samples_leaf=7,
+                     min_samples_split=9, n_estimators=74, random_state=8)
+) -> Fitness: 0.20524139793540924
+
+Ensemble fitness: 0.0
+Weights: [1.0, 0.8725807163124947, 0.9388655078022328, 0.7139317264511705, 0.9958930845348352]
+Prediction: [ 8  7  9 ...  9 10 10]

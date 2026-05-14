@@ -1,0 +1,54 @@
+0: Pipeline(
+	0: FastICA(fun='exp', n_components=71, random_state=3, whiten='arbitrary-variance')
+	1: MinMaxScaler()
+	2: MLPClassifier(alpha=0.05990365822686672, hidden_layer_sizes=(19, 12),
+              learning_rate_init=0.3313290007190651, random_state=3,
+              solver='lbfgs')
+) -> Fitness: 0.871926946247575
+
+1: Pipeline(
+	0: RobustScaler(with_centering=False, with_scaling=False)
+	1: MinMaxScaler()
+	2: VarianceThreshold()
+	3: PCA(n_components=0.9116717919963409, random_state=3, whiten=True)
+	4: SelectFwe(alpha=0.03479051109603893)
+	5: MaxAbsScaler()
+	6: ExtraTreesClassifier(bootstrap=True, criterion='entropy', max_features='log2',
+                     min_samples_leaf=4, min_samples_split=11, n_estimators=94,
+                     random_state=3)
+) -> Fitness: 0.8706588453082642
+
+2: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: PCA(n_components=0.805621460089649, random_state=3)
+	2: SelectFwe(alpha=0.040423492385127754)
+	3: MaxAbsScaler()
+	4: ExtraTreesClassifier(class_weight='balanced_subsample', criterion='entropy',
+                     max_features='log2', min_samples_leaf=4,
+                     min_samples_split=20, n_estimators=94, random_state=3)
+) -> Fitness: 0.8760989161302394
+
+3: Pipeline(
+	0: FastICA(fun='exp', n_components=71, random_state=3, whiten='arbitrary-variance')
+	1: VarianceThreshold()
+	2: MLPClassifier(alpha=0.05990365822686672, hidden_layer_sizes=(19, 12),
+              learning_rate_init=0.3313290007190651, random_state=3,
+              solver='lbfgs')
+) -> Fitness: 0.8710334024438164
+
+4: Pipeline(
+	0: RobustScaler(with_centering=False, with_scaling=False)
+	1: MinMaxScaler()
+	2: VarianceThreshold()
+	3: PCA(n_components=0.9116717919963409, random_state=3, whiten=True)
+	4: SelectFwe(alpha=0.03479051109603893)
+	5: MaxAbsScaler()
+	6: ExtraTreesClassifier(bootstrap=True, class_weight='balanced_subsample',
+                     criterion='entropy', max_features='log2',
+                     min_samples_leaf=4, min_samples_split=20, n_estimators=94,
+                     random_state=3)
+) -> Fitness: 0.8724738285485623
+
+Ensemble fitness: 0.0
+Weights: [0.9952380150165097, 0.9937905746465203, 1.0, 0.9942181030096493, 0.9958622393945089]
+Prediction: [0 1 2 ... 0 0 0]

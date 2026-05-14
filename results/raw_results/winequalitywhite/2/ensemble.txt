@@ -1,0 +1,43 @@
+0: Pipeline(
+	0: FastICA(fun='cube', n_components=93, random_state=2)
+	1: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       max_features='log2', min_samples_leaf=9,
+                       min_samples_split=4, n_estimators=69, random_state=2)
+) -> Fitness: 0.4513052067749624
+
+1: Pipeline(
+	0: FastICA(n_components=69, random_state=2, whiten='arbitrary-variance')
+	1: ExtraTreesClassifier(class_weight='balanced_subsample', max_features='log2',
+                     min_samples_leaf=14, min_samples_split=10, n_estimators=73,
+                     random_state=2)
+) -> Fitness: 0.4209453022124368
+
+2: Pipeline(
+	0: SelectFwe(alpha=0.04632553916914158)
+	1: FastICA(n_components=94, random_state=2)
+	2: RobustScaler(with_scaling=False)
+	3: MinMaxScaler()
+	4: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       max_features='log2', min_samples_leaf=9,
+                       min_samples_split=4, n_estimators=69, random_state=2)
+) -> Fitness: 0.4507990370692661
+
+3: Pipeline(
+	0: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       max_features='log2', min_samples_leaf=9,
+                       min_samples_split=4, n_estimators=69, random_state=2)
+) -> Fitness: 0.4356383287487275
+
+4: Pipeline(
+	0: SelectPercentile(percentile=74.52506113033547)
+	1: FastICA(n_components=69, random_state=2)
+	2: RobustScaler(with_scaling=False)
+	3: MinMaxScaler()
+	4: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       max_features='log2', min_samples_leaf=9,
+                       min_samples_split=4, n_estimators=69, random_state=2)
+) -> Fitness: 0.44845667716682003
+
+Ensemble fitness: 0.0
+Weights: [1.0, 0.9327286632044904, 0.9988784314958088, 0.9652854037776546, 0.9936882412048865]
+Prediction: [5 6 6 ... 6 5 6]

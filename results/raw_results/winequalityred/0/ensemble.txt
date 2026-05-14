@@ -1,0 +1,52 @@
+0: Pipeline(
+	0: SelectFwe(alpha=0.01547397754087198)
+	1: MaxAbsScaler()
+	2: Nystroem(coef0=-0.255101474055488, degree=5, gamma=3.783720160104937,
+         kernel='poly', n_components=68, random_state=0)
+	3: MinMaxScaler()
+	4: PCA(n_components=0.9580891485306424, random_state=0, whiten=True)
+	5: RandomForestClassifier(class_weight='balanced_subsample',
+                       max_features=0.9140316392019494, min_samples_leaf=8,
+                       min_samples_split=12, n_estimators=95, random_state=0)
+) -> Fitness: 0.4782234033214426
+
+1: Pipeline(
+	0: DecisionTreeClassifier(class_weight='balanced', criterion='entropy',
+                       max_depth=19, max_features=0.23673356878784502,
+                       min_samples_leaf=15, min_samples_split=16,
+                       random_state=0)
+) -> Fitness: 0.41429122076180896
+
+2: Pipeline(
+	0: SelectFwe(alpha=0.0280704456870048)
+	1: MaxAbsScaler()
+	2: Nystroem(coef0=-0.255101474055488, degree=5, gamma=3.783720160104937,
+         kernel='poly', n_components=68, random_state=0)
+	3: MinMaxScaler()
+	4: PCA(n_components=0.9580891485306424, random_state=0, whiten=True)
+	5: RandomForestClassifier(class_weight='balanced_subsample',
+                       max_features=0.9140316392019494, min_samples_leaf=8,
+                       min_samples_split=12, n_estimators=95, random_state=0)
+) -> Fitness: 0.49643284094264484
+
+3: Pipeline(
+	0: ExtraTreesClassifier(bootstrap=True, class_weight='balanced_subsample',
+                     max_features='log2', min_samples_leaf=10,
+                     min_samples_split=13, n_estimators=60, random_state=0)
+) -> Fitness: 0.45724771960066074
+
+4: Pipeline(
+	0: SelectFwe(alpha=0.01547397754087198)
+	1: MaxAbsScaler()
+	2: Nystroem(coef0=-0.255101474055488, degree=5, gamma=3.783720160104937,
+         kernel='poly', n_components=68, random_state=0)
+	3: MinMaxScaler()
+	4: PCA(n_components=0.9580891485306424, random_state=0, whiten=True)
+	5: RandomForestClassifier(class_weight='balanced_subsample',
+                       max_features=0.9140316392019494, min_samples_leaf=8,
+                       min_samples_split=9, n_estimators=95, random_state=0)
+) -> Fitness: 0.4782234033214426
+
+Ensemble fitness: 0.0
+Weights: [0.9633194339306289, 0.8345362888868062, 1.0, 0.9210666214838286, 0.9633194339306289]
+Prediction: [4 3 4 ... 4 3 3]

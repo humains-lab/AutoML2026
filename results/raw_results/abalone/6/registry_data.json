@@ -1,0 +1,1348 @@
+[
+    {
+        "id": "40023d38-f11b-4ff9-9477-567a55eecb36",
+        "parents_id": [],
+        "pipeline": "robustScaler(True,True);selectPercentile(93.08779403059991);varianceThreshold();fastICA(16,'deflation','unit-variance','exp');randomForest(39,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.22938615849015426
+        ],
+        "runtime": 48.7710075378418,
+        "hp_number": 14,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "fabb888c-e80f-424b-9d01-671c37993dfb",
+        "parents_id": [],
+        "pipeline": "robustScaler(True,True);selectPercentile(93.08779403059991);varianceThreshold();fastICA(16,'deflation','unit-variance','logcosh');randomForest(91,'entropy',0.5253630401655005,15,9,True,'balanced')",
+        "fitness": [
+            0.2437677209752996
+        ],
+        "runtime": 77.29923152923584,
+        "hp_number": 14,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "13c543ea-272e-4db7-8cd3-997c926b3cd1",
+        "parents_id": [],
+        "pipeline": "robustScaler(True,True);selectPercentile(25.50897591338026);varianceThreshold();fastICA(16,'deflation','unit-variance','logcosh');randomForest(91,'entropy',0.5253630401655005,15,9,True,'balanced')",
+        "fitness": [
+            0.19539715614813163
+        ],
+        "runtime": 25.021413326263428,
+        "hp_number": 14,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "b7399ef2-2ae6-48ba-919d-6faffa75648f",
+        "parents_id": [],
+        "pipeline": "selectFwe(0.043608404094675514);selectPercentile(93.08779403059991);minMaxScaler();fastICA(16,'deflation','unit-variance','exp');randomForest(39,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.22055446564676934
+        ],
+        "runtime": 62.63664746284485,
+        "hp_number": 13,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "39264bad-f6a4-4b32-a99b-08b1df1c7b96",
+        "parents_id": [],
+        "pipeline": "robustScaler(True,True);selectPercentile(93.08779403059991);varianceThreshold();fastICA(16,'deflation','unit-variance','exp');randomForest(91,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.22406748023575127
+        ],
+        "runtime": 76.18730688095093,
+        "hp_number": 14,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "da9109ed-d5b5-4fda-a570-4fcec3ae50d3",
+        "parents_id": [
+            "40023d38-f11b-4ff9-9477-567a55eecb36"
+        ],
+        "pipeline": "randomForest(39,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.16936521403760746
+        ],
+        "runtime": 10.059731006622314,
+        "hp_number": 7,
+        "families": [
+            "4"
+        ]
+    },
+    {
+        "id": "577a41e8-4ef5-4bee-b103-c75d1e7e56b3",
+        "parents_id": [
+            "40023d38-f11b-4ff9-9477-567a55eecb36"
+        ],
+        "pipeline": "robustScaler(True,True);randomForest(39,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.16875546346147405
+        ],
+        "runtime": 13.615590810775757,
+        "hp_number": 9,
+        "families": [
+            "0",
+            "4"
+        ]
+    },
+    {
+        "id": "0d3aa70a-f03c-4365-8ea2-64f369dd224b",
+        "parents_id": [
+            "40023d38-f11b-4ff9-9477-567a55eecb36"
+        ],
+        "pipeline": "selectPercentile(93.08779403059991);randomForest(39,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.16040108894300203
+        ],
+        "runtime": 9.924975633621216,
+        "hp_number": 8,
+        "families": [
+            "1",
+            "4"
+        ]
+    },
+    {
+        "id": "bc2faf7a-a7d2-4f26-9d8e-1a0d1e4d7999",
+        "parents_id": [
+            "40023d38-f11b-4ff9-9477-567a55eecb36"
+        ],
+        "pipeline": "varianceThreshold();randomForest(39,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.16936521403760746
+        ],
+        "runtime": 13.575454473495483,
+        "hp_number": 7,
+        "families": [
+            "2",
+            "4"
+        ]
+    },
+    {
+        "id": "47f66228-07ad-4538-9980-067c22b582a0",
+        "parents_id": [
+            "40023d38-f11b-4ff9-9477-567a55eecb36"
+        ],
+        "pipeline": "fastICA(16,'deflation','unit-variance','exp');randomForest(39,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [NaN
+        ],
+        "runtime": null,
+        "hp_number": 11,
+        "families": [
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "def4a07c-2369-4659-a7b7-1ebefadaaaf5",
+        "parents_id": [
+            "40023d38-f11b-4ff9-9477-567a55eecb36"
+        ],
+        "pipeline": "robustScaler(True,True);selectPercentile(93.08779403059991);randomForest(39,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.16017421786284974
+        ],
+        "runtime": 11.766242265701294,
+        "hp_number": 10,
+        "families": [
+            "0",
+            "1",
+            "4"
+        ]
+    },
+    {
+        "id": "426315d5-bc53-4ef6-bac4-ec4e6b307edf",
+        "parents_id": [
+            "40023d38-f11b-4ff9-9477-567a55eecb36"
+        ],
+        "pipeline": "robustScaler(True,True);varianceThreshold();randomForest(39,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.16875546346147405
+        ],
+        "runtime": 10.47396206855774,
+        "hp_number": 9,
+        "families": [
+            "0",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "id": "9862592a-0dab-4a2a-a85b-84a84f698598",
+        "parents_id": [
+            "40023d38-f11b-4ff9-9477-567a55eecb36"
+        ],
+        "pipeline": "robustScaler(True,True);fastICA(16,'deflation','unit-variance','exp');randomForest(39,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.16966879739674245
+        ],
+        "runtime": 22.54102349281311,
+        "hp_number": 13,
+        "families": [
+            "0",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "c695bb69-6f86-4aa8-b869-abce826b1344",
+        "parents_id": [
+            "40023d38-f11b-4ff9-9477-567a55eecb36"
+        ],
+        "pipeline": "selectPercentile(93.08779403059991);varianceThreshold();randomForest(39,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.16040108894300203
+        ],
+        "runtime": 10.25911259651184,
+        "hp_number": 8,
+        "families": [
+            "1",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "id": "ef32658c-a33a-42ef-bef5-66a664641ed8",
+        "parents_id": [
+            "40023d38-f11b-4ff9-9477-567a55eecb36"
+        ],
+        "pipeline": "selectPercentile(93.08779403059991);fastICA(16,'deflation','unit-variance','exp');randomForest(39,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.1587201027383784
+        ],
+        "runtime": 33.098113775253296,
+        "hp_number": 12,
+        "families": [
+            "1",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "037c5444-d38d-4c74-aa22-21155999069d",
+        "parents_id": [
+            "40023d38-f11b-4ff9-9477-567a55eecb36"
+        ],
+        "pipeline": "varianceThreshold();fastICA(16,'deflation','unit-variance','exp');randomForest(39,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.18108828537673322
+        ],
+        "runtime": 24.697073221206665,
+        "hp_number": 11,
+        "families": [
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "b3ea1991-52ea-4ef9-8386-537a0facdd82",
+        "parents_id": [
+            "40023d38-f11b-4ff9-9477-567a55eecb36"
+        ],
+        "pipeline": "robustScaler(True,True);selectPercentile(93.08779403059991);varianceThreshold();randomForest(39,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.16017421786284974
+        ],
+        "runtime": 11.620101690292358,
+        "hp_number": 10,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "id": "7db93ea9-a9ce-47d9-b8f2-a495f9016ae1",
+        "parents_id": [
+            "40023d38-f11b-4ff9-9477-567a55eecb36"
+        ],
+        "pipeline": "robustScaler(True,True);selectPercentile(93.08779403059991);fastICA(16,'deflation','unit-variance','exp');randomForest(39,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.18003163252965249
+        ],
+        "runtime": 30.18477702140808,
+        "hp_number": 14,
+        "families": [
+            "0",
+            "1",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "dfcd5f21-1013-4dae-8cc2-22423abb426a",
+        "parents_id": [
+            "40023d38-f11b-4ff9-9477-567a55eecb36"
+        ],
+        "pipeline": "robustScaler(True,True);varianceThreshold();fastICA(16,'deflation','unit-variance','exp');randomForest(39,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.19451979599450292
+        ],
+        "runtime": 25.562387704849243,
+        "hp_number": 13,
+        "families": [
+            "0",
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "903f70e2-d76a-4a7c-87fa-35cfbe1d7a4a",
+        "parents_id": [
+            "40023d38-f11b-4ff9-9477-567a55eecb36"
+        ],
+        "pipeline": "selectPercentile(93.08779403059991);varianceThreshold();fastICA(16,'deflation','unit-variance','exp');randomForest(39,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.1587201027383784
+        ],
+        "runtime": 28.91707968711853,
+        "hp_number": 12,
+        "families": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "6914e2ec-44e6-4372-a973-2eed6802f499",
+        "parents_id": [
+            "fabb888c-e80f-424b-9d01-671c37993dfb"
+        ],
+        "pipeline": "randomForest(91,'entropy',0.5253630401655005,15,9,True,'balanced')",
+        "fitness": [
+            0.17212365576013444
+        ],
+        "runtime": 19.914273500442505,
+        "hp_number": 7,
+        "families": [
+            "4"
+        ]
+    },
+    {
+        "id": "156e822e-7ee8-4336-bc06-d4efce41c4b3",
+        "parents_id": [
+            "fabb888c-e80f-424b-9d01-671c37993dfb"
+        ],
+        "pipeline": "robustScaler(True,True);randomForest(91,'entropy',0.5253630401655005,15,9,True,'balanced')",
+        "fitness": [
+            0.17133120211258882
+        ],
+        "runtime": 18.19365429878235,
+        "hp_number": 9,
+        "families": [
+            "0",
+            "4"
+        ]
+    },
+    {
+        "id": "90e0a4f7-6ac6-490c-a64c-e70b27df8e90",
+        "parents_id": [
+            "fabb888c-e80f-424b-9d01-671c37993dfb"
+        ],
+        "pipeline": "selectPercentile(93.08779403059991);randomForest(91,'entropy',0.5253630401655005,15,9,True,'balanced')",
+        "fitness": [
+            0.1655088871403692
+        ],
+        "runtime": 18.25711989402771,
+        "hp_number": 8,
+        "families": [
+            "1",
+            "4"
+        ]
+    },
+    {
+        "id": "81f02069-884b-4ecc-be25-8a4401df2e0f",
+        "parents_id": [
+            "fabb888c-e80f-424b-9d01-671c37993dfb"
+        ],
+        "pipeline": "varianceThreshold();randomForest(91,'entropy',0.5253630401655005,15,9,True,'balanced')",
+        "fitness": [
+            0.17212365576013444
+        ],
+        "runtime": 17.691749095916748,
+        "hp_number": 7,
+        "families": [
+            "2",
+            "4"
+        ]
+    },
+    {
+        "id": "c63ef3a8-608c-44dd-8659-664002f84605",
+        "parents_id": [
+            "fabb888c-e80f-424b-9d01-671c37993dfb"
+        ],
+        "pipeline": "fastICA(16,'deflation','unit-variance','logcosh');randomForest(91,'entropy',0.5253630401655005,15,9,True,'balanced')",
+        "fitness": [
+            0.17937561751474268
+        ],
+        "runtime": 127.56063055992126,
+        "hp_number": 11,
+        "families": [
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "d65cad26-e877-4868-b00a-db62e3bcf929",
+        "parents_id": [
+            "fabb888c-e80f-424b-9d01-671c37993dfb"
+        ],
+        "pipeline": "robustScaler(True,True);selectPercentile(93.08779403059991);randomForest(91,'entropy',0.5253630401655005,15,9,True,'balanced')",
+        "fitness": [
+            0.1667265168483827
+        ],
+        "runtime": 20.171777963638306,
+        "hp_number": 10,
+        "families": [
+            "0",
+            "1",
+            "4"
+        ]
+    },
+    {
+        "id": "54430f80-755f-4e3c-abaf-4f80eb6713c3",
+        "parents_id": [
+            "fabb888c-e80f-424b-9d01-671c37993dfb"
+        ],
+        "pipeline": "robustScaler(True,True);varianceThreshold();randomForest(91,'entropy',0.5253630401655005,15,9,True,'balanced')",
+        "fitness": [
+            0.17133120211258882
+        ],
+        "runtime": 29.187511682510376,
+        "hp_number": 9,
+        "families": [
+            "0",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "id": "1276caa8-43ad-4195-b172-0f0b6e4483fa",
+        "parents_id": [
+            "fabb888c-e80f-424b-9d01-671c37993dfb"
+        ],
+        "pipeline": "robustScaler(True,True);fastICA(16,'deflation','unit-variance','logcosh');randomForest(91,'entropy',0.5253630401655005,15,9,True,'balanced')",
+        "fitness": [
+            0.1669690462249604
+        ],
+        "runtime": 153.35562181472778,
+        "hp_number": 13,
+        "families": [
+            "0",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "0791c8ec-d77b-4e59-8bc3-73de26c24163",
+        "parents_id": [
+            "fabb888c-e80f-424b-9d01-671c37993dfb"
+        ],
+        "pipeline": "selectPercentile(93.08779403059991);varianceThreshold();randomForest(91,'entropy',0.5253630401655005,15,9,True,'balanced')",
+        "fitness": [
+            0.1655088871403692
+        ],
+        "runtime": 20.14352774620056,
+        "hp_number": 8,
+        "families": [
+            "1",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "id": "0dbf1a00-d166-4895-a9a2-2e77914deb1e",
+        "parents_id": [
+            "fabb888c-e80f-424b-9d01-671c37993dfb"
+        ],
+        "pipeline": "selectPercentile(93.08779403059991);fastICA(16,'deflation','unit-variance','logcosh');randomForest(91,'entropy',0.5253630401655005,15,9,True,'balanced')",
+        "fitness": [
+            0.17675936874984566
+        ],
+        "runtime": 109.89599061012268,
+        "hp_number": 12,
+        "families": [
+            "1",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "aef21fb6-ec70-4d4b-8007-65f30f1e3ae0",
+        "parents_id": [
+            "fabb888c-e80f-424b-9d01-671c37993dfb"
+        ],
+        "pipeline": "varianceThreshold();fastICA(16,'deflation','unit-variance','logcosh');randomForest(91,'entropy',0.5253630401655005,15,9,True,'balanced')",
+        "fitness": [
+            0.18515380274549387
+        ],
+        "runtime": 120.52506995201111,
+        "hp_number": 11,
+        "families": [
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "95fa73d4-d289-4779-9577-23a33af0e1a3",
+        "parents_id": [
+            "fabb888c-e80f-424b-9d01-671c37993dfb"
+        ],
+        "pipeline": "robustScaler(True,True);selectPercentile(93.08779403059991);varianceThreshold();randomForest(91,'entropy',0.5253630401655005,15,9,True,'balanced')",
+        "fitness": [
+            0.1667265168483827
+        ],
+        "runtime": 26.74618887901306,
+        "hp_number": 10,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "id": "93e2460e-b724-45ea-af33-b6df188dfd57",
+        "parents_id": [
+            "fabb888c-e80f-424b-9d01-671c37993dfb"
+        ],
+        "pipeline": "robustScaler(True,True);selectPercentile(93.08779403059991);fastICA(16,'deflation','unit-variance','logcosh');randomForest(91,'entropy',0.5253630401655005,15,9,True,'balanced')",
+        "fitness": [
+            0.18456014245107066
+        ],
+        "runtime": 114.77223181724548,
+        "hp_number": 14,
+        "families": [
+            "0",
+            "1",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "97778672-8078-47b7-8805-5f11b36ced93",
+        "parents_id": [
+            "fabb888c-e80f-424b-9d01-671c37993dfb"
+        ],
+        "pipeline": "robustScaler(True,True);varianceThreshold();fastICA(16,'deflation','unit-variance','logcosh');randomForest(91,'entropy',0.5253630401655005,15,9,True,'balanced')",
+        "fitness": [
+            0.16725675286096836
+        ],
+        "runtime": 160.18556451797485,
+        "hp_number": 13,
+        "families": [
+            "0",
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "5fb13a6c-a5af-4870-b779-2290f0a603cd",
+        "parents_id": [
+            "fabb888c-e80f-424b-9d01-671c37993dfb"
+        ],
+        "pipeline": "selectPercentile(93.08779403059991);varianceThreshold();fastICA(16,'deflation','unit-variance','logcosh');randomForest(91,'entropy',0.5253630401655005,15,9,True,'balanced')",
+        "fitness": [
+            0.17675936874984566
+        ],
+        "runtime": 105.43995690345764,
+        "hp_number": 12,
+        "families": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "2281c00f-46f0-41f8-ae42-db8d1aa95aaa",
+        "parents_id": [
+            "13c543ea-272e-4db7-8cd3-997c926b3cd1"
+        ],
+        "pipeline": "randomForest(91,'entropy',0.5253630401655005,15,9,True,'balanced')",
+        "fitness": [
+            0.17212365576013444
+        ],
+        "runtime": 32.04901075363159,
+        "hp_number": 7,
+        "families": [
+            "4"
+        ]
+    },
+    {
+        "id": "a1f155d4-0c79-4718-840e-358fed812486",
+        "parents_id": [
+            "13c543ea-272e-4db7-8cd3-997c926b3cd1"
+        ],
+        "pipeline": "robustScaler(True,True);randomForest(91,'entropy',0.5253630401655005,15,9,True,'balanced')",
+        "fitness": [
+            0.17133120211258882
+        ],
+        "runtime": 21.073237895965576,
+        "hp_number": 9,
+        "families": [
+            "0",
+            "4"
+        ]
+    },
+    {
+        "id": "05b21953-4a37-4248-90b3-60e6ab82bc66",
+        "parents_id": [
+            "13c543ea-272e-4db7-8cd3-997c926b3cd1"
+        ],
+        "pipeline": "selectPercentile(25.50897591338026);randomForest(91,'entropy',0.5253630401655005,15,9,True,'balanced')",
+        "fitness": [
+            0.17438138241588585
+        ],
+        "runtime": 9.216174602508545,
+        "hp_number": 8,
+        "families": [
+            "1",
+            "4"
+        ]
+    },
+    {
+        "id": "755a5db0-a8da-4dac-8f1d-5a1053c16f9f",
+        "parents_id": [
+            "13c543ea-272e-4db7-8cd3-997c926b3cd1"
+        ],
+        "pipeline": "varianceThreshold();randomForest(91,'entropy',0.5253630401655005,15,9,True,'balanced')",
+        "fitness": [
+            0.17212365576013444
+        ],
+        "runtime": 22.85919713973999,
+        "hp_number": 7,
+        "families": [
+            "2",
+            "4"
+        ]
+    },
+    {
+        "id": "026087f1-4128-4479-99a3-be9c7969c94c",
+        "parents_id": [
+            "13c543ea-272e-4db7-8cd3-997c926b3cd1"
+        ],
+        "pipeline": "fastICA(16,'deflation','unit-variance','logcosh');randomForest(91,'entropy',0.5253630401655005,15,9,True,'balanced')",
+        "fitness": [
+            0.17937561751474268
+        ],
+        "runtime": 134.02071237564087,
+        "hp_number": 11,
+        "families": [
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "5f99177d-a89f-463b-bea8-7ca00efeba3c",
+        "parents_id": [
+            "13c543ea-272e-4db7-8cd3-997c926b3cd1"
+        ],
+        "pipeline": "robustScaler(True,True);selectPercentile(25.50897591338026);randomForest(91,'entropy',0.5253630401655005,15,9,True,'balanced')",
+        "fitness": [
+            0.17572086419015026
+        ],
+        "runtime": 13.360123634338379,
+        "hp_number": 10,
+        "families": [
+            "0",
+            "1",
+            "4"
+        ]
+    },
+    {
+        "id": "1b48ab3f-e2c0-49b0-a57c-cbc40ff93172",
+        "parents_id": [
+            "13c543ea-272e-4db7-8cd3-997c926b3cd1"
+        ],
+        "pipeline": "robustScaler(True,True);varianceThreshold();randomForest(91,'entropy',0.5253630401655005,15,9,True,'balanced')",
+        "fitness": [
+            0.17133120211258882
+        ],
+        "runtime": 27.987749338150024,
+        "hp_number": 9,
+        "families": [
+            "0",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "id": "f72c3393-4224-4c04-83b4-97cdd63140c9",
+        "parents_id": [
+            "13c543ea-272e-4db7-8cd3-997c926b3cd1"
+        ],
+        "pipeline": "robustScaler(True,True);fastICA(16,'deflation','unit-variance','logcosh');randomForest(91,'entropy',0.5253630401655005,15,9,True,'balanced')",
+        "fitness": [
+            0.1669690462249604
+        ],
+        "runtime": 151.98286962509155,
+        "hp_number": 13,
+        "families": [
+            "0",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "e81ab36f-3014-4411-90ce-692c1d810370",
+        "parents_id": [
+            "13c543ea-272e-4db7-8cd3-997c926b3cd1"
+        ],
+        "pipeline": "selectPercentile(25.50897591338026);varianceThreshold();randomForest(91,'entropy',0.5253630401655005,15,9,True,'balanced')",
+        "fitness": [
+            0.17438138241588585
+        ],
+        "runtime": 11.759677648544312,
+        "hp_number": 8,
+        "families": [
+            "1",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "id": "f5b3285b-b8e7-4daf-98d7-065154c271b3",
+        "parents_id": [
+            "13c543ea-272e-4db7-8cd3-997c926b3cd1"
+        ],
+        "pipeline": "selectPercentile(25.50897591338026);fastICA(16,'deflation','unit-variance','logcosh');randomForest(91,'entropy',0.5253630401655005,15,9,True,'balanced')",
+        "fitness": [
+            0.1825321325362836
+        ],
+        "runtime": 33.16415572166443,
+        "hp_number": 12,
+        "families": [
+            "1",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "3b2e8de3-38d8-4603-99d0-18a87741acf4",
+        "parents_id": [
+            "13c543ea-272e-4db7-8cd3-997c926b3cd1"
+        ],
+        "pipeline": "varianceThreshold();fastICA(16,'deflation','unit-variance','logcosh');randomForest(91,'entropy',0.5253630401655005,15,9,True,'balanced')",
+        "fitness": [
+            0.18515380274549387
+        ],
+        "runtime": 127.68954682350159,
+        "hp_number": 11,
+        "families": [
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "dee6ede0-f912-4a99-a236-ff70e4aa3da1",
+        "parents_id": [
+            "13c543ea-272e-4db7-8cd3-997c926b3cd1"
+        ],
+        "pipeline": "robustScaler(True,True);selectPercentile(25.50897591338026);varianceThreshold();randomForest(91,'entropy',0.5253630401655005,15,9,True,'balanced')",
+        "fitness": [
+            0.17572086419015026
+        ],
+        "runtime": 12.192383289337158,
+        "hp_number": 10,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "id": "10204f2d-2366-4cf1-89b0-cd2f50614c3c",
+        "parents_id": [
+            "13c543ea-272e-4db7-8cd3-997c926b3cd1"
+        ],
+        "pipeline": "robustScaler(True,True);selectPercentile(25.50897591338026);fastICA(16,'deflation','unit-variance','logcosh');randomForest(91,'entropy',0.5253630401655005,15,9,True,'balanced')",
+        "fitness": [
+            0.18695632160671607
+        ],
+        "runtime": 33.75206661224365,
+        "hp_number": 14,
+        "families": [
+            "0",
+            "1",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "44bd84a9-99ad-4547-9c1f-902ffb9c339b",
+        "parents_id": [
+            "13c543ea-272e-4db7-8cd3-997c926b3cd1"
+        ],
+        "pipeline": "robustScaler(True,True);varianceThreshold();fastICA(16,'deflation','unit-variance','logcosh');randomForest(91,'entropy',0.5253630401655005,15,9,True,'balanced')",
+        "fitness": [
+            0.16725675286096836
+        ],
+        "runtime": 138.5307080745697,
+        "hp_number": 13,
+        "families": [
+            "0",
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "52bb9e52-32f7-4f03-8257-2f23e241214b",
+        "parents_id": [
+            "13c543ea-272e-4db7-8cd3-997c926b3cd1"
+        ],
+        "pipeline": "selectPercentile(25.50897591338026);varianceThreshold();fastICA(16,'deflation','unit-variance','logcosh');randomForest(91,'entropy',0.5253630401655005,15,9,True,'balanced')",
+        "fitness": [
+            0.1825321325362836
+        ],
+        "runtime": 28.740269422531128,
+        "hp_number": 12,
+        "families": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "28064640-0e35-4634-b30d-74baeb1cf10a",
+        "parents_id": [
+            "b7399ef2-2ae6-48ba-919d-6faffa75648f"
+        ],
+        "pipeline": "randomForest(39,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.16936521403760746
+        ],
+        "runtime": 18.871711015701294,
+        "hp_number": 7,
+        "families": [
+            "4"
+        ]
+    },
+    {
+        "id": "1609a569-cea5-4549-a351-cee805bdb1e4",
+        "parents_id": [
+            "b7399ef2-2ae6-48ba-919d-6faffa75648f"
+        ],
+        "pipeline": "selectFwe(0.043608404094675514);randomForest(39,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.16936521403760746
+        ],
+        "runtime": 19.74678325653076,
+        "hp_number": 8,
+        "families": [
+            "0",
+            "4"
+        ]
+    },
+    {
+        "id": "d09e78c5-84ec-4387-bd79-6246515c10d7",
+        "parents_id": [
+            "b7399ef2-2ae6-48ba-919d-6faffa75648f"
+        ],
+        "pipeline": "selectPercentile(93.08779403059991);randomForest(39,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.16040108894300203
+        ],
+        "runtime": 16.40175485610962,
+        "hp_number": 8,
+        "families": [
+            "1",
+            "4"
+        ]
+    },
+    {
+        "id": "5f772cac-25b2-428d-9bac-2c9fb38702c4",
+        "parents_id": [
+            "b7399ef2-2ae6-48ba-919d-6faffa75648f"
+        ],
+        "pipeline": "minMaxScaler();randomForest(39,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.16882482411327931
+        ],
+        "runtime": 17.259000301361084,
+        "hp_number": 7,
+        "families": [
+            "2",
+            "4"
+        ]
+    },
+    {
+        "id": "f26d114a-1a4d-4211-9c1f-28d57b200052",
+        "parents_id": [
+            "b7399ef2-2ae6-48ba-919d-6faffa75648f"
+        ],
+        "pipeline": "fastICA(16,'deflation','unit-variance','exp');randomForest(39,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [NaN
+        ],
+        "runtime": null,
+        "hp_number": 11,
+        "families": [
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "549f6d1a-402c-4fe1-ac6a-e3e5b364ab10",
+        "parents_id": [
+            "b7399ef2-2ae6-48ba-919d-6faffa75648f"
+        ],
+        "pipeline": "selectFwe(0.043608404094675514);selectPercentile(93.08779403059991);randomForest(39,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.16040108894300203
+        ],
+        "runtime": 17.075308561325073,
+        "hp_number": 9,
+        "families": [
+            "0",
+            "1",
+            "4"
+        ]
+    },
+    {
+        "id": "b5c5edd5-a6a7-4aab-91ff-d7bda1fccf0a",
+        "parents_id": [
+            "b7399ef2-2ae6-48ba-919d-6faffa75648f"
+        ],
+        "pipeline": "selectFwe(0.043608404094675514);minMaxScaler();randomForest(39,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.16882482411327931
+        ],
+        "runtime": 15.981051921844482,
+        "hp_number": 8,
+        "families": [
+            "0",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "id": "45fd92b0-5495-418b-b86d-5ba85b4a7a55",
+        "parents_id": [
+            "b7399ef2-2ae6-48ba-919d-6faffa75648f"
+        ],
+        "pipeline": "selectFwe(0.043608404094675514);fastICA(16,'deflation','unit-variance','exp');randomForest(39,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.18108828537673322
+        ],
+        "runtime": 29.251332998275757,
+        "hp_number": 12,
+        "families": [
+            "0",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "272c99f8-4ba7-4b95-9532-ab0b66cf3278",
+        "parents_id": [
+            "b7399ef2-2ae6-48ba-919d-6faffa75648f"
+        ],
+        "pipeline": "selectPercentile(93.08779403059991);minMaxScaler();randomForest(39,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.16016080423306486
+        ],
+        "runtime": 15.480283260345459,
+        "hp_number": 8,
+        "families": [
+            "1",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "id": "ca58d96d-af4d-455b-86c1-df95cbae394d",
+        "parents_id": [
+            "b7399ef2-2ae6-48ba-919d-6faffa75648f"
+        ],
+        "pipeline": "selectPercentile(93.08779403059991);fastICA(16,'deflation','unit-variance','exp');randomForest(39,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.1587201027383784
+        ],
+        "runtime": 34.86054062843323,
+        "hp_number": 12,
+        "families": [
+            "1",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "e36e5bcf-f27d-4ea9-87af-a45c292fe34c",
+        "parents_id": [
+            "b7399ef2-2ae6-48ba-919d-6faffa75648f"
+        ],
+        "pipeline": "minMaxScaler();fastICA(16,'deflation','unit-variance','exp');randomForest(39,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [NaN
+        ],
+        "runtime": null,
+        "hp_number": 11,
+        "families": [
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "2af9c546-1878-43a4-9a47-7c70e5cf6363",
+        "parents_id": [
+            "b7399ef2-2ae6-48ba-919d-6faffa75648f"
+        ],
+        "pipeline": "selectFwe(0.043608404094675514);selectPercentile(93.08779403059991);minMaxScaler();randomForest(39,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.16016080423306486
+        ],
+        "runtime": 14.162091255187988,
+        "hp_number": 9,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "id": "d5dba579-81aa-4e3e-bb05-b063b09627f7",
+        "parents_id": [
+            "b7399ef2-2ae6-48ba-919d-6faffa75648f"
+        ],
+        "pipeline": "selectFwe(0.043608404094675514);selectPercentile(93.08779403059991);fastICA(16,'deflation','unit-variance','exp');randomForest(39,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.1587201027383784
+        ],
+        "runtime": 35.865110874176025,
+        "hp_number": 13,
+        "families": [
+            "0",
+            "1",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "3669ffec-3cca-4c6a-b99d-cf27ca3dd9d7",
+        "parents_id": [
+            "b7399ef2-2ae6-48ba-919d-6faffa75648f"
+        ],
+        "pipeline": "selectFwe(0.043608404094675514);minMaxScaler();fastICA(16,'deflation','unit-variance','exp');randomForest(39,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.16562278293908364
+        ],
+        "runtime": 26.800215005874634,
+        "hp_number": 12,
+        "families": [
+            "0",
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "82d81f0c-5097-4b79-8263-a601d85720ae",
+        "parents_id": [
+            "b7399ef2-2ae6-48ba-919d-6faffa75648f"
+        ],
+        "pipeline": "selectPercentile(93.08779403059991);minMaxScaler();fastICA(16,'deflation','unit-variance','exp');randomForest(39,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.1907701413676458
+        ],
+        "runtime": 24.845948219299316,
+        "hp_number": 12,
+        "families": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "2ab0977f-7d8a-42fc-9ac3-bb4ff3df0e21",
+        "parents_id": [
+            "39264bad-f6a4-4b32-a99b-08b1df1c7b96"
+        ],
+        "pipeline": "randomForest(91,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.16673014273320036
+        ],
+        "runtime": 24.26529622077942,
+        "hp_number": 7,
+        "families": [
+            "4"
+        ]
+    },
+    {
+        "id": "6313a838-f312-436a-afd2-1b016226c530",
+        "parents_id": [
+            "39264bad-f6a4-4b32-a99b-08b1df1c7b96"
+        ],
+        "pipeline": "robustScaler(True,True);randomForest(91,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.16691445122914259
+        ],
+        "runtime": 19.998945951461792,
+        "hp_number": 9,
+        "families": [
+            "0",
+            "4"
+        ]
+    },
+    {
+        "id": "7d9c5b48-3b8f-47dc-b750-e7b0ef7169ec",
+        "parents_id": [
+            "39264bad-f6a4-4b32-a99b-08b1df1c7b96"
+        ],
+        "pipeline": "selectPercentile(93.08779403059991);randomForest(91,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.1662390189101458
+        ],
+        "runtime": 23.68754553794861,
+        "hp_number": 8,
+        "families": [
+            "1",
+            "4"
+        ]
+    },
+    {
+        "id": "49b1d7bf-b45e-4c5e-bb71-1ed2b7eece90",
+        "parents_id": [
+            "39264bad-f6a4-4b32-a99b-08b1df1c7b96"
+        ],
+        "pipeline": "varianceThreshold();randomForest(91,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.16673014273320036
+        ],
+        "runtime": 20.843923807144165,
+        "hp_number": 7,
+        "families": [
+            "2",
+            "4"
+        ]
+    },
+    {
+        "id": "16ba78d1-677e-4c23-a41a-10ac1cc399cc",
+        "parents_id": [
+            "39264bad-f6a4-4b32-a99b-08b1df1c7b96"
+        ],
+        "pipeline": "fastICA(16,'deflation','unit-variance','exp');randomForest(91,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [NaN
+        ],
+        "runtime": null,
+        "hp_number": 11,
+        "families": [
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "a7053808-ad39-43e7-b831-8588665f407d",
+        "parents_id": [
+            "39264bad-f6a4-4b32-a99b-08b1df1c7b96"
+        ],
+        "pipeline": "robustScaler(True,True);selectPercentile(93.08779403059991);randomForest(91,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.16618543631591137
+        ],
+        "runtime": 18.53871750831604,
+        "hp_number": 10,
+        "families": [
+            "0",
+            "1",
+            "4"
+        ]
+    },
+    {
+        "id": "b140793d-2e1f-4dac-9ea8-4d2584b68030",
+        "parents_id": [
+            "39264bad-f6a4-4b32-a99b-08b1df1c7b96"
+        ],
+        "pipeline": "robustScaler(True,True);varianceThreshold();randomForest(91,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.16691445122914259
+        ],
+        "runtime": 18.90198516845703,
+        "hp_number": 9,
+        "families": [
+            "0",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "id": "a5d450a6-e9a1-4bae-97ad-ee1754af1636",
+        "parents_id": [
+            "39264bad-f6a4-4b32-a99b-08b1df1c7b96"
+        ],
+        "pipeline": "robustScaler(True,True);fastICA(16,'deflation','unit-variance','exp');randomForest(91,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.17607090983754045
+        ],
+        "runtime": 35.73782134056091,
+        "hp_number": 13,
+        "families": [
+            "0",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "78580a56-c416-4cb7-9d89-c2a048a9fd78",
+        "parents_id": [
+            "39264bad-f6a4-4b32-a99b-08b1df1c7b96"
+        ],
+        "pipeline": "selectPercentile(93.08779403059991);varianceThreshold();randomForest(91,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.1662390189101458
+        ],
+        "runtime": 22.96767497062683,
+        "hp_number": 8,
+        "families": [
+            "1",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "id": "2cbf05bc-2c6b-43fb-bc9d-b7a7c7bf49e2",
+        "parents_id": [
+            "39264bad-f6a4-4b32-a99b-08b1df1c7b96"
+        ],
+        "pipeline": "selectPercentile(93.08779403059991);fastICA(16,'deflation','unit-variance','exp');randomForest(91,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.16582040526979624
+        ],
+        "runtime": 41.442736864089966,
+        "hp_number": 12,
+        "families": [
+            "1",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "e4562205-6ee2-4d8c-bd64-7202f6470ec1",
+        "parents_id": [
+            "39264bad-f6a4-4b32-a99b-08b1df1c7b96"
+        ],
+        "pipeline": "varianceThreshold();fastICA(16,'deflation','unit-variance','exp');randomForest(91,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.1864484344421996
+        ],
+        "runtime": 40.210137367248535,
+        "hp_number": 11,
+        "families": [
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "4bf53c5c-bdc8-484d-8515-3fc140f5dda2",
+        "parents_id": [
+            "39264bad-f6a4-4b32-a99b-08b1df1c7b96"
+        ],
+        "pipeline": "robustScaler(True,True);selectPercentile(93.08779403059991);varianceThreshold();randomForest(91,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.16618543631591137
+        ],
+        "runtime": 14.122249364852905,
+        "hp_number": 10,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "id": "929cc32d-9b27-46e7-b896-9a49574a403d",
+        "parents_id": [
+            "39264bad-f6a4-4b32-a99b-08b1df1c7b96"
+        ],
+        "pipeline": "robustScaler(True,True);selectPercentile(93.08779403059991);fastICA(16,'deflation','unit-variance','exp');randomForest(91,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.1853825337813895
+        ],
+        "runtime": 48.620251178741455,
+        "hp_number": 14,
+        "families": [
+            "0",
+            "1",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "a2c49bd1-acc0-4b60-af26-6a04729d5637",
+        "parents_id": [
+            "39264bad-f6a4-4b32-a99b-08b1df1c7b96"
+        ],
+        "pipeline": "robustScaler(True,True);varianceThreshold();fastICA(16,'deflation','unit-variance','exp');randomForest(91,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.19241155583428782
+        ],
+        "runtime": 18.210431814193726,
+        "hp_number": 13,
+        "families": [
+            "0",
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "9152a6cc-79c2-4c12-a51f-44f3579d8770",
+        "parents_id": [
+            "39264bad-f6a4-4b32-a99b-08b1df1c7b96"
+        ],
+        "pipeline": "selectPercentile(93.08779403059991);varianceThreshold();fastICA(16,'deflation','unit-variance','exp');randomForest(91,'entropy',0.5253630401655005,15,9,False,'balanced')",
+        "fitness": [
+            0.16582040526979624
+        ],
+        "runtime": 45.87742829322815,
+        "hp_number": 12,
+        "families": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ]
+    }
+]

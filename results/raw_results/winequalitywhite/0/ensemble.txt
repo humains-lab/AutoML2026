@@ -1,0 +1,64 @@
+0: Pipeline(
+	0: SelectFwe(alpha=0.009081526616090027)
+	1: MaxAbsScaler()
+	2: Nystroem(coef0=-0.255101474055488, degree=5, gamma=3.783720160104937,
+         kernel='poly', n_components=68, random_state=0)
+	3: FastICA(algorithm='deflation', fun='cube', n_components=81, random_state=0,
+        whiten='arbitrary-variance')
+	4: PCA(n_components=0.8947326171469987, random_state=0, whiten=True)
+	5: RobustScaler(with_centering=False, with_scaling=False)
+	6: ExtraTreesClassifier(class_weight='balanced_subsample', min_samples_leaf=10,
+                     min_samples_split=7, n_estimators=50, random_state=0)
+) -> Fitness: 0.45949009038129407
+
+1: Pipeline(
+	0: SelectFwe(alpha=0.009081526616090027)
+	1: MaxAbsScaler()
+	2: Nystroem(coef0=-0.255101474055488, degree=3, gamma=3.783720160104937,
+         kernel='poly', n_components=68, random_state=0)
+	3: FastICA(algorithm='deflation', fun='cube', n_components=81, random_state=0,
+        whiten='arbitrary-variance')
+	4: PCA(n_components=0.8947326171469987, random_state=0, whiten=True)
+	5: RobustScaler(with_centering=False, with_scaling=False)
+	6: ExtraTreesClassifier(class_weight='balanced_subsample', criterion='entropy',
+                     min_samples_leaf=10, min_samples_split=7, n_estimators=12,
+                     random_state=0)
+) -> Fitness: 0.4315433814314936
+
+2: Pipeline(
+	0: FastICA(algorithm='deflation', fun='cube', n_components=80, random_state=0,
+        whiten='arbitrary-variance')
+	1: LogisticRegression(C=0.06981703426173451, class_weight='balanced',
+                   max_iter=1000, penalty='l2', random_state=0,
+                   solver='newton-cg')
+) -> Fitness: 0.3946262951131468
+
+3: Pipeline(
+	0: SelectFwe(alpha=0.009081526616090027)
+	1: MaxAbsScaler()
+	2: Nystroem(coef0=-0.255101474055488, degree=5, gamma=3.783720160104937,
+         kernel='poly', n_components=68, random_state=0)
+	3: FastICA(algorithm='deflation', fun='cube', n_components=81, random_state=0,
+        whiten='arbitrary-variance')
+	4: PCA(n_components=0.6086065440732548, random_state=0)
+	5: RobustScaler(with_centering=False, with_scaling=False)
+	6: ExtraTreesClassifier(class_weight='balanced_subsample', min_samples_leaf=10,
+                     min_samples_split=7, n_estimators=50, random_state=0)
+) -> Fitness: 0.4569151948825045
+
+4: Pipeline(
+	0: SelectFwe(alpha=0.009081526616090027)
+	1: MaxAbsScaler()
+	2: Nystroem(coef0=-0.255101474055488, degree=5, gamma=2.0514082208433195,
+         kernel='poly', n_components=56, random_state=0)
+	3: FastICA(algorithm='deflation', fun='cube', n_components=81, random_state=0,
+        whiten='arbitrary-variance')
+	4: PCA(n_components=0.8947326171469987, random_state=0, whiten=True)
+	5: RobustScaler(with_centering=False)
+	6: ExtraTreesClassifier(class_weight='balanced_subsample', min_samples_leaf=10,
+                     min_samples_split=7, n_estimators=50, random_state=0)
+) -> Fitness: 0.4521467117465739
+
+Ensemble fitness: 0.0
+Weights: [1.0, 0.9391788647136879, 0.8588352684291363, 0.9943961892700387, 0.9840184178321963]
+Prediction: [5 6 6 ... 6 5 6]

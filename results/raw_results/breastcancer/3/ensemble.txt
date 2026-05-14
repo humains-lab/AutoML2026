@@ -1,0 +1,47 @@
+0: Pipeline(
+	0: ExtraTreesClassifier(bootstrap=True, class_weight='balanced',
+                     max_features='log2', min_samples_leaf=2,
+                     min_samples_split=8, n_estimators=71, random_state=3)
+) -> Fitness: 0.974267262791853
+
+1: Pipeline(
+	0: ExtraTreesClassifier(bootstrap=True, class_weight='balanced',
+                     max_features='log2', min_samples_leaf=2,
+                     min_samples_split=8, n_estimators=69, random_state=3)
+) -> Fitness: 0.974267262791853
+
+2: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: VarianceThreshold()
+	2: ExtraTreesClassifier(bootstrap=True, class_weight='balanced',
+                     max_features='log2', min_samples_leaf=2,
+                     min_samples_split=8, n_estimators=69, random_state=3)
+) -> Fitness: 0.974267262791853
+
+3: Pipeline(
+	0: ExtraTreesClassifier(bootstrap=True, class_weight='balanced',
+                     criterion='entropy', min_samples_split=8, n_estimators=69,
+                     random_state=3)
+) -> Fitness: 0.9725332215598609
+
+4: Pipeline(
+	0: ExtraTreesClassifier(bootstrap=True, class_weight='balanced',
+                     max_features='log2', min_samples_split=8, n_estimators=69,
+                     random_state=3)
+) -> Fitness: 0.9725332215598609
+
+Ensemble fitness: 0.0
+Weights: [1.0, 1.0, 1.0, 0.9982201585763817, 0.9982201585763817]
+Prediction: [2 1 1 2 1 2 2 1 1 2 2 2 1 1 2 1 1 2 2 1 1 1 2 2 2 2 1 2 1 1 2 1 1 2 2 1 1
+ 1 1 1 1 1 1 1 1 2 1 1 2 2 1 1 1 1 2 1 2 1 1 1 1 1 1 2 1 2 1 2 2 1 2 1 1 1
+ 1 1 2 1 1 2 1 2 1 1 2 1 2 1 1 1 2 2 1 1 1 2 2 2 1 2 2 1 1 1 1 2 2 1 1 1 1
+ 1 1 1 2 2 2 2 2 2 1 1 1 2 2 1 1 1 2 1 1 1 1 1 1 2 1 1 2 1 1 1 1 1 2 1 1 1
+ 2 1 2 1 1 2 1 2 1 2 2 2 2 1 1 1 1 2 2 2 1 1 2 1 1 2 1 2 1 2 2 2 1 1 1 2 2
+ 1 1 2 1 1 1 1 1 1 2 2 1 1 1 1 1 1 2 2 1 1 1 2 2 1 1 2 1 2 2 1 1 1 1 1 1 1
+ 1 2 2 1 2 2 1 2 1 1 2 1 2 2 1 1 1 1 2 1 2 1 2 1 1 2 1 2 1 1 1 1 1 1 1 1 2
+ 1 1 2 2 2 2 1 2 1 2 1 2 1 2 1 1 1 1 1 1 1 2 1 2 1 1 2 2 1 2 1 2 2 2 2 1 2
+ 1 1 2 2 2 1 1 1 1 2 1 1 1 1 1 2 1 1 1 1 1 1 1 2 1 2 1 2 2 1 2 2 2 1 1 1 2
+ 1 1 1 1 1 1 1 1 2 2 2 1 2 1 1 1 1 1 2 2 1 2 1 1 2 2 2 1 2 1 1 1 1 1 1 2 1
+ 1 1 1 1 1 2 2 1 1 1 2 1 1 1 1 2 2 1 1 2 2 2 2 2 2 1 1 1 1 2 2 1 1 1 2 1 1
+ 1 1 1 1 1 1 2 2 1 1 1 1 1 2 1 2 1 1 1 2 1 1 2 1 1 1 1 1 1 1 1 1 1 2 2 2 1
+ 1 2 1 2 1 1 1 2 2 1 1 2 1 2 1 1 2 2 1 1 2 2]

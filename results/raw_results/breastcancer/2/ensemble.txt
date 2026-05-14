@@ -1,0 +1,98 @@
+0: Pipeline(
+	0: Nystroem(coef0=-0.19415663267329997, degree=2, gamma=3.1719914632542565,
+         kernel='poly', n_components=22, random_state=2)
+	1: VarianceThreshold()
+	2: MinMaxScaler()
+	3: MaxAbsScaler()
+	4: AdaBoostClassifier(estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    criterion='entropy',
+                                                    max_depth=16,
+                                                    max_features=0.08166905284351333,
+                                                    min_samples_leaf=3,
+                                                    min_samples_split=8,
+                                                    random_state=2),
+                   learning_rate=0.19747663730920903, n_estimators=39,
+                   random_state=2)
+) -> Fitness: 0.975563524590164
+
+1: Pipeline(
+	0: Nystroem(coef0=-0.19415663267329997, degree=2, gamma=3.1719914632542565,
+         kernel='poly', n_components=22, random_state=2)
+	1: VarianceThreshold()
+	2: MinMaxScaler()
+	3: MaxAbsScaler()
+	4: AdaBoostClassifier(estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    criterion='entropy',
+                                                    max_depth=27,
+                                                    max_features=0.8665531950815841,
+                                                    min_samples_leaf=13,
+                                                    min_samples_split=15,
+                                                    random_state=2),
+                   learning_rate=0.9043614903846723, n_estimators=68,
+                   random_state=2)
+) -> Fitness: 0.972438524590164
+
+2: Pipeline(
+	0: Nystroem(coef0=-0.19415663267329997, degree=3, gamma=3.1719914632542565,
+         kernel='poly', n_components=22, random_state=2)
+	1: VarianceThreshold()
+	2: MinMaxScaler()
+	3: MaxAbsScaler()
+	4: AdaBoostClassifier(estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    max_depth=24,
+                                                    max_features=0.012691537168848077,
+                                                    min_samples_leaf=17,
+                                                    min_samples_split=9,
+                                                    random_state=2),
+                   learning_rate=0.19747663730920903, n_estimators=39,
+                   random_state=2)
+) -> Fitness: 0.971047565822156
+
+3: Pipeline(
+	0: Nystroem(coef0=-0.19415663267329997, degree=5, gamma=2.697663005341322,
+         kernel='poly', n_components=22, random_state=2)
+	1: VarianceThreshold()
+	2: MinMaxScaler()
+	3: MaxAbsScaler()
+	4: AdaBoostClassifier(estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    criterion='entropy',
+                                                    max_depth=16,
+                                                    max_features=0.08166905284351333,
+                                                    min_samples_leaf=3,
+                                                    min_samples_split=8,
+                                                    random_state=2),
+                   learning_rate=0.19747663730920903, n_estimators=39,
+                   random_state=2)
+) -> Fitness: 0.972438524590164
+
+4: Pipeline(
+	0: Nystroem(coef0=-0.19415663267329997, degree=2, gamma=3.1719914632542565,
+         kernel='poly', n_components=22, random_state=2)
+	1: VarianceThreshold()
+	2: MinMaxScaler()
+	3: MaxAbsScaler()
+	4: AdaBoostClassifier(estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    max_depth=5,
+                                                    max_features=0.2440575675994,
+                                                    min_samples_leaf=10,
+                                                    min_samples_split=18,
+                                                    random_state=2),
+                   learning_rate=1.9111547321302806, n_estimators=36,
+                   random_state=2)
+) -> Fitness: 0.971047565822156
+
+Ensemble fitness: 0.0
+Weights: [1.0, 0.9967967232053773, 0.9953709229033494, 0.9967967232053773, 0.9953709229033494]
+Prediction: [2 1 1 2 1 2 2 1 1 2 2 1 1 1 2 1 1 2 2 1 1 1 2 2 2 2 1 2 1 1 2 1 1 2 2 1 1
+ 1 1 1 1 1 1 1 1 2 1 1 2 2 1 1 1 1 2 1 2 1 1 1 1 1 1 2 1 2 1 2 2 1 2 1 1 1
+ 1 1 2 1 1 2 1 2 1 1 2 1 2 1 1 1 2 2 1 1 1 2 2 2 1 2 2 1 1 1 1 1 2 1 1 1 1
+ 1 1 1 2 2 2 2 2 2 1 1 1 2 2 1 1 1 2 1 1 1 1 1 1 1 1 1 2 1 1 1 1 1 2 1 1 1
+ 2 1 1 1 1 2 1 2 1 1 2 2 2 1 1 1 1 2 2 2 1 1 2 1 1 2 1 2 1 2 2 2 1 1 1 2 2
+ 1 1 2 1 1 1 1 1 1 2 2 1 1 1 1 1 1 2 2 1 1 1 2 2 1 1 1 1 1 2 1 1 1 1 1 1 1
+ 1 2 1 1 2 2 1 2 1 1 2 1 2 2 1 1 1 1 2 1 2 1 2 1 1 2 1 2 1 1 1 1 1 1 1 1 2
+ 1 1 2 2 2 2 1 2 1 2 1 2 1 2 1 1 1 1 1 1 1 2 1 2 1 1 2 2 1 2 1 2 2 2 2 1 2
+ 1 1 2 2 2 1 1 1 1 2 1 1 1 1 1 2 1 1 1 1 1 1 1 2 1 1 1 2 2 1 2 2 2 1 1 1 2
+ 1 1 1 1 1 1 1 1 1 2 2 1 2 1 1 1 1 1 2 2 1 2 1 1 2 2 2 1 2 1 1 1 1 1 1 2 1
+ 1 1 1 1 1 2 2 1 1 1 1 1 1 1 1 2 2 1 1 2 1 1 2 2 2 1 1 1 1 2 2 1 1 1 2 1 1
+ 1 1 1 1 1 1 2 2 1 1 1 1 1 2 1 2 1 1 1 2 1 1 2 1 1 1 1 1 1 1 2 1 1 2 2 2 1
+ 1 2 1 2 1 1 1 2 2 1 1 2 1 2 1 1 2 2 1 1 2 2]

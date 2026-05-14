@@ -1,0 +1,246 @@
+[
+    {
+        "id": "0fde842e-80b6-4989-a032-3339c550d21e",
+        "parents_id": [],
+        "pipeline": "maxAbsScaler();fastICA(16,'deflation','unit-variance','logcosh');extraTreesClassifier(11,'gini','log2',6,18,False,'balanced')",
+        "fitness": [
+            0.40369630167186343
+        ],
+        "runtime": 81.38370752334595,
+        "hp_number": 11,
+        "families": [
+            "0",
+            "1",
+            "2"
+        ]
+    },
+    {
+        "id": "49092ea8-21b4-4c53-96fe-4f73c510e522",
+        "parents_id": [],
+        "pipeline": "selectPercentile(83.02253161712584);fastICA(50,'deflation','arbitrary-variance','logcosh');extraTreesClassifier(96,'entropy','log2',10,15,False,'balanced')",
+        "fitness": [
+            0.4169984631624716
+        ],
+        "runtime": 49.20665717124939,
+        "hp_number": 12,
+        "families": [
+            "0",
+            "1",
+            "2"
+        ]
+    },
+    {
+        "id": "7ccf61c9-a98e-4306-88bb-2d96dd78e4fa",
+        "parents_id": [],
+        "pipeline": "minMaxScaler();extraTreesClassifier(11,'gini','sqrt',20,7,False,'balanced')",
+        "fitness": [
+            0.41725945605744563
+        ],
+        "runtime": 2.1017637252807617,
+        "hp_number": 7,
+        "families": [
+            "0",
+            "1"
+        ]
+    },
+    {
+        "id": "e242e089-ff4d-4e4d-9d9b-0ffa89a6241b",
+        "parents_id": [],
+        "pipeline": "robustScaler(False,True);extraTreesClassifier(96,'gini','sqrt',10,2,False,'balanced')",
+        "fitness": [
+            0.4294313448278001
+        ],
+        "runtime": 8.104060173034668,
+        "hp_number": 9,
+        "families": [
+            "0",
+            "1"
+        ]
+    },
+    {
+        "id": "7c63b2cc-853c-4632-aa99-4bec56568c25",
+        "parents_id": [],
+        "pipeline": "selectPercentile(83.02253161712584);fastICA(76,'parallel','unit-variance','exp');extraTreesClassifier(96,'gini','sqrt',10,7,False,'balanced')",
+        "fitness": [
+            0.4310467010745679
+        ],
+        "runtime": 6.3398377895355225,
+        "hp_number": 12,
+        "families": [
+            "0",
+            "1",
+            "2"
+        ]
+    },
+    {
+        "id": "1a975a29-73e5-4cac-af41-e37a2b4543d6",
+        "parents_id": [
+            "0fde842e-80b6-4989-a032-3339c550d21e"
+        ],
+        "pipeline": "extraTreesClassifier(11,'gini','log2',6,18,False,'balanced')",
+        "fitness": [
+            0.36484533910433814
+        ],
+        "runtime": 4.0779993534088135,
+        "hp_number": 7,
+        "families": [
+            "2"
+        ]
+    },
+    {
+        "id": "ce9fc885-9a45-48f7-afb7-fc67e69abcce",
+        "parents_id": [
+            "0fde842e-80b6-4989-a032-3339c550d21e"
+        ],
+        "pipeline": "maxAbsScaler();extraTreesClassifier(11,'gini','log2',6,18,False,'balanced')",
+        "fitness": [
+            0.36484533910433814
+        ],
+        "runtime": 5.501738548278809,
+        "hp_number": 7,
+        "families": [
+            "0",
+            "2"
+        ]
+    },
+    {
+        "id": "10486ed1-625d-49d2-bf3b-0c5f25662a5d",
+        "parents_id": [
+            "0fde842e-80b6-4989-a032-3339c550d21e"
+        ],
+        "pipeline": "fastICA(16,'deflation','unit-variance','logcosh');extraTreesClassifier(11,'gini','log2',6,18,False,'balanced')",
+        "fitness": [
+            0.43719242989254203
+        ],
+        "runtime": 57.084712505340576,
+        "hp_number": 11,
+        "families": [
+            "1",
+            "2"
+        ]
+    },
+    {
+        "id": "223c0e1d-07cd-4c2a-8dbd-2176edde7f9b",
+        "parents_id": [
+            "49092ea8-21b4-4c53-96fe-4f73c510e522"
+        ],
+        "pipeline": "extraTreesClassifier(96,'entropy','log2',10,15,False,'balanced')",
+        "fitness": [
+            0.39197930439091644
+        ],
+        "runtime": 6.7426605224609375,
+        "hp_number": 7,
+        "families": [
+            "2"
+        ]
+    },
+    {
+        "id": "871ad2d6-a027-4113-b9e5-1f0fde7b07f7",
+        "parents_id": [
+            "49092ea8-21b4-4c53-96fe-4f73c510e522"
+        ],
+        "pipeline": "selectPercentile(83.02253161712584);extraTreesClassifier(96,'entropy','log2',10,15,False,'balanced')",
+        "fitness": [
+            0.379557711778807
+        ],
+        "runtime": 7.586044549942017,
+        "hp_number": 8,
+        "families": [
+            "0",
+            "2"
+        ]
+    },
+    {
+        "id": "3d955688-0339-4610-8b7b-9c675d77ef68",
+        "parents_id": [
+            "49092ea8-21b4-4c53-96fe-4f73c510e522"
+        ],
+        "pipeline": "fastICA(50,'deflation','arbitrary-variance','logcosh');extraTreesClassifier(96,'entropy','log2',10,15,False,'balanced')",
+        "fitness": [
+            0.3933388407858639
+        ],
+        "runtime": 56.04706811904907,
+        "hp_number": 11,
+        "families": [
+            "1",
+            "2"
+        ]
+    },
+    {
+        "id": "dc9981df-c5da-4e5b-8fc1-5727e0b30ef0",
+        "parents_id": [
+            "7ccf61c9-a98e-4306-88bb-2d96dd78e4fa"
+        ],
+        "pipeline": "extraTreesClassifier(11,'gini','sqrt',20,7,False,'balanced')",
+        "fitness": [
+            0.3829293837986409
+        ],
+        "runtime": 4.026776075363159,
+        "hp_number": 7,
+        "families": [
+            "1"
+        ]
+    },
+    {
+        "id": "c8dd1437-bd3d-473a-aeea-80ca7c3f58d4",
+        "parents_id": [
+            "e242e089-ff4d-4e4d-9d9b-0ffa89a6241b"
+        ],
+        "pipeline": "extraTreesClassifier(96,'gini','sqrt',10,2,False,'balanced')",
+        "fitness": [
+            0.4230714024946772
+        ],
+        "runtime": 9.977048397064209,
+        "hp_number": 7,
+        "families": [
+            "1"
+        ]
+    },
+    {
+        "id": "f5654c2c-be38-41af-8a39-29c320feb1fb",
+        "parents_id": [
+            "7c63b2cc-853c-4632-aa99-4bec56568c25"
+        ],
+        "pipeline": "extraTreesClassifier(96,'gini','sqrt',10,7,False,'balanced')",
+        "fitness": [
+            0.4156182341726421
+        ],
+        "runtime": 6.824965238571167,
+        "hp_number": 7,
+        "families": [
+            "2"
+        ]
+    },
+    {
+        "id": "47114913-4f47-4a0e-a2ba-54f04a6157b8",
+        "parents_id": [
+            "7c63b2cc-853c-4632-aa99-4bec56568c25"
+        ],
+        "pipeline": "selectPercentile(83.02253161712584);extraTreesClassifier(96,'gini','sqrt',10,7,False,'balanced')",
+        "fitness": [
+            0.42593042506780465
+        ],
+        "runtime": 9.796693325042725,
+        "hp_number": 8,
+        "families": [
+            "0",
+            "2"
+        ]
+    },
+    {
+        "id": "6973233e-b693-49ae-a34c-b6467543f89b",
+        "parents_id": [
+            "7c63b2cc-853c-4632-aa99-4bec56568c25"
+        ],
+        "pipeline": "fastICA(76,'parallel','unit-variance','exp');extraTreesClassifier(96,'gini','sqrt',10,7,False,'balanced')",
+        "fitness": [
+            0.4181474058046887
+        ],
+        "runtime": 10.979310512542725,
+        "hp_number": 11,
+        "families": [
+            "1",
+            "2"
+        ]
+    }
+]

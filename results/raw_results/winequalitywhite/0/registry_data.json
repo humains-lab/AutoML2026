@@ -1,0 +1,4631 @@
+[
+    {
+        "id": "93011206-28f1-4071-a09d-e9f4508ca70d",
+        "parents_id": [],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();nystroem('poly',3.783720160104937,68,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.45949009038129407
+        ],
+        "runtime": 30.641273498535156,
+        "hp_number": 21,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3",
+        "parents_id": [],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();nystroem('poly',3.783720160104937,68,3,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);robustScaler(False,False);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.4315433814314936
+        ],
+        "runtime": 38.76888370513916,
+        "hp_number": 21,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "15040f1a-7a55-44ad-840e-dc1e23620696",
+        "parents_id": [],
+        "pipeline": "fastICA(80,'deflation','arbitrary-variance','cube');logisticRegression('l2','newton-cg',1000,0.06981703426173451,'balanced')",
+        "fitness": [
+            0.3946262951131468
+        ],
+        "runtime": 6.17805552482605,
+        "hp_number": 9,
+        "families": [
+            "0",
+            "1"
+        ]
+    },
+    {
+        "id": "cb66c231-79d1-4068-ba22-3511e94386e4",
+        "parents_id": [],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();nystroem('poly',3.783720160104937,68,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');pca(0.6086065440732548,False);robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.4569151948825045
+        ],
+        "runtime": 60.62916111946106,
+        "hp_number": 21,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "75a7a361-6867-4a1e-95c8-018a4378f8eb",
+        "parents_id": [],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();nystroem('poly',2.0514082208433195,56,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);robustScaler(False,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.4521467117465739
+        ],
+        "runtime": 60.11669850349426,
+        "hp_number": 21,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "d3071972-7f24-4017-8eb7-79c078da4046",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.41121703529944725
+        ],
+        "runtime": 5.429462194442749,
+        "hp_number": 7,
+        "families": [
+            "6"
+        ]
+    },
+    {
+        "id": "05d49a0c-8163-4201-afba-a0374da17a5e",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.4027436586611112
+        ],
+        "runtime": 5.819640874862671,
+        "hp_number": 8,
+        "families": [
+            "0",
+            "6"
+        ]
+    },
+    {
+        "id": "04186c2b-9df3-44d4-833e-555726c59afe",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "maxAbsScaler();extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.41121703529944725
+        ],
+        "runtime": 4.595195531845093,
+        "hp_number": 7,
+        "families": [
+            "1",
+            "6"
+        ]
+    },
+    {
+        "id": "5363714b-d0fb-4b2a-8068-fffd43213fbb",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "nystroem('poly',3.783720160104937,68,5,-0.255101474055488);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3823893689276594
+        ],
+        "runtime": 7.093905448913574,
+        "hp_number": 12,
+        "families": [
+            "2",
+            "6"
+        ]
+    },
+    {
+        "id": "51f4420e-85b5-400d-a3ae-54d16d1c4638",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "fastICA(81,'deflation','arbitrary-variance','cube');extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.39739546082499194
+        ],
+        "runtime": 7.042622327804565,
+        "hp_number": 11,
+        "families": [
+            "3",
+            "6"
+        ]
+    },
+    {
+        "id": "38dde2ad-6431-4a34-b68c-b3788172cfd1",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "pca(0.8947326171469987,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.2547206463416492
+        ],
+        "runtime": 5.575040817260742,
+        "hp_number": 9,
+        "families": [
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "dccd9015-3c84-40df-a63c-32dd70d05f03",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.41121703529944725
+        ],
+        "runtime": 5.6883323192596436,
+        "hp_number": 9,
+        "families": [
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "04a6cf45-46ee-44ea-86b1-32ad234c2f6b",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.40367816471191187
+        ],
+        "runtime": 6.1306312084198,
+        "hp_number": 8,
+        "families": [
+            "0",
+            "1",
+            "6"
+        ]
+    },
+    {
+        "id": "a54f1c5a-fa0a-4c2b-8d03-5c8ac24ea2c8",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);nystroem('poly',3.783720160104937,68,5,-0.255101474055488);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.37738709485200306
+        ],
+        "runtime": 6.795260190963745,
+        "hp_number": 13,
+        "families": [
+            "0",
+            "2",
+            "6"
+        ]
+    },
+    {
+        "id": "b0a760ba-2c85-4f7d-b5ae-2e8ad3f64133",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);fastICA(81,'deflation','arbitrary-variance','cube');extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.41220011213045316
+        ],
+        "runtime": 6.364136695861816,
+        "hp_number": 12,
+        "families": [
+            "0",
+            "3",
+            "6"
+        ]
+    },
+    {
+        "id": "e7081510-c4bf-4258-b4e5-4b4d52b2e918",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);pca(0.8947326171469987,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.2547206463416492
+        ],
+        "runtime": 6.982455730438232,
+        "hp_number": 10,
+        "families": [
+            "0",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "c7a10122-723d-4bd8-a2de-2b2b03d12291",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.4027436586611112
+        ],
+        "runtime": 8.739583969116211,
+        "hp_number": 10,
+        "families": [
+            "0",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "1a6a9d7f-b850-40ae-8ade-b70225c1a177",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "maxAbsScaler();nystroem('poly',3.783720160104937,68,5,-0.255101474055488);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.41094499665256423
+        ],
+        "runtime": 8.521764993667603,
+        "hp_number": 12,
+        "families": [
+            "1",
+            "2",
+            "6"
+        ]
+    },
+    {
+        "id": "5fb950ef-cd85-40ef-b9e4-27c0314370d7",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "maxAbsScaler();fastICA(81,'deflation','arbitrary-variance','cube');extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3779519818168229
+        ],
+        "runtime": 13.575138092041016,
+        "hp_number": 11,
+        "families": [
+            "1",
+            "3",
+            "6"
+        ]
+    },
+    {
+        "id": "f44221f4-41b7-4f52-850e-2e7cd04d1097",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "maxAbsScaler();pca(0.8947326171469987,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.377529827402386
+        ],
+        "runtime": 5.949115991592407,
+        "hp_number": 9,
+        "families": [
+            "1",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "3b64a967-cff9-4b7d-80e8-46791480424a",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "maxAbsScaler();robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.41121703529944725
+        ],
+        "runtime": 8.077508211135864,
+        "hp_number": 9,
+        "families": [
+            "1",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "6311d303-ebc0-47f7-8417-0829f4c27575",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "nystroem('poly',3.783720160104937,68,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3796342595910617
+        ],
+        "runtime": 31.568041801452637,
+        "hp_number": 16,
+        "families": [
+            "2",
+            "3",
+            "6"
+        ]
+    },
+    {
+        "id": "1885629c-aa64-42ae-bfb9-97e0505e8b56",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "nystroem('poly',3.783720160104937,68,5,-0.255101474055488);pca(0.8947326171469987,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.2637163903099039
+        ],
+        "runtime": 10.491414308547974,
+        "hp_number": 14,
+        "families": [
+            "2",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "9918ccac-22bd-496d-a01b-6cedbfda094c",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "nystroem('poly',3.783720160104937,68,5,-0.255101474055488);robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3823893689276594
+        ],
+        "runtime": 9.664197444915771,
+        "hp_number": 14,
+        "families": [
+            "2",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "acae0864-1791-451c-94fb-ec130a5753f5",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.40298537038904775
+        ],
+        "runtime": 11.275171756744385,
+        "hp_number": 13,
+        "families": [
+            "3",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "82d03618-e129-47a1-bfc7-b723579d4943",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "fastICA(81,'deflation','arbitrary-variance','cube');robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.39739546082499194
+        ],
+        "runtime": 14.39881443977356,
+        "hp_number": 13,
+        "families": [
+            "3",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "31b8cd2c-3f04-4195-a345-42754f3143fd",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "pca(0.8947326171469987,True);robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.2547206463416492
+        ],
+        "runtime": 9.125036239624023,
+        "hp_number": 11,
+        "families": [
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "4253856f-c9ac-4678-affc-c95851aa9f4f",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();nystroem('poly',3.783720160104937,68,5,-0.255101474055488);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.4160263124779062
+        ],
+        "runtime": 14.133333683013916,
+        "hp_number": 13,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "6"
+        ]
+    },
+    {
+        "id": "5906e2b9-6f21-4657-926d-028b0afc7c2f",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();fastICA(81,'deflation','arbitrary-variance','cube');extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.454683695788402
+        ],
+        "runtime": 11.8078932762146,
+        "hp_number": 12,
+        "families": [
+            "0",
+            "1",
+            "3",
+            "6"
+        ]
+    },
+    {
+        "id": "3f01d282-2998-43ca-9434-3ce138310e1d",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();pca(0.8947326171469987,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3978612214405142
+        ],
+        "runtime": 9.688652753829956,
+        "hp_number": 10,
+        "families": [
+            "0",
+            "1",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "5df4078f-fdd7-4513-8f62-d5b2165b472d",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.40367816471191187
+        ],
+        "runtime": 9.806494951248169,
+        "hp_number": 10,
+        "families": [
+            "0",
+            "1",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "86ab11fd-e1c1-4b10-8b42-fbc06931c281",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);nystroem('poly',3.783720160104937,68,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3829527103653275
+        ],
+        "runtime": 39.03333330154419,
+        "hp_number": 17,
+        "families": [
+            "0",
+            "2",
+            "3",
+            "6"
+        ]
+    },
+    {
+        "id": "2a34c2e7-d3fa-407a-88ce-d7f10e7b727c",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);nystroem('poly',3.783720160104937,68,5,-0.255101474055488);pca(0.8947326171469987,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.26417129423212127
+        ],
+        "runtime": 12.289060115814209,
+        "hp_number": 15,
+        "families": [
+            "0",
+            "2",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "a72bc8ec-4a9e-4737-a68d-bbe8d9968d03",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);nystroem('poly',3.783720160104937,68,5,-0.255101474055488);robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.37738709485200306
+        ],
+        "runtime": 9.264909505844116,
+        "hp_number": 15,
+        "families": [
+            "0",
+            "2",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "7fb26242-9494-48ed-9cc9-18227782234d",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.4053709420176485
+        ],
+        "runtime": 16.07298493385315,
+        "hp_number": 14,
+        "families": [
+            "0",
+            "3",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "d2f7a921-fde5-454c-afc1-363d60f66dd1",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);fastICA(81,'deflation','arbitrary-variance','cube');robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.41220011213045316
+        ],
+        "runtime": 13.40008544921875,
+        "hp_number": 14,
+        "families": [
+            "0",
+            "3",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "d7ae7182-5a1a-4b84-8448-c0d140efd92d",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);pca(0.8947326171469987,True);robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.2547206463416492
+        ],
+        "runtime": 11.300042152404785,
+        "hp_number": 12,
+        "families": [
+            "0",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "c72d0247-46db-49e0-888b-2e4f3067de96",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "maxAbsScaler();nystroem('poly',3.783720160104937,68,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3864527886579616
+        ],
+        "runtime": 40.56378483772278,
+        "hp_number": 16,
+        "families": [
+            "1",
+            "2",
+            "3",
+            "6"
+        ]
+    },
+    {
+        "id": "bba4780c-3921-46b0-b404-c0c47aa37b91",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "maxAbsScaler();nystroem('poly',3.783720160104937,68,5,-0.255101474055488);pca(0.8947326171469987,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.37540454754644537
+        ],
+        "runtime": 13.9905366897583,
+        "hp_number": 14,
+        "families": [
+            "1",
+            "2",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "f7dac4a6-bf88-4f95-8bb4-8bf5b4dc01d2",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "maxAbsScaler();nystroem('poly',3.783720160104937,68,5,-0.255101474055488);robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.41094499665256423
+        ],
+        "runtime": 16.120142936706543,
+        "hp_number": 14,
+        "families": [
+            "1",
+            "2",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "b2b01d0e-616d-4156-949a-0fe20154f1ab",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "maxAbsScaler();fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.41067193084009335
+        ],
+        "runtime": 13.86345386505127,
+        "hp_number": 13,
+        "families": [
+            "1",
+            "3",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "30a09765-63ca-4465-b6f3-5584d7760779",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "maxAbsScaler();fastICA(81,'deflation','arbitrary-variance','cube');robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3779519818168229
+        ],
+        "runtime": 14.905201196670532,
+        "hp_number": 13,
+        "families": [
+            "1",
+            "3",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "08c3c0d3-3c79-4061-ba5f-29f175b80ffa",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "maxAbsScaler();pca(0.8947326171469987,True);robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.377529827402386
+        ],
+        "runtime": 11.014971733093262,
+        "hp_number": 11,
+        "families": [
+            "1",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "cae6e8c0-e069-4d19-85dd-c05e6b41a3fb",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "nystroem('poly',3.783720160104937,68,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.4199418037067975
+        ],
+        "runtime": 44.6012499332428,
+        "hp_number": 18,
+        "families": [
+            "2",
+            "3",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "2e84e79a-050a-4c21-a683-a2e64d6a62be",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "nystroem('poly',3.783720160104937,68,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3796342595910617
+        ],
+        "runtime": 50.63374733924866,
+        "hp_number": 18,
+        "families": [
+            "2",
+            "3",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "74034699-f617-49ee-8379-4fbaa2fbec11",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "nystroem('poly',3.783720160104937,68,5,-0.255101474055488);pca(0.8947326171469987,True);robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.2637163903099039
+        ],
+        "runtime": 14.371708393096924,
+        "hp_number": 16,
+        "families": [
+            "2",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "e6f5bfe2-bb04-49b9-b13d-9882f1448ab6",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.40298537038904775
+        ],
+        "runtime": 17.481345653533936,
+        "hp_number": 15,
+        "families": [
+            "3",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "548f2de0-30dd-46f0-9656-ca0ca40d1ef7",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();nystroem('poly',3.783720160104937,68,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.38106420598855345
+        ],
+        "runtime": 50.85207438468933,
+        "hp_number": 17,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "6"
+        ]
+    },
+    {
+        "id": "cceeec0c-d055-4705-ad03-67cc317eb29e",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();nystroem('poly',3.783720160104937,68,5,-0.255101474055488);pca(0.8947326171469987,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3686233123951541
+        ],
+        "runtime": 11.316796779632568,
+        "hp_number": 15,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "6759d54e-5baf-4fe5-a2ec-946faeb8bdb3",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();nystroem('poly',3.783720160104937,68,5,-0.255101474055488);robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.4160263124779062
+        ],
+        "runtime": 19.7976131439209,
+        "hp_number": 15,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "ba12db93-3e3b-4a60-8314-f395ffc2cb8e",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.4061273881670536
+        ],
+        "runtime": 16.669822931289673,
+        "hp_number": 14,
+        "families": [
+            "0",
+            "1",
+            "3",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "0988b0af-8fc9-40ce-923b-fbf7daf128c1",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();fastICA(81,'deflation','arbitrary-variance','cube');robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.454683695788402
+        ],
+        "runtime": 13.140557527542114,
+        "hp_number": 14,
+        "families": [
+            "0",
+            "1",
+            "3",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "7c6c652d-c246-425a-aed2-42e65dc1fdb9",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();pca(0.8947326171469987,True);robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3978612214405142
+        ],
+        "runtime": 14.269873142242432,
+        "hp_number": 12,
+        "families": [
+            "0",
+            "1",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "e5a3369d-0fd8-46a7-97d1-3e891b62606a",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);nystroem('poly',3.783720160104937,68,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.40321382819051294
+        ],
+        "runtime": 48.837557315826416,
+        "hp_number": 19,
+        "families": [
+            "0",
+            "2",
+            "3",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "94a7e95c-ff0c-4102-bb73-11141eebad89",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);nystroem('poly',3.783720160104937,68,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3829527103653275
+        ],
+        "runtime": 56.038684368133545,
+        "hp_number": 19,
+        "families": [
+            "0",
+            "2",
+            "3",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "68905137-a11d-4325-9d8e-980a2be0f84a",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);nystroem('poly',3.783720160104937,68,5,-0.255101474055488);pca(0.8947326171469987,True);robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.26417129423212127
+        ],
+        "runtime": 11.840585470199585,
+        "hp_number": 17,
+        "families": [
+            "0",
+            "2",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "50f6bc89-8594-4d2e-8021-b1e5ccdeb06e",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.4053709420176485
+        ],
+        "runtime": 19.04470443725586,
+        "hp_number": 16,
+        "families": [
+            "0",
+            "3",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "abd71ada-6a95-44e5-9c65-84a9fa153994",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "maxAbsScaler();nystroem('poly',3.783720160104937,68,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.4163335667414474
+        ],
+        "runtime": 62.87435984611511,
+        "hp_number": 18,
+        "families": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "4514a71d-6cd5-47b7-949f-f1b05a05a968",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "maxAbsScaler();nystroem('poly',3.783720160104937,68,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3864527886579616
+        ],
+        "runtime": 69.89906334877014,
+        "hp_number": 18,
+        "families": [
+            "1",
+            "2",
+            "3",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "b4b19afc-b968-44f1-b1cd-e0f2c5133513",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "maxAbsScaler();nystroem('poly',3.783720160104937,68,5,-0.255101474055488);pca(0.8947326171469987,True);robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.37540454754644537
+        ],
+        "runtime": 17.379538774490356,
+        "hp_number": 16,
+        "families": [
+            "1",
+            "2",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "99af634a-660a-4e76-8d95-6733a7b95e86",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "maxAbsScaler();fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.41067193084009335
+        ],
+        "runtime": 18.18055534362793,
+        "hp_number": 15,
+        "families": [
+            "1",
+            "3",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "eee283ad-f55e-40cb-84a7-e465d67dc6c4",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "nystroem('poly',3.783720160104937,68,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.4199418037067975
+        ],
+        "runtime": 63.054089307785034,
+        "hp_number": 20,
+        "families": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "670a93dd-ca40-446a-bd5b-5b43b01e1164",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();nystroem('poly',3.783720160104937,68,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.430384999573976
+        ],
+        "runtime": 56.398011922836304,
+        "hp_number": 19,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "672c12c6-9795-4782-8260-5db053bc72a6",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();nystroem('poly',3.783720160104937,68,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.38106420598855345
+        ],
+        "runtime": 67.99828672409058,
+        "hp_number": 19,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "bb54cbb4-9856-4ab0-8a68-bd502aa02246",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();nystroem('poly',3.783720160104937,68,5,-0.255101474055488);pca(0.8947326171469987,True);robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3686233123951541
+        ],
+        "runtime": 16.83767533302307,
+        "hp_number": 17,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "6a639432-9d7d-4a51-a94d-d8a9ffd8cbfe",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.4061273881670536
+        ],
+        "runtime": 18.789722204208374,
+        "hp_number": 16,
+        "families": [
+            "0",
+            "1",
+            "3",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "08f6de51-9a5b-41d9-abe5-ada164efbe15",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);nystroem('poly',3.783720160104937,68,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.40321382819051294
+        ],
+        "runtime": 62.04002094268799,
+        "hp_number": 21,
+        "families": [
+            "0",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "fb4b124b-406a-4ce1-abad-5e63b341e0ea",
+        "parents_id": [
+            "93011206-28f1-4071-a09d-e9f4508ca70d"
+        ],
+        "pipeline": "maxAbsScaler();nystroem('poly',3.783720160104937,68,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.4163335667414474
+        ],
+        "runtime": 56.673452377319336,
+        "hp_number": 20,
+        "families": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "e77e8e3b-8630-4f65-9a47-55cd85abb530",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3909286648859982
+        ],
+        "runtime": 6.026991128921509,
+        "hp_number": 7,
+        "families": [
+            "6"
+        ]
+    },
+    {
+        "id": "741e696c-0949-444a-878c-b34a32e49510",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.39968222464096875
+        ],
+        "runtime": 13.621048927307129,
+        "hp_number": 8,
+        "families": [
+            "0",
+            "6"
+        ]
+    },
+    {
+        "id": "9f397137-4975-451a-abef-60b268b9ef68",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "maxAbsScaler();extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3909286648859982
+        ],
+        "runtime": 9.153200149536133,
+        "hp_number": 7,
+        "families": [
+            "1",
+            "6"
+        ]
+    },
+    {
+        "id": "572474b9-c0d6-4395-867b-1de2758fd035",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "nystroem('poly',3.783720160104937,68,3,-0.255101474055488);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.35843392198867463
+        ],
+        "runtime": 12.674127101898193,
+        "hp_number": 12,
+        "families": [
+            "2",
+            "6"
+        ]
+    },
+    {
+        "id": "5d63445c-44a6-4407-8db9-85edcee76aff",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "fastICA(81,'deflation','arbitrary-variance','cube');extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3473405868749591
+        ],
+        "runtime": 8.308919429779053,
+        "hp_number": 11,
+        "families": [
+            "3",
+            "6"
+        ]
+    },
+    {
+        "id": "70dd8b51-3f4a-4ce7-a0ae-14f915692f98",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "pca(0.8947326171469987,True);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.2323436500080774
+        ],
+        "runtime": 9.60823655128479,
+        "hp_number": 9,
+        "families": [
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "3c0b762d-3d8c-4836-ad24-e8c0f910f83c",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "robustScaler(False,False);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3909286648859982
+        ],
+        "runtime": 6.982189416885376,
+        "hp_number": 9,
+        "families": [
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "4f0094b7-a114-45b0-be09-51cba72dcd63",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.39968222464096875
+        ],
+        "runtime": 6.091923236846924,
+        "hp_number": 8,
+        "families": [
+            "0",
+            "1",
+            "6"
+        ]
+    },
+    {
+        "id": "fbea3132-b2e7-40bc-ab22-c1ed30282904",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);nystroem('poly',3.783720160104937,68,3,-0.255101474055488);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3624063675402054
+        ],
+        "runtime": 6.985438346862793,
+        "hp_number": 13,
+        "families": [
+            "0",
+            "2",
+            "6"
+        ]
+    },
+    {
+        "id": "bfa8924b-30cb-4958-98bc-fc9c187acbf1",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);fastICA(81,'deflation','arbitrary-variance','cube');extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3504005973971049
+        ],
+        "runtime": 6.179339408874512,
+        "hp_number": 12,
+        "families": [
+            "0",
+            "3",
+            "6"
+        ]
+    },
+    {
+        "id": "b9927844-5937-4b1c-a6e6-ff13bacfc809",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);pca(0.8947326171469987,True);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.2323436500080774
+        ],
+        "runtime": 6.678774356842041,
+        "hp_number": 10,
+        "families": [
+            "0",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "dc31c3f1-a80f-4460-a926-8e43757be798",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);robustScaler(False,False);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.39968222464096875
+        ],
+        "runtime": 4.659573316574097,
+        "hp_number": 10,
+        "families": [
+            "0",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "8f4b9000-81c5-4e1a-be65-d777d288ce11",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "maxAbsScaler();nystroem('poly',3.783720160104937,68,3,-0.255101474055488);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3951204417007824
+        ],
+        "runtime": 7.203313112258911,
+        "hp_number": 12,
+        "families": [
+            "1",
+            "2",
+            "6"
+        ]
+    },
+    {
+        "id": "28f93be8-7987-458a-b851-299c63487a97",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "maxAbsScaler();fastICA(81,'deflation','arbitrary-variance','cube');extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.37367530786915926
+        ],
+        "runtime": 8.220149755477905,
+        "hp_number": 11,
+        "families": [
+            "1",
+            "3",
+            "6"
+        ]
+    },
+    {
+        "id": "ef882ea4-b743-42ce-96a9-9ad76d02cb31",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "maxAbsScaler();pca(0.8947326171469987,True);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3513634199729053
+        ],
+        "runtime": 7.235283374786377,
+        "hp_number": 9,
+        "families": [
+            "1",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "0ccf9c2e-7074-4dc5-a3f7-fa7306deba54",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "maxAbsScaler();robustScaler(False,False);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3909286648859982
+        ],
+        "runtime": 6.3958070278167725,
+        "hp_number": 9,
+        "families": [
+            "1",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "b1bb47fa-48fd-4678-a174-f5960bbde95e",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "nystroem('poly',3.783720160104937,68,3,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.33973001600277714
+        ],
+        "runtime": 34.131460666656494,
+        "hp_number": 16,
+        "families": [
+            "2",
+            "3",
+            "6"
+        ]
+    },
+    {
+        "id": "f8fcbed9-9ef4-4cc0-a827-2607137b5f80",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "nystroem('poly',3.783720160104937,68,3,-0.255101474055488);pca(0.8947326171469987,True);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.23069385363188064
+        ],
+        "runtime": 7.434681415557861,
+        "hp_number": 14,
+        "families": [
+            "2",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "64a24ee3-00f8-4daa-bdae-f8b668e0d9de",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "nystroem('poly',3.783720160104937,68,3,-0.255101474055488);robustScaler(False,False);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.35843392198867463
+        ],
+        "runtime": 10.282339811325073,
+        "hp_number": 14,
+        "families": [
+            "2",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "364d9cd8-ef44-4ab7-b88e-0807cb86fee6",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3451432529435511
+        ],
+        "runtime": 10.508833646774292,
+        "hp_number": 13,
+        "families": [
+            "3",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "dcc19fb2-f955-4653-812f-57d50279b566",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "fastICA(81,'deflation','arbitrary-variance','cube');robustScaler(False,False);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3473405868749591
+        ],
+        "runtime": 11.522194862365723,
+        "hp_number": 13,
+        "families": [
+            "3",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "9ff8e029-726b-4479-8f2a-ca54eaaec979",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "pca(0.8947326171469987,True);robustScaler(False,False);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.2323436500080774
+        ],
+        "runtime": 6.992303133010864,
+        "hp_number": 11,
+        "families": [
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "30d58f11-5722-4b83-a5ba-80c5d92ce44d",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();nystroem('poly',3.783720160104937,68,3,-0.255101474055488);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3861487509148437
+        ],
+        "runtime": 10.80542516708374,
+        "hp_number": 13,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "6"
+        ]
+    },
+    {
+        "id": "8a9a359f-d631-47ec-a680-b597288ffda7",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();fastICA(81,'deflation','arbitrary-variance','cube');extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.43898334201498884
+        ],
+        "runtime": 11.10527229309082,
+        "hp_number": 12,
+        "families": [
+            "0",
+            "1",
+            "3",
+            "6"
+        ]
+    },
+    {
+        "id": "35cfe715-b82e-4d82-aa73-9cccb8f26982",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();pca(0.8947326171469987,True);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3444807278027143
+        ],
+        "runtime": 9.06184196472168,
+        "hp_number": 10,
+        "families": [
+            "0",
+            "1",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "b6f6887a-d13e-4fc8-a90d-25e37b49a06d",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();robustScaler(False,False);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.39968222464096875
+        ],
+        "runtime": 8.85321044921875,
+        "hp_number": 10,
+        "families": [
+            "0",
+            "1",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "206700c7-7fc7-4ad2-b69c-04e14cb05674",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);nystroem('poly',3.783720160104937,68,3,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3503528165486252
+        ],
+        "runtime": 42.75206255912781,
+        "hp_number": 17,
+        "families": [
+            "0",
+            "2",
+            "3",
+            "6"
+        ]
+    },
+    {
+        "id": "91575875-5868-4a9f-88e9-4d80ad3d04d4",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);nystroem('poly',3.783720160104937,68,3,-0.255101474055488);pca(0.8947326171469987,True);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.22951656397023287
+        ],
+        "runtime": 9.632416009902954,
+        "hp_number": 15,
+        "families": [
+            "0",
+            "2",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "3da26e1a-1326-4cb2-94f5-3edb831d148b",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);nystroem('poly',3.783720160104937,68,3,-0.255101474055488);robustScaler(False,False);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3624063675402054
+        ],
+        "runtime": 8.10063648223877,
+        "hp_number": 15,
+        "families": [
+            "0",
+            "2",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "0554dd46-0ca4-45e6-ac8c-4efa19f1d455",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.34672306230072913
+        ],
+        "runtime": 9.65873098373413,
+        "hp_number": 14,
+        "families": [
+            "0",
+            "3",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "0656cc24-a111-49ed-890c-117bc0b889f2",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);fastICA(81,'deflation','arbitrary-variance','cube');robustScaler(False,False);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3504005973971049
+        ],
+        "runtime": 11.357590436935425,
+        "hp_number": 14,
+        "families": [
+            "0",
+            "3",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "6ba5f649-1776-4ea5-ac9e-6bc797051bb9",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);pca(0.8947326171469987,True);robustScaler(False,False);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.2323436500080774
+        ],
+        "runtime": 7.0502777099609375,
+        "hp_number": 12,
+        "families": [
+            "0",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "44bed246-0627-4ac1-a95b-2c48367cd7ac",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "maxAbsScaler();nystroem('poly',3.783720160104937,68,3,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3362453111835816
+        ],
+        "runtime": 50.1983687877655,
+        "hp_number": 16,
+        "families": [
+            "1",
+            "2",
+            "3",
+            "6"
+        ]
+    },
+    {
+        "id": "54ed55a7-576d-4a28-a65e-c71d6d2bafda",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "maxAbsScaler();nystroem('poly',3.783720160104937,68,3,-0.255101474055488);pca(0.8947326171469987,True);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.32034654239144894
+        ],
+        "runtime": 11.016508340835571,
+        "hp_number": 14,
+        "families": [
+            "1",
+            "2",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "da42c4b4-72c0-44ec-8b57-58bf7ece7fed",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "maxAbsScaler();nystroem('poly',3.783720160104937,68,3,-0.255101474055488);robustScaler(False,False);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3951204417007824
+        ],
+        "runtime": 14.250827550888062,
+        "hp_number": 14,
+        "families": [
+            "1",
+            "2",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "a64562f6-6643-47c8-97c4-04f14dcf27b4",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "maxAbsScaler();fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3496425426429403
+        ],
+        "runtime": 15.081799983978271,
+        "hp_number": 13,
+        "families": [
+            "1",
+            "3",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "0138838f-2ea9-4495-a74f-c5a82ec31ffe",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "maxAbsScaler();fastICA(81,'deflation','arbitrary-variance','cube');robustScaler(False,False);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.37367530786915926
+        ],
+        "runtime": 14.373139381408691,
+        "hp_number": 13,
+        "families": [
+            "1",
+            "3",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "4f65032a-7770-43f4-b606-8322ade23fe0",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "maxAbsScaler();pca(0.8947326171469987,True);robustScaler(False,False);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3513634199729053
+        ],
+        "runtime": 12.752454996109009,
+        "hp_number": 11,
+        "families": [
+            "1",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "75ce59a1-3fc1-426d-b8a7-f91d8ccfcf5d",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "nystroem('poly',3.783720160104937,68,3,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3589486056889739
+        ],
+        "runtime": 57.046231269836426,
+        "hp_number": 18,
+        "families": [
+            "2",
+            "3",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "17e581f4-17b6-4368-b602-ccb8a94ccdef",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "nystroem('poly',3.783720160104937,68,3,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');robustScaler(False,False);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.33973001600277714
+        ],
+        "runtime": 51.66297698020935,
+        "hp_number": 18,
+        "families": [
+            "2",
+            "3",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "dd9a7294-7061-419f-bd5d-71059e61785a",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "nystroem('poly',3.783720160104937,68,3,-0.255101474055488);pca(0.8947326171469987,True);robustScaler(False,False);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.23069385363188064
+        ],
+        "runtime": 12.990769624710083,
+        "hp_number": 16,
+        "families": [
+            "2",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "c909ca11-1068-4027-bd8f-ae0764f03d71",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);robustScaler(False,False);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3451432529435511
+        ],
+        "runtime": 16.264952182769775,
+        "hp_number": 15,
+        "families": [
+            "3",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "4d369709-e1fc-4283-97eb-2b4765efd098",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();nystroem('poly',3.783720160104937,68,3,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3308394768926234
+        ],
+        "runtime": 51.57733345031738,
+        "hp_number": 17,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "6"
+        ]
+    },
+    {
+        "id": "32bfe9a6-913a-49a5-8ace-733f66f78ac0",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();nystroem('poly',3.783720160104937,68,3,-0.255101474055488);pca(0.8947326171469987,True);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3818347817513185
+        ],
+        "runtime": 16.391303539276123,
+        "hp_number": 15,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "7c377d05-5b2c-4717-96ed-07228fccdd1c",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();nystroem('poly',3.783720160104937,68,3,-0.255101474055488);robustScaler(False,False);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3861487509148437
+        ],
+        "runtime": 14.926931858062744,
+        "hp_number": 15,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "c9abff03-3a87-4831-8765-3f2351be2b03",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.39117941795633093
+        ],
+        "runtime": 13.941081285476685,
+        "hp_number": 14,
+        "families": [
+            "0",
+            "1",
+            "3",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "d3ce5498-1c1b-4605-b856-53b24867446a",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();fastICA(81,'deflation','arbitrary-variance','cube');robustScaler(False,False);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.43898334201498884
+        ],
+        "runtime": 14.26332974433899,
+        "hp_number": 14,
+        "families": [
+            "0",
+            "1",
+            "3",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "dcc3730b-fdf1-4bbf-ae09-889e99f187dd",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();pca(0.8947326171469987,True);robustScaler(False,False);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3444807278027143
+        ],
+        "runtime": 12.313941955566406,
+        "hp_number": 12,
+        "families": [
+            "0",
+            "1",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "40861b74-8c9e-46af-bf5f-c5fae2568698",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);nystroem('poly',3.783720160104937,68,3,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.37130899737445344
+        ],
+        "runtime": 51.831870317459106,
+        "hp_number": 19,
+        "families": [
+            "0",
+            "2",
+            "3",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "766449e6-4ccf-4a19-8e76-936b1a05e615",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);nystroem('poly',3.783720160104937,68,3,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');robustScaler(False,False);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3503528165486252
+        ],
+        "runtime": 59.46750473976135,
+        "hp_number": 19,
+        "families": [
+            "0",
+            "2",
+            "3",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "f74a0088-b979-4d0b-bca1-2489ce57a4dd",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);nystroem('poly',3.783720160104937,68,3,-0.255101474055488);pca(0.8947326171469987,True);robustScaler(False,False);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.22951656397023287
+        ],
+        "runtime": 16.454235792160034,
+        "hp_number": 17,
+        "families": [
+            "0",
+            "2",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "d536df34-a549-4f79-8ccb-286c646ac6b0",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);robustScaler(False,False);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.34672306230072913
+        ],
+        "runtime": 16.78639841079712,
+        "hp_number": 16,
+        "families": [
+            "0",
+            "3",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "4d7c4706-5331-4193-9408-184cdd593c23",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "maxAbsScaler();nystroem('poly',3.783720160104937,68,3,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3618413277604093
+        ],
+        "runtime": 66.26669383049011,
+        "hp_number": 18,
+        "families": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "c4009550-7d7e-43a8-b1b6-01cd514ed88b",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "maxAbsScaler();nystroem('poly',3.783720160104937,68,3,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');robustScaler(False,False);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3362453111835816
+        ],
+        "runtime": 60.774229764938354,
+        "hp_number": 18,
+        "families": [
+            "1",
+            "2",
+            "3",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "b2f64307-5496-481a-bc4a-dce3d1929d7f",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "maxAbsScaler();nystroem('poly',3.783720160104937,68,3,-0.255101474055488);pca(0.8947326171469987,True);robustScaler(False,False);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.32034654239144894
+        ],
+        "runtime": 15.10072636604309,
+        "hp_number": 16,
+        "families": [
+            "1",
+            "2",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "018bfa75-4b7b-4c2e-80c1-be6fd0887a7f",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "maxAbsScaler();fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);robustScaler(False,False);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3496425426429403
+        ],
+        "runtime": 18.404818773269653,
+        "hp_number": 15,
+        "families": [
+            "1",
+            "3",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "fab67645-aeae-405f-95f5-c223d292d66e",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "nystroem('poly',3.783720160104937,68,3,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);robustScaler(False,False);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3589486056889739
+        ],
+        "runtime": 53.409144163131714,
+        "hp_number": 20,
+        "families": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "59436723-5d11-467a-bed6-9b6a849ed69d",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();nystroem('poly',3.783720160104937,68,3,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.38823221465769275
+        ],
+        "runtime": 53.03703284263611,
+        "hp_number": 19,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "536c320d-ae62-4f10-8857-cb1e22292450",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();nystroem('poly',3.783720160104937,68,3,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');robustScaler(False,False);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3308394768926234
+        ],
+        "runtime": 35.15712809562683,
+        "hp_number": 19,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "2205553b-a88b-4da3-9f30-4a7610876794",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();nystroem('poly',3.783720160104937,68,3,-0.255101474055488);pca(0.8947326171469987,True);robustScaler(False,False);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3818347817513185
+        ],
+        "runtime": 14.24729871749878,
+        "hp_number": 17,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "f0f90606-8a5e-4474-945e-3756bb8cf8b7",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);robustScaler(False,False);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.39117941795633093
+        ],
+        "runtime": 12.534512758255005,
+        "hp_number": 16,
+        "families": [
+            "0",
+            "1",
+            "3",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "bdc25330-80d5-4d01-8ee0-86766ec0fc1d",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);nystroem('poly',3.783720160104937,68,3,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);robustScaler(False,False);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.37130899737445344
+        ],
+        "runtime": 41.45716643333435,
+        "hp_number": 21,
+        "families": [
+            "0",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "5058918e-a95c-40b3-8431-36cd778a0e45",
+        "parents_id": [
+            "ee89d6ee-e954-4aa7-ba3d-5f2a6b230dd3"
+        ],
+        "pipeline": "maxAbsScaler();nystroem('poly',3.783720160104937,68,3,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);robustScaler(False,False);extraTreesClassifier(12,'entropy','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3618413277604093
+        ],
+        "runtime": 34.30561852455139,
+        "hp_number": 20,
+        "families": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "f402ba82-608d-44cd-af8f-0f0e1cdad571",
+        "parents_id": [
+            "15040f1a-7a55-44ad-840e-dc1e23620696"
+        ],
+        "pipeline": "logisticRegression('l2','newton-cg',1000,0.06981703426173451,'balanced')",
+        "fitness": [
+            0.29698411236125644
+        ],
+        "runtime": 26.172647714614868,
+        "hp_number": 5,
+        "families": [
+            "1"
+        ]
+    },
+    {
+        "id": "bfc8c7a5-2745-49f7-832f-925c1c29bdd1",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.41121703529944725
+        ],
+        "runtime": 12.324518918991089,
+        "hp_number": 7,
+        "families": [
+            "6"
+        ]
+    },
+    {
+        "id": "14a0e3b4-9e7d-4053-a9cb-cdb9cee8dfe3",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.4027436586611112
+        ],
+        "runtime": 12.051853656768799,
+        "hp_number": 8,
+        "families": [
+            "0",
+            "6"
+        ]
+    },
+    {
+        "id": "907fd926-2b4d-4fbf-9b19-f8f42ea657e9",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "maxAbsScaler();extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.41121703529944725
+        ],
+        "runtime": 10.323118209838867,
+        "hp_number": 7,
+        "families": [
+            "1",
+            "6"
+        ]
+    },
+    {
+        "id": "1146c784-d155-4ac5-8ef8-c2c0d27787bf",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "nystroem('poly',3.783720160104937,68,5,-0.255101474055488);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3823893689276594
+        ],
+        "runtime": 11.75352168083191,
+        "hp_number": 12,
+        "families": [
+            "2",
+            "6"
+        ]
+    },
+    {
+        "id": "37b91c2a-e9ae-4722-8d69-06a818e41659",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "fastICA(81,'deflation','arbitrary-variance','cube');extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.39739546082499194
+        ],
+        "runtime": 14.794806480407715,
+        "hp_number": 11,
+        "families": [
+            "3",
+            "6"
+        ]
+    },
+    {
+        "id": "701d2458-2b42-400d-9cca-c7c133129095",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "pca(0.6086065440732548,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.2547206463416492
+        ],
+        "runtime": 11.173641920089722,
+        "hp_number": 9,
+        "families": [
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "28f3c73c-b4a7-4165-badf-32b435fc0572",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.41121703529944725
+        ],
+        "runtime": 12.786076545715332,
+        "hp_number": 9,
+        "families": [
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "b53870bc-072f-4851-8973-c6f3e094f4e4",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.40367816471191187
+        ],
+        "runtime": 10.74250316619873,
+        "hp_number": 8,
+        "families": [
+            "0",
+            "1",
+            "6"
+        ]
+    },
+    {
+        "id": "139ad797-d318-40f3-a308-75200d1b8334",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);nystroem('poly',3.783720160104937,68,5,-0.255101474055488);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.37738709485200306
+        ],
+        "runtime": 12.962873935699463,
+        "hp_number": 13,
+        "families": [
+            "0",
+            "2",
+            "6"
+        ]
+    },
+    {
+        "id": "6373ec48-ebb6-491b-8192-c1e1ae0bdcdd",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);fastICA(81,'deflation','arbitrary-variance','cube');extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.41220011213045316
+        ],
+        "runtime": 13.49703574180603,
+        "hp_number": 12,
+        "families": [
+            "0",
+            "3",
+            "6"
+        ]
+    },
+    {
+        "id": "eedd7e3d-8765-4c7a-aedc-d8458aa16e91",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);pca(0.6086065440732548,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.2547206463416492
+        ],
+        "runtime": 9.722270250320435,
+        "hp_number": 10,
+        "families": [
+            "0",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "87ba76e8-9f0b-4804-85c0-8d9184d032e1",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.4027436586611112
+        ],
+        "runtime": 11.283488035202026,
+        "hp_number": 10,
+        "families": [
+            "0",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "da1f28f1-41db-439d-ad87-c5c179906af9",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "maxAbsScaler();nystroem('poly',3.783720160104937,68,5,-0.255101474055488);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.41094499665256423
+        ],
+        "runtime": 11.022870779037476,
+        "hp_number": 12,
+        "families": [
+            "1",
+            "2",
+            "6"
+        ]
+    },
+    {
+        "id": "6bf970c7-b5dc-4031-95b9-d3d909679422",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "maxAbsScaler();fastICA(81,'deflation','arbitrary-variance','cube');extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3779519818168229
+        ],
+        "runtime": 10.762249946594238,
+        "hp_number": 11,
+        "families": [
+            "1",
+            "3",
+            "6"
+        ]
+    },
+    {
+        "id": "298c6fed-2c54-49f3-bfee-cacfa949f840",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "maxAbsScaler();pca(0.6086065440732548,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.25293077443592765
+        ],
+        "runtime": 9.185056924819946,
+        "hp_number": 9,
+        "families": [
+            "1",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "3df2bfa4-9ff2-4e22-a533-14b7b5875da8",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "maxAbsScaler();robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.41121703529944725
+        ],
+        "runtime": 10.479340553283691,
+        "hp_number": 9,
+        "families": [
+            "1",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "746458a4-2677-4143-97f4-9ef973aaeb60",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "nystroem('poly',3.783720160104937,68,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3796342595910617
+        ],
+        "runtime": 39.08663630485535,
+        "hp_number": 16,
+        "families": [
+            "2",
+            "3",
+            "6"
+        ]
+    },
+    {
+        "id": "780afdb8-30d7-4412-8a87-4b0ba827e080",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "nystroem('poly',3.783720160104937,68,5,-0.255101474055488);pca(0.6086065440732548,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.2637163903099039
+        ],
+        "runtime": 8.757613182067871,
+        "hp_number": 14,
+        "families": [
+            "2",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "7d68f208-b779-4eae-83cc-fb891590c896",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "nystroem('poly',3.783720160104937,68,5,-0.255101474055488);robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3823893689276594
+        ],
+        "runtime": 10.569380521774292,
+        "hp_number": 14,
+        "families": [
+            "2",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "31d967b0-1201-4720-8f76-8405fca4253b",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "fastICA(81,'deflation','arbitrary-variance','cube');pca(0.6086065440732548,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3517924338068415
+        ],
+        "runtime": 8.941365003585815,
+        "hp_number": 13,
+        "families": [
+            "3",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "ea8281c8-accc-4332-8abe-f95151cc98b4",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "fastICA(81,'deflation','arbitrary-variance','cube');robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.39739546082499194
+        ],
+        "runtime": 11.883179903030396,
+        "hp_number": 13,
+        "families": [
+            "3",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "8d58ceeb-9f58-4eff-a9d8-6f88738041e3",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "pca(0.6086065440732548,False);robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.2547206463416492
+        ],
+        "runtime": 8.381965398788452,
+        "hp_number": 11,
+        "families": [
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "63948661-f56e-4b63-8e2e-802b959305f2",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();nystroem('poly',3.783720160104937,68,5,-0.255101474055488);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.4160263124779062
+        ],
+        "runtime": 13.20366644859314,
+        "hp_number": 13,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "6"
+        ]
+    },
+    {
+        "id": "16b50639-1129-4841-993f-071866c4219a",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();fastICA(81,'deflation','arbitrary-variance','cube');extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.454683695788402
+        ],
+        "runtime": 9.394817590713501,
+        "hp_number": 12,
+        "families": [
+            "0",
+            "1",
+            "3",
+            "6"
+        ]
+    },
+    {
+        "id": "b46743d4-5324-4e2d-abd2-e6f9fb6ab6ec",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();pca(0.6086065440732548,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.31078753514314983
+        ],
+        "runtime": 8.757415294647217,
+        "hp_number": 10,
+        "families": [
+            "0",
+            "1",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "a2713c26-dfcb-4e37-b8fe-78c18dae0d48",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.40367816471191187
+        ],
+        "runtime": 7.266971588134766,
+        "hp_number": 10,
+        "families": [
+            "0",
+            "1",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "7932121c-d4b4-4027-90bd-5e5619566d3b",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);nystroem('poly',3.783720160104937,68,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3829527103653275
+        ],
+        "runtime": 42.82473802566528,
+        "hp_number": 17,
+        "families": [
+            "0",
+            "2",
+            "3",
+            "6"
+        ]
+    },
+    {
+        "id": "19229ba7-c8ee-488e-8ff2-58209a5dbaca",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);nystroem('poly',3.783720160104937,68,5,-0.255101474055488);pca(0.6086065440732548,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.26417129423212127
+        ],
+        "runtime": 10.994287490844727,
+        "hp_number": 15,
+        "families": [
+            "0",
+            "2",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "d61231ff-ff33-433b-b9ae-c60db66565c6",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);nystroem('poly',3.783720160104937,68,5,-0.255101474055488);robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.37738709485200306
+        ],
+        "runtime": 12.275856733322144,
+        "hp_number": 15,
+        "families": [
+            "0",
+            "2",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "32aee840-0ecb-44ac-b360-bfc918488334",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);fastICA(81,'deflation','arbitrary-variance','cube');pca(0.6086065440732548,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3874350456538985
+        ],
+        "runtime": 14.957357168197632,
+        "hp_number": 14,
+        "families": [
+            "0",
+            "3",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "dd119550-5f6b-4003-b3ac-ab2de6994b19",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);fastICA(81,'deflation','arbitrary-variance','cube');robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.41220011213045316
+        ],
+        "runtime": 12.076934814453125,
+        "hp_number": 14,
+        "families": [
+            "0",
+            "3",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "5a462273-2783-4839-9958-f8b65b6a2000",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);pca(0.6086065440732548,False);robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.2547206463416492
+        ],
+        "runtime": 11.502177000045776,
+        "hp_number": 12,
+        "families": [
+            "0",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "6c1f9910-eb1e-4c2b-95b4-c4dff7f6d446",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "maxAbsScaler();nystroem('poly',3.783720160104937,68,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3864527886579616
+        ],
+        "runtime": 41.92664098739624,
+        "hp_number": 16,
+        "families": [
+            "1",
+            "2",
+            "3",
+            "6"
+        ]
+    },
+    {
+        "id": "23aac7c5-67d2-42c6-8c11-60de32981922",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "maxAbsScaler();nystroem('poly',3.783720160104937,68,5,-0.255101474055488);pca(0.6086065440732548,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.2961573595866236
+        ],
+        "runtime": 12.884916543960571,
+        "hp_number": 14,
+        "families": [
+            "1",
+            "2",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "de3ec441-345f-4d70-8839-c910d39a9133",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "maxAbsScaler();nystroem('poly',3.783720160104937,68,5,-0.255101474055488);robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.41094499665256423
+        ],
+        "runtime": 16.067582368850708,
+        "hp_number": 14,
+        "families": [
+            "1",
+            "2",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "778b5f03-8450-4772-9b81-74b766c2c035",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "maxAbsScaler();fastICA(81,'deflation','arbitrary-variance','cube');pca(0.6086065440732548,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3603413531219063
+        ],
+        "runtime": 14.45750093460083,
+        "hp_number": 13,
+        "families": [
+            "1",
+            "3",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "f1645408-527a-4be3-86ee-4945256c4205",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "maxAbsScaler();fastICA(81,'deflation','arbitrary-variance','cube');robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3779519818168229
+        ],
+        "runtime": 18.052847623825073,
+        "hp_number": 13,
+        "families": [
+            "1",
+            "3",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "78ae6ab5-7bec-4b94-b014-aa5f157caa8c",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "maxAbsScaler();pca(0.6086065440732548,False);robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.25293077443592765
+        ],
+        "runtime": 10.471975803375244,
+        "hp_number": 11,
+        "families": [
+            "1",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "ace7ee31-ea6d-4105-bcbd-c9f818e0654d",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "nystroem('poly',3.783720160104937,68,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');pca(0.6086065440732548,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.37552518290334114
+        ],
+        "runtime": 49.73105502128601,
+        "hp_number": 18,
+        "families": [
+            "2",
+            "3",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "85ad0573-6809-4146-a52f-6e70b55bf3b0",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "nystroem('poly',3.783720160104937,68,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3796342595910617
+        ],
+        "runtime": 47.05909013748169,
+        "hp_number": 18,
+        "families": [
+            "2",
+            "3",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "edeb1b42-fdae-4d36-87b1-6858e05a80dd",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "nystroem('poly',3.783720160104937,68,5,-0.255101474055488);pca(0.6086065440732548,False);robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.2637163903099039
+        ],
+        "runtime": 12.110845804214478,
+        "hp_number": 16,
+        "families": [
+            "2",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "219115e0-dad1-4e63-bfa2-86d7b946ae5b",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "fastICA(81,'deflation','arbitrary-variance','cube');pca(0.6086065440732548,False);robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3517924338068415
+        ],
+        "runtime": 16.44422435760498,
+        "hp_number": 15,
+        "families": [
+            "3",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "0f45d48f-e03c-4150-801e-1a25848ed04f",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();nystroem('poly',3.783720160104937,68,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.38106420598855345
+        ],
+        "runtime": 50.87106537818909,
+        "hp_number": 17,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "6"
+        ]
+    },
+    {
+        "id": "05674c59-9a0b-4426-9e31-8777233facee",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();nystroem('poly',3.783720160104937,68,5,-0.255101474055488);pca(0.6086065440732548,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.2916029783983403
+        ],
+        "runtime": 14.006154298782349,
+        "hp_number": 15,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "e4fab400-f11a-4cf5-a3a8-28d81d1dd34f",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();nystroem('poly',3.783720160104937,68,5,-0.255101474055488);robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.4160263124779062
+        ],
+        "runtime": 16.455937385559082,
+        "hp_number": 15,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "a7ca509c-d33f-4fb5-8c11-d375b5e22016",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();fastICA(81,'deflation','arbitrary-variance','cube');pca(0.6086065440732548,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3606778625930246
+        ],
+        "runtime": 13.874841213226318,
+        "hp_number": 14,
+        "families": [
+            "0",
+            "1",
+            "3",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "41d97e97-a51b-471e-aba7-3827edfd2abf",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();fastICA(81,'deflation','arbitrary-variance','cube');robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.454683695788402
+        ],
+        "runtime": 16.711032390594482,
+        "hp_number": 14,
+        "families": [
+            "0",
+            "1",
+            "3",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "01b2e55c-aa73-4573-b4c1-b65a8b4be393",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();pca(0.6086065440732548,False);robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.31078753514314983
+        ],
+        "runtime": 8.509432077407837,
+        "hp_number": 12,
+        "families": [
+            "0",
+            "1",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "e44a0491-944f-48a6-b80d-5ac4890ac466",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);nystroem('poly',3.783720160104937,68,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');pca(0.6086065440732548,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.41896970230411396
+        ],
+        "runtime": 67.76674461364746,
+        "hp_number": 19,
+        "families": [
+            "0",
+            "2",
+            "3",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "46f1abb0-06cb-4e89-8332-9e485e89e0ef",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);nystroem('poly',3.783720160104937,68,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3829527103653275
+        ],
+        "runtime": 53.81324481964111,
+        "hp_number": 19,
+        "families": [
+            "0",
+            "2",
+            "3",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "969b1adb-b837-4469-a46f-f78166866bd9",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);nystroem('poly',3.783720160104937,68,5,-0.255101474055488);pca(0.6086065440732548,False);robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.26417129423212127
+        ],
+        "runtime": 14.3029465675354,
+        "hp_number": 17,
+        "families": [
+            "0",
+            "2",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "ffc0273b-4e7a-452b-acbe-6bd74fce8383",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);fastICA(81,'deflation','arbitrary-variance','cube');pca(0.6086065440732548,False);robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3874350456538985
+        ],
+        "runtime": 13.062505960464478,
+        "hp_number": 16,
+        "families": [
+            "0",
+            "3",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "745f3606-a59f-4d3b-9238-ed5ffbcdeeec",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "maxAbsScaler();nystroem('poly',3.783720160104937,68,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');pca(0.6086065440732548,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.430007853734074
+        ],
+        "runtime": 62.916767597198486,
+        "hp_number": 18,
+        "families": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "68f35e06-b02d-4a0e-9f98-735a059541b3",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "maxAbsScaler();nystroem('poly',3.783720160104937,68,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3864527886579616
+        ],
+        "runtime": 63.55503559112549,
+        "hp_number": 18,
+        "families": [
+            "1",
+            "2",
+            "3",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "974093a8-6371-4b0b-887a-29769ff6c3eb",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "maxAbsScaler();nystroem('poly',3.783720160104937,68,5,-0.255101474055488);pca(0.6086065440732548,False);robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.2961573595866236
+        ],
+        "runtime": 15.871703147888184,
+        "hp_number": 16,
+        "families": [
+            "1",
+            "2",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "2b03249e-92f0-4dd4-bc12-2cc2b7514dfd",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "maxAbsScaler();fastICA(81,'deflation','arbitrary-variance','cube');pca(0.6086065440732548,False);robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3603413531219063
+        ],
+        "runtime": 23.59143877029419,
+        "hp_number": 15,
+        "families": [
+            "1",
+            "3",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "5a6ea258-6dfc-4974-b207-7e39bf219d6d",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "nystroem('poly',3.783720160104937,68,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');pca(0.6086065440732548,False);robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.37552518290334114
+        ],
+        "runtime": 51.54049062728882,
+        "hp_number": 20,
+        "families": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "300842e9-0ddb-4665-b522-a1bc5b4bb088",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();nystroem('poly',3.783720160104937,68,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');pca(0.6086065440732548,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.44841889424928905
+        ],
+        "runtime": 49.42561173439026,
+        "hp_number": 19,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "1ceac9b8-4918-4569-b3d4-b51d30c63fd2",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();nystroem('poly',3.783720160104937,68,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.38106420598855345
+        ],
+        "runtime": 39.80623936653137,
+        "hp_number": 19,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "6787738a-8773-432e-a6c3-9b8c803b611f",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();nystroem('poly',3.783720160104937,68,5,-0.255101474055488);pca(0.6086065440732548,False);robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.2916029783983403
+        ],
+        "runtime": 12.957283973693848,
+        "hp_number": 17,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "2125ab53-9f27-42d8-9177-dc214e383951",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();fastICA(81,'deflation','arbitrary-variance','cube');pca(0.6086065440732548,False);robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3606778625930246
+        ],
+        "runtime": 17.859877109527588,
+        "hp_number": 16,
+        "families": [
+            "0",
+            "1",
+            "3",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "aa97c0e9-17a4-47d1-8b72-599e8b37344b",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);nystroem('poly',3.783720160104937,68,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');pca(0.6086065440732548,False);robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.41896970230411396
+        ],
+        "runtime": 45.23316144943237,
+        "hp_number": 21,
+        "families": [
+            "0",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "1375956a-8a78-4c6b-9b20-c9b8663bd1e5",
+        "parents_id": [
+            "cb66c231-79d1-4068-ba22-3511e94386e4"
+        ],
+        "pipeline": "maxAbsScaler();nystroem('poly',3.783720160104937,68,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');pca(0.6086065440732548,False);robustScaler(False,False);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.430007853734074
+        ],
+        "runtime": 39.031951904296875,
+        "hp_number": 20,
+        "families": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "b1eb9a1f-fd36-4441-bb30-4aafdb77164f",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.41121703529944725
+        ],
+        "runtime": 12.11305046081543,
+        "hp_number": 7,
+        "families": [
+            "6"
+        ]
+    },
+    {
+        "id": "4669fddf-095c-40a8-92ff-893ec397c63e",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.4027436586611112
+        ],
+        "runtime": 10.79287314414978,
+        "hp_number": 8,
+        "families": [
+            "0",
+            "6"
+        ]
+    },
+    {
+        "id": "d3a87611-bd4f-4592-ac0a-d8950d630aa0",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "maxAbsScaler();extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.41121703529944725
+        ],
+        "runtime": 12.294159412384033,
+        "hp_number": 7,
+        "families": [
+            "1",
+            "6"
+        ]
+    },
+    {
+        "id": "d76a9de9-4e5e-4c10-a46a-ead7c55c16b2",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "nystroem('poly',2.0514082208433195,56,5,-0.255101474055488);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3727442143636081
+        ],
+        "runtime": 9.747198343276978,
+        "hp_number": 12,
+        "families": [
+            "2",
+            "6"
+        ]
+    },
+    {
+        "id": "cec95060-dc00-40a8-baae-7d5620d34528",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "fastICA(81,'deflation','arbitrary-variance','cube');extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.39739546082499194
+        ],
+        "runtime": 14.492830276489258,
+        "hp_number": 11,
+        "families": [
+            "3",
+            "6"
+        ]
+    },
+    {
+        "id": "a1774c88-7b0d-4851-8fc6-af00badf0a28",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "pca(0.8947326171469987,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.2547206463416492
+        ],
+        "runtime": 9.35870909690857,
+        "hp_number": 9,
+        "families": [
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "fe3a3206-e8df-403a-9351-3a1946768d03",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "robustScaler(False,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.41121703529944725
+        ],
+        "runtime": 9.349337816238403,
+        "hp_number": 9,
+        "families": [
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "79b6601f-6537-4dee-a790-07eb373e81c1",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.40367816471191187
+        ],
+        "runtime": 11.242976188659668,
+        "hp_number": 8,
+        "families": [
+            "0",
+            "1",
+            "6"
+        ]
+    },
+    {
+        "id": "5c1020b6-12c9-4138-9241-a903cd980618",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);nystroem('poly',2.0514082208433195,56,5,-0.255101474055488);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.37769736961413136
+        ],
+        "runtime": 10.652141809463501,
+        "hp_number": 13,
+        "families": [
+            "0",
+            "2",
+            "6"
+        ]
+    },
+    {
+        "id": "6c482cb0-55cd-4fa8-8a8a-e294f26b1e4d",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);fastICA(81,'deflation','arbitrary-variance','cube');extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.41220011213045316
+        ],
+        "runtime": 16.17456078529358,
+        "hp_number": 12,
+        "families": [
+            "0",
+            "3",
+            "6"
+        ]
+    },
+    {
+        "id": "f24e8cc1-3f95-431a-aab5-6b12029ae668",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);pca(0.8947326171469987,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.2547206463416492
+        ],
+        "runtime": 11.103563785552979,
+        "hp_number": 10,
+        "families": [
+            "0",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "93c24e53-b560-4f5c-af9d-7b382490dc8d",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);robustScaler(False,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.40367816471191187
+        ],
+        "runtime": 14.603907585144043,
+        "hp_number": 10,
+        "families": [
+            "0",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "356fa5cf-586f-4938-bb09-6cf2af5a3a0c",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "maxAbsScaler();nystroem('poly',2.0514082208433195,56,5,-0.255101474055488);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.4187923406573445
+        ],
+        "runtime": 15.874817609786987,
+        "hp_number": 12,
+        "families": [
+            "1",
+            "2",
+            "6"
+        ]
+    },
+    {
+        "id": "2cb6b51f-9b5e-44f6-affb-f681c3bab0ca",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "maxAbsScaler();fastICA(81,'deflation','arbitrary-variance','cube');extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3779519818168229
+        ],
+        "runtime": 12.690221786499023,
+        "hp_number": 11,
+        "families": [
+            "1",
+            "3",
+            "6"
+        ]
+    },
+    {
+        "id": "81e696a1-7128-42a2-ba19-e4b6618f93b4",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "maxAbsScaler();pca(0.8947326171469987,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.377529827402386
+        ],
+        "runtime": 10.121381998062134,
+        "hp_number": 9,
+        "families": [
+            "1",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "76251522-b007-4a24-b96a-da76651a7835",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "maxAbsScaler();robustScaler(False,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.41121703529944725
+        ],
+        "runtime": 9.133569240570068,
+        "hp_number": 9,
+        "families": [
+            "1",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "5b68fd2a-433a-4c9f-94a5-cefc6a5e87e2",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "nystroem('poly',2.0514082208433195,56,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.36993525324785625
+        ],
+        "runtime": 28.540521144866943,
+        "hp_number": 16,
+        "families": [
+            "2",
+            "3",
+            "6"
+        ]
+    },
+    {
+        "id": "f4cd5371-67e9-42c9-9bf3-4a4c100f4f2d",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "nystroem('poly',2.0514082208433195,56,5,-0.255101474055488);pca(0.8947326171469987,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.26383726713227956
+        ],
+        "runtime": 9.408450841903687,
+        "hp_number": 14,
+        "families": [
+            "2",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "f868ed34-f42b-452d-a432-f6eee77839bd",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "nystroem('poly',2.0514082208433195,56,5,-0.255101474055488);robustScaler(False,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3727442143636081
+        ],
+        "runtime": 11.297732591629028,
+        "hp_number": 14,
+        "families": [
+            "2",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "f8e43187-39fd-4e81-9d56-4293bd490292",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.40298537038904775
+        ],
+        "runtime": 12.747434616088867,
+        "hp_number": 13,
+        "families": [
+            "3",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "86e15650-905e-4208-a8f9-5afeb7617ff7",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "fastICA(81,'deflation','arbitrary-variance','cube');robustScaler(False,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.39739546082499194
+        ],
+        "runtime": 11.48249888420105,
+        "hp_number": 13,
+        "families": [
+            "3",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "fc7e3170-7e83-4efd-a3f7-03ff7cc02809",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "pca(0.8947326171469987,True);robustScaler(False,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.2547206463416492
+        ],
+        "runtime": 7.7626776695251465,
+        "hp_number": 11,
+        "families": [
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "d82e5f1f-ca87-4c58-8acd-7d94caafc70d",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();nystroem('poly',2.0514082208433195,56,5,-0.255101474055488);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.41786085569913534
+        ],
+        "runtime": 11.164001703262329,
+        "hp_number": 13,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "6"
+        ]
+    },
+    {
+        "id": "6ca13916-05b1-44af-a3bf-919407976ab4",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();fastICA(81,'deflation','arbitrary-variance','cube');extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.454683695788402
+        ],
+        "runtime": 10.958280563354492,
+        "hp_number": 12,
+        "families": [
+            "0",
+            "1",
+            "3",
+            "6"
+        ]
+    },
+    {
+        "id": "b879325e-585b-4fd1-a81f-5415d83580cf",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();pca(0.8947326171469987,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3978612214405142
+        ],
+        "runtime": 9.504964828491211,
+        "hp_number": 10,
+        "families": [
+            "0",
+            "1",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "6dd7c510-815e-4d8b-9529-1ef3ac379688",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();robustScaler(False,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.40367816471191187
+        ],
+        "runtime": 8.662956476211548,
+        "hp_number": 10,
+        "families": [
+            "0",
+            "1",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "f2039b10-6c9e-4824-9ba4-d622364a34e5",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);nystroem('poly',2.0514082208433195,56,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3684568442442576
+        ],
+        "runtime": 32.185649394989014,
+        "hp_number": 17,
+        "families": [
+            "0",
+            "2",
+            "3",
+            "6"
+        ]
+    },
+    {
+        "id": "22da09db-f8a2-454c-8019-de55caa88156",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);nystroem('poly',2.0514082208433195,56,5,-0.255101474055488);pca(0.8947326171469987,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.26383726713227956
+        ],
+        "runtime": 13.7526113986969,
+        "hp_number": 15,
+        "families": [
+            "0",
+            "2",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "a1264315-bdf1-4892-a58f-58ef0828b8af",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);nystroem('poly',2.0514082208433195,56,5,-0.255101474055488);robustScaler(False,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.37769736961413136
+        ],
+        "runtime": 9.333136320114136,
+        "hp_number": 15,
+        "families": [
+            "0",
+            "2",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "6b5775e6-6551-4a8c-9a54-01e93541791e",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.4053709420176485
+        ],
+        "runtime": 14.934944152832031,
+        "hp_number": 14,
+        "families": [
+            "0",
+            "3",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "eb2e86e9-7391-4aa3-b607-e4c1c6ab82cf",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);fastICA(81,'deflation','arbitrary-variance','cube');robustScaler(False,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.41220011213045316
+        ],
+        "runtime": 11.453472375869751,
+        "hp_number": 14,
+        "families": [
+            "0",
+            "3",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "6a4b4fd1-6d78-4f52-8ecc-f4077bb3c6a7",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);pca(0.8947326171469987,True);robustScaler(False,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.2547206463416492
+        ],
+        "runtime": 9.334685564041138,
+        "hp_number": 12,
+        "families": [
+            "0",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "e685df3e-50df-4977-9058-6a3b36598655",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "maxAbsScaler();nystroem('poly',2.0514082208433195,56,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.39724782147547055
+        ],
+        "runtime": 38.820451736450195,
+        "hp_number": 16,
+        "families": [
+            "1",
+            "2",
+            "3",
+            "6"
+        ]
+    },
+    {
+        "id": "a62a3cfb-3d28-4aca-a7cb-22c3b52b0582",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "maxAbsScaler();nystroem('poly',2.0514082208433195,56,5,-0.255101474055488);pca(0.8947326171469987,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.386109872514252
+        ],
+        "runtime": 11.56795597076416,
+        "hp_number": 14,
+        "families": [
+            "1",
+            "2",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "f595a028-a329-4ae5-912b-92c58ae1ddba",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "maxAbsScaler();nystroem('poly',2.0514082208433195,56,5,-0.255101474055488);robustScaler(False,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.4187923406573445
+        ],
+        "runtime": 16.938368558883667,
+        "hp_number": 14,
+        "families": [
+            "1",
+            "2",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "e921e7df-e8e0-4266-a624-fd02f0dd645f",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "maxAbsScaler();fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.41067193084009335
+        ],
+        "runtime": 16.019240617752075,
+        "hp_number": 13,
+        "families": [
+            "1",
+            "3",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "da0d586d-60ee-40aa-b8fc-d519fd57543f",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "maxAbsScaler();fastICA(81,'deflation','arbitrary-variance','cube');robustScaler(False,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3779519818168229
+        ],
+        "runtime": 17.913726329803467,
+        "hp_number": 13,
+        "families": [
+            "1",
+            "3",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "06d0ce80-fe2a-46f4-a53e-efdd7611d023",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "maxAbsScaler();pca(0.8947326171469987,True);robustScaler(False,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.377529827402386
+        ],
+        "runtime": 9.571315050125122,
+        "hp_number": 11,
+        "families": [
+            "1",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "3d6b13dd-385f-471a-a784-93d71adb5964",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "nystroem('poly',2.0514082208433195,56,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.39902465482918054
+        ],
+        "runtime": 35.272252321243286,
+        "hp_number": 18,
+        "families": [
+            "2",
+            "3",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "5832c07a-ea1a-4d71-9207-020a536fa7a6",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "nystroem('poly',2.0514082208433195,56,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');robustScaler(False,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.36993525324785625
+        ],
+        "runtime": 41.548938512802124,
+        "hp_number": 18,
+        "families": [
+            "2",
+            "3",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "983b3df7-7cec-44b6-900f-f6b810a91f8a",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "nystroem('poly',2.0514082208433195,56,5,-0.255101474055488);pca(0.8947326171469987,True);robustScaler(False,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.26383726713227956
+        ],
+        "runtime": 10.056309700012207,
+        "hp_number": 16,
+        "families": [
+            "2",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "7f2c5ce6-4e20-4e9e-bbfc-c46d1d6fd312",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);robustScaler(False,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.40298537038904775
+        ],
+        "runtime": 15.881393194198608,
+        "hp_number": 15,
+        "families": [
+            "3",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "70256314-482a-4ccf-a89a-927d82e7fb68",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();nystroem('poly',2.0514082208433195,56,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3889208097544131
+        ],
+        "runtime": 34.408931732177734,
+        "hp_number": 17,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "6"
+        ]
+    },
+    {
+        "id": "2eec1583-a72b-48e8-a8dd-09b4d3330f70",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();nystroem('poly',2.0514082208433195,56,5,-0.255101474055488);pca(0.8947326171469987,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.386413685124383
+        ],
+        "runtime": 14.267755270004272,
+        "hp_number": 15,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "da42eb6b-9480-4336-9097-f3a690ac3a36",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();nystroem('poly',2.0514082208433195,56,5,-0.255101474055488);robustScaler(False,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.41818721363522354
+        ],
+        "runtime": 15.761525630950928,
+        "hp_number": 15,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "21592f7f-27c9-4511-b3ef-6ab9d3d99029",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.4061273881670536
+        ],
+        "runtime": 14.538543701171875,
+        "hp_number": 14,
+        "families": [
+            "0",
+            "1",
+            "3",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "05c8bd87-3eb2-4939-815b-8f8e8f1680d6",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();fastICA(81,'deflation','arbitrary-variance','cube');robustScaler(False,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.454683695788402
+        ],
+        "runtime": 14.920360088348389,
+        "hp_number": 14,
+        "families": [
+            "0",
+            "1",
+            "3",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "7cedc036-2de1-4c63-bc85-0a355ca3dd26",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();pca(0.8947326171469987,True);robustScaler(False,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3978612214405142
+        ],
+        "runtime": 13.1324622631073,
+        "hp_number": 12,
+        "families": [
+            "0",
+            "1",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "6d64bbf4-baf9-48f3-9885-d83cf9f2a6e1",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);nystroem('poly',2.0514082208433195,56,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.4061795723215754
+        ],
+        "runtime": 42.875038385391235,
+        "hp_number": 19,
+        "families": [
+            "0",
+            "2",
+            "3",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "e2b1da1c-aa31-4a51-b0ee-f112b3c2674e",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);nystroem('poly',2.0514082208433195,56,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');robustScaler(False,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3684568442442576
+        ],
+        "runtime": 53.75133299827576,
+        "hp_number": 19,
+        "families": [
+            "0",
+            "2",
+            "3",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "64868522-dfa2-4faf-8c15-5e652f13a24d",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);nystroem('poly',2.0514082208433195,56,5,-0.255101474055488);pca(0.8947326171469987,True);robustScaler(False,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.26383726713227956
+        ],
+        "runtime": 15.093914270401001,
+        "hp_number": 17,
+        "families": [
+            "0",
+            "2",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "53cbca01-b826-4d3c-8290-babb6a1cf622",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);robustScaler(False,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.4053709420176485
+        ],
+        "runtime": 14.82743525505066,
+        "hp_number": 16,
+        "families": [
+            "0",
+            "3",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "2676c5df-b05e-410d-9efe-e53088539050",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "maxAbsScaler();nystroem('poly',2.0514082208433195,56,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.41335900830188627
+        ],
+        "runtime": 50.6573703289032,
+        "hp_number": 18,
+        "families": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "b083ff22-58fe-4a49-b829-ef6f9ab75329",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "maxAbsScaler();nystroem('poly',2.0514082208433195,56,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');robustScaler(False,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.39724782147547055
+        ],
+        "runtime": 48.238935232162476,
+        "hp_number": 18,
+        "families": [
+            "1",
+            "2",
+            "3",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "a130e456-e104-426c-af42-836555fcd6aa",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "maxAbsScaler();nystroem('poly',2.0514082208433195,56,5,-0.255101474055488);pca(0.8947326171469987,True);robustScaler(False,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.386109872514252
+        ],
+        "runtime": 16.660581588745117,
+        "hp_number": 16,
+        "families": [
+            "1",
+            "2",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "d5419dc6-ad70-4c50-a8ed-eef5d6a4d701",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "maxAbsScaler();fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);robustScaler(False,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.41067193084009335
+        ],
+        "runtime": 22.299041271209717,
+        "hp_number": 15,
+        "families": [
+            "1",
+            "3",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "18ae9b2c-0e20-431f-85a8-4e40f2fcf0f9",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "nystroem('poly',2.0514082208433195,56,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);robustScaler(False,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.39902465482918054
+        ],
+        "runtime": 48.41049838066101,
+        "hp_number": 20,
+        "families": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "3e7c455a-da1e-4ac8-afda-4f3d94c6c935",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();nystroem('poly',2.0514082208433195,56,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.41292676735422196
+        ],
+        "runtime": 43.10458302497864,
+        "hp_number": 19,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "id": "2080be04-b747-4458-ad41-171fc511da53",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();nystroem('poly',2.0514082208433195,56,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');robustScaler(False,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.3889208097544131
+        ],
+        "runtime": 45.6508948802948,
+        "hp_number": 19,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "f84c3184-88ad-4d56-bc80-6edab0170d5e",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();nystroem('poly',2.0514082208433195,56,5,-0.255101474055488);pca(0.8947326171469987,True);robustScaler(False,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.386413685124383
+        ],
+        "runtime": 18.131142616271973,
+        "hp_number": 17,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "e236febc-420b-41f2-a483-0b0c6710f690",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);maxAbsScaler();fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);robustScaler(False,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.4061273881670536
+        ],
+        "runtime": 19.20167827606201,
+        "hp_number": 16,
+        "families": [
+            "0",
+            "1",
+            "3",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "086333ec-485a-4859-b83c-ea588ea24cdf",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "selectFwe(0.009081526616090027);nystroem('poly',2.0514082208433195,56,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);robustScaler(False,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.4061795723215754
+        ],
+        "runtime": 42.03055787086487,
+        "hp_number": 21,
+        "families": [
+            "0",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "id": "1e38f15d-f67d-4882-898b-909a6a8e2e03",
+        "parents_id": [
+            "75a7a361-6867-4a1e-95c8-018a4378f8eb"
+        ],
+        "pipeline": "maxAbsScaler();nystroem('poly',2.0514082208433195,56,5,-0.255101474055488);fastICA(81,'deflation','arbitrary-variance','cube');pca(0.8947326171469987,True);robustScaler(False,True);extraTreesClassifier(50,'gini','sqrt',7,10,False,'balanced_subsample')",
+        "fitness": [
+            0.41335900830188627
+        ],
+        "runtime": 30.197947025299072,
+        "hp_number": 20,
+        "families": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+        ]
+    }
+]

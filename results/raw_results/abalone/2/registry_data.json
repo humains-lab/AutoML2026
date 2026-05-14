@@ -1,0 +1,1352 @@
+[
+    {
+        "id": "60fba4b0-42b2-4f07-bded-86466b8c5e12",
+        "parents_id": [],
+        "pipeline": "selectPercentile(30.932378064694717);fastICA(60,'parallel','unit-variance','logcosh');robustScaler(False,True);minMaxScaler();randomForest(96,'entropy',0.8679387485297195,17,18,True,'balanced')",
+        "fitness": [
+            0.21124038615932403
+        ],
+        "runtime": 13.517489671707153,
+        "hp_number": 14,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "4f6ae51d-b96a-47ab-b12b-bca5a24c25eb",
+        "parents_id": [],
+        "pipeline": "selectPercentile(74.52506113033547);fastICA(94,'parallel','unit-variance','exp');robustScaler(False,True);minMaxScaler();randomForest(13,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.2342689911819677
+        ],
+        "runtime": 6.966577053070068,
+        "hp_number": 14,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "3dfd3bc9-7e74-4b45-bdb0-93219d2706d0",
+        "parents_id": [],
+        "pipeline": "selectPercentile(74.52506113033547);fastICA(94,'parallel','unit-variance','logcosh');robustScaler(False,True);minMaxScaler();randomForest(96,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.22825348260158274
+        ],
+        "runtime": 16.911598920822144,
+        "hp_number": 14,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "f94627d9-d1f0-4227-9848-f7e3a5442cf0",
+        "parents_id": [],
+        "pipeline": "selectPercentile(74.52506113033547);fastICA(60,'parallel','unit-variance','logcosh');robustScaler(False,True);minMaxScaler();randomForest(96,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.22825348260158274
+        ],
+        "runtime": 29.29759383201599,
+        "hp_number": 14,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "d3d9cf75-bca4-4aca-82f2-430157add56e",
+        "parents_id": [],
+        "pipeline": "selectPercentile(74.52506113033547);fastICA(8,'parallel','arbitrary-variance','cube');robustScaler(False,True);minMaxScaler();randomForest(96,'entropy',0.8679387485297195,17,18,True,'balanced')",
+        "fitness": [
+            0.23912891118954746
+        ],
+        "runtime": 26.829801321029663,
+        "hp_number": 14,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "3a2c5c49-cb5a-496d-a20d-fa25aac78555",
+        "parents_id": [
+            "60fba4b0-42b2-4f07-bded-86466b8c5e12"
+        ],
+        "pipeline": "randomForest(96,'entropy',0.8679387485297195,17,18,True,'balanced')",
+        "fitness": [
+            0.18345852067928026
+        ],
+        "runtime": 16.32563614845276,
+        "hp_number": 7,
+        "families": [
+            "4"
+        ]
+    },
+    {
+        "id": "a04a0847-ebf5-4d77-a7fb-c657addeb601",
+        "parents_id": [
+            "60fba4b0-42b2-4f07-bded-86466b8c5e12"
+        ],
+        "pipeline": "selectPercentile(30.932378064694717);randomForest(96,'entropy',0.8679387485297195,17,18,True,'balanced')",
+        "fitness": [
+            0.18460728014246444
+        ],
+        "runtime": 6.803456544876099,
+        "hp_number": 8,
+        "families": [
+            "0",
+            "4"
+        ]
+    },
+    {
+        "id": "4d835070-9153-496e-aded-74ac92ad452b",
+        "parents_id": [
+            "60fba4b0-42b2-4f07-bded-86466b8c5e12"
+        ],
+        "pipeline": "fastICA(60,'parallel','unit-variance','logcosh');randomForest(96,'entropy',0.8679387485297195,17,18,True,'balanced')",
+        "fitness": [
+            0.19126499238967803
+        ],
+        "runtime": 26.820980310440063,
+        "hp_number": 11,
+        "families": [
+            "1",
+            "4"
+        ]
+    },
+    {
+        "id": "fe8e16fe-4ede-46c6-b9a6-6af59852ff16",
+        "parents_id": [
+            "60fba4b0-42b2-4f07-bded-86466b8c5e12"
+        ],
+        "pipeline": "robustScaler(False,True);randomForest(96,'entropy',0.8679387485297195,17,18,True,'balanced')",
+        "fitness": [
+            0.18394817330307922
+        ],
+        "runtime": 15.435404062271118,
+        "hp_number": 9,
+        "families": [
+            "2",
+            "4"
+        ]
+    },
+    {
+        "id": "56998150-a7c3-4605-b942-cc6bd046ae51",
+        "parents_id": [
+            "60fba4b0-42b2-4f07-bded-86466b8c5e12"
+        ],
+        "pipeline": "minMaxScaler();randomForest(96,'entropy',0.8679387485297195,17,18,True,'balanced')",
+        "fitness": [
+            0.18358036478309678
+        ],
+        "runtime": 17.16873550415039,
+        "hp_number": 7,
+        "families": [
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "22939028-5bf1-413d-a519-becfa9264a06",
+        "parents_id": [
+            "60fba4b0-42b2-4f07-bded-86466b8c5e12"
+        ],
+        "pipeline": "selectPercentile(30.932378064694717);fastICA(60,'parallel','unit-variance','logcosh');randomForest(96,'entropy',0.8679387485297195,17,18,True,'balanced')",
+        "fitness": [
+            0.20254953467385448
+        ],
+        "runtime": 15.261364221572876,
+        "hp_number": 12,
+        "families": [
+            "0",
+            "1",
+            "4"
+        ]
+    },
+    {
+        "id": "90af1f06-b738-4889-96a6-444cfe86b5c8",
+        "parents_id": [
+            "60fba4b0-42b2-4f07-bded-86466b8c5e12"
+        ],
+        "pipeline": "selectPercentile(30.932378064694717);robustScaler(False,True);randomForest(96,'entropy',0.8679387485297195,17,18,True,'balanced')",
+        "fitness": [
+            0.18460728014246444
+        ],
+        "runtime": 5.784399032592773,
+        "hp_number": 10,
+        "families": [
+            "0",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "id": "74382948-b084-42ca-a668-c605286ad216",
+        "parents_id": [
+            "60fba4b0-42b2-4f07-bded-86466b8c5e12"
+        ],
+        "pipeline": "selectPercentile(30.932378064694717);minMaxScaler();randomForest(96,'entropy',0.8679387485297195,17,18,True,'balanced')",
+        "fitness": [
+            0.18444321123352267
+        ],
+        "runtime": 7.53071403503418,
+        "hp_number": 8,
+        "families": [
+            "0",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "af9803e7-79b7-4f4d-8838-4f6b35a3ef7d",
+        "parents_id": [
+            "60fba4b0-42b2-4f07-bded-86466b8c5e12"
+        ],
+        "pipeline": "fastICA(60,'parallel','unit-variance','logcosh');robustScaler(False,True);randomForest(96,'entropy',0.8679387485297195,17,18,True,'balanced')",
+        "fitness": [
+            0.19126499238967803
+        ],
+        "runtime": 27.421350717544556,
+        "hp_number": 13,
+        "families": [
+            "1",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "id": "1a26dcb4-cb3e-4c5d-9aa4-07803f617c21",
+        "parents_id": [
+            "60fba4b0-42b2-4f07-bded-86466b8c5e12"
+        ],
+        "pipeline": "fastICA(60,'parallel','unit-variance','logcosh');minMaxScaler();randomForest(96,'entropy',0.8679387485297195,17,18,True,'balanced')",
+        "fitness": [
+            0.19126499238967803
+        ],
+        "runtime": 26.757896900177002,
+        "hp_number": 11,
+        "families": [
+            "1",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "50634de4-5be6-414f-ad98-e7d813244920",
+        "parents_id": [
+            "60fba4b0-42b2-4f07-bded-86466b8c5e12"
+        ],
+        "pipeline": "robustScaler(False,True);minMaxScaler();randomForest(96,'entropy',0.8679387485297195,17,18,True,'balanced')",
+        "fitness": [
+            0.18358036478309678
+        ],
+        "runtime": 15.343814611434937,
+        "hp_number": 9,
+        "families": [
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "26c41094-9cec-4325-af4f-1454ed2664ba",
+        "parents_id": [
+            "60fba4b0-42b2-4f07-bded-86466b8c5e12"
+        ],
+        "pipeline": "selectPercentile(30.932378064694717);fastICA(60,'parallel','unit-variance','logcosh');robustScaler(False,True);randomForest(96,'entropy',0.8679387485297195,17,18,True,'balanced')",
+        "fitness": [
+            0.20229700942132922
+        ],
+        "runtime": 15.051888942718506,
+        "hp_number": 14,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "id": "494e36fe-4dcd-4d38-850f-2f8d01e6fe83",
+        "parents_id": [
+            "60fba4b0-42b2-4f07-bded-86466b8c5e12"
+        ],
+        "pipeline": "selectPercentile(30.932378064694717);fastICA(60,'parallel','unit-variance','logcosh');minMaxScaler();randomForest(96,'entropy',0.8679387485297195,17,18,True,'balanced')",
+        "fitness": [
+            0.20229700942132922
+        ],
+        "runtime": 14.514230728149414,
+        "hp_number": 12,
+        "families": [
+            "0",
+            "1",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "89412dd5-4ff1-4e45-bd60-7a82d8c46243",
+        "parents_id": [
+            "60fba4b0-42b2-4f07-bded-86466b8c5e12"
+        ],
+        "pipeline": "selectPercentile(30.932378064694717);robustScaler(False,True);minMaxScaler();randomForest(96,'entropy',0.8679387485297195,17,18,True,'balanced')",
+        "fitness": [
+            0.18444321123352267
+        ],
+        "runtime": 6.496601343154907,
+        "hp_number": 10,
+        "families": [
+            "0",
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "0cdc9ce1-e850-47fa-bb15-2e034a1d2ede",
+        "parents_id": [
+            "60fba4b0-42b2-4f07-bded-86466b8c5e12"
+        ],
+        "pipeline": "fastICA(60,'parallel','unit-variance','logcosh');robustScaler(False,True);minMaxScaler();randomForest(96,'entropy',0.8679387485297195,17,18,True,'balanced')",
+        "fitness": [
+            0.19126499238967803
+        ],
+        "runtime": 29.28213095664978,
+        "hp_number": 13,
+        "families": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "52bb98ef-0b1b-4e98-8afa-35ce475bb649",
+        "parents_id": [
+            "4f6ae51d-b96a-47ab-b12b-bca5a24c25eb"
+        ],
+        "pipeline": "randomForest(13,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.17657039042989844
+        ],
+        "runtime": 6.225545644760132,
+        "hp_number": 7,
+        "families": [
+            "4"
+        ]
+    },
+    {
+        "id": "e484c812-e149-4840-8429-39cd3572bedf",
+        "parents_id": [
+            "4f6ae51d-b96a-47ab-b12b-bca5a24c25eb"
+        ],
+        "pipeline": "selectPercentile(74.52506113033547);randomForest(13,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.16572605910038057
+        ],
+        "runtime": 5.598758697509766,
+        "hp_number": 8,
+        "families": [
+            "0",
+            "4"
+        ]
+    },
+    {
+        "id": "04e34997-25c3-46e4-b355-ea7e1061f22a",
+        "parents_id": [
+            "4f6ae51d-b96a-47ab-b12b-bca5a24c25eb"
+        ],
+        "pipeline": "fastICA(94,'parallel','unit-variance','exp');randomForest(13,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.18665580576014654
+        ],
+        "runtime": 8.701680183410645,
+        "hp_number": 11,
+        "families": [
+            "1",
+            "4"
+        ]
+    },
+    {
+        "id": "513c6b48-eb47-4d49-8664-231f14139c7b",
+        "parents_id": [
+            "4f6ae51d-b96a-47ab-b12b-bca5a24c25eb"
+        ],
+        "pipeline": "robustScaler(False,True);randomForest(13,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.1762215860144845
+        ],
+        "runtime": 5.5912580490112305,
+        "hp_number": 9,
+        "families": [
+            "2",
+            "4"
+        ]
+    },
+    {
+        "id": "c92d05ef-be99-44b1-b587-078a6fdb135f",
+        "parents_id": [
+            "4f6ae51d-b96a-47ab-b12b-bca5a24c25eb"
+        ],
+        "pipeline": "minMaxScaler();randomForest(13,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.1760029969619034
+        ],
+        "runtime": 5.464720964431763,
+        "hp_number": 7,
+        "families": [
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "40a0b2b8-6b76-46f5-b737-e8536a1b3024",
+        "parents_id": [
+            "4f6ae51d-b96a-47ab-b12b-bca5a24c25eb"
+        ],
+        "pipeline": "selectPercentile(74.52506113033547);fastICA(94,'parallel','unit-variance','exp');randomForest(13,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.1964307843845242
+        ],
+        "runtime": 9.545152187347412,
+        "hp_number": 12,
+        "families": [
+            "0",
+            "1",
+            "4"
+        ]
+    },
+    {
+        "id": "74c1cae2-5f24-44d9-8e91-310c98c02a61",
+        "parents_id": [
+            "4f6ae51d-b96a-47ab-b12b-bca5a24c25eb"
+        ],
+        "pipeline": "selectPercentile(74.52506113033547);robustScaler(False,True);randomForest(13,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.16511519844811204
+        ],
+        "runtime": 5.496598243713379,
+        "hp_number": 10,
+        "families": [
+            "0",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "id": "fd82707c-978a-4ff7-b43a-e82ea088cc0f",
+        "parents_id": [
+            "4f6ae51d-b96a-47ab-b12b-bca5a24c25eb"
+        ],
+        "pipeline": "selectPercentile(74.52506113033547);minMaxScaler();randomForest(13,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.1655487812715876
+        ],
+        "runtime": 5.56955099105835,
+        "hp_number": 8,
+        "families": [
+            "0",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "6c3f4605-a41f-4e1e-b4b5-cc9229c9cba4",
+        "parents_id": [
+            "4f6ae51d-b96a-47ab-b12b-bca5a24c25eb"
+        ],
+        "pipeline": "fastICA(94,'parallel','unit-variance','exp');robustScaler(False,True);randomForest(13,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.18665580576014654
+        ],
+        "runtime": 9.255252838134766,
+        "hp_number": 13,
+        "families": [
+            "1",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "id": "aa2c92c0-fa05-4c4b-9145-7a85a8401097",
+        "parents_id": [
+            "4f6ae51d-b96a-47ab-b12b-bca5a24c25eb"
+        ],
+        "pipeline": "fastICA(94,'parallel','unit-variance','exp');minMaxScaler();randomForest(13,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.18665580576014654
+        ],
+        "runtime": 8.108232736587524,
+        "hp_number": 11,
+        "families": [
+            "1",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "bb8822cc-cd97-4c77-ab9a-86d7d20b7c97",
+        "parents_id": [
+            "4f6ae51d-b96a-47ab-b12b-bca5a24c25eb"
+        ],
+        "pipeline": "robustScaler(False,True);minMaxScaler();randomForest(13,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.1760029969619034
+        ],
+        "runtime": 5.516017436981201,
+        "hp_number": 9,
+        "families": [
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "9165ff77-a1f9-424a-8f3f-c44d1142a8af",
+        "parents_id": [
+            "4f6ae51d-b96a-47ab-b12b-bca5a24c25eb"
+        ],
+        "pipeline": "selectPercentile(74.52506113033547);fastICA(94,'parallel','unit-variance','exp');robustScaler(False,True);randomForest(13,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.1964307843845242
+        ],
+        "runtime": 9.844698190689087,
+        "hp_number": 14,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "id": "0d361e66-33f0-4e72-b5aa-f22c76787072",
+        "parents_id": [
+            "4f6ae51d-b96a-47ab-b12b-bca5a24c25eb"
+        ],
+        "pipeline": "selectPercentile(74.52506113033547);fastICA(94,'parallel','unit-variance','exp');minMaxScaler();randomForest(13,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.19610765616755838
+        ],
+        "runtime": 9.070698738098145,
+        "hp_number": 12,
+        "families": [
+            "0",
+            "1",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "ad3b3831-66ef-449e-8c11-60cc57b80f41",
+        "parents_id": [
+            "4f6ae51d-b96a-47ab-b12b-bca5a24c25eb"
+        ],
+        "pipeline": "selectPercentile(74.52506113033547);robustScaler(False,True);minMaxScaler();randomForest(13,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.1655487812715876
+        ],
+        "runtime": 5.276351451873779,
+        "hp_number": 10,
+        "families": [
+            "0",
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "5ea02d74-4652-44fc-9547-9399952e358f",
+        "parents_id": [
+            "4f6ae51d-b96a-47ab-b12b-bca5a24c25eb"
+        ],
+        "pipeline": "fastICA(94,'parallel','unit-variance','exp');robustScaler(False,True);minMaxScaler();randomForest(13,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.18665580576014654
+        ],
+        "runtime": 8.466871500015259,
+        "hp_number": 13,
+        "families": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "069237a9-fa8d-46e4-9ba0-ebd6171beaa4",
+        "parents_id": [
+            "3dfd3bc9-7e74-4b45-bdb0-93219d2706d0"
+        ],
+        "pipeline": "randomForest(96,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.1850203339202388
+        ],
+        "runtime": 18.009085655212402,
+        "hp_number": 7,
+        "families": [
+            "4"
+        ]
+    },
+    {
+        "id": "325a9ce2-e5e6-43a1-a081-2bfe9ff340bd",
+        "parents_id": [
+            "3dfd3bc9-7e74-4b45-bdb0-93219d2706d0"
+        ],
+        "pipeline": "selectPercentile(74.52506113033547);randomForest(96,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.18065132277487655
+        ],
+        "runtime": 15.553174495697021,
+        "hp_number": 8,
+        "families": [
+            "0",
+            "4"
+        ]
+    },
+    {
+        "id": "671c6780-a47f-4674-a919-bc0ab128f6a6",
+        "parents_id": [
+            "3dfd3bc9-7e74-4b45-bdb0-93219d2706d0"
+        ],
+        "pipeline": "fastICA(94,'parallel','unit-variance','logcosh');randomForest(96,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.1817210612499101
+        ],
+        "runtime": 29.215221643447876,
+        "hp_number": 11,
+        "families": [
+            "1",
+            "4"
+        ]
+    },
+    {
+        "id": "2a03779e-2daf-4b76-ac7e-4858f25a38eb",
+        "parents_id": [
+            "3dfd3bc9-7e74-4b45-bdb0-93219d2706d0"
+        ],
+        "pipeline": "robustScaler(False,True);randomForest(96,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.18490946917522771
+        ],
+        "runtime": 18.899389505386353,
+        "hp_number": 9,
+        "families": [
+            "2",
+            "4"
+        ]
+    },
+    {
+        "id": "18b52c5d-312c-4912-846e-c734124fbff3",
+        "parents_id": [
+            "3dfd3bc9-7e74-4b45-bdb0-93219d2706d0"
+        ],
+        "pipeline": "minMaxScaler();randomForest(96,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.18476035099003435
+        ],
+        "runtime": 18.624188899993896,
+        "hp_number": 7,
+        "families": [
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "4f138d85-f8e7-4c9c-bb82-95a4e7dc9173",
+        "parents_id": [
+            "3dfd3bc9-7e74-4b45-bdb0-93219d2706d0"
+        ],
+        "pipeline": "selectPercentile(74.52506113033547);fastICA(94,'parallel','unit-variance','logcosh');randomForest(96,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.20647107085552746
+        ],
+        "runtime": 30.855973482131958,
+        "hp_number": 12,
+        "families": [
+            "0",
+            "1",
+            "4"
+        ]
+    },
+    {
+        "id": "f4159019-785e-4fae-86f4-ac5e9998fa4b",
+        "parents_id": [
+            "3dfd3bc9-7e74-4b45-bdb0-93219d2706d0"
+        ],
+        "pipeline": "selectPercentile(74.52506113033547);robustScaler(False,True);randomForest(96,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.1810160814729686
+        ],
+        "runtime": 15.641618728637695,
+        "hp_number": 10,
+        "families": [
+            "0",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "id": "12f8b5af-e76b-4474-bbe1-fc0edccc7c31",
+        "parents_id": [
+            "3dfd3bc9-7e74-4b45-bdb0-93219d2706d0"
+        ],
+        "pipeline": "selectPercentile(74.52506113033547);minMaxScaler();randomForest(96,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.18112831491853537
+        ],
+        "runtime": 15.336616277694702,
+        "hp_number": 8,
+        "families": [
+            "0",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "db9aedd7-9c85-4e9a-8abe-3bd9c96b88f9",
+        "parents_id": [
+            "3dfd3bc9-7e74-4b45-bdb0-93219d2706d0"
+        ],
+        "pipeline": "fastICA(94,'parallel','unit-variance','logcosh');robustScaler(False,True);randomForest(96,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.1817210612499101
+        ],
+        "runtime": 28.156782865524292,
+        "hp_number": 13,
+        "families": [
+            "1",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "id": "134d7f83-9e01-4280-a901-e48c5fb7fa65",
+        "parents_id": [
+            "3dfd3bc9-7e74-4b45-bdb0-93219d2706d0"
+        ],
+        "pipeline": "fastICA(94,'parallel','unit-variance','logcosh');minMaxScaler();randomForest(96,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.1817210612499101
+        ],
+        "runtime": 28.239851236343384,
+        "hp_number": 11,
+        "families": [
+            "1",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "4f50e0ca-aefa-4045-a9fc-4be19eff7c7b",
+        "parents_id": [
+            "3dfd3bc9-7e74-4b45-bdb0-93219d2706d0"
+        ],
+        "pipeline": "robustScaler(False,True);minMaxScaler();randomForest(96,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.18476035099003435
+        ],
+        "runtime": 15.826035976409912,
+        "hp_number": 9,
+        "families": [
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "39c80ce9-a03a-41bf-9eca-f55379736499",
+        "parents_id": [
+            "3dfd3bc9-7e74-4b45-bdb0-93219d2706d0"
+        ],
+        "pipeline": "selectPercentile(74.52506113033547);fastICA(94,'parallel','unit-variance','logcosh');robustScaler(False,True);randomForest(96,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.20647107085552746
+        ],
+        "runtime": 31.866106033325195,
+        "hp_number": 14,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "id": "a7bb658d-eb3c-4476-860f-3a2f6c908ed2",
+        "parents_id": [
+            "3dfd3bc9-7e74-4b45-bdb0-93219d2706d0"
+        ],
+        "pipeline": "selectPercentile(74.52506113033547);fastICA(94,'parallel','unit-variance','logcosh');minMaxScaler();randomForest(96,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.20647107085552746
+        ],
+        "runtime": 31.23344397544861,
+        "hp_number": 12,
+        "families": [
+            "0",
+            "1",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "037104ab-7880-42d6-983a-02f9a2ae8f55",
+        "parents_id": [
+            "3dfd3bc9-7e74-4b45-bdb0-93219d2706d0"
+        ],
+        "pipeline": "selectPercentile(74.52506113033547);robustScaler(False,True);minMaxScaler();randomForest(96,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.18112831491853537
+        ],
+        "runtime": 15.627791166305542,
+        "hp_number": 10,
+        "families": [
+            "0",
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "70353e8f-ed53-4927-82fa-1b26e1802348",
+        "parents_id": [
+            "3dfd3bc9-7e74-4b45-bdb0-93219d2706d0"
+        ],
+        "pipeline": "fastICA(94,'parallel','unit-variance','logcosh');robustScaler(False,True);minMaxScaler();randomForest(96,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.1817210612499101
+        ],
+        "runtime": 27.726534366607666,
+        "hp_number": 13,
+        "families": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "eb308928-d75c-4ca7-ac9d-45afd90c960e",
+        "parents_id": [
+            "f94627d9-d1f0-4227-9848-f7e3a5442cf0"
+        ],
+        "pipeline": "randomForest(96,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.1850203339202388
+        ],
+        "runtime": 18.738640546798706,
+        "hp_number": 7,
+        "families": [
+            "4"
+        ]
+    },
+    {
+        "id": "2e9b8bbd-5927-46fa-ab80-7cf6478b72ea",
+        "parents_id": [
+            "f94627d9-d1f0-4227-9848-f7e3a5442cf0"
+        ],
+        "pipeline": "selectPercentile(74.52506113033547);randomForest(96,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.18065132277487655
+        ],
+        "runtime": 16.76990580558777,
+        "hp_number": 8,
+        "families": [
+            "0",
+            "4"
+        ]
+    },
+    {
+        "id": "2d3b7e45-915f-4281-81c8-ccd06325d8a0",
+        "parents_id": [
+            "f94627d9-d1f0-4227-9848-f7e3a5442cf0"
+        ],
+        "pipeline": "fastICA(60,'parallel','unit-variance','logcosh');randomForest(96,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.1817210612499101
+        ],
+        "runtime": 26.47185254096985,
+        "hp_number": 11,
+        "families": [
+            "1",
+            "4"
+        ]
+    },
+    {
+        "id": "d7ad8d84-19d3-49c8-87f0-ef571b2bf3bd",
+        "parents_id": [
+            "f94627d9-d1f0-4227-9848-f7e3a5442cf0"
+        ],
+        "pipeline": "robustScaler(False,True);randomForest(96,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.18490946917522771
+        ],
+        "runtime": 16.546590566635132,
+        "hp_number": 9,
+        "families": [
+            "2",
+            "4"
+        ]
+    },
+    {
+        "id": "db9ce90d-8928-4c94-8d68-6c5e9013a5c7",
+        "parents_id": [
+            "f94627d9-d1f0-4227-9848-f7e3a5442cf0"
+        ],
+        "pipeline": "minMaxScaler();randomForest(96,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.18476035099003435
+        ],
+        "runtime": 16.108471155166626,
+        "hp_number": 7,
+        "families": [
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "7706e937-751d-4e27-afc9-38b7441c516e",
+        "parents_id": [
+            "f94627d9-d1f0-4227-9848-f7e3a5442cf0"
+        ],
+        "pipeline": "selectPercentile(74.52506113033547);fastICA(60,'parallel','unit-variance','logcosh');randomForest(96,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.20647107085552746
+        ],
+        "runtime": 29.272080421447754,
+        "hp_number": 12,
+        "families": [
+            "0",
+            "1",
+            "4"
+        ]
+    },
+    {
+        "id": "37487a07-0ed2-48e0-97b4-9eeccbedbc8b",
+        "parents_id": [
+            "f94627d9-d1f0-4227-9848-f7e3a5442cf0"
+        ],
+        "pipeline": "selectPercentile(74.52506113033547);robustScaler(False,True);randomForest(96,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.1810160814729686
+        ],
+        "runtime": 16.61770009994507,
+        "hp_number": 10,
+        "families": [
+            "0",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "id": "e54269ff-21fb-4a15-aa6e-dea61fbeee30",
+        "parents_id": [
+            "f94627d9-d1f0-4227-9848-f7e3a5442cf0"
+        ],
+        "pipeline": "selectPercentile(74.52506113033547);minMaxScaler();randomForest(96,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.18112831491853537
+        ],
+        "runtime": 16.473965644836426,
+        "hp_number": 8,
+        "families": [
+            "0",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "410c7fa7-bca0-4564-8951-e7c2fff1be9b",
+        "parents_id": [
+            "f94627d9-d1f0-4227-9848-f7e3a5442cf0"
+        ],
+        "pipeline": "fastICA(60,'parallel','unit-variance','logcosh');robustScaler(False,True);randomForest(96,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.1817210612499101
+        ],
+        "runtime": 27.14011859893799,
+        "hp_number": 13,
+        "families": [
+            "1",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "id": "8f7527c4-6b66-49e9-a5fa-713b7e9e0ccb",
+        "parents_id": [
+            "f94627d9-d1f0-4227-9848-f7e3a5442cf0"
+        ],
+        "pipeline": "fastICA(60,'parallel','unit-variance','logcosh');minMaxScaler();randomForest(96,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.1817210612499101
+        ],
+        "runtime": 29.5049250125885,
+        "hp_number": 11,
+        "families": [
+            "1",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "9d4a3bcd-adff-4985-8fa5-e6c73713e48f",
+        "parents_id": [
+            "f94627d9-d1f0-4227-9848-f7e3a5442cf0"
+        ],
+        "pipeline": "robustScaler(False,True);minMaxScaler();randomForest(96,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.18476035099003435
+        ],
+        "runtime": 17.517560958862305,
+        "hp_number": 9,
+        "families": [
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "f8e25927-2eef-46b5-80af-8722efc7d2e2",
+        "parents_id": [
+            "f94627d9-d1f0-4227-9848-f7e3a5442cf0"
+        ],
+        "pipeline": "selectPercentile(74.52506113033547);fastICA(60,'parallel','unit-variance','logcosh');robustScaler(False,True);randomForest(96,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.20647107085552746
+        ],
+        "runtime": 29.96995186805725,
+        "hp_number": 14,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "id": "b764b935-3081-4059-9310-e17d009382d4",
+        "parents_id": [
+            "f94627d9-d1f0-4227-9848-f7e3a5442cf0"
+        ],
+        "pipeline": "selectPercentile(74.52506113033547);fastICA(60,'parallel','unit-variance','logcosh');minMaxScaler();randomForest(96,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.20647107085552746
+        ],
+        "runtime": 27.813058376312256,
+        "hp_number": 12,
+        "families": [
+            "0",
+            "1",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "71578481-4675-4805-b48f-d78161c74c26",
+        "parents_id": [
+            "f94627d9-d1f0-4227-9848-f7e3a5442cf0"
+        ],
+        "pipeline": "selectPercentile(74.52506113033547);robustScaler(False,True);minMaxScaler();randomForest(96,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.18112831491853537
+        ],
+        "runtime": 15.49300479888916,
+        "hp_number": 10,
+        "families": [
+            "0",
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "0a664ca4-a8a7-48b2-9e51-e805fff10580",
+        "parents_id": [
+            "f94627d9-d1f0-4227-9848-f7e3a5442cf0"
+        ],
+        "pipeline": "fastICA(60,'parallel','unit-variance','logcosh');robustScaler(False,True);minMaxScaler();randomForest(96,'entropy',0.8245326211057018,17,18,True,'balanced_subsample')",
+        "fitness": [
+            0.1817210612499101
+        ],
+        "runtime": 29.838372230529785,
+        "hp_number": 13,
+        "families": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "a934fea2-e93e-45b0-aa14-4ca8d1f66860",
+        "parents_id": [
+            "d3d9cf75-bca4-4aca-82f2-430157add56e"
+        ],
+        "pipeline": "randomForest(96,'entropy',0.8679387485297195,17,18,True,'balanced')",
+        "fitness": [
+            0.18345852067928026
+        ],
+        "runtime": 17.055617809295654,
+        "hp_number": 7,
+        "families": [
+            "4"
+        ]
+    },
+    {
+        "id": "2eec2cc7-cbfe-4bf6-abe9-36ad13b8b05c",
+        "parents_id": [
+            "d3d9cf75-bca4-4aca-82f2-430157add56e"
+        ],
+        "pipeline": "selectPercentile(74.52506113033547);randomForest(96,'entropy',0.8679387485297195,17,18,True,'balanced')",
+        "fitness": [
+            0.18170366451960113
+        ],
+        "runtime": 16.55920386314392,
+        "hp_number": 8,
+        "families": [
+            "0",
+            "4"
+        ]
+    },
+    {
+        "id": "bc8c3785-5ea6-49d1-a23d-9df82f0047b0",
+        "parents_id": [
+            "d3d9cf75-bca4-4aca-82f2-430157add56e"
+        ],
+        "pipeline": "fastICA(8,'parallel','arbitrary-variance','cube');randomForest(96,'entropy',0.8679387485297195,17,18,True,'balanced')",
+        "fitness": [
+            0.19099536011618176
+        ],
+        "runtime": 35.760491371154785,
+        "hp_number": 11,
+        "families": [
+            "1",
+            "4"
+        ]
+    },
+    {
+        "id": "6ef8f4db-eb58-4a32-86a7-217f2186ca9a",
+        "parents_id": [
+            "d3d9cf75-bca4-4aca-82f2-430157add56e"
+        ],
+        "pipeline": "robustScaler(False,True);randomForest(96,'entropy',0.8679387485297195,17,18,True,'balanced')",
+        "fitness": [
+            0.18394817330307922
+        ],
+        "runtime": 15.07970142364502,
+        "hp_number": 9,
+        "families": [
+            "2",
+            "4"
+        ]
+    },
+    {
+        "id": "9c9c70d5-3697-4bc9-8fdf-3b30e496985a",
+        "parents_id": [
+            "d3d9cf75-bca4-4aca-82f2-430157add56e"
+        ],
+        "pipeline": "minMaxScaler();randomForest(96,'entropy',0.8679387485297195,17,18,True,'balanced')",
+        "fitness": [
+            0.18358036478309678
+        ],
+        "runtime": 16.66285753250122,
+        "hp_number": 7,
+        "families": [
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "fe1952d8-e7d3-476c-8232-b14e89784048",
+        "parents_id": [
+            "d3d9cf75-bca4-4aca-82f2-430157add56e"
+        ],
+        "pipeline": "selectPercentile(74.52506113033547);fastICA(8,'parallel','arbitrary-variance','cube');randomForest(96,'entropy',0.8679387485297195,17,18,True,'balanced')",
+        "fitness": [
+            0.22040345535778316
+        ],
+        "runtime": 38.435280323028564,
+        "hp_number": 12,
+        "families": [
+            "0",
+            "1",
+            "4"
+        ]
+    },
+    {
+        "id": "739061d9-3c39-43a6-87b9-2d5e00f6dd3e",
+        "parents_id": [
+            "d3d9cf75-bca4-4aca-82f2-430157add56e"
+        ],
+        "pipeline": "selectPercentile(74.52506113033547);robustScaler(False,True);randomForest(96,'entropy',0.8679387485297195,17,18,True,'balanced')",
+        "fitness": [
+            0.18170250378044236
+        ],
+        "runtime": 16.50046706199646,
+        "hp_number": 10,
+        "families": [
+            "0",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "id": "91ae2b1e-1576-40d4-a63e-5d98d151929a",
+        "parents_id": [
+            "d3d9cf75-bca4-4aca-82f2-430157add56e"
+        ],
+        "pipeline": "selectPercentile(74.52506113033547);minMaxScaler();randomForest(96,'entropy',0.8679387485297195,17,18,True,'balanced')",
+        "fitness": [
+            0.18197617541302855
+        ],
+        "runtime": 15.501364707946777,
+        "hp_number": 8,
+        "families": [
+            "0",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "3a42ed8d-a821-4a25-bacc-d81353540361",
+        "parents_id": [
+            "d3d9cf75-bca4-4aca-82f2-430157add56e"
+        ],
+        "pipeline": "fastICA(8,'parallel','arbitrary-variance','cube');robustScaler(False,True);randomForest(96,'entropy',0.8679387485297195,17,18,True,'balanced')",
+        "fitness": [
+            0.19351236691890286
+        ],
+        "runtime": 33.79067945480347,
+        "hp_number": 13,
+        "families": [
+            "1",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "id": "9bfdd055-1781-421f-8308-64414b750ebe",
+        "parents_id": [
+            "d3d9cf75-bca4-4aca-82f2-430157add56e"
+        ],
+        "pipeline": "fastICA(8,'parallel','arbitrary-variance','cube');minMaxScaler();randomForest(96,'entropy',0.8679387485297195,17,18,True,'balanced')",
+        "fitness": [
+            0.19160142072224237
+        ],
+        "runtime": 28.419103145599365,
+        "hp_number": 11,
+        "families": [
+            "1",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "8ac6ed60-9325-491b-a0eb-a450f45eb5ee",
+        "parents_id": [
+            "d3d9cf75-bca4-4aca-82f2-430157add56e"
+        ],
+        "pipeline": "robustScaler(False,True);minMaxScaler();randomForest(96,'entropy',0.8679387485297195,17,18,True,'balanced')",
+        "fitness": [
+            0.18358036478309678
+        ],
+        "runtime": 16.030853509902954,
+        "hp_number": 9,
+        "families": [
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "21760cae-64dc-4fcd-9cbd-ac97353706ac",
+        "parents_id": [
+            "d3d9cf75-bca4-4aca-82f2-430157add56e"
+        ],
+        "pipeline": "selectPercentile(74.52506113033547);fastICA(8,'parallel','arbitrary-variance','cube');robustScaler(False,True);randomForest(96,'entropy',0.8679387485297195,17,18,True,'balanced')",
+        "fitness": [
+            0.22040345535778316
+        ],
+        "runtime": 31.893214464187622,
+        "hp_number": 14,
+        "families": [
+            "0",
+            "1",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "id": "1e421967-bde7-488b-a3b2-54f65c6e24a2",
+        "parents_id": [
+            "d3d9cf75-bca4-4aca-82f2-430157add56e"
+        ],
+        "pipeline": "selectPercentile(74.52506113033547);fastICA(8,'parallel','arbitrary-variance','cube');minMaxScaler();randomForest(96,'entropy',0.8679387485297195,17,18,True,'balanced')",
+        "fitness": [
+            0.22040345535778316
+        ],
+        "runtime": 34.213258266448975,
+        "hp_number": 12,
+        "families": [
+            "0",
+            "1",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "fb3796bf-3ad3-4a02-80e0-375a37150e8e",
+        "parents_id": [
+            "d3d9cf75-bca4-4aca-82f2-430157add56e"
+        ],
+        "pipeline": "selectPercentile(74.52506113033547);robustScaler(False,True);minMaxScaler();randomForest(96,'entropy',0.8679387485297195,17,18,True,'balanced')",
+        "fitness": [
+            0.18197617541302855
+        ],
+        "runtime": 10.496516942977905,
+        "hp_number": 10,
+        "families": [
+            "0",
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "id": "52307f66-dbf4-489c-b6ec-9251898ddf41",
+        "parents_id": [
+            "d3d9cf75-bca4-4aca-82f2-430157add56e"
+        ],
+        "pipeline": "fastICA(8,'parallel','arbitrary-variance','cube');robustScaler(False,True);minMaxScaler();randomForest(96,'entropy',0.8679387485297195,17,18,True,'balanced')",
+        "fitness": [
+            0.19160142072224237
+        ],
+        "runtime": 31.593849420547485,
+        "hp_number": 13,
+        "families": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ]
+    }
+]

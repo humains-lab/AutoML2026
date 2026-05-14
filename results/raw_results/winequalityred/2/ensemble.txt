@@ -1,0 +1,45 @@
+0: Pipeline(
+	0: MaxAbsScaler()
+	1: VarianceThreshold()
+	2: SelectPercentile(percentile=59.20124036458131)
+	3: RandomForestClassifier(class_weight='balanced', max_features=0.7326433490014181,
+                       min_samples_leaf=6, min_samples_split=3, n_estimators=21,
+                       random_state=2)
+) -> Fitness: 0.4950003591180062
+
+1: Pipeline(
+	0: MaxAbsScaler()
+	1: MinMaxScaler()
+	2: SelectPercentile(percentile=59.20124036458131)
+	3: RandomForestClassifier(class_weight='balanced', max_features=0.7326433490014181,
+                       min_samples_leaf=18, min_samples_split=3,
+                       n_estimators=21, random_state=2)
+) -> Fitness: 0.5224064896613917
+
+2: Pipeline(
+	0: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       max_features=0.8245326211057018, min_samples_leaf=18,
+                       min_samples_split=17, n_estimators=68, random_state=2)
+) -> Fitness: 0.4835634880732919
+
+3: Pipeline(
+	0: MaxAbsScaler()
+	1: MinMaxScaler()
+	2: SelectPercentile(percentile=41.673953209840676)
+	3: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       max_features=0.8245326211057018, min_samples_leaf=18,
+                       min_samples_split=3, n_estimators=21, random_state=2)
+) -> Fitness: 0.4948245509029824
+
+4: Pipeline(
+	0: MaxAbsScaler()
+	1: VarianceThreshold()
+	2: SelectPercentile(percentile=50.899316902238965)
+	3: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       max_features=0.8245326211057018, min_samples_leaf=18,
+                       min_samples_split=17, n_estimators=68, random_state=2)
+) -> Fitness: 0.5068397615456439
+
+Ensemble fitness: 0.0
+Weights: [0.9475386866630441, 1.0, 0.9256460201838674, 0.947202151381605, 0.9702018860335413]
+Prediction: [2 3 4 ... 4 3 3]

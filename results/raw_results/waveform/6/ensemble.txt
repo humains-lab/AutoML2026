@@ -1,0 +1,38 @@
+0: Pipeline(
+	0: FastICA(n_components=16, random_state=6, whiten='arbitrary-variance')
+	1: LogisticRegression(C=3.6070000370393505, class_weight='balanced', max_iter=1000,
+                   penalty='l2', random_state=6)
+) -> Fitness: 0.869904459264842
+
+1: Pipeline(
+	0: Nystroem(coef0=-0.557928626697439, degree=2, gamma=0.5278269757069988,
+         kernel='poly', n_components=32, random_state=6)
+	1: MaxAbsScaler()
+	2: PCA(n_components=0.918954240762401, random_state=6, whiten=True)
+	3: VarianceThreshold()
+	4: LogisticRegression(C=3.6070000370393505, class_weight='balanced', max_iter=1000,
+                   penalty='l2', random_state=6)
+) -> Fitness: 0.8672330938075131
+
+2: Pipeline(
+	0: FastICA(n_components=16, random_state=6)
+	1: LogisticRegression(C=3.6070000370393505, class_weight='balanced', max_iter=1000,
+                   penalty='l2', random_state=6)
+) -> Fitness: 0.8752409751551007
+
+3: Pipeline(
+	0: SelectFwe(alpha=0.043608404094675514)
+	1: ExtraTreesClassifier(bootstrap=True, class_weight='balanced',
+                     min_samples_leaf=2, min_samples_split=11, n_estimators=71,
+                     random_state=6)
+) -> Fitness: 0.8676169744926149
+
+4: Pipeline(
+	0: FastICA(n_components=16, random_state=6)
+	1: LogisticRegression(C=3.6070000370393505, max_iter=1000, penalty='l2',
+                   random_state=6)
+) -> Fitness: 0.8752042819007851
+
+Ensemble fitness: 0.0
+Weights: [0.9939028038657433, 0.9908506553338999, 1.0, 0.9912892553263577, 0.9999580763979782]
+Prediction: [0 1 2 ... 0 0 0]

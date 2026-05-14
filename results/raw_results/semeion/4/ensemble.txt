@@ -1,0 +1,43 @@
+0: Pipeline(
+	0: AdaBoostClassifier(estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    criterion='entropy',
+                                                    max_depth=19,
+                                                    max_features=0.8472577132055269,
+                                                    min_samples_leaf=3,
+                                                    min_samples_split=16,
+                                                    random_state=4),
+                   learning_rate=0.434589951503216, n_estimators=87,
+                   random_state=4)
+) -> Fitness: 0.9324721814417465
+
+1: Pipeline(
+	0: MinMaxScaler()
+	1: MLPClassifier(activation='tanh', alpha=0.08588436029239058,
+              hidden_layer_sizes=(68, 18),
+              learning_rate_init=0.4413043861603544, random_state=4,
+              solver='sgd')
+) -> Fitness: 0.9290233201581028
+
+2: Pipeline(
+	0: MinMaxScaler()
+	1: MLPClassifier(activation='tanh', alpha=0.08588436029239058,
+              hidden_layer_sizes=(68, 18),
+              learning_rate_init=0.5177715198831786, random_state=4,
+              solver='sgd')
+) -> Fitness: 0.9327100319969885
+
+3: Pipeline(
+	0: ExtraTreesClassifier(class_weight='balanced', criterion='entropy',
+                     max_features='log2', min_samples_leaf=2,
+                     min_samples_split=7, n_estimators=32, random_state=4)
+) -> Fitness: 0.9240239600978732
+
+4: Pipeline(
+	0: ExtraTreesClassifier(class_weight='balanced', criterion='entropy',
+                     max_features='log2', min_samples_leaf=2,
+                     min_samples_split=7, n_estimators=51, random_state=4)
+) -> Fitness: 0.930733051006964
+
+Ensemble fitness: 0.0
+Weights: [0.9997449898177542, 0.9960473119057246, 1.0, 0.9906872751432534, 0.9978803905584764]
+Prediction: [0 0 0 ... 9 9 9]

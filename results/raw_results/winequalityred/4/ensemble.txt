@@ -1,0 +1,37 @@
+0: Pipeline(
+	0: MinMaxScaler()
+	1: DecisionTreeClassifier(class_weight='balanced', max_depth=17,
+                       max_features=0.614162185673012, min_samples_leaf=16,
+                       min_samples_split=9, random_state=4)
+) -> Fitness: 0.4725834151324347
+
+1: Pipeline(
+	0: MinMaxScaler()
+	1: DecisionTreeClassifier(class_weight='balanced', max_depth=30,
+                       max_features=0.906419073413928, min_samples_leaf=16,
+                       min_samples_split=15, random_state=4)
+) -> Fitness: 0.4686002378159241
+
+2: Pipeline(
+	0: DecisionTreeClassifier(class_weight='balanced', criterion='entropy',
+                       max_depth=30, max_features=0.9478588470666757,
+                       min_samples_leaf=12, min_samples_split=9,
+                       random_state=4)
+) -> Fitness: 0.43812907499182
+
+3: Pipeline(
+	0: DecisionTreeClassifier(class_weight='balanced', max_depth=24,
+                       max_features=0.614162185673012, min_samples_leaf=17,
+                       min_samples_split=9, random_state=4)
+) -> Fitness: 0.4770736670736671
+
+4: Pipeline(
+	0: MinMaxScaler()
+	1: DecisionTreeClassifier(class_weight='balanced', max_depth=30,
+                       max_features=0.906419073413928, min_samples_leaf=16,
+                       min_samples_split=9, random_state=4)
+) -> Fitness: 0.4686002378159241
+
+Ensemble fitness: 0.0
+Weights: [0.9905879275023178, 0.9822387403821334, 0.9183677600133954, 1.0, 0.9822387403821334]
+Prediction: [5 3 4 ... 2 3 4]

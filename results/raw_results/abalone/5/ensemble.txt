@@ -1,0 +1,58 @@
+0: Pipeline(
+	0: SelectPercentile(percentile=39.193913505122175)
+	1: AdaBoostClassifier(estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    criterion='entropy',
+                                                    max_depth=11,
+                                                    max_features=0.7320617877078847,
+                                                    min_samples_leaf=18,
+                                                    min_samples_split=8,
+                                                    random_state=5),
+                   learning_rate=0.1432500231958788, n_estimators=35,
+                   random_state=5)
+) -> Fitness: 0.19684175957752276
+
+1: Pipeline(
+	0: MaxAbsScaler()
+	1: FastICA(algorithm='deflation', fun='cube', n_components=15, random_state=5,
+        whiten='arbitrary-variance')
+	2: SelectPercentile(percentile=60.83997005341973)
+	3: DecisionTreeClassifier(class_weight='balanced', criterion='entropy',
+                       max_depth=28, max_features=0.6888553487611566,
+                       min_samples_leaf=18, min_samples_split=5,
+                       random_state=5)
+) -> Fitness: 0.19026827229328594
+
+2: Pipeline(
+	0: SelectPercentile(percentile=60.83997005341973)
+	1: MaxAbsScaler()
+	2: DecisionTreeClassifier(class_weight='balanced', criterion='entropy',
+                       max_depth=8, max_features=0.19823614305657122,
+                       min_samples_leaf=15, min_samples_split=20,
+                       random_state=5)
+) -> Fitness: 0.19131584157030768
+
+3: Pipeline(
+	0: MaxAbsScaler()
+	1: FastICA(algorithm='deflation', n_components=15, random_state=5,
+        whiten='arbitrary-variance')
+	2: SelectPercentile(percentile=60.83997005341973)
+	3: DecisionTreeClassifier(class_weight='balanced', criterion='entropy',
+                       max_depth=11, max_features=0.7320617877078847,
+                       min_samples_leaf=18, min_samples_split=8,
+                       random_state=5)
+) -> Fitness: 0.18519961855161718
+
+4: Pipeline(
+	0: MaxAbsScaler()
+	1: FastICA(algorithm='deflation', fun='cube', n_components=15, random_state=5,
+        whiten='arbitrary-variance')
+	2: SelectPercentile(percentile=60.83997005341973)
+	3: DecisionTreeClassifier(class_weight='balanced', criterion='entropy',
+                       max_depth=8, max_features=0.6888553487611566,
+                       min_samples_leaf=18, min_samples_split=5,
+                       random_state=5)
+) -> Fitness: 0.19581962939386094
+
+Ensemble fitness: 0.0
+Weights: [1.0, 0.9666052198560643, 0.9719271052083905, 0.9408553294235286, 0.9948073509104186]
+Prediction: [ 8  7  9 ... 10 10 10]

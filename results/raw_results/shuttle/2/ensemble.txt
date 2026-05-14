@@ -1,0 +1,39 @@
+0: Pipeline(
+	0: RandomForestClassifier(bootstrap=False, class_weight='balanced',
+                       criterion='entropy', max_features=0.5680640272099431,
+                       min_samples_leaf=3, min_samples_split=11,
+                       n_estimators=80, random_state=2)
+) -> Fitness: 0.9998531399612238
+
+1: Pipeline(
+	0: MaxAbsScaler()
+	1: RandomForestClassifier(bootstrap=False, class_weight='balanced',
+                       criterion='entropy', max_features=0.5680640272099431,
+                       min_samples_leaf=3, min_samples_split=11,
+                       n_estimators=80, random_state=2)
+) -> Fitness: 0.9998531399612238
+
+2: Pipeline(
+	0: RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features=0.5680640272099431, min_samples_leaf=3,
+                       min_samples_split=11, n_estimators=80, random_state=2)
+) -> Fitness: 0.9998238224313578
+
+3: Pipeline(
+	0: VarianceThreshold()
+	1: RandomForestClassifier(bootstrap=False, class_weight='balanced',
+                       criterion='entropy', max_features=0.5680640272099431,
+                       min_samples_leaf=3, min_samples_split=11,
+                       n_estimators=80, random_state=2)
+) -> Fitness: 0.9998531399612238
+
+4: Pipeline(
+	0: MaxAbsScaler()
+	1: RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features=0.5680640272099431, min_samples_leaf=3,
+                       min_samples_split=11, n_estimators=80, random_state=2)
+) -> Fitness: 0.9998238224313578
+
+Ensemble fitness: 0.0
+Weights: [1.0, 1.0, 0.999970678163928, 1.0, 0.999970678163928]
+Prediction: [2 4 1 ... 1 1 1]

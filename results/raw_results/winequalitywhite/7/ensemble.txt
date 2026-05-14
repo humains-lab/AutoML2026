@@ -1,0 +1,50 @@
+0: Pipeline(
+	0: MinMaxScaler()
+	1: SelectFwe(alpha=0.005010002130225307)
+	2: FastICA(algorithm='deflation', fun='exp', n_components=64, random_state=7,
+        whiten='arbitrary-variance')
+	3: ExtraTreesClassifier(class_weight='balanced', criterion='entropy',
+                     min_samples_leaf=18, min_samples_split=4, n_estimators=72,
+                     random_state=7)
+) -> Fitness: 0.46099806925466763
+
+1: Pipeline(
+	0: MinMaxScaler()
+	1: VarianceThreshold()
+	2: SelectFwe(alpha=0.005010002130225307)
+	3: FastICA(n_components=73, random_state=7)
+	4: ExtraTreesClassifier(bootstrap=True, class_weight='balanced_subsample',
+                     criterion='entropy', min_samples_leaf=18,
+                     min_samples_split=4, n_estimators=72, random_state=7)
+) -> Fitness: 0.41418834840532953
+
+2: Pipeline(
+	0: MinMaxScaler()
+	1: SelectFwe(alpha=0.005010002130225307)
+	2: FastICA(algorithm='deflation', fun='exp', n_components=32, random_state=7,
+        whiten='arbitrary-variance')
+	3: ExtraTreesClassifier(class_weight='balanced', criterion='entropy',
+                     min_samples_leaf=8, min_samples_split=4, n_estimators=24,
+                     random_state=7)
+) -> Fitness: 0.4451374526828548
+
+3: Pipeline(
+	0: MinMaxScaler()
+	1: SelectFwe(alpha=0.005010002130225307)
+	2: FastICA(n_components=73, random_state=7)
+	3: ExtraTreesClassifier(class_weight='balanced', max_features='log2',
+                     min_samples_leaf=4, n_estimators=24, random_state=7)
+) -> Fitness: 0.4346902348393501
+
+4: Pipeline(
+	0: MinMaxScaler()
+	1: SelectFwe(alpha=0.03057445767703305)
+	2: FastICA(algorithm='deflation', fun='exp', n_components=46, random_state=7)
+	3: ExtraTreesClassifier(class_weight='balanced', criterion='entropy',
+                     min_samples_leaf=14, min_samples_split=14, n_estimators=94,
+                     random_state=7)
+) -> Fitness: 0.46275814024301265
+
+Ensemble fitness: 0.0
+Weights: [0.9961965639601267, 0.8950428147797094, 0.9619224687200435, 0.9393464901796801, 1.0]
+Prediction: [4 6 6 ... 6 5 5]

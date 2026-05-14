@@ -1,0 +1,62 @@
+0: Pipeline(
+	0: AdaBoostClassifier(estimator=DecisionTreeClassifier(max_depth=23,
+                                                    max_features=0.8505079609716611,
+                                                    min_samples_leaf=2,
+                                                    min_samples_split=19,
+                                                    random_state=4),
+                   learning_rate=0.8919591563536088, n_estimators=60,
+                   random_state=4)
+) -> Fitness: 0.9964243832977342
+
+1: Pipeline(
+	0: AdaBoostClassifier(estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    criterion='entropy',
+                                                    max_depth=16,
+                                                    max_features=0.540945301359934,
+                                                    min_samples_leaf=2,
+                                                    min_samples_split=19,
+                                                    random_state=4),
+                   learning_rate=0.4134631048075189, n_estimators=77,
+                   random_state=4)
+) -> Fitness: 0.9964032192765702
+
+2: Pipeline(
+	0: AdaBoostClassifier(estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    criterion='entropy',
+                                                    max_depth=22,
+                                                    max_features=0.8505079609716611,
+                                                    min_samples_leaf=2,
+                                                    min_samples_split=19,
+                                                    random_state=4),
+                   learning_rate=0.8919591563536088, n_estimators=41,
+                   random_state=4)
+) -> Fitness: 0.9962868387121244
+
+3: Pipeline(
+	0: AdaBoostClassifier(estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    criterion='entropy',
+                                                    max_depth=16,
+                                                    max_features=0.540945301359934,
+                                                    min_samples_leaf=2,
+                                                    min_samples_split=19,
+                                                    random_state=4),
+                   learning_rate=0.434589951503216, n_estimators=87,
+                   random_state=4)
+) -> Fitness: 0.9953001294328265
+
+4: Pipeline(
+	0: VarianceThreshold()
+	1: SelectFwe(alpha=0.0027695749763846)
+	2: AdaBoostClassifier(estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    max_depth=18,
+                                                    max_features=0.6580355417154597,
+                                                    min_samples_leaf=12,
+                                                    min_samples_split=8,
+                                                    random_state=4),
+                   learning_rate=0.434589951503216, n_estimators=87,
+                   random_state=4)
+) -> Fitness: 0.9856847454314472
+
+Ensemble fitness: 0.0
+Weights: [1.0, 0.9999787600328547, 0.9998619618428499, 0.9988717118089916, 0.9892218235058204]
+Prediction: [2 4 1 ... 1 1 1]

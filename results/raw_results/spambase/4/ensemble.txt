@@ -1,0 +1,47 @@
+0: Pipeline(
+	0: ExtraTreesClassifier(class_weight='balanced', criterion='entropy',
+                     min_samples_leaf=2, min_samples_split=7, n_estimators=49,
+                     random_state=4)
+) -> Fitness: 0.9511224980112971
+
+1: Pipeline(
+	0: RobustScaler(with_centering=False, with_scaling=False)
+	1: MaxAbsScaler()
+	2: AdaBoostClassifier(estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    criterion='entropy',
+                                                    max_depth=27,
+                                                    max_features=0.0739375940195448,
+                                                    min_samples_leaf=15,
+                                                    min_samples_split=13,
+                                                    random_state=4),
+                   learning_rate=0.5862022905905027, n_estimators=30,
+                   random_state=4)
+) -> Fitness: 0.9478669401175361
+
+2: Pipeline(
+	0: ExtraTreesClassifier(class_weight='balanced', criterion='entropy',
+                     max_features='log2', min_samples_leaf=2,
+                     min_samples_split=7, n_estimators=57, random_state=4)
+) -> Fitness: 0.948246501458234
+
+3: Pipeline(
+	0: ExtraTreesClassifier(class_weight='balanced', min_samples_leaf=2,
+                     min_samples_split=7, n_estimators=49, random_state=4)
+) -> Fitness: 0.9502913669789684
+
+4: Pipeline(
+	0: VarianceThreshold()
+	1: RobustScaler(with_centering=False)
+	2: AdaBoostClassifier(estimator=DecisionTreeClassifier(criterion='entropy',
+                                                    max_depth=7,
+                                                    max_features=0.24116344310403115,
+                                                    min_samples_leaf=8,
+                                                    min_samples_split=15,
+                                                    random_state=4),
+                   learning_rate=0.4333879051759157, n_estimators=86,
+                   random_state=4)
+) -> Fitness: 0.9468882891998355
+
+Ensemble fitness: 0.0
+Weights: [1.0, 0.9965771413245212, 0.9969762080498815, 0.9991261577409151, 0.9955481982391176]
+Prediction: [2 1 2 ... 1 2 1]

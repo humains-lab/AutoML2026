@@ -1,0 +1,47 @@
+0: Pipeline(
+	0: PCA(n_components=0.7109527512982751, random_state=2)
+	1: SelectFwe(alpha=0.0015382798768397298)
+	2: MaxAbsScaler()
+	3: MLPClassifier(alpha=0.05140653258230293, hidden_layer_sizes=(60, 19),
+              learning_rate_init=0.897258844864606, random_state=2,
+              solver='lbfgs')
+) -> Fitness: 0.9297577639751553
+
+1: Pipeline(
+	0: AdaBoostClassifier(estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    max_depth=18,
+                                                    max_features=0.48583808627043934,
+                                                    min_samples_leaf=2,
+                                                    min_samples_split=15,
+                                                    random_state=2),
+                   learning_rate=0.7192687310126962, n_estimators=41,
+                   random_state=2)
+) -> Fitness: 0.92796295878035
+
+2: Pipeline(
+	0: PCA(n_components=0.9327789797556615, random_state=2)
+	1: SelectFwe(alpha=0.0015382798768397298)
+	2: MaxAbsScaler()
+	3: MLPClassifier(alpha=0.05140653258230293, hidden_layer_sizes=(60, 19),
+              learning_rate_init=0.897258844864606, random_state=2,
+              solver='lbfgs')
+) -> Fitness: 0.9296278938452852
+
+3: Pipeline(
+	0: PCA(n_components=0.7109527512982751, random_state=2)
+	1: SelectFwe(alpha=0.0015382798768397298)
+	2: MaxAbsScaler()
+	3: MLPClassifier(alpha=0.052304611803006426, hidden_layer_sizes=(60, 19),
+              learning_rate_init=0.897258844864606, random_state=2,
+              solver='lbfgs')
+) -> Fitness: 0.9342778091473743
+
+4: Pipeline(
+	0: MLPClassifier(alpha=0.052304611803006426, hidden_layer_sizes=(60, 19),
+              learning_rate_init=0.897258844864606, random_state=2,
+              solver='lbfgs')
+) -> Fitness: 0.9278238283455675
+
+Ensemble fitness: 0.0
+Weights: [0.995161990226072, 0.9932409286561271, 0.9950229843237606, 1.0, 0.9930920110286074]
+Prediction: [0 0 0 ... 9 9 9]

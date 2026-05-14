@@ -1,0 +1,78 @@
+0: Pipeline(
+	0: Nystroem(coef0=-0.13791396541338585, degree=4, gamma=1.4832055954700831,
+         kernel='cosine', n_components=86, random_state=4)
+	1: VarianceThreshold()
+	2: AdaBoostClassifier(estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    max_depth=8,
+                                                    max_features=0.10331196411972454,
+                                                    min_samples_leaf=16,
+                                                    min_samples_split=15,
+                                                    random_state=4),
+                   learning_rate=1.480284766784859, n_estimators=62,
+                   random_state=4)
+) -> Fitness: 0.9417892156862745
+
+1: Pipeline(
+	0: Nystroem(coef0=-0.13791396541338585, degree=4, gamma=1.4832055954700831,
+         kernel='cosine', n_components=86, random_state=4)
+	1: RobustScaler()
+	2: AdaBoostClassifier(estimator=DecisionTreeClassifier(max_depth=3,
+                                                    max_features=0.9135318190058366,
+                                                    min_samples_leaf=15,
+                                                    min_samples_split=15,
+                                                    random_state=4),
+                   learning_rate=1.5323465555503462, n_estimators=37,
+                   random_state=4)
+) -> Fitness: 0.9368872549019608
+
+2: Pipeline(
+	0: Nystroem(coef0=-0.13791396541338585, degree=4, gamma=1.4832055954700831,
+         kernel='cosine', n_components=86, random_state=4)
+	1: MinMaxScaler()
+	2: AdaBoostClassifier(estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    max_depth=8,
+                                                    max_features=0.10331196411972454,
+                                                    min_samples_leaf=16,
+                                                    min_samples_split=15,
+                                                    random_state=4),
+                   learning_rate=1.480284766784859, n_estimators=62,
+                   random_state=4)
+) -> Fitness: 0.9417892156862745
+
+3: Pipeline(
+	0: Nystroem(coef0=-0.13791396541338585, degree=4, gamma=1.4832055954700831,
+         kernel='cosine', n_components=86, random_state=4)
+	1: RobustScaler()
+	2: AdaBoostClassifier(estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    max_depth=8,
+                                                    max_features=0.10331196411972454,
+                                                    min_samples_leaf=16,
+                                                    min_samples_split=15,
+                                                    random_state=4),
+                   learning_rate=1.480284766784859, n_estimators=62,
+                   random_state=4)
+) -> Fitness: 0.9417892156862745
+
+4: Pipeline(
+	0: Nystroem(coef0=-0.13791396541338585, degree=4, gamma=1.4832055954700831,
+         kernel='cosine', n_components=86, random_state=4)
+	1: MinMaxScaler()
+	2: AdaBoostClassifier(estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    max_depth=8,
+                                                    max_features=0.254032244182572,
+                                                    min_samples_leaf=2,
+                                                    min_samples_split=19,
+                                                    random_state=4),
+                   learning_rate=1.480284766784859, n_estimators=62,
+                   random_state=4)
+) -> Fitness: 0.937671568627451
+
+Ensemble fitness: 0.0
+Weights: [1.0, 0.9947950553025374, 1.0, 1.0, 0.9956278464541315]
+Prediction: [2 1 2 2 2 1 2 1 2 2 2 2 1 2 2 2 2 1 2 2 2 2 1 2 1 1 2 2 2 2 2 2 2 2 2 2 2
+ 1 1 2 2 2 1 2 2 2 1 2 2 2 2 2 1 1 1 2 2 1 2 2 2 1 2 2 1 1 2 2 2 2 1 2 2 2
+ 2 2 1 2 2 1 1 2 1 2 2 2 2 2 2 2 1 2 2 2 1 2 1 1 1 2 1 2 1 1 2 1 1 1 2 2 1
+ 2 2 2 2 2 2 1 1 2 2 2 2 1 2 2 2 2 1 1 2 2 2 1 2 2 1 2 2 2 2 1 2 1 2 2 2 2
+ 2 2 2 2 1 2 2 2 2 1 1 2 1 2 1 1 2 2 1 1 1 2 1 1 2 2 1 1 2 1 1 1 1 2 2 2 2
+ 1 1 2 1 2 2 2 1 1 1 1 1 1 2 2 1 1 2 1 1 2 2 1 2 1 1 2 2 2 2 1 2 2 2 2 2 2
+ 2 1 2 1 1 2 2 2 1 1 2 2]

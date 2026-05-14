@@ -1,0 +1,57 @@
+0: Pipeline(
+	0: PCA(n_components=0.5006194296396518, random_state=9, whiten=True)
+	1: MinMaxScaler()
+	2: SelectPercentile(percentile=64.18140201945707)
+	3: FastICA(n_components=9, random_state=9, whiten='arbitrary-variance')
+	4: SelectFwe(alpha=0.035036692908687335)
+	5: ExtraTreesClassifier(class_weight='balanced_subsample', criterion='entropy',
+                     min_samples_leaf=8, min_samples_split=15, n_estimators=59,
+                     random_state=9)
+) -> Fitness: 0.8784414044476418
+
+1: Pipeline(
+	0: FastICA(n_components=9, random_state=9, whiten='arbitrary-variance')
+	1: VarianceThreshold()
+	2: MinMaxScaler()
+	3: AdaBoostClassifier(estimator=DecisionTreeClassifier(criterion='entropy',
+                                                    max_depth=4,
+                                                    max_features=0.8970335546151182,
+                                                    min_samples_leaf=12,
+                                                    min_samples_split=8,
+                                                    random_state=9),
+                   learning_rate=0.06659688043728257, n_estimators=87,
+                   random_state=9)
+) -> Fitness: 0.8707422708673743
+
+2: Pipeline(
+	0: PCA(n_components=0.5006194296396518, random_state=9, whiten=True)
+	1: MinMaxScaler()
+	2: SelectPercentile(percentile=64.18140201945707)
+	3: FastICA(n_components=9, random_state=9, whiten='arbitrary-variance')
+	4: SelectFwe(alpha=0.03622754835119975)
+	5: ExtraTreesClassifier(class_weight='balanced_subsample', criterion='entropy',
+                     min_samples_leaf=8, min_samples_split=15, n_estimators=59,
+                     random_state=9)
+) -> Fitness: 0.8784414044476418
+
+3: Pipeline(
+	0: FastICA(n_components=9, random_state=9, whiten='arbitrary-variance')
+	1: VarianceThreshold()
+	2: SelectPercentile(percentile=64.18140201945707)
+	3: MaxAbsScaler()
+	4: SelectFwe(alpha=0.03622754835119975)
+	5: QuadraticDiscriminantAnalysis(reg_param=0.18231769176790835)
+) -> Fitness: 0.8666089988518797
+
+4: Pipeline(
+	0: PCA(n_components=0.5006194296396518, random_state=9, whiten=True)
+	1: MinMaxScaler()
+	2: SelectPercentile(percentile=64.18140201945707)
+	3: VarianceThreshold()
+	4: SelectFwe(alpha=0.035036692908687335)
+	5: QuadraticDiscriminantAnalysis(reg_param=0.1575815563573112)
+) -> Fitness: 0.8715206387743362
+
+Ensemble fitness: 0.0
+Weights: [1.0, 0.9912354614191841, 1.0, 0.9865302278150216, 0.9921215397654697]
+Prediction: [0 1 2 ... 0 0 0]

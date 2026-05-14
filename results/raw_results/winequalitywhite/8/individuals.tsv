@@ -1,0 +1,841 @@
+pipeline	fitness	fit_time
+varianceThreshold();maxAbsScaler();nystroem('poly',1.1192588680639208,31,5,0.8102652167039999);selectPercentile(7.857595833368152);maxAbsScaler();minMaxScaler();minMaxScaler();mlpClassifier((34, 1),0.09088601962403824,0.2672869542070195,'adam','identity')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+pca(0.5416690657363064,True);varianceThreshold();maxAbsScaler();varianceThreshold();logisticRegression('l2','saga',1000,2.607249820082844,'None')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();maxAbsScaler();selectFwe(0.0013198621322190421);minMaxScaler();fastICA(39,'parallel','arbitrary-variance','cube');adaBoost(decisionTree('gini',7,17,0.36997222437408805,19,'None'),36,0.38569457871113755,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();maxAbsScaler();varianceThreshold();robustScaler(True,False);varianceThreshold();pca(0.8966395647354573,False);varianceThreshold();multinomialNB(0.11814879608508395,False)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();selectFwe(0.02600506239796325);selectFwe(0.021373606981220157);adaBoost(decisionTree('entropy',22,3,0.25300677426013196,7,'balanced'),46,0.08318522683790083,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();maxAbsScaler();maxAbsScaler();minMaxScaler();adaBoost(decisionTree('entropy',20,6,0.6167802599495176,16,'balanced'),38,0.7765988415402334,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+selectPercentile(56.99730248612609);minMaxScaler();gaussianNB(0.0030928744787012633)	0.27941862773653053	2.398838758468628
+pca(0.9294483165974883,True);fastICA(6,'deflation','unit-variance','exp');maxAbsScaler();randomForest(65,'gini','log2',14,5,False,'None')	0.27327772404051626	12.320260763168335
+pca(0.9877255525798894,False);randomForest(50,'entropy',0.9381739109034369,5,20,False,'balanced')	0.3133181966453681	19.418454885482788
+qda(0.38468190810598835)	eval_error (The covariance matrix of class 9 is not full rank. When using `solver='svd'` the number of samples in each class should be more than the number of features, but class 9 has 3 samples and 11 features. Try using `solver='eigen'` and setting the parameter `shrinkage` for regularization.)	eval_error (The covariance matrix of class 9 is not full rank. When using `solver='svd'` the number of samples in each class should be more than the number of features, but class 9 has 3 samples and 11 features. Try using `solver='eigen'` and setting the parameter `shrinkage` for regularization.)
+selectFwe(0.00376964638091453);fastICA(87,'parallel','unit-variance','cube');maxAbsScaler();maxAbsScaler();kNN(7,'uniform',2)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.9833650269361177,16,'None'),77,0.2386696315364275,'SAMME')	0.3519908619880299	48.5170419216156
+selectPercentile(37.75833306086296);selectPercentile(82.11762045395449);robustScaler(True,True);minMaxScaler();minMaxScaler();maxAbsScaler();gaussianNB(0.0010167105051724769)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();minMaxScaler();nystroem('sigmoid',2.1360440143882644,70,5,0.4520038681288201);logisticRegression('l2','lbfgs',1000,7.611726005730587,'None')	0.21403252705606146	53.86904692649841
+minMaxScaler();nystroem('sigmoid',2.4027054806246797,64,3,-0.6834004854515896);minMaxScaler();lda(0.6239857166830313,80,0.014423288560272692)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();extraTreesClassifier(74,'entropy','sqrt',9,7,True,'balanced')	0.3804157466252701	14.374605178833008
+adaBoost(decisionTree('entropy',10,9,0.7361478917330656,16,'balanced'),82,1.207584527142635,'SAMME')	0.3466467669262784	60.71797490119934
+minMaxScaler();varianceThreshold();varianceThreshold();mlpClassifier((90, 18),0.031000214769746924,0.062039916272437524,'sgd','identity')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+nystroem('rbf',0.32717991553331827,90,2,0.7741364439602001);nystroem('cosine',1.9317759720929129,47,5,0.4431571206807865);fastICA(97,'parallel','arbitrary-variance','cube');lda(0.6669715349533474,245,0.05200731364632919)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();robustScaler(False,True);nystroem('cosine',0.046446164154640826,44,2,0.05568715995403628);multinomialNB(59.08657930149258,True)	0.1476190476190476	6.488473892211914
+robustScaler(False,False);selectPercentile(23.352692198696445);selectPercentile(59.36031509295475);qda(0.07484248877037303)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+multinomialNB(3.1621955256527947,True)	0.2885259381354776	5.09640097618103
+maxAbsScaler();fastICA(55,'deflation','arbitrary-variance','exp');adaBoost(decisionTree('gini',3,10,0.07525296979249374,18,'balanced'),27,0.046553070340756286,'SAMME')	eval_error (BaseClassifier in AdaBoostClassifier ensemble is worse than random, ensemble can not be fit.)	eval_error (BaseClassifier in AdaBoostClassifier ensemble is worse than random, ensemble can not be fit.)
+minMaxScaler();adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.37739723228317107	44.256142377853394
+selectPercentile(86.16784270581033);gaussianNB(0.004013235235440282)	0.21238589065065067	10.24074935913086
+selectFwe(0.04606905418291108);varianceThreshold();minMaxScaler();maxAbsScaler();extraTreesClassifier(27,'entropy','log2',5,14,False,'balanced')	0.36278352001374137	17.008282899856567
+varianceThreshold();fastICA(71,'deflation','unit-variance','exp');maxAbsScaler();minMaxScaler();adaBoost(decisionTree('entropy',21,15,0.01254714075491592,9,'None'),15,1.0505095207445883,'SAMME')	0.3204642973279906	26.291924953460693
+bernoulliNB(2.37645845917436,True)	0.1476190476190476	7.22913384437561
+selectFwe(0.04867817784735616);pca(0.5208625177046806,False);pca(0.7559150482703687,True);fastICA(13,'parallel','unit-variance','logcosh');qda(0.4192829724356306)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+qda(0.04198305681508352)	eval_error (The covariance matrix of class 9 is not full rank. When using `solver='svd'` the number of samples in each class should be more than the number of features, but class 9 has 3 samples and 11 features. Try using `solver='eigen'` and setting the parameter `shrinkage` for regularization.)	eval_error (The covariance matrix of class 9 is not full rank. When using `solver='svd'` the number of samples in each class should be more than the number of features, but class 9 has 3 samples and 11 features. Try using `solver='eigen'` and setting the parameter `shrinkage` for regularization.)
+selectPercentile(7.6689590067266895);pca(0.5721054847418433,True);pca(0.7773049065383504,True);adaBoost(decisionTree('gini',24,15,0.9751272402992051,4,'balanced'),15,1.12004444823451,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();nystroem('sigmoid',0.8077269253226392,92,5,0.6538893873651526);minMaxScaler();fastICA(53,'deflation','unit-variance','logcosh');adaBoost(decisionTree('gini',5,19,0.0998004323943924,2,'None'),18,0.7659042034200616,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+fastICA(86,'deflation','unit-variance','logcosh');maxAbsScaler();bernoulliNB(2.44541876156576,False)	0.2710961180120988	134.32055497169495
+minMaxScaler();minMaxScaler();varianceThreshold();maxAbsScaler();maxAbsScaler();varianceThreshold();varianceThreshold();qda(0.21183113244481133)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();maxAbsScaler();qda(0.9382355804362116)	eval_error (The covariance matrix of class 9 is not full rank. When using `solver='svd'` the number of samples in each class should be more than the number of features, but class 9 has 3 samples and 11 features. Try using `solver='eigen'` and setting the parameter `shrinkage` for regularization.)	eval_error (The covariance matrix of class 9 is not full rank. When using `solver='svd'` the number of samples in each class should be more than the number of features, but class 9 has 3 samples and 11 features. Try using `solver='eigen'` and setting the parameter `shrinkage` for regularization.)
+maxAbsScaler();selectFwe(0.014728332010675416);mlpClassifier((47, 3),0.017527728823127118,0.07370059460151995,'lbfgs','logistic')	0.20580190898147896	110.9687135219574
+minMaxScaler();pca(0.8640358017208775,False);lda(0.5676347646868776,26,0.0680654506589282)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)	eval_error (n_components cannot be larger than min(n_features, n_classes - 1).)
+pca(0.630631734446151,False);selectFwe(0.009318422367572708);mlpClassifier((17, 13),0.055934291641464406,0.1726042875164753,'lbfgs','logistic')	0.16115705888318083	83.26593899726868
+pca(0.832094859541622,False);pca(0.8653203001865177,False);adaBoost(decisionTree('entropy',15,13,0.4039684103932193,2,'None'),85,1.1053533339957846,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+selectFwe(0.0475244615224976);logisticRegression('l2','sag',1000,0.27750567185849406,'balanced')	0.1970354169543437	21.2090904712677
+varianceThreshold();maxAbsScaler();nystroem('poly',1.1192588680639208,31,5,0.8102652167039999);selectPercentile(7.857595833368152);maxAbsScaler();minMaxScaler();minMaxScaler();mlpClassifier((34, 1),0.09088601962403824,0.2672869542070195,'adam','identity')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+selectPercentile(7.6689590067266895);pca(0.5721054847418433,True);pca(0.6945323504435572,False);adaBoost(decisionTree('gini',24,15,0.9751272402992051,4,'balanced'),15,1.12004444823451,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+selectPercentile(57.119814782174345);varianceThreshold();nystroem('sigmoid',5.382624877179694,38,5,0.062103265709848365);fastICA(45,'deflation','unit-variance','logcosh');maxAbsScaler();maxAbsScaler();varianceThreshold();logisticRegression('l2','saga',1000,2.607249820082844,'None')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();varianceThreshold();nystroem('cosine',2.0371843608312648,93,3,-0.20671627826519878);selectPercentile(65.40092261225642);maxAbsScaler();minMaxScaler();minMaxScaler();mlpClassifier((34, 1),0.09088601962403824,0.2672869542070195,'adam','identity')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+pca(0.832094859541622,False);pca(0.8653203001865177,False);adaBoost(decisionTree('gini',16,5,0.7693023849120255,16,'balanced'),12,1.4072806994465605,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+selectPercentile(86.16784270581033);gaussianNB(0.004013235235440282)	0.21238589065065067	1.9237616062164307
+minMaxScaler();varianceThreshold();varianceThreshold();mlpClassifier((90, 18),0.031000214769746924,0.062039916272437524,'sgd','identity')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+pca(0.8971354790821806,True);selectFwe(0.03043013917542024);gaussianNB(0.0014091090186453311)	0.1841348460792858	2.702260971069336
+pca(0.9877255525798894,False);adaBoost(decisionTree('entropy',21,15,0.01254714075491592,9,'None'),15,1.0505095207445883,'SAMME')	0.28337669395936327	3.9498696327209473
+multinomialNB(3.1621955256527947,False)	0.26700551068816275	2.175755500793457
+selectFwe(0.00376964638091453);fastICA(87,'parallel','unit-variance','cube');selectPercentile(7.6689590067266895);maxAbsScaler();kNN(7,'uniform',2)	0.22088235335935416	3.109720230102539
+maxAbsScaler();pca(0.5721054847418433,True);pca(0.7773049065383504,True);adaBoost(decisionTree('gini',24,15,0.9751272402992051,4,'balanced'),15,1.12004444823451,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();varianceThreshold();varianceThreshold();mlpClassifier((90, 18),0.031000214769746924,0.062039916272437524,'sgd','identity')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+pca(0.832094859541622,False);pca(0.8653203001865177,False);adaBoost(decisionTree('entropy',15,13,0.4039684103932193,2,'None'),85,1.1053533339957846,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+pca(0.9474274612381431,True);adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.2699328846582936	8.047608137130737
+selectPercentile(56.99730248612609);minMaxScaler();gaussianNB(0.0030928744787012633)	0.27941862773653053	cached
+varianceThreshold();selectFwe(0.02600506239796325);selectFwe(0.021373606981220157);adaBoost(decisionTree('entropy',22,3,0.25300677426013196,7,'balanced'),46,0.08318522683790083,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();pca(0.6311472878371919,False);maxAbsScaler();minMaxScaler();adaBoost(decisionTree('entropy',21,15,0.01254714075491592,9,'None'),15,1.0505095207445883,'SAMME')	0.2405521173416567	4.169487953186035
+selectPercentile(56.99730248612609);minMaxScaler();gaussianNB(0.0030928744787012633)	0.27941862773653053	2.7720704078674316
+maxAbsScaler();extraTreesClassifier(74,'gini','sqrt',9,13,True,'balanced')	0.36936916320081414	4.4153876304626465
+maxAbsScaler();maxAbsScaler();selectFwe(0.0013198621322190421);minMaxScaler();fastICA(39,'deflation','arbitrary-variance','logcosh');adaBoost(decisionTree('gini',7,17,0.36997222437408805,19,'None'),36,0.38569457871113755,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();extraTreesClassifier(74,'entropy','sqrt',9,7,True,'balanced')	0.3804157466252701	5.047103643417358
+varianceThreshold();maxAbsScaler();varianceThreshold();robustScaler(True,False);varianceThreshold();pca(0.8966395647354573,False);varianceThreshold();multinomialNB(0.11814879608508395,False)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();extraTreesClassifier(74,'entropy','sqrt',9,7,True,'balanced')	0.3804157466252701	cached
+pca(0.9294483165974883,True);fastICA(6,'deflation','unit-variance','exp');maxAbsScaler();randomForest(65,'gini','log2',14,5,False,'None')	0.27327772404051626	cached
+pca(0.9294483165974883,True);fastICA(6,'deflation','unit-variance','exp');maxAbsScaler();randomForest(65,'gini','log2',14,5,False,'None')	0.27327772404051626	cached
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.9833650269361177,16,'None'),77,0.2386696315364275,'SAMME')	0.3519908619880299	15.903310775756836
+fastICA(86,'parallel','unit-variance','cube');maxAbsScaler();bernoulliNB(2.44541876156576,False)	0.31246824844496457	5.170374155044556
+varianceThreshold();selectFwe(0.02600506239796325);selectFwe(0.021373606981220157);adaBoost(decisionTree('entropy',22,3,0.25300677426013196,7,'balanced'),46,0.08318522683790083,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+selectFwe(0.0010374991947416647);varianceThreshold();minMaxScaler();maxAbsScaler();extraTreesClassifier(27,'entropy','sqrt',5,17,True,'balanced')	0.34922745839409747	5.634772300720215
+maxAbsScaler();extraTreesClassifier(74,'entropy','log2',9,14,False,'balanced')	0.39347808872640466	4.014281749725342
+selectFwe(0.00376964638091453);minMaxScaler();maxAbsScaler();maxAbsScaler();kNN(7,'uniform',2)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+pca(0.9877255525798894,False);randomForest(50,'entropy',0.9381739109034369,5,20,False,'balanced')	0.3133181966453681	7.055500030517578
+pca(0.630631734446151,False);selectFwe(0.009318422367572708);mlpClassifier((17, 13),0.055934291641464406,0.1726042875164753,'lbfgs','logistic')	0.16115705888318083	cached
+multinomialNB(3.1621955256527947,True)	0.2885259381354776	cached
+fastICA(87,'parallel','unit-variance','cube');maxAbsScaler();qda(0.0801217563113984)	eval_error (The covariance matrix of class 9 is not full rank. When using `solver='svd'` the number of samples in each class should be more than the number of features, but class 9 has 3 samples and 11 features. Try using `solver='eigen'` and setting the parameter `shrinkage` for regularization.)	eval_error (The covariance matrix of class 9 is not full rank. When using `solver='svd'` the number of samples in each class should be more than the number of features, but class 9 has 3 samples and 11 features. Try using `solver='eigen'` and setting the parameter `shrinkage` for regularization.)
+varianceThreshold();fastICA(71,'deflation','unit-variance','exp');maxAbsScaler();minMaxScaler();randomForest(50,'entropy',0.9381739109034369,5,20,False,'balanced')	0.37201328358969554	28.367307901382446
+fastICA(71,'deflation','unit-variance','exp');randomForest(50,'entropy',0.9381739109034369,5,20,False,'balanced')	0.37201328358969554	27.01914882659912
+varianceThreshold();minMaxScaler();nystroem('sigmoid',2.1360440143882644,70,5,0.4520038681288201);adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.3738472205578196	80.21127009391785
+minMaxScaler();logisticRegression('l2','lbfgs',1000,7.611726005730587,'None')	0.23278975480188052	2.344251871109009
+varianceThreshold();selectFwe(0.02600506239796325);selectFwe(0.021373606981220157);adaBoost(decisionTree('entropy',22,3,0.25300677426013196,7,'balanced'),46,0.08318522683790083,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();maxAbsScaler();varianceThreshold();robustScaler(True,False);varianceThreshold();pca(0.8966395647354573,False);varianceThreshold();multinomialNB(0.11814879608508395,False)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();selectFwe(0.02600506239796325);selectFwe(0.021373606981220157);adaBoost(decisionTree('entropy',22,3,0.25300677426013196,7,'balanced'),46,0.08318522683790083,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+pca(0.832094859541622,False);pca(0.8653203001865177,False);multinomialNB(3.1621955256527947,False)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+multinomialNB(3.1621955256527947,True)	0.2885259381354776	1.7722179889678955
+pca(0.832094859541622,False);pca(0.8653203001865177,False);adaBoost(decisionTree('entropy',15,13,0.4039684103932193,2,'None'),85,1.1053533339957846,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+fastICA(86,'parallel','unit-variance','cube');maxAbsScaler();bernoulliNB(2.44541876156576,False)	0.31246824844496457	3.125981569290161
+maxAbsScaler();extraTreesClassifier(74,'entropy','log2',9,14,False,'balanced')	0.39347808872640466	4.094679594039917
+pca(0.9474274612381431,True);adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.2699328846582936	cached
+varianceThreshold();minMaxScaler();nystroem('sigmoid',2.1360440143882644,70,5,0.4520038681288201);adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.3738472205578196	cached
+minMaxScaler();varianceThreshold();varianceThreshold();randomForest(50,'entropy',0.9381739109034369,5,20,False,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+selectPercentile(61.471852910931204);extraTreesClassifier(74,'entropy','sqrt',9,7,True,'balanced')	0.3688596869792028	3.3865599632263184
+maxAbsScaler();extraTreesClassifier(74,'gini','sqrt',9,13,True,'balanced')	0.36936916320081414	cached
+selectPercentile(86.16784270581033);gaussianNB(0.004013235235440282)	0.21238589065065067	3.719939708709717
+varianceThreshold();selectFwe(0.02600506239796325);selectFwe(0.021373606981220157);adaBoost(decisionTree('entropy',22,3,0.25300677426013196,7,'balanced'),46,0.08318522683790083,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();pca(0.5721054847418433,True);pca(0.7773049065383504,True);adaBoost(decisionTree('gini',24,15,0.9751272402992051,4,'balanced'),15,1.12004444823451,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+pca(0.9294483165974883,True);fastICA(6,'deflation','unit-variance','exp');maxAbsScaler();randomForest(65,'gini','log2',14,5,False,'None')	0.27327772404051626	cached
+maxAbsScaler();selectPercentile(14.155018916143996);varianceThreshold();selectPercentile(77.67309835802884);varianceThreshold();adaBoost(decisionTree('entropy',6,14,0.3044724335243939,1,'None'),50,0.26555837157507944,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+pca(0.832094859541622,False);pca(0.8653203001865177,False);adaBoost(decisionTree('gini',16,5,0.7693023849120255,16,'balanced'),12,1.4072806994465605,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+pca(0.832094859541622,False);pca(0.8653203001865177,False);adaBoost(decisionTree('entropy',15,13,0.4104292371322197,2,'balanced'),85,1.1053533339957846,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+selectFwe(0.00376964638091453);minMaxScaler();maxAbsScaler();maxAbsScaler();kNN(7,'uniform',2)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();pca(0.9877255525798894,False);selectFwe(0.021373606981220157);adaBoost(decisionTree('entropy',22,3,0.25300677426013196,7,'balanced'),46,0.08318522683790083,'SAMME')	0.30989870356836585	9.318370342254639
+pca(0.9877255525798894,False);randomForest(50,'entropy',0.9381739109034369,5,20,False,'balanced')	0.3133181966453681	7.089461088180542
+minMaxScaler();varianceThreshold();varianceThreshold();mlpClassifier((90, 18),0.031000214769746924,0.062039916272437524,'sgd','identity')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();minMaxScaler();nystroem('sigmoid',2.1360440143882644,70,5,0.4520038681288201);adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.3738472205578196	cached
+maxAbsScaler();fastICA(6,'deflation','unit-variance','exp');maxAbsScaler();randomForest(65,'gini','log2',14,5,False,'None')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+adaBoost(decisionTree('gini',16,5,0.7693023849120255,16,'None'),58,1.4072806994465605,'SAMME')	0.343179119309088	13.163363695144653
+selectPercentile(56.99730248612609);minMaxScaler();gaussianNB(0.0030928744787012633)	0.27941862773653053	cached
+selectFwe(0.0010374991947416647);varianceThreshold();minMaxScaler();maxAbsScaler();extraTreesClassifier(27,'entropy','sqrt',5,17,True,'balanced')	0.34922745839409747	cached
+varianceThreshold();extraTreesClassifier(74,'gini','sqrt',9,13,True,'balanced')	0.36936916320081414	7.743664979934692
+pca(0.9294483165974883,True);extraTreesClassifier(74,'entropy','sqrt',9,7,True,'balanced')	0.28493866244353117	7.57171106338501
+varianceThreshold();selectFwe(0.02600506239796325);selectFwe(0.021373606981220157);adaBoost(decisionTree('entropy',22,3,0.25300677426013196,7,'balanced'),46,0.08318522683790083,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+selectFwe(0.0010374991947416647);varianceThreshold();minMaxScaler();maxAbsScaler();extraTreesClassifier(27,'entropy','sqrt',5,17,True,'balanced')	0.34922745839409747	6.61117959022522
+multinomialNB(3.1621955256527947,True)	0.2885259381354776	5.201634645462036
+varianceThreshold();maxAbsScaler();varianceThreshold();robustScaler(True,False);varianceThreshold();pca(0.8966395647354573,False);fastICA(86,'parallel','unit-variance','cube');multinomialNB(0.11814879608508395,False)	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+selectFwe(0.02600506239796325);randomForest(50,'entropy',0.9381739109034369,5,20,False,'balanced')	0.34749672914676105	16.717167377471924
+varianceThreshold();maxAbsScaler();bernoulliNB(2.44541876156576,False)	0.14715762158292692	4.951771974563599
+varianceThreshold();fastICA(71,'deflation','unit-variance','exp');maxAbsScaler();minMaxScaler();mlpClassifier((90, 18),0.031000214769746924,0.062039916272437524,'sgd','identity')	0.23150864780812164	27.80987548828125
+pca(0.9474274612381431,True);adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.2699328846582936	14.06493878364563
+maxAbsScaler();adaBoost(decisionTree('entropy',23,20,0.9833650269361177,16,'None'),77,0.2386696315364275,'SAMME')	0.35079752393231856	20.739846229553223
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.9833650269361177,16,'None'),77,0.2386696315364275,'SAMME')	0.3519908619880299	cached
+varianceThreshold();selectFwe(0.02600506239796325);selectFwe(0.021373606981220157);adaBoost(decisionTree('entropy',22,3,0.25300677426013196,7,'balanced'),46,0.08318522683790083,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+pca(0.832094859541622,False);pca(0.8653203001865177,False);adaBoost(decisionTree('entropy',15,5,0.4104292371322197,16,'balanced'),85,1.1053533339957846,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+pca(0.832094859541622,False);pca(0.8653203001865177,False);adaBoost(decisionTree('gini',16,13,0.7693023849120255,2,'balanced'),12,1.4072806994465605,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+pca(0.832094859541622,False);pca(0.8653203001865177,False);adaBoost(decisionTree('entropy',15,13,0.4104292371322197,2,'balanced'),85,1.1053533339957846,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();varianceThreshold();varianceThreshold();mlpClassifier((90, 18),0.031000214769746924,0.062039916272437524,'sgd','identity')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+pca(0.832094859541622,False);pca(0.8653203001865177,False);adaBoost(decisionTree('gini',29,17,0.4687287210964731,9,'None'),65,0.498084485527099,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+selectPercentile(56.99730248612609);minMaxScaler();gaussianNB(0.0030928744787012633)	0.27941862773653053	2.6354188919067383
+minMaxScaler();varianceThreshold();varianceThreshold();randomForest(50,'entropy',0.9381739109034369,5,20,False,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();extraTreesClassifier(74,'entropy','sqrt',9,17,True,'balanced')	0.3803054790239559	3.1738808155059814
+selectFwe(0.0010374991947416647);varianceThreshold();minMaxScaler();maxAbsScaler();extraTreesClassifier(27,'gini','sqrt',5,13,True,'balanced')	0.38025750819496784	2.374666929244995
+fastICA(86,'parallel','unit-variance','cube');maxAbsScaler();bernoulliNB(2.44541876156576,False)	0.31246824844496457	3.2870943546295166
+adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.37716304024570035	11.586490392684937
+pca(0.9474274612381431,True);multinomialNB(3.1621955256527947,True)	eval_error (Negative values in data passed to MultinomialNB (input X).)	eval_error (Negative values in data passed to MultinomialNB (input X).)
+adaBoost(decisionTree('entropy',15,13,0.4104292371322197,2,'balanced'),85,1.1053533339957846,'SAMME')	0.34676333143305854	15.780263185501099
+maxAbsScaler();extraTreesClassifier(74,'entropy','log2',9,14,False,'balanced')	0.39347808872640466	5.122503757476807
+maxAbsScaler();extraTreesClassifier(74,'gini','sqrt',9,13,True,'balanced')	0.36936916320081414	5.012566804885864
+multinomialNB(3.1621955256527947,True)	0.2885259381354776	2.3477261066436768
+pca(0.9233118777822384,True);adaBoost(decisionTree('entropy',23,20,0.9833650269361177,16,'None'),77,0.2386696315364275,'SAMME')	0.2849098638768659	13.245845079421997
+selectFwe(0.02600506239796325);randomForest(50,'entropy',0.9381739109034369,5,20,False,'balanced')	0.34749672914676105	cached
+pca(0.9877255525798894,False);randomForest(50,'entropy',0.9381739109034369,5,20,False,'balanced')	0.3133181966453681	cached
+selectPercentile(56.99730248612609);minMaxScaler();gaussianNB(0.0030928744787012633)	0.27941862773653053	3.2637388706207275
+minMaxScaler();varianceThreshold();varianceThreshold();randomForest(50,'entropy',0.9381739109034369,5,20,False,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+fastICA(71,'deflation','unit-variance','exp');randomForest(50,'entropy',0.9381739109034369,5,20,False,'balanced')	0.37201328358969554	33.139885902404785
+pca(0.9294483165974883,True);mlpClassifier((90, 18),0.031000214769746924,0.062039916272437524,'sgd','identity')	0.16820418960302386	19.154362201690674
+minMaxScaler();varianceThreshold();varianceThreshold();extraTreesClassifier(74,'entropy','sqrt',9,7,True,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+fastICA(71,'deflation','unit-variance','exp');randomForest(50,'entropy',0.9381739109034369,5,20,False,'balanced')	0.37201328358969554	38.63134026527405
+multinomialNB(3.1621955256527947,True)	0.2885259381354776	3.1071927547454834
+maxAbsScaler();extraTreesClassifier(74,'gini','sqrt',9,13,True,'balanced')	0.36936916320081414	5.0461626052856445
+pca(0.9877255525798894,False);randomForest(50,'entropy',0.9381739109034369,5,20,False,'balanced')	0.3133181966453681	5.194523334503174
+maxAbsScaler();adaBoost(decisionTree('gini',16,5,0.7693023849120255,16,'balanced'),12,1.4072806994465605,'SAMME')	0.31705371366769536	3.8627779483795166
+pca(0.832094859541622,False);pca(0.8653203001865177,False);extraTreesClassifier(74,'gini','sqrt',9,13,True,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+robustScaler(False,False);extraTreesClassifier(74,'gini','sqrt',9,13,False,'balanced')	0.41032898094761217	5.157289028167725
+minMaxScaler();varianceThreshold();maxAbsScaler();minMaxScaler();robustScaler(False,False);extraTreesClassifier(74,'entropy','log2',9,14,True,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();fastICA(71,'deflation','unit-variance','exp');maxAbsScaler();minMaxScaler();randomForest(50,'entropy',0.9381739109034369,5,20,False,'balanced')	0.37201328358969554	37.223313093185425
+varianceThreshold();adaBoost(decisionTree('entropy',7,20,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.37432863101737646	11.345183849334717
+fastICA(95,'deflation','unit-variance','exp');randomForest(79,'entropy',0.9381739109034369,5,20,False,'balanced')	0.3704240514681248	43.700809478759766
+varianceThreshold();pca(0.9877255525798894,False);selectFwe(0.021373606981220157);adaBoost(decisionTree('entropy',22,3,0.25300677426013196,7,'balanced'),46,0.08318522683790083,'SAMME')	0.30989870356836585	cached
+varianceThreshold();minMaxScaler();nystroem('sigmoid',2.1360440143882644,70,5,0.4520038681288201);adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.3738472205578196	90.71816301345825
+varianceThreshold();minMaxScaler();nystroem('sigmoid',2.1360440143882644,70,5,0.4520038681288201);adaBoost(decisionTree('entropy',23,10,0.9833650269361177,16,'None'),77,0.2386696315364275,'SAMME')	0.36313574915968727	144.55734539031982
+pca(0.6400422368355697,False);pca(0.8653203001865177,True);adaBoost(decisionTree('gini',16,13,0.7693023849120255,2,'balanced'),12,1.4072806994465605,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+pca(0.592357944384004,True);pca(0.8653203001865177,False);adaBoost(decisionTree('gini',16,13,0.7693023849120255,2,'balanced'),12,1.4072806994465605,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();varianceThreshold();varianceThreshold();extraTreesClassifier(74,'entropy','sqrt',9,7,True,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();extraTreesClassifier(74,'entropy','sqrt',9,17,True,'balanced')	0.3803054790239559	cached
+minMaxScaler();varianceThreshold();varianceThreshold();mlpClassifier((90, 18),0.031000214769746924,0.062039916272437524,'sgd','identity')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+pca(0.9877255525798894,False);randomForest(50,'entropy',0.9381739109034369,5,20,False,'balanced')	0.3133181966453681	cached
+minMaxScaler();varianceThreshold();varianceThreshold();randomForest(50,'entropy',0.9381739109034369,5,11,False,'None')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+pca(0.832094859541622,False);pca(0.8653203001865177,False);adaBoost(decisionTree('entropy',15,13,0.4104292371322197,2,'balanced'),85,1.1053533339957846,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+robustScaler(False,False);extraTreesClassifier(74,'gini','sqrt',9,13,False,'balanced')	0.41032898094761217	2.904663562774658
+minMaxScaler();varianceThreshold();varianceThreshold();mlpClassifier((90, 18),0.031000214769746924,0.062039916272437524,'sgd','identity')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.37716304024570035	cached
+fastICA(71,'deflation','unit-variance','exp');extraTreesClassifier(74,'entropy','log2',9,14,True,'balanced')	0.3961541541256424	6.2125022411346436
+minMaxScaler();varianceThreshold();maxAbsScaler();minMaxScaler();robustScaler(False,False);randomForest(50,'entropy',0.9381739109034369,5,20,False,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();adaBoost(decisionTree('gini',8,15,0.6430519593820734,14,'balanced'),48,0.03428200200253955,'SAMME')	0.3868689594873652	7.5969319343566895
+pca(0.6492034055035627,True);pca(0.8653203001865177,False);extraTreesClassifier(74,'gini','sqrt',9,13,True,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();adaBoost(decisionTree('entropy',7,20,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.37432863101737646	10.605610609054565
+varianceThreshold();adaBoost(decisionTree('entropy',7,20,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.37432863101737646	10.759206295013428
+pca(0.832094859541622,False);randomForest(50,'entropy',0.9381739109034369,5,20,False,'balanced')	0.235177161141908	5.334041118621826
+pca(0.9877255525798894,False);pca(0.8653203001865177,False);adaBoost(decisionTree('entropy',15,13,0.4104292371322197,2,'balanced'),85,1.1053533339957846,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+pca(0.832094859541622,False);pca(0.8653203001865177,False);extraTreesClassifier(74,'gini','sqrt',9,13,False,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();adaBoost(decisionTree('entropy',11,18,0.7992239920450853,7,'balanced'),12,1.8655628958289368,'SAMME')	0.31375401332431524	4.936908721923828
+varianceThreshold();minMaxScaler();nystroem('sigmoid',2.1360440143882644,70,5,0.4520038681288201);adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.3738472205578196	cached
+varianceThreshold();minMaxScaler();nystroem('sigmoid',2.1360440143882644,70,5,0.4520038681288201);adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.3738472205578196	cached
+maxAbsScaler();extraTreesClassifier(74,'gini','sqrt',9,13,True,'balanced')	0.36936916320081414	3.4019405841827393
+maxAbsScaler();extraTreesClassifier(74,'entropy','log2',9,14,True,'balanced')	0.37015618306103926	3.3879735469818115
+varianceThreshold();minMaxScaler();nystroem('sigmoid',2.1360440143882644,70,5,0.4520038681288201);adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.3738472205578196	cached
+fastICA(71,'deflation','unit-variance','exp');randomForest(50,'entropy',0.9381739109034369,5,20,False,'balanced')	0.37201328358969554	cached
+minMaxScaler();varianceThreshold();maxAbsScaler();nystroem('sigmoid',2.1360440143882644,70,5,0.4520038681288201);robustScaler(False,False);extraTreesClassifier(74,'entropy','log2',9,14,True,'balanced')	0.37067742993206854	5.339507818222046
+varianceThreshold();minMaxScaler();minMaxScaler();adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+fastICA(71,'deflation','unit-variance','exp');randomForest(50,'entropy',0.9381739109034369,5,20,False,'balanced')	0.37201328358969554	27.55850648880005
+pca(0.832094859541622,False);pca(0.8653203001865177,False);adaBoost(decisionTree('gini',16,13,0.7693023849120255,2,'balanced'),12,1.4072806994465605,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();extraTreesClassifier(74,'entropy','log2',9,14,False,'balanced')	0.39347808872640466	4.174266338348389
+selectPercentile(56.99730248612609);minMaxScaler();gaussianNB(0.0030928744787012633)	0.27941862773653053	3.0675225257873535
+varianceThreshold();minMaxScaler();nystroem('sigmoid',2.1360440143882644,70,5,0.4520038681288201);extraTreesClassifier(74,'gini','sqrt',9,13,False,'balanced')	0.4074992551388939	5.972680330276489
+varianceThreshold();fastICA(71,'deflation','unit-variance','exp');maxAbsScaler();minMaxScaler();randomForest(50,'entropy',0.9381739109034369,5,20,False,'balanced')	0.37201328358969554	28.81175661087036
+fastICA(95,'deflation','unit-variance','exp');randomForest(79,'entropy',0.9381739109034369,5,20,False,'balanced')	0.3704240514681248	36.13120698928833
+minMaxScaler();varianceThreshold();varianceThreshold();extraTreesClassifier(74,'entropy','sqrt',9,7,True,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+robustScaler(False,False);adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.37716304024570035	8.465648412704468
+varianceThreshold();fastICA(95,'deflation','unit-variance','exp');nystroem('sigmoid',2.1360440143882644,70,5,0.4520038681288201);adaBoost(decisionTree('entropy',23,10,0.9833650269361177,16,'None'),77,0.2386696315364275,'SAMME')	0.3114661961937837	183.53896570205688
+minMaxScaler();randomForest(79,'entropy',0.9381739109034369,5,20,False,'balanced')	0.34316958255628077	7.620802640914917
+pca(0.9877255525798894,False);pca(0.8653203001865177,False);adaBoost(decisionTree('gini',18,16,0.7651787391443229,12,'balanced'),97,0.9428748636512964,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+robustScaler(False,False);adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.37716304024570035	cached
+pca(0.832094859541622,False);pca(0.8653203001865177,False);adaBoost(decisionTree('entropy',15,13,0.4104292371322197,2,'balanced'),85,1.1053533339957846,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+selectPercentile(56.99730248612609);minMaxScaler();gaussianNB(0.0030928744787012633)	0.27941862773653053	2.0510973930358887
+varianceThreshold();extraTreesClassifier(74,'entropy','log2',9,14,True,'balanced')	0.37015618306103926	2.984328031539917
+varianceThreshold();gaussianNB(0.0035984977461487873)	0.21274106468715667	1.9850382804870605
+maxAbsScaler();adaBoost(decisionTree('gini',8,15,0.6430519593820734,14,'balanced'),48,0.03428200200253955,'SAMME')	0.3868689594873652	cached
+nystroem('rbf',2.303490824103726,49,3,0.7365311292665315);adaBoost(decisionTree('entropy',7,20,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	eval_error (BaseClassifier in AdaBoostClassifier ensemble is worse than random, ensemble can not be fit.)	eval_error (BaseClassifier in AdaBoostClassifier ensemble is worse than random, ensemble can not be fit.)
+varianceThreshold();randomForest(50,'entropy',0.9381739109034369,5,20,False,'balanced')	0.34190503340950934	8.409661769866943
+adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.37716304024570035	9.212273836135864
+pca(0.9877255525798894,False);randomForest(50,'entropy',0.9381739109034369,5,20,False,'balanced')	0.3133181966453681	4.683421611785889
+selectPercentile(56.99730248612609);minMaxScaler();gaussianNB(0.0030928744787012633)	0.27941862773653053	cached
+pca(0.859323744912284,False);pca(0.8653203001865177,True);adaBoost(decisionTree('entropy',15,13,0.6695155164607602,2,'balanced'),85,1.1053533339957846,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.37716304024570035	cached
+varianceThreshold();adaBoost(decisionTree('entropy',7,20,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.37432863101737646	cached
+minMaxScaler();varianceThreshold();maxAbsScaler();randomForest(50,'entropy',0.9381739109034369,5,11,False,'None')	0.2768021392974732	10.222516536712646
+pca(0.9877255525798894,False);randomForest(50,'entropy',0.9381739109034369,5,20,False,'balanced')	0.3133181966453681	4.521860599517822
+pca(0.9877255525798894,False);adaBoost(decisionTree('entropy',23,20,0.9833650269361177,16,'None'),77,0.2386696315364275,'SAMME')	0.2863350404531263	10.757930517196655
+varianceThreshold();minMaxScaler();minMaxScaler();adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();fastICA(71,'deflation','unit-variance','exp');maxAbsScaler();minMaxScaler();randomForest(50,'entropy',0.9381739109034369,5,20,False,'balanced')	0.37201328358969554	21.70434045791626
+robustScaler(False,False);adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.37716304024570035	cached
+pca(0.832094859541622,False);pca(0.8653203001865177,False);adaBoost(decisionTree('gini',16,13,0.7693023849120255,2,'balanced'),12,1.4072806994465605,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();adaBoost(decisionTree('gini',8,15,0.6430519593820734,14,'balanced'),48,0.03428200200253955,'SAMME')	0.38690068500968267	6.689849853515625
+fastICA(90,'deflation','unit-variance','cube');maxAbsScaler();selectFwe(0.03837494249054343);maxAbsScaler();maxAbsScaler();fastICA(61,'parallel','unit-variance','cube');maxAbsScaler();decisionTree('gini',26,20,0.6245618394206974,12,'None')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();extraTreesClassifier(74,'gini','sqrt',9,13,False,'balanced')	0.41032898094761217	3.551476001739502
+robustScaler(False,False);adaBoost(decisionTree('entropy',18,16,0.08722308252614297,2,'balanced'),76,0.011326510045998361,'SAMME')	0.4042785424448995	9.337005853652954
+maxAbsScaler();varianceThreshold();varianceThreshold();randomForest(50,'entropy',0.9381739109034369,5,11,False,'None')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+fastICA(67,'parallel','unit-variance','cube');adaBoost(decisionTree('gini',16,13,0.7693023849120255,2,'balanced'),12,1.4072806994465605,'SAMME')	0.34868187470693746	6.6411566734313965
+pca(0.592357944384004,True);pca(0.8653203001865177,False);randomForest(79,'gini',0.9381739109034369,5,4,False,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();fastICA(71,'deflation','unit-variance','exp');varianceThreshold();randomForest(50,'entropy',0.9381739109034369,5,11,False,'None')	0.2816087061080571	26.032775163650513
+minMaxScaler();varianceThreshold();varianceThreshold();extraTreesClassifier(74,'entropy','sqrt',9,2,True,'None')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();extraTreesClassifier(74,'entropy','sqrt',9,17,True,'balanced')	0.3803054790239559	cached
+adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.37716304024570035	12.311715841293335
+varianceThreshold();minMaxScaler();nystroem('sigmoid',2.1360440143882644,70,5,0.4520038681288201);extraTreesClassifier(74,'gini','sqrt',9,13,False,'balanced')	0.4074992551388939	5.524672746658325
+pca(0.9877255525798894,False);pca(0.8653203001865177,False);adaBoost(decisionTree('entropy',15,13,0.4104292371322197,2,'balanced'),85,1.1053533339957846,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+fastICA(71,'deflation','unit-variance','exp');extraTreesClassifier(74,'entropy','log2',9,14,True,'balanced')	0.3961541541256424	5.701315402984619
+minMaxScaler();adaBoost(decisionTree('gini',8,15,0.6430519593820734,14,'balanced'),48,0.03428200200253955,'SAMME')	0.38690068500968267	7.831464052200317
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.9833650269361177,16,'None'),77,0.2386696315364275,'SAMME')	0.3519908619880299	9.790307760238647
+varianceThreshold();minMaxScaler();nystroem('sigmoid',2.1360440143882644,70,5,0.4520038681288201);adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.3738472205578196	75.84473919868469
+maxAbsScaler();extraTreesClassifier(74,'entropy','log2',9,14,False,'balanced')	0.39347808872640466	2.206285238265991
+varianceThreshold();adaBoost(decisionTree('gini',8,15,0.6430519593820734,14,'balanced'),48,0.03428200200253955,'SAMME')	0.38690068500968267	cached
+adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.37716304024570035	cached
+robustScaler(False,False);adaBoost(decisionTree('entropy',18,16,0.08722308252614297,2,'balanced'),76,0.011326510045998361,'SAMME')	0.4042785424448995	cached
+pca(0.5029101692495435,True);pca(0.8739380338317413,False);extraTreesClassifier(74,'gini','sqrt',9,13,False,'balanced_subsample')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+nystroem('rbf',2.303490824103726,49,3,0.7365311292665315);adaBoost(decisionTree('entropy',7,20,0.606569398646551,5,'balanced'),76,0.03428200200253955,'SAMME')	eval_error (BaseClassifier in AdaBoostClassifier ensemble is worse than random, ensemble can not be fit.)	eval_error (BaseClassifier in AdaBoostClassifier ensemble is worse than random, ensemble can not be fit.)
+robustScaler(False,False);extraTreesClassifier(74,'gini','sqrt',9,13,False,'balanced')	0.41032898094761217	4.215886354446411
+fastICA(67,'parallel','unit-variance','cube');adaBoost(decisionTree('entropy',2,2,0.6746812961463984,5,'None'),12,1.4072806994465605,'SAMME')	0.19831012100840334	4.460290193557739
+varianceThreshold();adaBoost(decisionTree('gini',8,15,0.6430519593820734,14,'balanced'),48,0.03428200200253955,'SAMME')	0.38690068500968267	cached
+pca(0.832094859541622,False);pca(0.8653203001865177,False);adaBoost(decisionTree('gini',16,13,0.7693023849120255,2,'balanced'),12,1.4072806994465605,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();varianceThreshold();varianceThreshold();randomForest(50,'entropy',0.9381739109034369,5,11,False,'None')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();adaBoost(decisionTree('gini',8,15,0.6430519593820734,14,'balanced'),48,0.03428200200253955,'SAMME')	0.38690068500968267	cached
+robustScaler(False,False);adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.37716304024570035	cached
+pca(0.832094859541622,True);pca(0.8653203001865177,False);adaBoost(decisionTree('entropy',14,9,0.4104292371322197,2,'balanced'),85,1.1053533339957846,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();adaBoost(decisionTree('gini',8,15,0.6430519593820734,14,'balanced'),48,0.011326510045998361,'SAMME')	0.39651942144301683	5.598917722702026
+maxAbsScaler();adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.3771814825528582	8.898433208465576
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),48,0.03428200200253955,'SAMME')	0.4178503908872794	6.554335355758667
+adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.37716304024570035	cached
+pca(0.859323744912284,False);pca(0.8653203001865177,True);adaBoost(decisionTree('entropy',15,13,0.6695155164607602,2,'balanced'),85,1.1053533339957846,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();adaBoost(decisionTree('gini',11,10,0.39517590355011833,13,'None'),71,1.9560108974837087,'SAMME')	0.312875150604941	6.917105436325073
+extraTreesClassifier(74,'entropy','sqrt',9,17,True,'balanced')	0.3803054790239559	3.1591341495513916
+nystroem('rbf',2.303490824103726,49,3,0.7365311292665315);adaBoost(decisionTree('entropy',7,20,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	eval_error (BaseClassifier in AdaBoostClassifier ensemble is worse than random, ensemble can not be fit.)	eval_error (BaseClassifier in AdaBoostClassifier ensemble is worse than random, ensemble can not be fit.)
+pca(0.9877255525798894,False);pca(0.8653203001865177,False);adaBoost(decisionTree('entropy',15,13,0.4104292371322197,2,'balanced'),85,1.1053533339957846,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+pca(0.9877255525798894,False);extraTreesClassifier(74,'gini','sqrt',9,13,False,'balanced')	0.27050090960503803	3.2277915477752686
+adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.37716304024570035	9.777637958526611
+maxAbsScaler();varianceThreshold();varianceThreshold();randomForest(50,'entropy',0.9381739109034369,5,11,False,'None')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+robustScaler(False,False);adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.37716304024570035	cached
+adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.37716304024570035	cached
+minMaxScaler();varianceThreshold();maxAbsScaler();randomForest(50,'entropy',0.9381739109034369,4,11,False,'None')	0.2768021392974732	7.976146697998047
+selectPercentile(22.29523386012113);maxAbsScaler();nystroem('sigmoid',1.800050496826835,66,2,-0.1938676318404906);varianceThreshold();nystroem('poly',1.2801336002243864,11,2,-0.4166870570910006);adaBoost(decisionTree('gini',21,7,0.08937052854793637,12,'balanced'),14,0.7174961223292134,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+robustScaler(False,False);randomForest(50,'entropy',0.9381739109034369,5,20,False,'balanced')	0.34190503340950934	7.675155878067017
+minMaxScaler();varianceThreshold();varianceThreshold();adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();adaBoost(decisionTree('entropy',7,15,0.6430519593820734,14,'balanced'),76,0.011326510045998361,'SAMME')	0.35398083225994925	9.836611270904541
+extraTreesClassifier(74,'entropy','sqrt',9,2,True,'None')	0.2804349686417829	4.075435400009155
+varianceThreshold();adaBoost(decisionTree('gini',8,15,0.6430519593820734,14,'balanced'),48,0.03428200200253955,'SAMME')	0.38690068500968267	7.209800958633423
+maxAbsScaler();adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.3771814825528582	10.51737356185913
+nystroem('rbf',2.303490824103726,49,3,0.7365311292665315);adaBoost(decisionTree('entropy',7,20,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	eval_error (BaseClassifier in AdaBoostClassifier ensemble is worse than random, ensemble can not be fit.)	eval_error (BaseClassifier in AdaBoostClassifier ensemble is worse than random, ensemble can not be fit.)
+selectPercentile(74.70653837211425);varianceThreshold();varianceThreshold();extraTreesClassifier(74,'entropy','sqrt',9,2,True,'None')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();adaBoost(decisionTree('gini',8,20,0.606569398646551,5,'balanced'),48,0.03428200200253955,'SAMME')	0.3848945205829368	6.306841135025024
+robustScaler(False,True);extraTreesClassifier(74,'gini','sqrt',9,13,False,'balanced')	0.41032898094761217	2.6113147735595703
+varianceThreshold();minMaxScaler();nystroem('sigmoid',2.1360440143882644,70,5,0.4520038681288201);randomForest(79,'gini',0.9381739109034369,5,4,False,'balanced')	0.33703777170450355	88.60947799682617
+robustScaler(False,True);extraTreesClassifier(74,'gini','sqrt',9,13,False,'balanced')	0.41032898094761217	cached
+maxAbsScaler();adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.3771814825528582	cached
+pca(0.9877255525798894,False);pca(0.8653203001865177,False);adaBoost(decisionTree('entropy',15,13,0.4104292371322197,2,'balanced'),85,0.03428200200253955,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+selectPercentile(6.616698369864013);selectPercentile(74.60819710053305);adaBoost(decisionTree('gini',8,15,0.6430519593820734,14,'balanced'),48,1.1053533339957846,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+pca(0.832094859541622,True);pca(0.8653203001865177,False);adaBoost(decisionTree('entropy',14,9,0.4104292371322197,2,'balanced'),85,1.1053533339957846,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+pca(0.832094859541622,True);pca(0.8653203001865177,False);adaBoost(decisionTree('entropy',14,9,0.4104292371322197,2,'balanced'),85,1.1053533339957846,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+selectPercentile(74.70653837211425);varianceThreshold();varianceThreshold();extraTreesClassifier(80,'entropy','sqrt',8,1,False,'balanced_subsample')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();minMaxScaler();nystroem('sigmoid',2.1360440143882644,70,5,0.4520038681288201);extraTreesClassifier(74,'gini','sqrt',9,13,False,'balanced')	0.4074992551388939	4.978638648986816
+pca(0.832094859541622,True);pca(0.8653203001865177,False);adaBoost(decisionTree('entropy',14,9,0.4104292371322197,2,'balanced'),85,1.1053533339957846,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();adaBoost(decisionTree('gini',8,15,0.6430519593820734,14,'balanced'),48,0.011326510045998361,'SAMME')	0.39651942144301683	5.706504821777344
+varianceThreshold();adaBoost(decisionTree('gini',8,15,0.6430519593820734,14,'balanced'),48,0.011326510045998361,'SAMME')	0.39651942144301683	5.904683828353882
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),48,0.03428200200253955,'SAMME')	0.4178503908872794	9.483975887298584
+maxAbsScaler();adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.3771814825528582	10.338173627853394
+extraTreesClassifier(74,'entropy','sqrt',9,17,True,'balanced')	0.3803054790239559	3.4661407470703125
+selectPercentile(74.70653837211425);varianceThreshold();varianceThreshold();extraTreesClassifier(74,'entropy','sqrt',9,2,True,'None')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.03428200200253955,'SAMME')	0.3784721151027527	8.551369667053223
+adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.03428200200253955,'SAMME')	0.3784721151027527	8.806342363357544
+robustScaler(False,False);adaBoost(decisionTree('gini',8,16,0.08722308252614297,2,'balanced'),48,0.03428200200253955,'SAMME')	0.3713938598300203	4.697789907455444
+robustScaler(False,False);adaBoost(decisionTree('entropy',18,16,0.08722308252614297,2,'balanced'),76,0.011326510045998361,'SAMME')	0.4042785424448995	7.8834545612335205
+minMaxScaler();varianceThreshold();maxAbsScaler();adaBoost(decisionTree('entropy',15,13,0.6695155164607602,2,'balanced'),85,1.1053533339957846,'SAMME')	0.3507490601793982	16.290122032165527
+pca(0.859323744912284,False);pca(0.8653203001865177,True);randomForest(50,'entropy',0.9381739109034369,4,11,False,'None')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();varianceThreshold();robustScaler(False,True);randomForest(73,'entropy',0.8992636260399163,7,14,True,'balanced')	0.39454098228629375	8.333776712417603
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),85,1.1053533339957846,'SAMME')	0.35859004070528616	13.069519996643066
+pca(0.9877255525798894,False);pca(0.8653203001865177,False);adaBoost(decisionTree('entropy',15,13,0.4104292371322197,2,'balanced'),48,0.03428200200253955,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.3771814825528582	cached
+varianceThreshold();adaBoost(decisionTree('gini',8,15,0.6430519593820734,14,'balanced'),48,0.03428200200253955,'SAMME')	0.38690068500968267	cached
+robustScaler(False,False);extraTreesClassifier(74,'gini','sqrt',9,13,False,'balanced')	0.41032898094761217	3.227816104888916
+robustScaler(False,False);adaBoost(decisionTree('entropy',18,16,0.08722308252614297,2,'balanced'),76,0.011326510045998361,'SAMME')	0.4042785424448995	cached
+varianceThreshold();adaBoost(decisionTree('gini',8,15,0.6430519593820734,14,'balanced'),48,0.03428200200253955,'SAMME')	0.38690068500968267	cached
+varianceThreshold();adaBoost(decisionTree('gini',8,20,0.606569398646551,5,'balanced'),48,0.03428200200253955,'SAMME')	0.3848945205829368	cached
+varianceThreshold();extraTreesClassifier(74,'gini','sqrt',9,13,False,'balanced')	0.41032898094761217	3.142690896987915
+nystroem('rbf',2.303490824103726,49,3,0.7365311292665315);adaBoost(decisionTree('entropy',7,20,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	eval_error (BaseClassifier in AdaBoostClassifier ensemble is worse than random, ensemble can not be fit.)	eval_error (BaseClassifier in AdaBoostClassifier ensemble is worse than random, ensemble can not be fit.)
+maxAbsScaler();varianceThreshold();varianceThreshold();randomForest(50,'entropy',0.9381739109034369,5,11,False,'None')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();randomForest(50,'entropy',0.9381739109034369,5,20,False,'balanced')	0.34190503340950934	8.627634763717651
+maxAbsScaler();adaBoost(decisionTree('gini',11,10,0.39517590355011833,13,'None'),48,0.03428200200253955,'SAMME')	0.3081427010136003	4.693641424179077
+varianceThreshold();adaBoost(decisionTree('entropy',18,15,0.6430519593820734,14,'balanced'),76,0.011326510045998361,'SAMME')	0.40132202238505255	12.872055530548096
+varianceThreshold();adaBoost(decisionTree('entropy',7,15,0.6430519593820734,14,'balanced'),76,0.011326510045998361,'SAMME')	0.35421404238363724	9.768247604370117
+varianceThreshold();fastICA(71,'deflation','unit-variance','exp');maxAbsScaler();minMaxScaler();adaBoost(decisionTree('gini',8,15,0.6430519593820734,14,'balanced'),48,0.03428200200253955,'SAMME')	0.4110447130037776	9.299412488937378
+varianceThreshold();adaBoost(decisionTree('gini',8,15,0.6430519593820734,14,'balanced'),71,1.9560108974837087,'SAMME')	0.3092290091342674	7.858534574508667
+adaBoost(decisionTree('gini',8,10,0.606569398646551,5,'balanced'),48,0.011326510045998361,'SAMME')	0.382690777937844	5.686372518539429
+varianceThreshold();adaBoost(decisionTree('gini',8,15,0.6430519593820734,14,'balanced'),48,0.011326510045998361,'SAMME')	0.39651942144301683	cached
+robustScaler(False,False);extraTreesClassifier(74,'gini','sqrt',9,13,False,'balanced')	0.41032898094761217	cached
+maxAbsScaler();varianceThreshold();varianceThreshold();randomForest(50,'entropy',0.9381739109034369,5,11,True,'None')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.3771814825528582	cached
+robustScaler(False,False);adaBoost(decisionTree('entropy',18,16,0.08722308252614297,2,'balanced'),76,0.011326510045998361,'SAMME')	0.4042785424448995	cached
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),85,1.1053533339957846,'SAMME')	0.35859004070528616	cached
+varianceThreshold();fastICA(71,'deflation','unit-variance','exp');maxAbsScaler();minMaxScaler();randomForest(50,'entropy',0.9381739109034369,5,20,False,'balanced')	0.37201328358969554	cached
+robustScaler(False,True);extraTreesClassifier(88,'entropy','log2',15,1,False,'balanced')	0.4241598913988164	4.225584983825684
+robustScaler(False,False);adaBoost(decisionTree('entropy',18,16,0.08722308252614297,2,'balanced'),48,1.1053533339957846,'SAMME')	0.3462503103824208	5.446475267410278
+selectPercentile(6.616698369864013);selectPercentile(74.60819710053305);adaBoost(decisionTree('gini',8,15,0.6430519593820734,14,'balanced'),76,0.011326510045998361,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+pca(0.859323744912284,False);pca(0.8653203001865177,True);randomForest(50,'entropy',0.9381739109034369,4,20,False,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+robustScaler(False,False);adaBoost(decisionTree('gini',8,16,0.08722308252614297,2,'balanced'),48,0.03428200200253955,'SAMME')	0.3713938598300203	6.05408239364624
+maxAbsScaler();selectPercentile(73.95858649342097);robustScaler(False,True);randomForest(73,'entropy',0.8992636260399163,7,14,False,'balanced')	0.35899027540369705	10.088511228561401
+varianceThreshold();minMaxScaler();nystroem('sigmoid',2.1360440143882644,70,5,0.4520038681288201);extraTreesClassifier(74,'gini','sqrt',9,13,False,'balanced')	0.4074992551388939	5.989078521728516
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),48,0.03428200200253955,'SAMME')	0.4178503908872794	10.467192888259888
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,1.1053533339957846,'SAMME')	0.3505889701776135	16.625038385391235
+extraTreesClassifier(74,'entropy','sqrt',9,17,True,'balanced')	0.3803054790239559	4.185598611831665
+varianceThreshold();adaBoost(decisionTree('gini',8,15,0.6430519593820734,14,'balanced'),76,0.011326510045998361,'SAMME')	0.3816598281581135	11.205944299697876
+minMaxScaler();varianceThreshold();maxAbsScaler();adaBoost(decisionTree('gini',8,13,0.6695155164607602,2,'balanced'),48,0.03428200200253955,'SAMME')	0.3738469882048559	7.939664840698242
+pca(0.859323744912284,True);pca(0.8653203001865177,False);adaBoost(decisionTree('entropy',14,9,0.4104292371322197,2,'balanced'),85,1.1053533339957846,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+pca(0.832094859541622,False);pca(0.8653203001865177,True);randomForest(50,'entropy',0.9381739109034369,4,11,False,'None')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();adaBoost(decisionTree('gini',8,15,0.6430519593820734,14,'balanced'),48,0.011326510045998361,'SAMME')	0.39651942144301683	8.19918417930603
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6695155164607602,14,'balanced'),85,1.1053533339957846,'SAMME')	0.3505889701776135	17.824565172195435
+varianceThreshold();adaBoost(decisionTree('entropy',18,15,0.6430519593820734,14,'balanced'),48,0.03428200200253955,'SAMME')	0.4186327448507532	11.471296548843384
+varianceThreshold();adaBoost(decisionTree('gini',8,15,0.6430519593820734,14,'balanced'),48,0.03428200200253955,'SAMME')	0.38690068500968267	cached
+pca(0.9877255525798894,False);pca(0.8653203001865177,False);adaBoost(decisionTree('entropy',15,4,0.4104292371322197,2,'balanced'),48,0.03428200200253955,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();robustScaler(False,True);maxAbsScaler();minMaxScaler();adaBoost(decisionTree('gini',8,15,0.6430519593820734,14,'balanced'),48,0.03428200200253955,'SAMME')	0.38690068500968267	7.877813816070557
+varianceThreshold();fastICA(71,'deflation','unit-variance','exp');maxAbsScaler();minMaxScaler();randomForest(50,'entropy',0.9381739109034369,5,11,False,'None')	0.29247337559383413	30.190085411071777
+minMaxScaler();varianceThreshold();maxAbsScaler();adaBoost(decisionTree('gini',8,13,0.6430519593820734,2,'balanced'),48,0.03428200200253955,'SAMME')	0.3738469882048559	8.87165880203247
+varianceThreshold();adaBoost(decisionTree('entropy',7,15,0.6430519593820734,14,'balanced'),76,0.011326510045998361,'SAMME')	0.35421404238363724	12.448668718338013
+pca(0.859323744912284,False);pca(0.8653203001865177,True);randomForest(50,'entropy',0.9381739109034369,4,11,False,'None')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+robustScaler(False,False);adaBoost(decisionTree('entropy',18,16,0.08722308252614297,2,'balanced'),76,0.011326510045998361,'SAMME')	0.4042785424448995	cached
+maxAbsScaler();adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.3771814825528582	cached
+nystroem('rbf',2.303490824103726,49,3,0.7365311292665315);adaBoost(decisionTree('entropy',7,20,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	eval_error (BaseClassifier in AdaBoostClassifier ensemble is worse than random, ensemble can not be fit.)	eval_error (BaseClassifier in AdaBoostClassifier ensemble is worse than random, ensemble can not be fit.)
+varianceThreshold();adaBoost(decisionTree('entropy',7,15,0.6430519593820734,14,'balanced'),76,0.011326510045998361,'SAMME')	0.35421404238363724	cached
+maxAbsScaler();varianceThreshold();fastICA(71,'deflation','unit-variance','exp');gaussianNB(0.005562825112455291)	0.30622766673143526	4.162337064743042
+robustScaler(False,True);extraTreesClassifier(74,'gini','sqrt',9,13,True,'balanced')	0.36936916320081414	4.642581224441528
+extraTreesClassifier(74,'entropy','log2',9,17,False,'balanced')	0.37559679747630803	2.3855502605438232
+maxAbsScaler();adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.3771814825528582	8.525552034378052
+selectPercentile(74.70653837211425);varianceThreshold();varianceThreshold();extraTreesClassifier(80,'entropy','sqrt',8,1,False,'balanced_subsample')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+pca(0.859323744912284,False);pca(0.8653203001865177,True);randomForest(50,'entropy',0.9381739109034369,4,20,False,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();varianceThreshold();maxAbsScaler();adaBoost(decisionTree('gini',8,13,0.6430519593820734,2,'balanced'),48,0.03428200200253955,'SAMME')	0.3738469882048559	cached
+pca(0.9877255525798894,False);pca(0.8653203001865177,False);adaBoost(decisionTree('entropy',15,4,0.4104292371322197,2,'balanced'),48,0.03428200200253955,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),48,0.03428200200253955,'SAMME')	0.4178503908872794	cached
+robustScaler(False,True);extraTreesClassifier(74,'gini','sqrt',9,13,False,'balanced')	0.41032898094761217	2.8206887245178223
+varianceThreshold();nystroem('cosine',1.798424217333027,31,2,0.4826283947811494);pca(0.6544448996744748,True);nystroem('sigmoid',2.1360440143882644,70,5,0.4520038681288201);extraTreesClassifier(74,'gini','sqrt',9,13,True,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();varianceThreshold();maxAbsScaler();adaBoost(decisionTree('gini',5,8,0.09382431212766362,18,'None'),51,0.131466738533371,'SAMME')	0.24010894827327936	4.898288011550903
+varianceThreshold();fastICA(71,'deflation','unit-variance','exp');maxAbsScaler();minMaxScaler();adaBoost(decisionTree('gini',8,15,0.6430519593820734,14,'balanced'),48,0.03428200200253955,'SAMME')	0.4110447130037776	cached
+varianceThreshold();minMaxScaler();randomForest(75,'entropy','log2',5,20,False,'balanced')	0.4063584139693794	5.967451572418213
+varianceThreshold();adaBoost(decisionTree('gini',18,10,0.8948265101823918,17,'None'),48,0.03428200200253955,'SAMME')	0.30778959170840026	6.514388561248779
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),48,0.03428200200253955,'SAMME')	0.4178503908872794	cached
+pca(0.859323744912284,True);pca(0.6448175268093272,False);adaBoost(decisionTree('gini',8,9,0.07719339480594023,12,'balanced'),85,0.011326510045998361,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+robustScaler(False,False);adaBoost(decisionTree('entropy',18,16,0.08722308252614297,2,'balanced'),48,0.011326510045998361,'SAMME')	0.40745558695215267	8.341118574142456
+selectFwe(0.018327977770077233);fastICA(71,'deflation','unit-variance','exp');maxAbsScaler();minMaxScaler();adaBoost(decisionTree('gini',8,15,0.6430519593820734,14,'balanced'),48,0.03428200200253955,'SAMME')	0.39075580304442376	11.999008417129517
+maxAbsScaler();adaBoost(decisionTree('entropy',22,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.40505809206868815	17.01068925857544
+varianceThreshold();adaBoost(decisionTree('gini',8,15,0.6430519593820734,14,'balanced'),48,0.011326510045998361,'SAMME')	0.39651942144301683	cached
+pca(0.9877255525798894,False);pca(0.8653203001865177,False);adaBoost(decisionTree('entropy',15,4,0.4104292371322197,2,'balanced'),48,0.03428200200253955,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.3771814825528582	cached
+pca(0.9877255525798894,False);pca(0.8653203001865177,False);adaBoost(decisionTree('gini',8,4,0.6430519593820734,14,'balanced'),48,0.03428200200253955,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+extraTreesClassifier(74,'entropy','log2',9,17,False,'balanced')	0.37559679747630803	4.166529178619385
+pca(0.9877255525798894,False);pca(0.8653203001865177,False);adaBoost(decisionTree('entropy',15,4,0.4104292371322197,2,'balanced'),48,0.03428200200253955,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,1.1053533339957846,'SAMME')	0.3505889701776135	cached
+maxAbsScaler();adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,1.1053533339957846,'SAMME')	0.338969378110112	14.916617155075073
+pca(0.859323744912284,False);pca(0.8653203001865177,True);randomForest(50,'entropy',0.9381739109034369,4,11,False,'None')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();adaBoost(decisionTree('gini',8,15,0.6430519593820734,14,'balanced'),76,0.011326510045998361,'SAMME')	0.3816598281581135	11.958404779434204
+maxAbsScaler();adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.3771814825528582	cached
+selectPercentile(74.70653837211425);varianceThreshold();varianceThreshold();extraTreesClassifier(80,'entropy','sqrt',8,1,False,'balanced_subsample')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+robustScaler(False,False);adaBoost(decisionTree('entropy',18,16,0.08722308252614297,2,'balanced'),48,1.1053533339957846,'SAMME')	0.3462503103824208	cached
+robustScaler(False,False);extraTreesClassifier(74,'gini','sqrt',9,13,False,'balanced')	0.41032898094761217	cached
+pca(0.859323744912284,False);robustScaler(False,False);randomForest(50,'entropy',0.9381739109034369,4,20,False,'balanced')	0.235177161141908	6.785905599594116
+extraTreesClassifier(74,'entropy','sqrt',9,17,False,'balanced')	0.37559679747630803	4.637478590011597
+varianceThreshold();fastICA(71,'deflation','unit-variance','exp');maxAbsScaler();adaBoost(decisionTree('gini',8,15,0.6430519593820734,14,'balanced'),76,0.011326510045998361,'SAMME')	0.4024053777046553	20.79297399520874
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.4104292371322197,2,'balanced'),48,0.03428200200253955,'SAMME')	0.39844218422360345	10.73962688446045
+varianceThreshold();gaussianNB(0.005562825112455291)	0.2104315303894737	2.539339542388916
+varianceThreshold();fastICA(71,'deflation','unit-variance','exp');maxAbsScaler();minMaxScaler();extraTreesClassifier(74,'entropy','sqrt',9,17,True,'balanced')	0.39509824499692237	6.76456356048584
+minMaxScaler();varianceThreshold();maxAbsScaler();adaBoost(decisionTree('gini',8,13,0.6430519593820734,2,'balanced'),48,1.1053533339957846,'SAMME')	0.33663479634877463	9.590728759765625
+pca(0.859323744912284,True);pca(0.8653203001865177,False);adaBoost(decisionTree('entropy',14,9,0.4104292371322197,2,'balanced'),85,0.03428200200253955,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();varianceThreshold();selectPercentile(87.11384326364647);minMaxScaler();nystroem('sigmoid',2.1360440143882644,70,5,0.4520038681288201);extraTreesClassifier(74,'gini','sqrt',9,13,False,'balanced')	0.4147705189477421	6.229245185852051
+pca(0.8653203001865177,True);adaBoost(decisionTree('entropy',18,16,0.08722308252614297,2,'balanced'),76,0.011326510045998361,'SAMME')	0.25526159948349153	12.805068492889404
+randomForest(50,'entropy',0.9381739109034369,5,20,False,'balanced_subsample')	0.34190503340950934	7.592120885848999
+minMaxScaler();varianceThreshold();extraTreesClassifier(74,'gini','sqrt',9,13,False,'balanced')	0.41046473268991096	3.669811725616455
+pca(0.859323744912284,False);fastICA(71,'deflation','unit-variance','exp');randomForest(50,'entropy',0.9381739109034369,4,11,False,'None')	0.1829848834679264	5.411121606826782
+minMaxScaler();varianceThreshold();maxAbsScaler();adaBoost(decisionTree('entropy',18,13,0.6430519593820734,14,'balanced'),48,0.03428200200253955,'SAMME')	0.4178715575703872	8.538247108459473
+robustScaler(False,True);maxAbsScaler();adaBoost(decisionTree('gini',8,13,0.6430519593820734,2,'balanced'),48,1.1053533339957846,'SAMME')	0.3372369668919833	9.422856092453003
+varianceThreshold();fastICA(71,'deflation','unit-variance','exp');maxAbsScaler();adaBoost(decisionTree('gini',8,15,0.6430519593820734,14,'balanced'),76,0.011326510045998361,'SAMME')	0.4024053777046553	cached
+maxAbsScaler();adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.3771814825528582	cached
+varianceThreshold();pca(0.8653203001865177,True);maxAbsScaler();adaBoost(decisionTree('gini',8,15,0.6430519593820734,14,'balanced'),76,0.011326510045998361,'SAMME')	0.2469330162991532	9.482499837875366
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),48,0.03428200200253955,'SAMME')	0.4178503908872794	cached
+varianceThreshold();fastICA(71,'deflation','unit-variance','exp');maxAbsScaler();minMaxScaler();adaBoost(decisionTree('gini',8,15,0.6430519593820734,14,'balanced'),48,0.03428200200253955,'SAMME')	0.4110447130037776	cached
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	17.133503198623657
+pca(0.859323744912284,True);pca(0.8653203001865177,False);adaBoost(decisionTree('entropy',14,9,0.4104292371322197,2,'balanced'),85,1.1053533339957846,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+pca(0.9877255525798894,False);pca(0.8653203001865177,False);adaBoost(decisionTree('entropy',15,4,0.4104292371322197,2,'balanced'),48,0.03428200200253955,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+pca(0.9877255525798894,False);pca(0.8653203001865177,False);adaBoost(decisionTree('entropy',15,4,0.4104292371322197,2,'balanced'),48,0.03428200200253955,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+selectFwe(0.03252943708319182);adaBoost(decisionTree('gini',8,15,0.6430519593820734,2,'balanced'),48,1.1053533339957846,'SAMME')	0.338892229072305	9.620551109313965
+pca(0.859323744912284,True);pca(0.6448175268093272,False);adaBoost(decisionTree('gini',8,9,0.07719339480594023,12,'balanced'),85,0.011326510045998361,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),48,0.03428200200253955,'SAMME')	0.4178503908872794	cached
+varianceThreshold();fastICA(71,'deflation','unit-variance','exp');maxAbsScaler();minMaxScaler();extraTreesClassifier(74,'entropy','sqrt',3,17,True,'balanced')	0.39509824499692237	8.156120538711548
+varianceThreshold();fastICA(71,'deflation','unit-variance','exp');maxAbsScaler();adaBoost(decisionTree('entropy',23,15,0.5683781986914915,14,'balanced'),48,0.03428200200253955,'SAMME')	0.4252773015130525	24.295257806777954
+robustScaler(False,False);adaBoost(decisionTree('entropy',18,16,0.08722308252614297,2,'balanced'),48,0.03428200200253955,'SAMME')	0.4008442225503705	7.691977024078369
+minMaxScaler();varianceThreshold();maxAbsScaler();adaBoost(decisionTree('gini',8,13,0.6430519593820734,14,'balanced'),48,0.011326510045998361,'SAMME')	0.39651942144301683	9.160706996917725
+pca(0.859323744912284,False);robustScaler(False,False);adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.2470808121673802	12.503878116607666
+varianceThreshold();adaBoost(decisionTree('gini',18,10,0.8948265101823918,17,'None'),48,0.03428200200253955,'SAMME')	0.30778959170840026	9.483372688293457
+pca(0.9877255525798894,False);pca(0.8653203001865177,False);adaBoost(decisionTree('gini',8,17,0.5920606143897971,15,'None'),83,0.9967840710630052,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();adaBoost(decisionTree('gini',8,15,0.6430519593820734,2,'balanced'),48,1.1053533339957846,'SAMME')	0.3347563121879117	8.02249550819397
+varianceThreshold();adaBoost(decisionTree('gini',8,20,0.6430519593820734,16,'balanced'),76,0.011326510045998361,'SAMME')	0.37093677414851933	10.6702299118042
+varianceThreshold();adaBoost(decisionTree('entropy',18,15,0.6430519593820734,14,'balanced'),48,0.011326510045998361,'SAMME')	0.4124304568594046	10.150963544845581
+pca(0.9877255525798894,False);pca(0.8653203001865177,True);adaBoost(decisionTree('entropy',8,4,0.6430519593820734,14,'balanced'),18,0.03428200200253955,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+selectPercentile(11.172167164768858);selectPercentile(34.77479905528803);adaBoost(decisionTree('gini',14,9,0.4104292371322197,2,'balanced'),48,0.03428200200253955,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();randomForest(50,'entropy',0.9381739109034369,4,20,False,'balanced')	0.3432665595409793	11.22311544418335
+pca(0.859323744912284,False);pca(0.8653203001865177,True);extraTreesClassifier(74,'entropy','log2',9,17,False,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+robustScaler(False,False);adaBoost(decisionTree('entropy',15,16,0.4104292371322197,2,'balanced'),48,0.03428200200253955,'SAMME')	0.41391271100649796	9.15860891342163
+varianceThreshold();adaBoost(decisionTree('gini',8,15,0.6430519593820734,14,'balanced'),48,0.03428200200253955,'SAMME')	0.38690068500968267	8.319925308227539
+robustScaler(False,True);adaBoost(decisionTree('gini',8,9,0.07719339480594023,12,'balanced'),85,0.011326510045998361,'SAMME')	0.4013220920132777	8.037701845169067
+pca(0.859323744912284,True);pca(0.6448175268093272,False);extraTreesClassifier(74,'gini','sqrt',9,13,False,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();randomForest(50,'entropy',0.9381739109034369,4,11,False,'None')	0.2766929842470175	11.31830620765686
+pca(0.859323744912284,False);pca(0.8653203001865177,True);adaBoost(decisionTree('entropy',22,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+robustScaler(False,False);adaBoost(decisionTree('entropy',18,16,0.08722308252614297,2,'balanced'),48,0.03428200200253955,'SAMME')	0.4008442225503705	5.97014307975769
+pca(0.9877255525798894,False);pca(0.8653203001865177,False);adaBoost(decisionTree('entropy',15,4,0.4104292371322197,2,'balanced'),48,0.011326510045998361,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+randomForest(50,'entropy',0.9381739109034369,4,11,False,'None')	0.27676700610999366	10.086978435516357
+varianceThreshold();fastICA(71,'deflation','unit-variance','exp');maxAbsScaler();minMaxScaler();adaBoost(decisionTree('gini',8,15,0.6430519593820734,14,'balanced'),48,0.011326510045998361,'SAMME')	0.38687764058725194	8.571675300598145
+minMaxScaler();varianceThreshold();extraTreesClassifier(74,'gini','sqrt',9,13,False,'balanced')	0.41046473268991096	cached
+pca(0.9877255525798894,False);pca(0.8653203001865177,False);adaBoost(decisionTree('entropy',15,4,0.4104292371322197,2,'balanced'),48,0.011326510045998361,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+pca(0.859323744912284,False);pca(0.8653203001865177,True);adaBoost(decisionTree('entropy',8,4,0.6430519593820734,14,'balanced'),18,0.03428200200253955,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+pca(0.9877255525798894,True);pca(0.6448175268093272,False);extraTreesClassifier(74,'gini','sqrt',9,13,False,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+pca(0.859323744912284,False);pca(0.8653203001865177,True);extraTreesClassifier(74,'entropy','log2',9,17,False,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+pca(0.859323744912284,True);pca(0.6448175268093272,False);adaBoost(decisionTree('gini',8,9,0.07719339480594023,12,'balanced'),85,0.011326510045998361,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.3771814825528582	cached
+varianceThreshold();fastICA(71,'deflation','unit-variance','exp');maxAbsScaler();adaBoost(decisionTree('gini',8,15,0.6430519593820734,14,'balanced'),76,0.011326510045998361,'SAMME')	0.4024053777046553	cached
+selectPercentile(11.172167164768858);selectPercentile(34.77479905528803);adaBoost(decisionTree('entropy',14,9,0.4104292371322197,2,'balanced'),48,0.03428200200253955,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+minMaxScaler();varianceThreshold();extraTreesClassifier(74,'gini','sqrt',9,13,False,'balanced')	0.41046473268991096	cached
+selectPercentile(11.172167164768858);selectPercentile(34.77479905528803);adaBoost(decisionTree('gini',14,9,0.4104292371322197,2,'balanced'),48,0.03428200200253955,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+pca(0.859323744912284,False);pca(0.8653203001865177,True);adaBoost(decisionTree('entropy',22,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+robustScaler(False,False);adaBoost(decisionTree('gini',18,16,0.08722308252614297,2,'balanced'),48,0.03428200200253955,'SAMME')	0.4102290804011954	4.508416175842285
+pca(0.859323744912284,False);robustScaler(False,False);adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.2470808121673802	cached
+robustScaler(False,True);adaBoost(decisionTree('gini',8,15,0.6430519593820734,2,'balanced'),48,1.1053533339957846,'SAMME')	0.3332626713775529	5.722444772720337
+minMaxScaler();varianceThreshold();maxAbsScaler();adaBoost(decisionTree('gini',8,13,0.6430519593820734,14,'balanced'),48,0.03428200200253955,'SAMME')	0.38690068500968267	7.236917972564697
+varianceThreshold();adaBoost(decisionTree('entropy',18,15,0.6430519593820734,14,'balanced'),48,0.6257372489510495,'SAMME')	0.35597049751113624	9.168424367904663
+varianceThreshold();extraTreesClassifier(88,'entropy','log2',15,1,False,'balanced')	0.42412375597600543	4.528299570083618
+varianceThreshold();adaBoost(decisionTree('entropy',10,20,0.6324141278142781,20,'None'),15,1.980716815712765,'SAMME')	0.2782497157806739	4.2017271518707275
+pca(0.9877255525798894,False);pca(0.8653203001865177,True);adaBoost(decisionTree('entropy',8,4,0.6430519593820734,14,'balanced'),18,0.03428200200253955,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();fastICA(71,'deflation','unit-variance','exp');maxAbsScaler();minMaxScaler();extraTreesClassifier(74,'entropy','sqrt',3,17,True,'balanced')	0.39509824499692237	8.852936506271362
+selectPercentile(11.172167164768858);selectPercentile(34.77479905528803);adaBoost(decisionTree('entropy',28,15,0.5385394022487136,16,'None'),48,0.03428200200253955,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();adaBoost(decisionTree('gini',8,20,0.6430519593820734,16,'balanced'),76,0.011326510045998361,'SAMME')	0.37093677414851933	cached
+varianceThreshold();fastICA(71,'deflation','unit-variance','exp');maxAbsScaler();minMaxScaler();adaBoost(decisionTree('entropy',8,15,0.6430519593820734,14,'balanced'),18,0.03428200200253955,'SAMME')	0.4054114286205472	14.888180017471313
+pca(0.9877255525798894,False);pca(0.8653203001865177,True);adaBoost(decisionTree('gini',8,4,0.6430519593820734,14,'balanced'),48,0.011326510045998361,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+robustScaler(False,False);adaBoost(decisionTree('entropy',18,16,0.08722308252614297,2,'balanced'),48,0.03428200200253955,'SAMME')	0.4008442225503705	cached
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.42964323536917454	19.996437788009644
+robustScaler(False,True);adaBoost(decisionTree('entropy',15,6,0.6740521707716772,15,'None'),85,0.011326510045998361,'SAMME')	0.29887506744523024	21.152958631515503
+minMaxScaler();varianceThreshold();maxAbsScaler();adaBoost(decisionTree('gini',8,13,0.6430519593820734,14,'balanced'),48,0.011326510045998361,'SAMME')	0.39651942144301683	cached
+selectPercentile(11.172167164768858);selectPercentile(34.77479905528803);adaBoost(decisionTree('entropy',14,9,0.4104292371322197,2,'balanced'),48,0.03428200200253955,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+maxAbsScaler();adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')	0.3771814825528582	13.084781646728516
+varianceThreshold();adaBoost(decisionTree('entropy',18,15,0.6430519593820734,14,'balanced'),48,0.03428200200253955,'SAMME')	0.4186327448507532	11.011860609054565
+pca(0.859323744912284,False);pca(0.8653203001865177,True);extraTreesClassifier(74,'entropy','log2',9,17,False,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();fastICA(71,'deflation','unit-variance','exp');maxAbsScaler();minMaxScaler();adaBoost(decisionTree('entropy',8,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.4189373201036486	36.27759766578674
+maxAbsScaler();varianceThreshold();selectPercentile(49.889864430177);adaBoost(decisionTree('entropy',22,10,0.606569398646551,5,'balanced'),76,0.03428200200253955,'SAMME')	0.3910802543573676	13.30359172821045
+robustScaler(False,False);adaBoost(decisionTree('gini',18,16,0.08722308252614297,2,'balanced'),48,0.03428200200253955,'SAMME')	0.4102290804011954	6.464690685272217
+varianceThreshold();fastICA(71,'deflation','unit-variance','exp');maxAbsScaler();minMaxScaler();extraTreesClassifier(74,'entropy','sqrt',3,17,True,'balanced')	0.39509824499692237	5.924973249435425
+varianceThreshold();adaBoost(decisionTree('gini',15,15,0.6430519593820734,14,'balanced'),48,0.03428200200253955,'SAMME')	0.42127262473947524	7.203630447387695
+varianceThreshold();adaBoost(decisionTree('entropy',18,15,0.6430519593820734,14,'balanced'),48,0.011326510045998361,'SAMME')	0.4124304568594046	7.0714051723480225
+varianceThreshold();adaBoost(decisionTree('entropy',18,15,0.6430519593820734,14,'balanced'),48,0.03428200200253955,'SAMME')	0.4186327448507532	cached
+varianceThreshold();fastICA(71,'deflation','unit-variance','exp');maxAbsScaler();minMaxScaler();extraTreesClassifier(74,'entropy','sqrt',3,17,True,'balanced')	0.39509824499692237	cached
+pca(0.859323744912284,True);pca(0.6448175268093272,False);adaBoost(decisionTree('gini',8,9,0.07719339480594023,12,'balanced'),85,0.011326510045998361,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();varianceThreshold();extraTreesClassifier(74,'gini','sqrt',9,13,False,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+robustScaler(False,False);adaBoost(decisionTree('entropy',18,16,0.08722308252614297,2,'balanced'),48,0.03428200200253955,'SAMME')	0.4008442225503705	cached
+robustScaler(False,True);extraTreesClassifier(88,'entropy','log2',15,1,False,'balanced')	0.4241598913988164	cached
+pca(0.859323744912284,True);pca(0.6448175268093272,False);adaBoost(decisionTree('gini',8,9,0.07719339480594023,12,'balanced'),48,0.03428200200253955,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+selectPercentile(11.172167164768858);selectPercentile(34.77479905528803);adaBoost(decisionTree('entropy',14,9,0.4104292371322197,2,'balanced'),85,0.011326510045998361,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();fastICA(71,'deflation','unit-variance','exp');maxAbsScaler();adaBoost(decisionTree('entropy',23,15,0.5683781986914915,14,'balanced'),48,0.03428200200253955,'SAMME')	0.4252773015130525	cached
+selectPercentile(11.172167164768858);selectPercentile(34.77479905528803);adaBoost(decisionTree('entropy',14,9,0.4104292371322197,2,'balanced'),48,0.03428200200253955,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();adaBoost(decisionTree('entropy',18,15,0.6430519593820734,14,'balanced'),48,0.6257372489510495,'SAMME')	0.35597049751113624	cached
+varianceThreshold();adaBoost(decisionTree('entropy',18,15,0.6430519593820734,14,'balanced'),48,0.03428200200253955,'SAMME')	0.4186327448507532	cached
+varianceThreshold();adaBoost(decisionTree('gini',27,5,0.2728317149635917,3,'None'),42,1.9171504238054113,'SAMME')	0.33941213776364976	5.433065176010132
+robustScaler(False,True);extraTreesClassifier(88,'entropy','log2',15,1,False,'balanced')	0.4241598913988164	cached
+maxAbsScaler();adaBoost(decisionTree('gini',18,10,0.08722308252614297,5,'balanced'),48,0.03428200200253955,'SAMME')	0.4416645152752327	5.868248701095581
+minMaxScaler();adaBoost(decisionTree('gini',15,15,0.6430519593820734,14,'balanced'),48,0.03428200200253955,'SAMME')	0.42036869905439406	9.520592212677002
+robustScaler(False,False);adaBoost(decisionTree('entropy',27,20,0.4256424260392717,10,'None'),48,0.03428200200253955,'SAMME')	0.3209974545476654	10.306299448013306
+robustScaler(False,True);extraTreesClassifier(88,'entropy','log2',15,1,False,'balanced')	0.4241598913988164	cached
+selectFwe(0.027019253137251956);fastICA(84,'parallel','unit-variance','exp');robustScaler(False,False);maxAbsScaler();maxAbsScaler();minMaxScaler();adaBoost(decisionTree('entropy',8,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+selectPercentile(11.172167164768858);selectPercentile(34.77479905528803);adaBoost(decisionTree('gini',14,9,0.4104292371322197,2,'balanced'),48,0.03428200200253955,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();fastICA(71,'deflation','unit-variance','exp');maxAbsScaler();minMaxScaler();extraTreesClassifier(74,'entropy','sqrt',3,17,True,'balanced')	0.39509824499692237	9.02879524230957
+varianceThreshold();fastICA(71,'deflation','arbitrary-variance','exp');maxAbsScaler();adaBoost(decisionTree('gini',8,15,0.6430519593820734,14,'balanced'),76,0.011326510045998361,'SAMME')	0.4024053777046553	20.07339835166931
+minMaxScaler();varianceThreshold();extraTreesClassifier(74,'gini','sqrt',9,13,False,'balanced')	0.41046473268991096	4.365515947341919
+robustScaler(False,False);adaBoost(decisionTree('entropy',7,16,0.606569398646551,2,'balanced'),76,0.011326510045998361,'SAMME')	0.3693386242873412	15.612791061401367
+pca(0.7780300293948215,False);selectPercentile(41.748586275129306);randomForest(94,'gini','log2',6,1,True,'balanced')	eval_error (Found array with 0 feature(s) (shape=(2743, 0)) while a minimum of 1 is required by RandomForestClassifier.)	eval_error (Found array with 0 feature(s) (shape=(2743, 0)) while a minimum of 1 is required by RandomForestClassifier.)
+minMaxScaler();varianceThreshold();extraTreesClassifier(74,'gini','sqrt',9,13,False,'balanced')	0.41046473268991096	3.817554235458374
+pca(0.859323744912284,False);pca(0.8653203001865177,True);extraTreesClassifier(74,'entropy','log2',9,17,False,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),48,0.03428200200253955,'SAMME')	0.4178503908872794	cached
+pca(0.859323744912284,False);pca(0.8653203001865177,True);extraTreesClassifier(74,'entropy','log2',9,17,False,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();adaBoost(decisionTree('entropy',28,20,0.5385394022487136,16,'None'),48,0.03428200200253955,'SAMME')	0.3005628688497508	8.588180303573608
+selectPercentile(11.172167164768858);selectPercentile(34.77479905528803);adaBoost(decisionTree('entropy',23,15,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+robustScaler(False,False);adaBoost(decisionTree('entropy',18,16,0.08722308252614297,2,'balanced'),48,0.03428200200253955,'SAMME')	0.4008442225503705	cached
+varianceThreshold();fastICA(71,'deflation','unit-variance','exp');maxAbsScaler();adaBoost(decisionTree('entropy',17,7,0.8380291295575739,11,'None'),48,1.1053533339957846,'SAMME')	0.3394180270471509	33.62949013710022
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.42964323536917454	16.395520210266113
+robustScaler(False,False);adaBoost(decisionTree('entropy',18,16,0.08722308252614297,2,'balanced'),48,0.03428200200253955,'SAMME')	0.4008442225503705	cached
+selectPercentile(11.172167164768858);selectPercentile(34.77479905528803);adaBoost(decisionTree('gini',14,9,0.4104292371322197,2,'balanced'),48,0.03428200200253955,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	15.749439001083374
+robustScaler(False,False);adaBoost(decisionTree('gini',25,11,0.027119292869608347,9,'balanced'),51,1.1157489550159776,'SAMME')	0.34500428233269986	6.031762361526489
+varianceThreshold();adaBoost(decisionTree('entropy',18,15,0.6430519593820734,14,'balanced'),48,0.03428200200253955,'SAMME')	0.4186327448507532	10.054062604904175
+robustScaler(False,True);adaBoost(decisionTree('entropy',23,15,0.5683781986914915,2,'balanced'),48,0.03428200200253955,'SAMME')	0.41043424127806977	8.212356090545654
+pca(0.859323744912284,False);fastICA(66,'deflation','unit-variance','exp');extraTreesClassifier(74,'entropy','sqrt',3,17,True,'balanced')	0.23182546401209175	2.8795766830444336
+maxAbsScaler();extraTreesClassifier(74,'entropy','sqrt',3,17,True,'balanced')	0.3803054790239559	3.0883090496063232
+minMaxScaler();varianceThreshold();extraTreesClassifier(95,'gini','sqrt',9,13,False,'balanced')	0.40935747142738493	3.9293198585510254
+varianceThreshold();fastICA(71,'deflation','unit-variance','exp');maxAbsScaler();minMaxScaler();qda(0.035084441164015656)	eval_error (The covariance matrix of class 9 is not full rank. When using `solver='svd'` the number of samples in each class should be more than the number of features, but class 9 has 3 samples and 11 features. Try using `solver='eigen'` and setting the parameter `shrinkage` for regularization.)	eval_error (The covariance matrix of class 9 is not full rank. When using `solver='svd'` the number of samples in each class should be more than the number of features, but class 9 has 3 samples and 11 features. Try using `solver='eigen'` and setting the parameter `shrinkage` for regularization.)
+varianceThreshold();fastICA(71,'deflation','unit-variance','exp');maxAbsScaler();minMaxScaler();extraTreesClassifier(74,'entropy','log2',9,17,False,'balanced')	0.42033530439009537	5.309674501419067
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),48,0.03428200200253955,'SAMME')	0.4178503908872794	11.44087028503418
+varianceThreshold();fastICA(71,'deflation','unit-variance','exp');maxAbsScaler();minMaxScaler();extraTreesClassifier(38,'gini','log2',3,4,False,'None')	0.2620108310816508	6.980036735534668
+nystroem('rbf',4.77573097276404,20,2,-0.5281731961397202);selectPercentile(34.77479905528803);adaBoost(decisionTree('entropy',23,15,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.1476190476190476	5.064040422439575
+varianceThreshold();varianceThreshold();extraTreesClassifier(79,'entropy','sqrt',15,9,False,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+pca(0.7780300293948215,False);selectPercentile(41.748586275129306);randomForest(94,'gini','log2',6,1,True,'balanced')	eval_error (Found array with 0 feature(s) (shape=(2743, 0)) while a minimum of 1 is required by RandomForestClassifier.)	eval_error (Found array with 0 feature(s) (shape=(2743, 0)) while a minimum of 1 is required by RandomForestClassifier.)
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),48,0.03428200200253955,'SAMME')	0.4178503908872794	12.179027795791626
+selectFwe(0.027019253137251956);fastICA(84,'parallel','unit-variance','exp');robustScaler(False,False);maxAbsScaler();maxAbsScaler();minMaxScaler();adaBoost(decisionTree('gini',8,15,0.6430519593820734,14,'balanced'),48,0.03428200200253955,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+selectPercentile(34.77479905528803);fastICA(71,'deflation','unit-variance','exp');maxAbsScaler();minMaxScaler();extraTreesClassifier(74,'entropy','sqrt',3,17,True,'balanced')	0.31798347859199894	5.65833306312561
+robustScaler(False,True);extraTreesClassifier(88,'entropy','log2',15,1,True,'balanced')	0.39443005970699885	6.713916063308716
+robustScaler(False,True);extraTreesClassifier(88,'entropy','log2',15,1,False,'balanced')	0.4241598913988164	cached
+pca(0.859323744912284,False);pca(0.8653203001865177,True);extraTreesClassifier(74,'entropy','log2',9,17,False,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();adaBoost(decisionTree('gini',15,15,0.6430519593820734,14,'balanced'),48,0.03428200200253955,'SAMME')	0.42127262473947524	cached
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.42964323536917454	cached
+varianceThreshold();adaBoost(decisionTree('entropy',18,15,0.6430519593820734,14,'balanced'),48,0.6257372489510495,'SAMME')	0.35597049751113624	cached
+robustScaler(False,False);extraTreesClassifier(74,'entropy','log2',9,17,False,'balanced')	0.37559679747630803	4.592890024185181
+pca(0.859323744912284,False);pca(0.8653203001865177,True);adaBoost(decisionTree('entropy',7,16,0.606569398646551,2,'balanced'),76,0.011326510045998361,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+varianceThreshold();adaBoost(decisionTree('entropy',18,15,0.6430519593820734,14,'balanced'),48,0.03428200200253955,'SAMME')	0.4186327448507532	cached
+maxAbsScaler();adaBoost(decisionTree('gini',18,10,0.08722308252614297,5,'balanced'),48,0.03428200200253955,'SAMME')	0.4416645152752327	cached
+robustScaler(False,False);adaBoost(decisionTree('entropy',18,16,0.08722308252614297,2,'balanced'),48,0.03428200200253955,'SAMME')	0.4008442225503705	cached
+varianceThreshold();adaBoost(decisionTree('entropy',18,15,0.6430519593820734,14,'balanced'),98,0.03428200200253955,'SAMME')	0.43315848890170267	21.48959255218506
+maxAbsScaler();adaBoost(decisionTree('entropy',18,10,0.08722308252614297,5,'balanced'),85,0.03428200200253955,'SAMME')	0.39517056821271684	10.568696737289429
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.42964323536917454	cached
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+maxAbsScaler();adaBoost(decisionTree('gini',18,10,0.08722308252614297,5,'balanced'),48,0.03428200200253955,'SAMME')	0.4416645152752327	cached
+varianceThreshold();adaBoost(decisionTree('gini',15,15,0.6430519593820734,14,'balanced'),48,0.03428200200253955,'SAMME')	0.42127262473947524	7.66029691696167
+varianceThreshold();adaBoost(decisionTree('entropy',18,15,0.6430519593820734,14,'balanced'),48,1.8804980636501862,'SAMME')	0.3386186625714339	9.912479639053345
+selectPercentile(11.172167164768858);varianceThreshold();adaBoost(decisionTree('entropy',14,9,0.4104292371322197,2,'balanced'),85,0.011326510045998361,'SAMME')	0.30427907484907696	11.129600763320923
+varianceThreshold();adaBoost(decisionTree('entropy',26,20,0.5683781986914915,16,'balanced'),48,0.03428200200253955,'SAMME')	0.4178503908872794	9.248688459396362
+varianceThreshold();adaBoost(decisionTree('entropy',23,16,0.5683781986914915,16,'None'),48,0.03428200200253955,'SAMME')	0.30378113572006055	8.136487007141113
+varianceThreshold();adaBoost(decisionTree('entropy',18,7,0.6430519593820734,14,'balanced'),48,1.9641234632084927,'SAMME')	0.3303899803690749	9.68163275718689
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	12.488670349121094
+varianceThreshold();varianceThreshold();extraTreesClassifier(74,'gini','sqrt',9,13,False,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+selectPercentile(42.310986707104504);minMaxScaler();varianceThreshold();maxAbsScaler();nystroem('rbf',1.7485347267475548,30,4,-0.07970570167372015);adaBoost(decisionTree('gini',15,15,0.6430519593820734,14,'balanced'),48,0.03428200200253955,'SAMME')	0.3893087989926156	17.55156922340393
+minMaxScaler();adaBoost(decisionTree('entropy',18,15,0.6430519593820734,14,'balanced'),48,0.03428200200253955,'SAMME')	0.4178715575703872	5.659475088119507
+varianceThreshold();adaBoost(decisionTree('entropy',26,20,0.5683781986914915,16,'balanced'),48,0.03428200200253955,'SAMME')	0.4178503908872794	cached
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.42964323536917454	cached
+pca(0.859323744912284,False);pca(0.8653203001865177,True);adaBoost(decisionTree('entropy',7,16,0.606569398646551,2,'balanced'),76,0.03428200200253955,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();adaBoost(decisionTree('entropy',18,15,0.6430519593820734,14,'balanced'),48,0.6257372489510495,'SAMME')	0.35597049751113624	cached
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.42964323536917454	cached
+robustScaler(False,False);adaBoost(decisionTree('entropy',26,14,0.5683781986914915,16,'balanced'),48,0.03428200200253955,'SAMME')	0.4178503908872794	6.3301661014556885
+robustScaler(False,True);adaBoost(decisionTree('entropy',26,20,0.5683781986914915,16,'balanced'),48,0.03428200200253955,'SAMME')	0.41728954264220386	9.0389244556427
+varianceThreshold();adaBoost(decisionTree('gini',11,17,0.3703535179222598,14,'balanced'),85,0.011326510045998361,'SAMME')	0.3989002643339726	9.512020587921143
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+varianceThreshold();robustScaler(False,False);maxAbsScaler();maxAbsScaler();minMaxScaler();adaBoost(decisionTree('entropy',8,15,0.6430519593820734,14,'balanced'),98,0.03428200200253955,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();extraTreesClassifier(88,'entropy','log2',15,1,False,'balanced')	0.42412375597600543	4.150813579559326
+varianceThreshold();adaBoost(decisionTree('entropy',18,15,0.6430519593820734,14,'balanced'),48,0.03428200200253955,'SAMME')	0.4186327448507532	cached
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.42964323536917454	cached
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	13.45238733291626
+varianceThreshold();varianceThreshold();extraTreesClassifier(74,'gini','sqrt',9,13,False,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();adaBoost(decisionTree('entropy',18,7,0.6430519593820734,14,'balanced'),48,1.9641234632084927,'SAMME')	0.3303899803690749	cached
+selectFwe(0.027019253137251956);fastICA(84,'parallel','unit-variance','exp');robustScaler(False,False);maxAbsScaler();maxAbsScaler();minMaxScaler();adaBoost(decisionTree('gini',8,15,0.6430519593820734,14,'balanced'),48,0.03428200200253955,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();adaBoost(decisionTree('entropy',18,15,0.6430519593820734,14,'balanced'),48,0.6257372489510495,'SAMME')	0.35597049751113624	cached
+varianceThreshold();adaBoost(decisionTree('gini',15,15,0.6430519593820734,14,'balanced'),48,0.03428200200253955,'SAMME')	0.42127262473947524	cached
+selectPercentile(91.15195856978355);pca(0.8653203001865177,True);extraTreesClassifier(74,'entropy','log2',9,17,False,'balanced')	0.24928581857336343	4.4654860496521
+varianceThreshold();extraTreesClassifier(88,'entropy','log2',15,1,False,'balanced')	0.42412375597600543	6.1052892208099365
+minMaxScaler();adaBoost(decisionTree('gini',13,16,0.9513120282534113,4,'balanced'),95,0.4978253591112349,'SAMME')	0.36092050153932237	16.147847652435303
+pca(0.859323744912284,False);fastICA(66,'deflation','unit-variance','exp');extraTreesClassifier(74,'entropy','sqrt',3,17,True,'balanced')	0.23182546401209175	4.804423093795776
+varianceThreshold();adaBoost(decisionTree('gini',23,15,0.5683781986914915,16,'balanced'),48,0.03428200200253955,'SAMME')	0.4087470679737156	9.885474920272827
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.42964323536917454	cached
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+varianceThreshold();adaBoost(decisionTree('entropy',18,20,0.5683781986914915,16,'balanced'),48,0.03428200200253955,'SAMME')	0.41735945365720595	9.01599407196045
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.42964323536917454	19.310178518295288
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.42964323536917454	cached
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	17.07125973701477
+selectFwe(0.027019253137251956);fastICA(71,'deflation','unit-variance','exp');robustScaler(False,False);maxAbsScaler();maxAbsScaler();minMaxScaler();adaBoost(decisionTree('gini',8,15,0.6430519593820734,14,'balanced'),48,0.03428200200253955,'SAMME')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	16.351963758468628
+varianceThreshold();fastICA(71,'deflation','unit-variance','exp');robustScaler(False,True);adaBoost(decisionTree('entropy',23,15,0.5683781986914915,14,'balanced'),48,0.03428200200253955,'SAMME')	0.4252773015130525	22.360203504562378
+varianceThreshold();fastICA(84,'parallel','unit-variance','exp');maxAbsScaler();minMaxScaler();extraTreesClassifier(74,'entropy','log2',9,17,False,'balanced')	0.40051826625935083	6.635640382766724
+maxAbsScaler();extraTreesClassifier(88,'entropy','log2',15,1,True,'balanced')	0.39452252387713294	5.954218626022339
+varianceThreshold();adaBoost(decisionTree('entropy',18,15,0.6430519593820734,14,'balanced'),98,0.03428200200253955,'SAMME')	0.43315848890170267	20.385452270507812
+varianceThreshold();adaBoost(decisionTree('entropy',18,15,0.6430519593820734,14,'balanced'),98,0.03428200200253955,'SAMME')	0.43315848890170267	17.581935167312622
+fastICA(88,'deflation','arbitrary-variance','exp');adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),48,0.03428200200253955,'SAMME')	0.4116220400104506	19.291884899139404
+fastICA(5,'deflation','arbitrary-variance','cube');adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),48,0.03428200200253955,'SAMME')	0.398657783505025	8.376007556915283
+varianceThreshold();adaBoost(decisionTree('gini',23,15,0.5683781986914915,16,'balanced'),48,0.03428200200253955,'SAMME')	0.4087470679737156	cached
+varianceThreshold();adaBoost(decisionTree('entropy',18,15,0.6430519593820734,14,'balanced'),98,0.03428200200253955,'SAMME')	0.43315848890170267	cached
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+varianceThreshold();adaBoost(decisionTree('entropy',26,20,0.5683781986914915,16,'balanced'),48,0.03428200200253955,'SAMME')	0.4178503908872794	cached
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+varianceThreshold();adaBoost(decisionTree('entropy',18,15,0.6430519593820734,14,'balanced'),48,0.03428200200253955,'SAMME')	0.4186327448507532	cached
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+varianceThreshold();fastICA(84,'parallel','unit-variance','exp');maxAbsScaler();minMaxScaler();extraTreesClassifier(74,'entropy','log2',9,17,False,'balanced')	0.40051826625935083	cached
+varianceThreshold();fastICA(71,'deflation','unit-variance','exp');maxAbsScaler();minMaxScaler();extraTreesClassifier(74,'entropy','log2',9,17,False,'balanced')	0.42033530439009537	cached
+fastICA(88,'deflation','arbitrary-variance','exp');adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),48,0.03428200200253955,'SAMME')	0.4116220400104506	cached
+varianceThreshold();adaBoost(decisionTree('entropy',18,15,0.6430519593820734,14,'balanced'),98,0.03428200200253955,'SAMME')	0.43315848890170267	cached
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.42964323536917454	cached
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.42964323536917454	cached
+maxAbsScaler();adaBoost(decisionTree('gini',18,10,0.08722308252614297,5,'balanced'),48,0.03428200200253955,'SAMME')	0.4416645152752327	cached
+varianceThreshold();extraTreesClassifier(88,'entropy','log2',15,1,False,'balanced')	0.42412375597600543	cached
+varianceThreshold();fastICA(71,'deflation','unit-variance','exp');maxAbsScaler();minMaxScaler();extraTreesClassifier(74,'entropy','log2',9,17,False,'balanced')	0.42033530439009537	6.241681814193726
+varianceThreshold();adaBoost(decisionTree('gini',26,3,0.8841330331658522,16,'balanced'),48,0.03428200200253955,'SAMME')	0.41231046811807	11.58273959159851
+maxAbsScaler();varianceThreshold();minMaxScaler();selectFwe(0.031981097282520916);adaBoost(decisionTree('entropy',18,15,0.6430519593820734,14,'balanced'),85,0.011326510045998361,'SAMME')	0.3907451928660178	16.234530448913574
+robustScaler(False,True);adaBoost(decisionTree('entropy',26,20,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.4292692792919329	18.50618267059326
+maxAbsScaler();adaBoost(decisionTree('gini',18,10,0.08722308252614297,5,'balanced'),98,0.03428200200253955,'SAMME')	0.40211934999630355	11.459587335586548
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.42964323536917454	cached
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+varianceThreshold();extraTreesClassifier(88,'entropy','log2',15,1,False,'balanced')	0.42412375597600543	cached
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+varianceThreshold();adaBoost(decisionTree('entropy',18,15,0.6430519593820734,14,'balanced'),48,0.6257372489510495,'SAMME')	0.35597049751113624	cached
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+varianceThreshold();adaBoost(decisionTree('entropy',18,20,0.5683781986914915,16,'balanced'),48,0.03428200200253955,'SAMME')	0.41735945365720595	cached
+varianceThreshold();adaBoost(decisionTree('gini',15,15,0.6430519593820734,14,'balanced'),48,0.03428200200253955,'SAMME')	0.42127262473947524	cached
+robustScaler(False,False);adaBoost(decisionTree('entropy',26,14,0.5683781986914915,16,'balanced'),48,0.03428200200253955,'SAMME')	0.4178503908872794	cached
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	17.64467716217041
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+varianceThreshold();adaBoost(decisionTree('entropy',26,20,0.5683781986914915,16,'balanced'),48,0.03428200200253955,'SAMME')	0.4178503908872794	cached
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),48,0.03428200200253955,'SAMME')	0.4178503908872794	9.425480842590332
+varianceThreshold();fastICA(71,'deflation','unit-variance','exp');maxAbsScaler();minMaxScaler();randomForest(50,'entropy',0.9381739109034369,5,20,False,'balanced')	0.37201328358969554	27.797208547592163
+varianceThreshold();adaBoost(decisionTree('gini',11,17,0.3703535179222598,14,'balanced'),98,0.03428200200253955,'SAMME')	0.42549446253642564	13.51095986366272
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.42964323536917454	25.029330492019653
+varianceThreshold();fastICA(71,'deflation','unit-variance','logcosh');maxAbsScaler();minMaxScaler();extraTreesClassifier(74,'entropy','log2',9,17,False,'balanced')	0.3942816091804461	51.254512548446655
+maxAbsScaler();adaBoost(decisionTree('gini',18,10,0.08722308252614297,5,'balanced'),48,0.03428200200253955,'SAMME')	0.4416645152752327	4.065968990325928
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.42964323536917454	cached
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+varianceThreshold();adaBoost(decisionTree('entropy',2,20,0.3243821075675214,2,'balanced'),98,0.03428200200253955,'SAMME')	eval_error (BaseClassifier in AdaBoostClassifier ensemble is worse than random, ensemble can not be fit.)	eval_error (BaseClassifier in AdaBoostClassifier ensemble is worse than random, ensemble can not be fit.)
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.42964323536917454	cached
+varianceThreshold();extraTreesClassifier(88,'entropy','log2',15,1,False,'balanced')	0.42412375597600543	4.830049276351929
+varianceThreshold();adaBoost(decisionTree('gini',11,20,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.41484157960391405	9.643035888671875
+varianceThreshold();adaBoost(decisionTree('gini',11,17,0.3703535179222598,14,'balanced'),98,0.03428200200253955,'SAMME')	0.42549446253642564	11.207690715789795
+selectFwe(0.022302088744101455);varianceThreshold();selectFwe(0.034202492389461624);fastICA(71,'deflation','unit-variance','exp');maxAbsScaler();minMaxScaler();extraTreesClassifier(74,'entropy','log2',9,17,False,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();adaBoost(decisionTree('gini',15,7,0.8545096468295557,3,'None'),98,0.03428200200253955,'SAMME')	0.353059797249045	14.79144549369812
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.42964323536917454	cached
+varianceThreshold();adaBoost(decisionTree('entropy',18,20,0.5683781986914915,16,'balanced'),48,0.03428200200253955,'SAMME')	0.41735945365720595	cached
+varianceThreshold();adaBoost(decisionTree('entropy',26,15,0.6430519593820734,14,'balanced'),85,0.1448342582072458,'SAMME')	0.3672791556514671	15.186853408813477
+varianceThreshold();adaBoost(decisionTree('entropy',23,16,0.1358058368979056,2,'None'),37,1.9315504575141857,'SAMME')	0.32758255501627703	5.472765922546387
+varianceThreshold();adaBoost(decisionTree('gini',23,15,0.5683781986914915,16,'balanced'),48,0.03428200200253955,'SAMME')	0.4087470679737156	cached
+maxAbsScaler();adaBoost(decisionTree('gini',18,10,0.08722308252614297,5,'balanced'),48,0.03428200200253955,'SAMME')	0.4416645152752327	cached
+robustScaler(False,False);adaBoost(decisionTree('entropy',18,14,0.5683781986914915,16,'balanced'),48,0.03428200200253955,'SAMME')	0.41735945365720595	9.751585245132446
+varianceThreshold();adaBoost(decisionTree('gini',11,9,0.8763511565620392,18,'None'),94,0.6178006314957938,'SAMME')	0.3539949520504488	14.346827745437622
+varianceThreshold();adaBoost(decisionTree('entropy',23,17,0.3703535179222598,14,'balanced'),98,0.03428200200253955,'SAMME')	0.4261189722211224	15.52227520942688
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+varianceThreshold();adaBoost(decisionTree('entropy',26,20,0.5683781986914915,16,'balanced'),48,0.03428200200253955,'SAMME')	0.4178503908872794	10.779929637908936
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+varianceThreshold();adaBoost(decisionTree('entropy',18,15,0.6430519593820734,14,'balanced'),98,0.03428200200253955,'SAMME')	0.43315848890170267	cached
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.42964323536917454	cached
+robustScaler(False,False);adaBoost(decisionTree('entropy',26,14,0.5683781986914915,16,'balanced'),48,0.03428200200253955,'SAMME')	0.4178503908872794	cached
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	17.060254096984863
+maxAbsScaler();adaBoost(decisionTree('gini',18,10,0.8066910798684876,5,'balanced'),48,0.03428200200253955,'SAMME')	0.4157268860515454	11.037060499191284
+varianceThreshold();adaBoost(decisionTree('entropy',18,15,0.6430519593820734,14,'balanced'),98,0.03428200200253955,'SAMME')	0.43315848890170267	cached
+varianceThreshold();extraTreesClassifier(88,'entropy','log2',15,1,False,'balanced')	0.42412375597600543	4.875631093978882
+varianceThreshold();adaBoost(decisionTree('gini',26,3,0.8841330331658522,16,'balanced'),98,0.03428200200253955,'SAMME')	0.44896889521673444	16.407469511032104
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	13.142861127853394
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),48,0.03428200200253955,'SAMME')	0.4178503908872794	6.3373448848724365
+fastICA(49,'deflation','unit-variance','exp');adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.4190188306830497	30.406733512878418
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+varianceThreshold();adaBoost(decisionTree('entropy',18,15,0.6430519593820734,14,'balanced'),48,0.03428200200253955,'SAMME')	0.4186327448507532	6.640162706375122
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.42964323536917454	cached
+fastICA(49,'deflation','unit-variance','exp');adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.4190188306830497	cached
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.42964323536917454	cached
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.42964323536917454	cached
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.42964323536917454	cached
+robustScaler(False,False);kNN(2,'distance',2)	0.321277984467787	2.0224435329437256
+varianceThreshold();extraTreesClassifier(88,'entropy','log2',15,1,False,'balanced')	0.42412375597600543	cached
+varianceThreshold();adaBoost(decisionTree('entropy',4,9,0.1478809596629882,14,'balanced'),73,0.512615763836668,'SAMME')	0.24265837559924347	3.3637123107910156
+varianceThreshold();adaBoost(decisionTree('gini',26,3,0.8841330331658522,16,'balanced'),98,0.03428200200253955,'SAMME')	0.44896889521673444	cached
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.42964323536917454	cached
+maxAbsScaler();adaBoost(decisionTree('entropy',18,10,0.08722308252614297,5,'balanced'),48,0.03428200200253955,'SAMME')	0.4136705581103034	5.646234035491943
+selectPercentile(19.680443928178313);adaBoost(decisionTree('entropy',18,15,0.6430519593820734,14,'balanced'),98,0.03428200200253955,'SAMME')	0.27819443479704636	8.365088701248169
+robustScaler(False,False);adaBoost(decisionTree('entropy',26,14,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.42964323536917454	15.647535800933838
+maxAbsScaler();adaBoost(decisionTree('entropy',8,20,0.4489948011689928,5,'balanced'),25,0.5961617227453536,'SAMME')	0.34519002391947246	5.992371559143066
+robustScaler(False,False);adaBoost(decisionTree('gini',26,14,0.5683781986914915,16,'balanced'),48,0.03428200200253955,'SAMME')	0.4087470679737156	8.828754663467407
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),98,0.03428200200253955,'SAMME')	0.42941781161438486	18.6148841381073
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),98,0.03428200200253955,'SAMME')	0.42941781161438486	18.89048409461975
+varianceThreshold();adaBoost(decisionTree('gini',26,3,0.8841330331658522,16,'balanced'),48,0.03428200200253955,'SAMME')	0.41231046811807	10.499872922897339
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+varianceThreshold();adaBoost(decisionTree('gini',11,17,0.3703535179222598,14,'balanced'),98,0.03428200200253955,'SAMME')	0.42549446253642564	cached
+robustScaler(True,False);adaBoost(decisionTree('gini',11,17,0.3703535179222598,14,'balanced'),98,0.03428200200253955,'SAMME')	0.42381616571703107	11.754867315292358
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+varianceThreshold();adaBoost(decisionTree('entropy',23,17,0.3703535179222598,14,'balanced'),85,0.03428200200253955,'SAMME')	0.4242168992760689	12.843927383422852
+varianceThreshold();fastICA(71,'deflation','unit-variance','exp');varianceThreshold();minMaxScaler();extraTreesClassifier(66,'entropy','log2',9,13,True,'balanced')	invalid_ind (duplicated operator)	invalid_ind (duplicated operator)
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),98,0.03428200200253955,'SAMME')	0.42941781161438486	17.21405601501465
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),85,0.03428200200253955,'SAMME')	0.4279653376450496	16.083068370819092
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+varianceThreshold();adaBoost(decisionTree('entropy',26,20,0.5683781986914915,16,'balanced'),48,0.03428200200253955,'SAMME')	0.4178503908872794	cached
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+varianceThreshold();adaBoost(decisionTree('gini',4,4,0.5749419337607063,7,'None'),94,0.4072797681770993,'SAMME')	0.2656249110985649	7.985233306884766
+varianceThreshold();adaBoost(decisionTree('entropy',18,15,0.6430519593820734,14,'balanced'),98,0.03428200200253955,'SAMME')	0.43315848890170267	cached
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+varianceThreshold();adaBoost(decisionTree('gini',7,4,0.2562976555920734,12,'None'),85,0.03428200200253955,'SAMME')	0.273753881127755	6.724288702011108
+varianceThreshold();adaBoost(decisionTree('entropy',20,12,0.6268127383970544,6,'None'),98,0.03428200200253955,'SAMME')	0.36353170839009497	16.434234142303467
+varianceThreshold();extraTreesClassifier(88,'entropy','log2',15,1,False,'balanced')	0.42412375597600543	3.4635207653045654
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),85,0.03428200200253955,'SAMME')	0.4279653376450496	12.709592580795288
+maxAbsScaler();adaBoost(decisionTree('gini',26,3,0.8841330331658522,16,'balanced'),98,0.03428200200253955,'SAMME')	0.44815532675624326	15.10439157485962
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+robustScaler(True,False);adaBoost(decisionTree('gini',11,17,0.3703535179222598,14,'balanced'),98,0.03428200200253955,'SAMME')	0.42381616571703107	cached
+robustScaler(False,False);adaBoost(decisionTree('entropy',26,14,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.42964323536917454	cached
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.42964323536917454	cached
+varianceThreshold();adaBoost(decisionTree('entropy',18,15,0.6430519593820734,14,'balanced'),98,0.03428200200253955,'SAMME')	0.43315848890170267	cached
+fastICA(49,'deflation','unit-variance','exp');adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.4190188306830497	cached
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.42964323536917454	cached
+varianceThreshold();fastICA(71,'deflation','unit-variance','exp');maxAbsScaler();minMaxScaler();extraTreesClassifier(74,'gini','sqrt',9,17,False,'balanced')	0.43222083541510825	5.990673542022705
+varianceThreshold();extraTreesClassifier(88,'entropy','log2',15,1,False,'balanced')	0.42412375597600543	5.976801156997681
+varianceThreshold();adaBoost(decisionTree('gini',16,9,0.18794148444850134,13,'None'),85,0.03428200200253955,'SAMME')	0.3332530543222204	10.004041910171509
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.42964323536917454	cached
+maxAbsScaler();adaBoost(decisionTree('gini',26,3,0.8841330331658522,16,'balanced'),98,0.03428200200253955,'SAMME')	0.44815532675624326	cached
+maxAbsScaler();adaBoost(decisionTree('entropy',18,10,0.08722308252614297,5,'balanced'),85,0.03428200200253955,'SAMME')	0.39517056821271684	11.293274402618408
+robustScaler(False,False);adaBoost(decisionTree('entropy',26,14,0.5683781986914915,16,'balanced'),85,0.03428200200253955,'SAMME')	0.4279653376450496	16.1525456905365
+varianceThreshold();adaBoost(decisionTree('gini',23,20,0.5683781986914915,16,'balanced'),48,0.03428200200253955,'SAMME')	0.4087470679737156	8.757951021194458
+selectPercentile(27.38234910496782);gaussianNB(0.00909943207385096)	0.21816230712368362	3.0173492431640625
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),85,0.03428200200253955,'SAMME')	0.4279653376450496	17.271644592285156
+varianceThreshold();adaBoost(decisionTree('entropy',18,15,0.6430519593820734,14,'balanced'),98,0.03428200200253955,'SAMME')	0.43315848890170267	18.49113130569458
+varianceThreshold();adaBoost(decisionTree('gini',26,3,0.8841330331658522,16,'balanced'),98,0.03428200200253955,'SAMME')	0.44896889521673444	cached
+maxAbsScaler();adaBoost(decisionTree('gini',26,3,0.8841330331658522,16,'balanced'),98,0.03428200200253955,'SAMME')	0.44815532675624326	cached
+maxAbsScaler();adaBoost(decisionTree('gini',18,10,0.08722308252614297,5,'balanced'),48,0.03428200200253955,'SAMME')	0.4416645152752327	cached
+varianceThreshold();adaBoost(decisionTree('entropy',22,4,0.9490569377466435,8,'balanced'),74,0.33820767686954184,'SAMME')	0.3659102333791068	21.57605504989624
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),98,0.03428200200253955,'SAMME')	0.42941781161438486	17.706864595413208
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+varianceThreshold();adaBoost(decisionTree('gini',26,3,0.8841330331658522,16,'balanced'),98,0.03428200200253955,'SAMME')	0.44896889521673444	cached
+varianceThreshold();adaBoost(decisionTree('gini',6,18,0.7483016421238718,14,'None'),98,0.03428200200253955,'SAMME')	0.2758776040173301	11.204348802566528
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.42964323536917454	16.537878274917603
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),98,0.03428200200253955,'SAMME')	0.42941781161438486	19.374876022338867
+varianceThreshold();adaBoost(decisionTree('entropy',23,15,0.5683781986914915,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42460095465346637	13.07664966583252
+varianceThreshold();adaBoost(decisionTree('entropy',23,15,0.6430519593820734,14,'balanced'),98,0.03428200200253955,'SAMME')	0.4264081137951596	16.239305019378662
+maxAbsScaler();adaBoost(decisionTree('entropy',23,10,0.5683781986914915,5,'balanced'),98,0.03428200200253955,'SAMME')	0.3988414275645279	17.976928234100342
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),85,0.03428200200253955,'SAMME')	0.4279653376450496	12.022578954696655
+varianceThreshold();adaBoost(decisionTree('gini',18,20,0.08722308252614297,16,'balanced'),48,0.03428200200253955,'SAMME')	0.4015796839692177	4.600236892700195
+varianceThreshold();adaBoost(decisionTree('entropy',15,20,0.5683781986914915,16,'balanced'),85,0.03428200200253955,'SAMME')	0.42365022613628744	11.49356484413147
+varianceThreshold();adaBoost(decisionTree('entropy',15,20,0.6430519593820734,16,'balanced'),85,0.03428200200253955,'SAMME')	0.4201961480000812	12.53678011894226
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.42964323536917454	cached
+maxAbsScaler();adaBoost(decisionTree('gini',26,3,0.8841330331658522,16,'balanced'),98,0.03428200200253955,'SAMME')	0.44815532675624326	cached
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.42964323536917454	cached
+robustScaler(False,False);adaBoost(decisionTree('entropy',26,14,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.42964323536917454	cached
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+varianceThreshold();adaBoost(decisionTree('entropy',18,15,0.6430519593820734,14,'balanced'),98,0.03428200200253955,'SAMME')	0.43315848890170267	cached
+varianceThreshold();adaBoost(decisionTree('entropy',18,15,0.6430519593820734,14,'balanced'),98,0.03428200200253955,'SAMME')	0.43315848890170267	cached
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+varianceThreshold();adaBoost(decisionTree('gini',26,3,0.8841330331658522,16,'balanced'),98,0.03428200200253955,'SAMME')	0.44896889521673444	cached
+varianceThreshold();adaBoost(decisionTree('gini',26,3,0.8841330331658522,16,'balanced'),98,0.03428200200253955,'SAMME')	0.44896889521673444	cached
+varianceThreshold();adaBoost(decisionTree('gini',26,3,0.8841330331658522,16,'balanced'),98,0.03428200200253955,'SAMME')	0.44896889521673444	cached
+varianceThreshold();adaBoost(decisionTree('gini',18,20,0.08722308252614297,16,'balanced'),48,0.03428200200253955,'SAMME')	0.4015796839692177	4.410340785980225
+varianceThreshold();adaBoost(decisionTree('gini',23,9,0.08896985818174508,7,'balanced'),85,0.03428200200253955,'SAMME')	0.4138291521653703	10.241724014282227
+maxAbsScaler();adaBoost(decisionTree('gini',26,14,0.8841330331658522,16,'balanced'),85,0.03428200200253955,'SAMME')	0.4467072832471942	15.244474411010742
+varianceThreshold();fastICA(71,'deflation','unit-variance','exp');maxAbsScaler();minMaxScaler();extraTreesClassifier(74,'entropy','log2',9,17,False,'balanced')	0.42033530439009537	7.830968856811523
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),98,0.03428200200253955,'SAMME')	0.42941781161438486	18.63612723350525
+varianceThreshold();adaBoost(decisionTree('entropy',15,20,0.6430519593820734,16,'balanced'),98,0.03428200200253955,'SAMME')	0.4246905641078045	20.544384479522705
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.42964323536917454	17.79751706123352
+varianceThreshold();adaBoost(decisionTree('entropy',23,15,0.5683781986914915,14,'balanced'),98,0.03428200200253955,'SAMME')	0.424361533825487	16.075456619262695
+robustScaler(False,False);adaBoost(decisionTree('entropy',26,14,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.42964323536917454	16.09237313270569
+varianceThreshold();adaBoost(decisionTree('entropy',18,15,0.6430519593820734,14,'balanced'),98,0.03428200200253955,'SAMME')	0.43315848890170267	cached
+varianceThreshold();adaBoost(decisionTree('entropy',18,15,0.6430519593820734,14,'balanced'),98,0.03428200200253955,'SAMME')	0.43315848890170267	cached
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),85,0.03428200200253955,'SAMME')	0.4279653376450496	16.118590593338013
+varianceThreshold();adaBoost(decisionTree('gini',26,3,0.8841330331658522,16,'balanced'),98,0.03428200200253955,'SAMME')	0.44896889521673444	cached
+varianceThreshold();adaBoost(decisionTree('gini',26,3,0.8841330331658522,16,'balanced'),98,0.03428200200253955,'SAMME')	0.44896889521673444	cached
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+varianceThreshold();adaBoost(decisionTree('entropy',23,15,0.5683781986914915,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42460095465346637	cached
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	15.420098066329956
+maxAbsScaler();adaBoost(decisionTree('gini',26,3,0.8841330331658522,16,'balanced'),98,0.03428200200253955,'SAMME')	0.44815532675624326	cached
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),85,0.03428200200253955,'SAMME')	0.4279653376450496	17.159796237945557
+maxAbsScaler();adaBoost(decisionTree('entropy',13,7,0.7256891314290214,18,'None'),48,0.03428200200253955,'SAMME')	0.300918080824656	9.756667375564575
+varianceThreshold();adaBoost(decisionTree('gini',26,3,0.8841330331658522,16,'balanced'),98,0.03428200200253955,'SAMME')	0.44896889521673444	cached
+robustScaler(False,False);adaBoost(decisionTree('entropy',26,14,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.42964323536917454	cached
+maxAbsScaler();adaBoost(decisionTree('gini',26,3,0.8841330331658522,16,'balanced'),98,0.03428200200253955,'SAMME')	0.44815532675624326	cached
+varianceThreshold();adaBoost(decisionTree('gini',23,20,0.5683781986914915,16,'balanced'),48,0.03428200200253955,'SAMME')	0.4087470679737156	9.062399864196777
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),98,0.03428200200253955,'SAMME')	0.42941781161438486	19.387316703796387
+varianceThreshold();fastICA(71,'deflation','unit-variance','exp');maxAbsScaler();minMaxScaler();extraTreesClassifier(74,'entropy','log2',9,17,False,'balanced')	0.42033530439009537	4.8665361404418945
+fastICA(49,'deflation','unit-variance','exp');adaBoost(decisionTree('entropy',23,20,0.35098805099310215,16,'balanced'),98,0.03428200200253955,'SAMME')	0.423714304942633	23.646071672439575
+varianceThreshold();fastICA(71,'deflation','unit-variance','exp');maxAbsScaler();adaBoost(decisionTree('gini',26,3,0.8841330331658522,16,'balanced'),98,0.03428200200253955,'SAMME')	0.4251187661119552	26.59553027153015
+varianceThreshold();minMaxScaler();extraTreesClassifier(74,'entropy','log2',9,17,False,'balanced')	0.37559679747630803	2.189699649810791
+varianceThreshold();adaBoost(decisionTree('entropy',18,15,0.6430519593820734,14,'balanced'),98,0.03428200200253955,'SAMME')	0.43315848890170267	cached
+maxAbsScaler();adaBoost(decisionTree('gini',26,3,0.8841330331658522,16,'balanced'),98,0.03428200200253955,'SAMME')	0.44815532675624326	cached
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),98,0.03428200200253955,'SAMME')	0.42941781161438486	cached
+varianceThreshold();adaBoost(decisionTree('gini',26,3,0.8841330331658522,16,'balanced'),98,0.03428200200253955,'SAMME')	0.44896889521673444	cached
+varianceThreshold();adaBoost(decisionTree('gini',23,20,0.5683781986914915,16,'balanced'),48,0.03428200200253955,'SAMME')	0.4087470679737156	5.954010248184204
+maxAbsScaler();adaBoost(decisionTree('entropy',7,19,0.34292425954856165,20,'None'),98,0.03428200200253955,'SAMME')	0.27332769621740494	6.3624184131622314
+varianceThreshold();adaBoost(decisionTree('entropy',18,15,0.6430519593820734,14,'balanced'),98,0.03428200200253955,'SAMME')	0.43315848890170267	cached
+varianceThreshold();adaBoost(decisionTree('gini',26,3,0.8841330331658522,16,'balanced'),98,0.03428200200253955,'SAMME')	0.44896889521673444	cached
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.42964323536917454	cached
+varianceThreshold();adaBoost(decisionTree('entropy',23,20,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.42964323536917454	cached
+varianceThreshold();adaBoost(decisionTree('gini',24,10,0.6999847671933419,8,'None'),85,0.03428200200253955,'SAMME')	0.3636428816368789	12.313652753829956
+varianceThreshold();adaBoost(decisionTree('gini',26,3,0.8841330331658522,16,'balanced'),98,0.03428200200253955,'SAMME')	0.44896889521673444	cached
+varianceThreshold();adaBoost(decisionTree('entropy',23,3,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.42964323536917454	14.950373649597168
+varianceThreshold();adaBoost(decisionTree('entropy',14,11,0.9389876333679907,10,'balanced'),98,0.11100791723258069,'SAMME')	0.3664212138589355	19.21099543571472
+varianceThreshold();adaBoost(decisionTree('gini',26,3,0.8841330331658522,16,'balanced'),98,0.03428200200253955,'SAMME')	0.44896889521673444	cached
+maxAbsScaler();adaBoost(decisionTree('entropy',16,17,0.33614518959385786,2,'None'),98,0.03428200200253955,'SAMME')	0.35652922926484065	14.688886880874634
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),98,0.03428200200253955,'SAMME')	0.42941781161438486	cached
+varianceThreshold();adaBoost(decisionTree('entropy',18,15,0.6430519593820734,14,'balanced'),98,0.03428200200253955,'SAMME')	0.43315848890170267	cached
+maxAbsScaler();adaBoost(decisionTree('gini',26,16,0.031001619425285343,16,'balanced'),98,0.03428200200253955,'SAMME')	0.4281292964218264	9.772790908813477
+maxAbsScaler();adaBoost(decisionTree('gini',18,10,0.08722308252614297,5,'balanced'),48,0.03428200200253955,'SAMME')	0.4416645152752327	cached
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+maxAbsScaler();adaBoost(decisionTree('gini',26,3,0.8841330331658522,16,'balanced'),98,0.03428200200253955,'SAMME')	0.44815532675624326	cached
+varianceThreshold();adaBoost(decisionTree('entropy',18,15,0.6430519593820734,14,'balanced'),98,0.03428200200253955,'SAMME')	0.43315848890170267	cached
+varianceThreshold();adaBoost(decisionTree('entropy',18,15,0.6430519593820734,14,'balanced'),98,0.03428200200253955,'SAMME')	0.43315848890170267	cached
+varianceThreshold();adaBoost(decisionTree('entropy',26,15,0.6430519593820734,14,'balanced'),98,0.03428200200253955,'SAMME')	0.42635983201173994	18.840256452560425
+selectPercentile(39.69981795192363);adaBoost(decisionTree('gini',26,3,0.8841330331658522,16,'balanced'),98,0.03428200200253955,'SAMME')	0.3690505320061339	10.431865215301514
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),98,0.03428200200253955,'SAMME')	0.42941781161438486	cached
+robustScaler(False,False);adaBoost(decisionTree('entropy',26,14,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.42964323536917454	cached
+varianceThreshold();adaBoost(decisionTree('gini',26,3,0.8841330331658522,16,'balanced'),98,0.03428200200253955,'SAMME')	0.44896889521673444	cached
+varianceThreshold();adaBoost(decisionTree('gini',26,20,0.8841330331658522,16,'balanced'),98,0.03428200200253955,'SAMME')	0.44896889521673444	18.264264583587646
+varianceThreshold();adaBoost(decisionTree('gini',26,3,0.8841330331658522,16,'balanced'),98,0.03428200200253955,'SAMME')	0.44896889521673444	cached
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),98,0.03428200200253955,'SAMME')	0.42941781161438486	cached
+varianceThreshold();adaBoost(decisionTree('entropy',15,20,0.6430519593820734,16,'balanced'),98,0.03428200200253955,'SAMME')	0.4246905641078045	cached
+varianceThreshold();adaBoost(decisionTree('entropy',15,15,0.6430519593820734,14,'balanced'),85,0.03428200200253955,'SAMME')	0.42894466520376556	cached
+varianceThreshold();adaBoost(decisionTree('entropy',15,20,0.5683781986914915,16,'balanced'),85,0.03428200200253955,'SAMME')	0.42365022613628744	15.259854316711426
+maxAbsScaler();adaBoost(decisionTree('gini',26,3,0.8841330331658522,16,'None'),98,0.03428200200253955,'SAMME')	0.3419227101713981	15.030150175094604
+varianceThreshold();adaBoost(decisionTree('entropy',3,4,0.4554267079191143,16,'None'),36,1.3425871050614326,'SAMME')	0.2209480921574143	4.42854380607605
+robustScaler(False,False);adaBoost(decisionTree('entropy',18,14,0.5683781986914915,16,'balanced'),98,0.03428200200253955,'SAMME')	0.43703938531688885	14.730273962020874
+varianceThreshold();adaBoost(decisionTree('gini',23,15,0.6430519593820734,14,'balanced'),48,0.03428200200253955,'SAMME')	0.4103632185182791	6.4872565269470215

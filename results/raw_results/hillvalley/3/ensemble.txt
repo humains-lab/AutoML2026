@@ -1,0 +1,75 @@
+0: Pipeline(
+	0: Nystroem(coef0=-0.004432926838504825, degree=5, gamma=0.4139939169044041,
+         kernel='cosine', n_components=98, random_state=3)
+	1: AdaBoostClassifier(estimator=DecisionTreeClassifier(max_depth=10,
+                                                    max_features=0.8235705112332644,
+                                                    min_samples_leaf=9,
+                                                    random_state=3),
+                   learning_rate=1.2089263684377511, n_estimators=86,
+                   random_state=3)
+) -> Fitness: 0.9838888888888888
+
+1: Pipeline(
+	0: Nystroem(coef0=-0.004432926838504825, degree=5, gamma=0.4139939169044041,
+         kernel='cosine', n_components=98, random_state=3)
+	1: AdaBoostClassifier(estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    max_depth=10,
+                                                    max_features=0.8235705112332644,
+                                                    min_samples_leaf=9,
+                                                    random_state=3),
+                   learning_rate=1.3131997280403833, n_estimators=99,
+                   random_state=3)
+) -> Fitness: 0.9801851851851853
+
+2: Pipeline(
+	0: VarianceThreshold()
+	1: LogisticRegression(C=11.788446672408776, class_weight='balanced', max_iter=1000,
+                   penalty='l2', random_state=3, solver='newton-cg')
+) -> Fitness: 0.9517438271604938
+
+3: Pipeline(
+	0: Nystroem(coef0=0.9191404071163116, degree=4, gamma=0.4139939169044041,
+         kernel='cosine', n_components=98, random_state=3)
+	1: AdaBoostClassifier(estimator=DecisionTreeClassifier(max_depth=10,
+                                                    max_features=0.8235705112332644,
+                                                    min_samples_leaf=9,
+                                                    random_state=3),
+                   learning_rate=1.902739586516493, n_estimators=100,
+                   random_state=3)
+) -> Fitness: 0.9888271604938271
+
+4: Pipeline(
+	0: Nystroem(coef0=-0.004432926838504825, degree=5, gamma=0.4139939169044041,
+         kernel='cosine', n_components=98, random_state=3)
+	1: AdaBoostClassifier(estimator=DecisionTreeClassifier(max_depth=10,
+                                                    max_features=0.8235705112332644,
+                                                    min_samples_leaf=9,
+                                                    random_state=3),
+                   learning_rate=1.902739586516493, n_estimators=100,
+                   random_state=3)
+) -> Fitness: 0.9888271604938271
+
+Ensemble fitness: 0.0
+Weights: [0.9950059304575816, 0.991260378300768, 0.9624976590299019, 1.0, 1.0]
+Prediction: [0 1 1 1 0 1 1 0 1 0 1 1 0 1 1 0 1 1 1 1 1 1 0 1 1 1 0 1 0 0 1 1 1 0 0 1 1
+ 0 1 1 1 1 1 0 0 0 1 1 0 0 0 0 0 1 1 0 0 1 1 0 0 1 1 1 0 1 0 0 0 0 1 0 0 1
+ 0 1 1 1 0 1 1 1 1 1 1 1 1 0 1 0 0 1 1 1 1 1 1 1 0 1 0 0 1 0 0 0 0 0 1 1 0
+ 1 1 0 0 0 0 1 1 1 0 1 1 1 0 0 1 1 1 0 1 1 0 0 1 0 1 0 0 1 1 1 0 1 1 1 1 1
+ 1 1 0 0 1 0 1 0 0 0 1 1 0 1 1 0 1 0 0 1 1 1 1 0 1 1 1 1 1 0 1 0 0 1 1 0 0
+ 1 0 0 1 1 0 0 1 0 1 0 0 1 1 1 1 0 1 0 1 0 1 0 0 1 0 1 0 1 0 1 1 1 0 1 1 1
+ 1 1 0 1 0 0 1 1 0 1 0 0 0 1 0 1 0 1 1 0 0 0 0 1 1 1 0 1 0 0 1 1 1 0 1 1 1
+ 0 1 0 0 0 0 0 1 0 1 0 0 1 1 0 1 1 1 0 0 0 1 1 1 1 0 1 0 0 0 0 0 0 0 1 1 1
+ 0 1 0 1 1 1 1 0 0 1 0 0 0 0 1 0 0 0 0 0 0 1 1 0 0 0 1 1 1 1 0 0 1 1 0 1 1
+ 0 1 0 0 0 1 1 1 1 0 0 0 1 0 0 0 0 1 1 0 1 0 1 1 1 0 1 1 1 0 0 1 1 1 1 1 1
+ 1 0 1 1 0 0 0 1 1 0 0 0 0 1 0 0 0 0 0 0 1 1 0 0 0 0 0 0 1 0 0 1 0 1 1 0 1
+ 1 0 0 1 0 0 1 1 0 1 1 0 0 0 1 0 1 0 0 0 0 1 0 1 0 1 0 0 0 0 1 1 1 0 1 0 0
+ 0 1 1 1 1 0 0 1 1 0 1 0 0 0 0 0 1 1 1 0 1 1 0 0 1 0 0 1 1 1 0 0 1 1 1 0 0
+ 0 1 0 1 1 0 1 1 0 1 0 1 1 1 0 1 0 1 0 0 1 1 1 1 0 0 0 1 0 0 0 1 0 1 1 0 0
+ 0 1 0 1 0 0 1 0 1 1 0 0 0 0 1 1 1 0 1 0 1 1 0 0 1 1 1 1 1 0 1 0 1 0 0 1 0
+ 0 0 0 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 0 1 0 0 0 0 1 1 1 0 0 1 0 1 1 0 1 0 0
+ 0 1 1 0 1 1 0 1 1 1 0 0 0 0 0 0 0 0 0 0 1 1 0 1 0 1 1 0 0 0 0 1 1 0 1 1 1
+ 1 1 1 0 0 0 0 0 1 1 0 0 1 1 0 0 0 1 0 0 0 0 0 0 1 1 1 1 0 1 0 1 0 1 0 1 0
+ 0 0 0 1 0 1 0 0 0 0 0 1 0 0 1 1 1 1 0 0 0 1 1 0 1 1 1 0 0 0 0 0 0 1 0 0 0
+ 1 1 0 0 1 0 0 0 0 1 1 1 0 0 0 0 1 1 0 0 1 1 0 1 0 1 1 1 0 0 0 1 1 1 0 1 1
+ 0 1 0 1 1 1 1 1 1 1 1 1 0 0 1 0 0 0 0 0 1 1 0 0 0 1 1 1 0 0 1 0 1 0 1 1 1
+ 1 0 0 0 0 0 0 1 0 1 0 0 0 1 0 0 1 1 1 1 0 0 0 1 0 1 1 1 1 1 0]

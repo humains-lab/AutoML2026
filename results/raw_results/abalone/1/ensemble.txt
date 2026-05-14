@@ -1,0 +1,50 @@
+0: Pipeline(
+	0: MaxAbsScaler()
+	1: Nystroem(coef0=-0.5536084395066585, degree=5, gamma=7.556033650403374,
+         kernel='cosine', n_components=54, random_state=1)
+	2: DecisionTreeClassifier(class_weight='balanced', criterion='entropy',
+                       max_depth=28, max_features=0.5808352568130942,
+                       min_samples_leaf=16, min_samples_split=16,
+                       random_state=1)
+) -> Fitness: 0.1761019985814956
+
+1: Pipeline(
+	0: RobustScaler(with_centering=False)
+	1: FastICA(n_components=63, random_state=1)
+	2: SelectFwe(alpha=0.0326841797004676)
+	3: RandomForestClassifier(class_weight='balanced_subsample', criterion='entropy',
+                       max_features=0.6956345264363321, min_samples_leaf=20,
+                       min_samples_split=14, n_estimators=86, random_state=1)
+) -> Fitness: 0.20988841580854692
+
+2: Pipeline(
+	0: RobustScaler()
+	1: FastICA(n_components=63, random_state=1)
+	2: MinMaxScaler()
+	3: DecisionTreeClassifier(class_weight='balanced', criterion='entropy',
+                       max_depth=28, max_features=0.5808352568130942,
+                       min_samples_leaf=16, min_samples_split=17,
+                       random_state=1)
+) -> Fitness: 0.1875491529660712
+
+3: Pipeline(
+	0: RobustScaler()
+	1: FastICA(n_components=63, random_state=1)
+	2: MaxAbsScaler()
+	3: RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features=0.6956345264363321, min_samples_leaf=20,
+                       min_samples_split=14, n_estimators=86, random_state=1)
+) -> Fitness: 0.21288360868157735
+
+4: Pipeline(
+	0: MaxAbsScaler()
+	1: FastICA(n_components=63, random_state=1)
+	2: VarianceThreshold()
+	3: RandomForestClassifier(class_weight='balanced_subsample', criterion='entropy',
+                       max_features=0.6956345264363321, min_samples_leaf=20,
+                       min_samples_split=14, n_estimators=86, random_state=1)
+) -> Fitness: 0.21199246545499487
+
+Ensemble fitness: 0.0
+Weights: [0.8272219720067872, 0.9859303734487584, 0.880993863865769, 1.0, 0.9958139415612998]
+Prediction: [15  7 17 ...  9 10  9]

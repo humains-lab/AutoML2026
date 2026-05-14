@@ -1,0 +1,44 @@
+0: Pipeline(
+	0: Nystroem(coef0=-0.004432926838504825, degree=5, gamma=0.4139939169044041,
+         kernel='cosine', n_components=98, random_state=3)
+	1: AdaBoostClassifier(estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    max_depth=19,
+                                                    max_features=0.14619796964054443,
+                                                    min_samples_leaf=9,
+                                                    random_state=3),
+                   learning_rate=0.0832370546964789, n_estimators=57,
+                   random_state=3)
+) -> Fitness: 0.39063360618371656
+
+1: Pipeline(
+	0: ExtraTreesClassifier(class_weight='balanced', criterion='entropy',
+                     max_features='log2', min_samples_leaf=2,
+                     min_samples_split=19, n_estimators=91, random_state=3)
+) -> Fitness: 0.43989848164667145
+
+2: Pipeline(
+	0: ExtraTreesClassifier(class_weight='balanced_subsample', criterion='entropy',
+                     min_samples_leaf=3, min_samples_split=19, n_estimators=16,
+                     random_state=3)
+) -> Fitness: 0.417895401739852
+
+3: Pipeline(
+	0: AdaBoostClassifier(estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    max_depth=19,
+                                                    max_features=0.14619796964054443,
+                                                    min_samples_leaf=8,
+                                                    min_samples_split=17,
+                                                    random_state=3),
+                   learning_rate=0.0832370546964789, n_estimators=57,
+                   random_state=3)
+) -> Fitness: 0.40168823823839483
+
+4: Pipeline(
+	0: ExtraTreesClassifier(class_weight='balanced_subsample', max_features='log2',
+                     min_samples_leaf=2, min_samples_split=19, n_estimators=91,
+                     random_state=3)
+) -> Fitness: 0.4230722212985903
+
+Ensemble fitness: 0.0
+Weights: [0.8880085348816351, 1.0, 0.9499814597575892, 0.9131384967157781, 0.9617496739586474]
+Prediction: [4 6 6 ... 6 5 6]

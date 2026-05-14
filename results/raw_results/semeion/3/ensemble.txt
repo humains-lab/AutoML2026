@@ -1,0 +1,38 @@
+0: Pipeline(
+	0: PCA(n_components=0.7205513760275748, random_state=3)
+	1: MinMaxScaler()
+	2: RobustScaler()
+	3: QuadraticDiscriminantAnalysis(reg_param=0.17576863048191382)
+) -> Fitness: 0.9523394880481837
+
+1: Pipeline(
+	0: PCA(n_components=0.7205513760275748, random_state=3)
+	1: VarianceThreshold()
+	2: RobustScaler()
+	3: QuadraticDiscriminantAnalysis(reg_param=0.17576863048191382)
+) -> Fitness: 0.9523394880481837
+
+2: Pipeline(
+	0: PCA(n_components=0.7205513760275748, random_state=3)
+	1: MinMaxScaler()
+	2: RobustScaler()
+	3: QuadraticDiscriminantAnalysis(reg_param=0.11961182584849994)
+) -> Fitness: 0.9566272350837568
+
+3: Pipeline(
+	0: FastICA(n_components=74, random_state=3)
+	1: MinMaxScaler()
+	2: RobustScaler()
+	3: QuadraticDiscriminantAnalysis(reg_param=0.17576863048191382)
+) -> Fitness: 0.9428806135893092
+
+4: Pipeline(
+	0: FastICA(n_components=74, random_state=3)
+	1: MinMaxScaler()
+	2: RobustScaler()
+	3: QuadraticDiscriminantAnalysis(reg_param=0.11961182584849994)
+) -> Fitness: 0.9472016939582157
+
+Ensemble fitness: 0.0
+Weights: [0.9955178497137417, 0.9955178497137417, 1.0, 0.9856301169459764, 0.9901471118740249]
+Prediction: [0 0 0 ... 3 9 9]

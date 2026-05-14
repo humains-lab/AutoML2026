@@ -1,0 +1,54 @@
+0: Pipeline(
+	0: MinMaxScaler()
+	1: AdaBoostClassifier(estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    criterion='entropy',
+                                                    max_depth=22,
+                                                    max_features=0.5144367604957987,
+                                                    min_samples_leaf=2,
+                                                    min_samples_split=7,
+                                                    random_state=9),
+                   learning_rate=0.1137596165020787, n_estimators=41,
+                   random_state=9)
+) -> Fitness: 0.3963229450107526
+
+1: Pipeline(
+	0: MaxAbsScaler()
+	1: RobustScaler(with_centering=False, with_scaling=False)
+	2: Nystroem(coef0=-0.18810893236847304, degree=2, gamma=4.251468434342298,
+         n_components=70, random_state=9)
+	3: ExtraTreesClassifier(class_weight='balanced', criterion='entropy',
+                     max_features='log2', min_samples_leaf=8,
+                     min_samples_split=6, n_estimators=59, random_state=9)
+) -> Fitness: 0.44129416126520826
+
+2: Pipeline(
+	0: FastICA(algorithm='deflation', fun='cube', n_components=96, random_state=9,
+        whiten='arbitrary-variance')
+	1: Nystroem(coef0=-0.08622800954618004, degree=3, gamma=4.251468434342298,
+         n_components=70, random_state=9)
+	2: ExtraTreesClassifier(class_weight='balanced', criterion='entropy',
+                     max_features='log2', min_samples_leaf=8,
+                     min_samples_split=6, n_estimators=59, random_state=9)
+) -> Fitness: 0.43453230255427516
+
+3: Pipeline(
+	0: MinMaxScaler()
+	1: Nystroem(coef0=-0.08622800954618004, degree=3, gamma=4.251468434342298,
+         n_components=70, random_state=9)
+	2: ExtraTreesClassifier(class_weight='balanced', criterion='entropy',
+                     max_features='log2', min_samples_leaf=8,
+                     min_samples_split=6, n_estimators=59, random_state=9)
+) -> Fitness: 0.4328051837466734
+
+4: Pipeline(
+	0: MinMaxScaler()
+	1: Nystroem(coef0=-0.5186541596088716, degree=3, gamma=4.251468434342298,
+         n_components=70, random_state=9)
+	2: ExtraTreesClassifier(class_weight='balanced', criterion='entropy',
+                     max_features='log2', min_samples_leaf=8,
+                     min_samples_split=6, n_estimators=46, random_state=9)
+) -> Fitness: 0.42500430821419216
+
+Ensemble fitness: 0.0
+Weights: [0.8980924285843226, 1.0, 0.9846772078480563, 0.9807634492733903, 0.9630861804191734]
+Prediction: [5 6 6 ... 6 5 5]

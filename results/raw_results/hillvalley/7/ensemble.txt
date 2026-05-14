@@ -1,0 +1,92 @@
+0: Pipeline(
+	0: FastICA(algorithm='deflation', n_components=7, random_state=7,
+        whiten='arbitrary-variance')
+	1: MinMaxScaler()
+	2: AdaBoostClassifier(estimator=DecisionTreeClassifier(criterion='entropy',
+                                                    max_depth=22,
+                                                    max_features=0.7240447768316132,
+                                                    min_samples_leaf=5,
+                                                    min_samples_split=11,
+                                                    random_state=7),
+                   learning_rate=1.2247421483315755, n_estimators=95,
+                   random_state=7)
+) -> Fitness: 0.9319598765432098
+
+1: Pipeline(
+	0: FastICA(algorithm='deflation', n_components=7, random_state=7,
+        whiten='arbitrary-variance')
+	1: MinMaxScaler()
+	2: AdaBoostClassifier(estimator=DecisionTreeClassifier(criterion='entropy',
+                                                    max_depth=22,
+                                                    max_features=0.7463084419639098,
+                                                    min_samples_leaf=2,
+                                                    min_samples_split=10,
+                                                    random_state=7),
+                   learning_rate=0.7270645522714722, n_estimators=65,
+                   random_state=7)
+) -> Fitness: 0.9295216049382716
+
+2: Pipeline(
+	0: FastICA(algorithm='deflation', n_components=7, random_state=7,
+        whiten='arbitrary-variance')
+	1: MinMaxScaler()
+	2: AdaBoostClassifier(estimator=DecisionTreeClassifier(criterion='entropy',
+                                                    max_depth=22,
+                                                    max_features=0.7240447768316132,
+                                                    min_samples_leaf=5,
+                                                    min_samples_split=11,
+                                                    random_state=7),
+                   learning_rate=0.7270645522714722, n_estimators=76,
+                   random_state=7)
+) -> Fitness: 0.9294907407407408
+
+3: Pipeline(
+	0: FastICA(algorithm='deflation', n_components=7, random_state=7)
+	1: MinMaxScaler()
+	2: AdaBoostClassifier(estimator=DecisionTreeClassifier(criterion='entropy',
+                                                    max_depth=22,
+                                                    max_features=0.06662253487446146,
+                                                    min_samples_leaf=5,
+                                                    min_samples_split=10,
+                                                    random_state=7),
+                   learning_rate=0.7270645522714722, n_estimators=76,
+                   random_state=7)
+) -> Fitness: 0.906003086419753
+
+4: Pipeline(
+	0: FastICA(algorithm='deflation', n_components=7, random_state=7)
+	1: MinMaxScaler()
+	2: AdaBoostClassifier(estimator=DecisionTreeClassifier(criterion='entropy',
+                                                    max_depth=30,
+                                                    max_features=0.7463084419639098,
+                                                    min_samples_leaf=2,
+                                                    min_samples_split=10,
+                                                    random_state=7),
+                   learning_rate=0.7270645522714722, n_estimators=76,
+                   random_state=7)
+) -> Fitness: 0.9319444444444445
+
+Ensemble fitness: 0.0
+Weights: [1.0, 0.99738371611664, 0.9973505985991291, 0.9721481677733438, 0.9999834412412447]
+Prediction: [0 1 1 1 0 1 1 0 1 0 1 1 0 1 1 0 1 1 1 1 1 1 0 1 1 1 0 1 0 0 1 1 1 0 0 1 1
+ 0 1 1 1 1 1 0 0 0 1 1 0 0 0 0 0 1 1 0 0 1 1 0 0 1 1 1 0 1 0 0 0 0 1 0 0 1
+ 0 1 1 1 0 1 1 1 1 1 1 1 1 0 1 0 0 1 1 1 1 1 1 1 0 1 0 0 1 0 0 0 0 0 1 1 0
+ 1 1 0 0 0 0 1 1 1 0 1 1 1 0 0 1 1 1 0 1 1 0 0 1 0 1 0 0 1 1 1 0 1 1 1 1 1
+ 1 1 0 0 1 0 1 0 0 0 1 1 0 1 1 0 1 0 0 1 1 1 1 0 1 1 1 1 1 0 1 0 0 1 1 0 0
+ 1 0 0 1 1 0 0 1 0 1 0 0 1 1 1 1 0 1 0 1 0 1 0 0 1 0 1 0 1 0 1 1 1 0 1 1 1
+ 1 1 0 1 0 0 1 1 0 1 0 0 0 1 0 1 0 1 1 0 0 0 0 1 1 1 0 1 0 0 1 1 1 0 1 1 1
+ 0 1 0 0 0 0 0 1 0 1 0 0 1 1 0 1 1 1 0 0 0 1 1 1 1 0 1 0 0 0 0 0 0 0 1 1 1
+ 0 1 0 1 1 1 1 0 0 1 0 0 0 0 1 0 0 0 0 0 0 1 1 0 0 0 1 1 1 1 0 0 1 1 0 1 1
+ 0 1 0 0 0 1 1 1 1 0 0 0 1 0 0 0 0 1 1 0 1 0 1 1 1 0 1 1 1 0 0 1 1 1 1 1 1
+ 1 0 1 1 0 0 0 1 1 0 0 0 0 1 0 0 0 0 0 0 1 1 0 0 0 0 0 0 1 0 0 1 0 1 1 0 1
+ 1 0 0 1 0 0 1 1 0 1 1 0 0 0 1 0 1 0 0 0 0 1 0 1 0 1 0 0 0 0 1 1 1 0 1 0 0
+ 0 1 1 1 1 0 0 1 1 0 1 0 0 0 0 0 1 1 1 0 1 1 0 0 1 0 0 1 1 1 0 0 1 1 1 0 0
+ 0 1 0 1 1 0 1 1 0 1 0 1 1 1 0 1 0 1 0 0 1 1 1 1 0 0 0 1 0 0 0 1 0 1 1 0 0
+ 0 1 0 1 0 0 1 0 1 1 0 0 0 0 1 1 1 0 1 0 1 1 0 0 1 1 1 1 1 0 1 0 1 0 0 1 0
+ 0 0 0 0 0 0 0 1 1 1 1 0 0 0 0 1 1 1 0 1 0 0 0 0 1 1 1 0 0 1 0 1 1 0 1 0 0
+ 0 1 1 0 1 1 0 1 1 1 0 0 0 0 0 0 0 0 0 0 1 1 0 1 0 1 1 0 0 0 0 1 1 0 1 1 1
+ 1 1 1 0 0 0 0 0 1 1 0 0 1 1 0 0 0 1 0 0 0 0 0 0 1 1 1 1 0 1 0 1 0 1 0 1 0
+ 0 0 0 1 0 1 0 0 0 0 0 1 0 0 1 1 1 1 0 0 0 1 1 0 1 1 1 0 0 0 0 0 0 1 0 0 0
+ 1 1 0 0 1 0 0 0 0 1 1 1 0 0 0 0 1 1 0 0 1 1 0 1 0 1 1 1 0 0 0 1 1 1 0 1 1
+ 0 1 0 1 1 1 1 1 1 1 1 1 0 0 1 0 0 0 0 0 1 1 0 0 0 1 1 1 0 0 1 0 1 0 1 1 1
+ 1 0 0 0 0 0 0 1 0 1 0 0 0 1 0 0 1 1 1 1 0 0 0 1 0 1 1 1 1 1 0]

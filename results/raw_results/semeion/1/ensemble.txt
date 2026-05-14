@@ -1,0 +1,39 @@
+0: Pipeline(
+	0: RobustScaler()
+	1: PCA(n_components=0.7948940657487412, random_state=1)
+	2: QuadraticDiscriminantAnalysis(reg_param=0.16930813588160243)
+) -> Fitness: 0.9539310935441371
+
+1: Pipeline(
+	0: RobustScaler(with_scaling=False)
+	1: PCA(n_components=0.7948940657487412, random_state=1)
+	2: QuadraticDiscriminantAnalysis(reg_param=0.16930813588160243)
+) -> Fitness: 0.9539310935441371
+
+2: Pipeline(
+	0: RobustScaler()
+	1: PCA(n_components=0.7655043748821907, random_state=1)
+	2: QuadraticDiscriminantAnalysis(reg_param=0.16930813588160243)
+) -> Fitness: 0.9548410502540937
+
+3: Pipeline(
+	0: VarianceThreshold()
+	1: PCA(n_components=0.7948940657487412, random_state=1)
+	2: QuadraticDiscriminantAnalysis(reg_param=0.16930813588160243)
+) -> Fitness: 0.9539310935441371
+
+4: Pipeline(
+	0: MaxAbsScaler()
+	1: AdaBoostClassifier(estimator=DecisionTreeClassifier(criterion='entropy',
+                                                    max_depth=24,
+                                                    max_features=0.22509934230030493,
+                                                    min_samples_leaf=5,
+                                                    min_samples_split=7,
+                                                    random_state=1),
+                   learning_rate=0.809010512563863, n_estimators=72,
+                   random_state=1)
+) -> Fitness: 0.935720101637493
+
+Ensemble fitness: 0.0
+Weights: [0.9990470071330568, 0.9990470071330568, 1.0, 0.9990470071330568, 0.9799747312796068]
+Prediction: [0 0 0 ... 9 9 9]

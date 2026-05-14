@@ -1,0 +1,59 @@
+0: Pipeline(
+	0: VarianceThreshold()
+	1: MinMaxScaler()
+	2: FastICA(n_components=94, random_state=4, whiten='arbitrary-variance')
+	3: ExtraTreesClassifier(class_weight='balanced', max_features='log2',
+                     min_samples_leaf=17, min_samples_split=14, n_estimators=57,
+                     random_state=4)
+) -> Fitness: 0.42284741401320664
+
+1: Pipeline(
+	0: VarianceThreshold()
+	1: SelectFwe(alpha=0.01175922987184992)
+	2: FastICA(algorithm='deflation', n_components=24, random_state=4,
+        whiten='arbitrary-variance')
+	3: ExtraTreesClassifier(class_weight='balanced', criterion='entropy',
+                     min_samples_leaf=17, min_samples_split=14, n_estimators=57,
+                     random_state=4)
+) -> Fitness: 0.43884145059557234
+
+2: Pipeline(
+	0: VarianceThreshold()
+	1: MinMaxScaler()
+	2: FastICA(algorithm='deflation', n_components=84, random_state=4,
+        whiten='arbitrary-variance')
+	3: ExtraTreesClassifier(class_weight='balanced', max_features='log2',
+                     min_samples_leaf=17, min_samples_split=14, n_estimators=57,
+                     random_state=4)
+) -> Fitness: 0.4173898806486914
+
+3: Pipeline(
+	0: VarianceThreshold()
+	1: MinMaxScaler()
+	2: FastICA(algorithm='deflation', n_components=94, random_state=4,
+        whiten='arbitrary-variance')
+	3: SelectFwe(alpha=0.01175922987184992)
+	4: AdaBoostClassifier(estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    criterion='entropy',
+                                                    max_depth=27,
+                                                    max_features=0.0739375940195448,
+                                                    min_samples_leaf=20,
+                                                    min_samples_split=5,
+                                                    random_state=4),
+                   learning_rate=0.1804713619082346, n_estimators=30,
+                   random_state=4)
+) -> Fitness: 0.4061931484776918
+
+4: Pipeline(
+	0: VarianceThreshold()
+	1: SelectFwe(alpha=0.01175922987184992)
+	2: FastICA(algorithm='deflation', n_components=24, random_state=4,
+        whiten='arbitrary-variance')
+	3: ExtraTreesClassifier(class_weight='balanced', max_features='log2',
+                     min_samples_leaf=17, min_samples_split=14, n_estimators=57,
+                     random_state=4)
+) -> Fitness: 0.44526211800089743
+
+Ensemble fitness: 0.0
+Weights: [0.9496595306864941, 0.9855800277055858, 0.9374026304385727, 0.9122562465034878, 1.0]
+Prediction: [4 9 9 ... 6 5 5]

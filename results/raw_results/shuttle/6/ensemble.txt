@@ -1,0 +1,68 @@
+0: Pipeline(
+	0: SelectPercentile(percentile=80.13198475725856)
+	1: VarianceThreshold()
+	2: AdaBoostClassifier(estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    max_depth=30,
+                                                    max_features=0.80447716832045,
+                                                    min_samples_leaf=6,
+                                                    min_samples_split=8,
+                                                    random_state=6),
+                   learning_rate=0.7530606588636066, n_estimators=74,
+                   random_state=6)
+) -> Fitness: 0.9952535818823133
+
+1: Pipeline(
+	0: SelectPercentile(percentile=83.02253161712584)
+	1: MinMaxScaler()
+	2: AdaBoostClassifier(estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    max_depth=4,
+                                                    max_features=0.836416551852853,
+                                                    min_samples_leaf=12,
+                                                    min_samples_split=8,
+                                                    random_state=6),
+                   learning_rate=0.7530606588636066, n_estimators=74,
+                   random_state=6)
+) -> Fitness: 0.9952166745081913
+
+2: Pipeline(
+	0: SelectPercentile(percentile=51.45246247932748)
+	1: VarianceThreshold()
+	2: AdaBoostClassifier(estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    max_depth=4,
+                                                    max_features=0.993639907485328,
+                                                    min_samples_leaf=16,
+                                                    min_samples_split=8,
+                                                    random_state=6),
+                   learning_rate=0.7530606588636066, n_estimators=74,
+                   random_state=6)
+) -> Fitness: 0.9856130515652207
+
+3: Pipeline(
+	0: SelectPercentile(percentile=51.45246247932748)
+	1: VarianceThreshold()
+	2: AdaBoostClassifier(estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    max_depth=4,
+                                                    max_features=0.836416551852853,
+                                                    min_samples_leaf=16,
+                                                    min_samples_split=8,
+                                                    random_state=6),
+                   learning_rate=0.7530606588636066, n_estimators=74,
+                   random_state=6)
+) -> Fitness: 0.9856130515652207
+
+4: Pipeline(
+	0: SelectPercentile(percentile=51.45246247932748)
+	1: VarianceThreshold()
+	2: AdaBoostClassifier(estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    max_depth=4,
+                                                    max_features=0.993639907485328,
+                                                    min_samples_leaf=16,
+                                                    min_samples_split=8,
+                                                    random_state=6),
+                   learning_rate=0.7530606588636066, n_estimators=58,
+                   random_state=6)
+) -> Fitness: 0.9856130515652207
+
+Ensemble fitness: 0.0
+Weights: [1.0, 0.9999629166126163, 0.9903134934728298, 0.9903134934728298, 0.9903134934728298]
+Prediction: [2 4 1 ... 1 1 1]

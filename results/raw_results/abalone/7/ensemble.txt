@@ -1,0 +1,52 @@
+0: Pipeline(
+	0: SelectPercentile(percentile=50.176039542893676)
+	1: ExtraTreesClassifier(bootstrap=True, class_weight='balanced_subsample',
+                     min_samples_leaf=18, min_samples_split=4, n_estimators=72,
+                     random_state=7)
+) -> Fitness: 0.2075839456413994
+
+1: Pipeline(
+	0: SelectPercentile(percentile=69.30675691848333)
+	1: AdaBoostClassifier(estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    max_depth=11,
+                                                    max_features=0.361762894929356,
+                                                    min_samples_leaf=14,
+                                                    min_samples_split=14,
+                                                    random_state=7),
+                   learning_rate=0.19415029660883396, n_estimators=62,
+                   random_state=7)
+) -> Fitness: 0.17253444530478285
+
+2: Pipeline(
+	0: Nystroem(coef0=-0.15859467464373656, degree=2, gamma=0.8960833401031192,
+         kernel='cosine', n_components=79, random_state=7)
+	1: ExtraTreesClassifier(bootstrap=True, class_weight='balanced',
+                     criterion='entropy', min_samples_leaf=3,
+                     min_samples_split=4, n_estimators=60, random_state=7)
+) -> Fitness: 0.19069372237218216
+
+3: Pipeline(
+	0: FastICA(n_components=7, random_state=7)
+	1: MinMaxScaler()
+	2: AdaBoostClassifier(estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    max_depth=15,
+                                                    max_features=0.22358303361003984,
+                                                    min_samples_leaf=20,
+                                                    min_samples_split=10,
+                                                    random_state=7),
+                   learning_rate=0.05338328478329552, n_estimators=32,
+                   random_state=7)
+) -> Fitness: 0.1660128535216691
+
+4: Pipeline(
+	0: VarianceThreshold()
+	1: MinMaxScaler()
+	2: SelectPercentile(percentile=34.543527019892394)
+	3: ExtraTreesClassifier(bootstrap=True, class_weight='balanced_subsample',
+                     min_samples_leaf=18, min_samples_split=6, n_estimators=86,
+                     random_state=7)
+) -> Fitness: 0.19966756370138303
+
+Ensemble fitness: 0.0
+Weights: [1.0, 0.8311550528229941, 0.9186342507508021, 0.7997384046666874, 0.9618641898555493]
+Prediction: [15  7  9 ... 10  9 10]

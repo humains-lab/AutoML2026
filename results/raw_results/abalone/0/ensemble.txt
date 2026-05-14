@@ -1,0 +1,45 @@
+0: Pipeline(
+	0: DecisionTreeClassifier(class_weight='balanced', max_depth=12,
+                       max_features=0.27998274332687256, min_samples_leaf=16,
+                       min_samples_split=11, random_state=0)
+) -> Fitness: 0.18356971759896246
+
+1: Pipeline(
+	0: VarianceThreshold()
+	1: SelectPercentile(percentile=25.379822174983772)
+	2: SelectFwe(alpha=0.025956368254407766)
+	3: Nystroem(coef0=-0.556884039344347, degree=4, gamma=0.6560318886820307,
+         kernel='sigmoid', random_state=0)
+	4: DecisionTreeClassifier(class_weight='balanced', max_depth=12,
+                       max_features=0.2868310479973286, min_samples_leaf=6,
+                       min_samples_split=17, random_state=0)
+) -> Fitness: 0.1692586009451567
+
+2: Pipeline(
+	0: MinMaxScaler()
+	1: SelectPercentile(percentile=89.01193965432412)
+	2: SelectFwe(alpha=0.02547797813748923)
+	3: RobustScaler(with_centering=False)
+	4: LogisticRegression(C=18.832380900373128, class_weight='balanced', max_iter=1000,
+                   penalty='l2', random_state=0, solver='newton-cg')
+) -> Fitness: 0.2069910960181872
+
+3: Pipeline(
+	0: FastICA(n_components=9, random_state=0, whiten='arbitrary-variance')
+	1: ExtraTreesClassifier(class_weight='balanced', criterion='entropy',
+                     min_samples_leaf=3, min_samples_split=4, n_estimators=81,
+                     random_state=0)
+) -> Fitness: 0.18310799018000504
+
+4: Pipeline(
+	0: MinMaxScaler()
+	1: SelectPercentile(percentile=89.01193965432412)
+	2: SelectFwe(alpha=0.0017443104297093497)
+	3: RobustScaler(with_centering=False)
+	4: LogisticRegression(C=18.832380900373128, class_weight='balanced', max_iter=1000,
+                   penalty='l2', random_state=0, solver='newton-cg')
+) -> Fitness: 0.2069910960181872
+
+Ensemble fitness: 0.0
+Weights: [0.886848377201854, 0.8177095739919406, 1.0, 0.8846177140098641, 1.0]
+Prediction: [ 7  7 15 ... 10 11  9]

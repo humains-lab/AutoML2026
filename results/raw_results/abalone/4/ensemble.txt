@@ -1,0 +1,53 @@
+0: Pipeline(
+	0: MinMaxScaler()
+	1: MaxAbsScaler()
+	2: FastICA(algorithm='deflation', fun='cube', n_components=36, random_state=4,
+        whiten='arbitrary-variance')
+	3: RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features=0.6964946176158158, min_samples_leaf=13,
+                       min_samples_split=18, n_estimators=25, random_state=4)
+) -> Fitness: 0.21762643751531643
+
+1: Pipeline(
+	0: MinMaxScaler()
+	1: SelectPercentile(percentile=83.98643844747953)
+	2: FastICA(algorithm='deflation', n_components=36, random_state=4,
+        whiten='arbitrary-variance')
+	3: RandomForestClassifier(bootstrap=False, class_weight='balanced_subsample',
+                       min_samples_leaf=17, min_samples_split=20,
+                       n_estimators=91, random_state=4)
+) -> Fitness: 0.2288487926146201
+
+2: Pipeline(
+	0: MinMaxScaler()
+	1: SelectPercentile(percentile=23.284962135796913)
+	2: FastICA(algorithm='deflation', fun='cube', n_components=50, random_state=4,
+        whiten='arbitrary-variance')
+	3: RandomForestClassifier(bootstrap=False, class_weight='balanced',
+                       max_features=0.6964946176158158, min_samples_leaf=4,
+                       min_samples_split=18, n_estimators=25, random_state=4)
+) -> Fitness: 0.1793153456975407
+
+3: Pipeline(
+	0: SelectPercentile(percentile=23.284962135796913)
+	1: MaxAbsScaler()
+	2: FastICA(algorithm='deflation', fun='cube', n_components=50, random_state=4,
+        whiten='arbitrary-variance')
+	3: RandomForestClassifier(class_weight='balanced', max_features='log2',
+                       min_samples_leaf=6, min_samples_split=18,
+                       n_estimators=25, random_state=4)
+) -> Fitness: 0.2090027112268107
+
+4: Pipeline(
+	0: SelectFwe(alpha=0.046137163666712756)
+	1: MaxAbsScaler()
+	2: FastICA(algorithm='deflation', fun='exp', n_components=50, random_state=4,
+        whiten='arbitrary-variance')
+	3: RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features=0.6964946176158158, min_samples_leaf=17,
+                       min_samples_split=20, n_estimators=62, random_state=4)
+) -> Fitness: 0.21700192112458466
+
+Ensemble fitness: 0.0
+Weights: [0.9509617028296844, 1.0, 0.7835538201833846, 0.9132786275117908, 0.9482327551101155]
+Prediction: [15  7 12 ... 10 10  9]

@@ -1,0 +1,41 @@
+0: Pipeline(
+	0: PCA(n_components=0.5880802684162725, random_state=2, whiten=True)
+	1: SelectFwe(alpha=0.004433434348235422)
+	2: FastICA(fun='exp', n_components=19, random_state=2)
+	3: VarianceThreshold()
+	4: RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features='log2', min_samples_leaf=9,
+                       min_samples_split=4, n_estimators=69, random_state=2)
+) -> Fitness: 0.8723994323810244
+
+1: Pipeline(
+	0: PCA(n_components=0.5880802684162725, random_state=2, whiten=True)
+	1: SelectFwe(alpha=0.004433434348235422)
+	2: FastICA(algorithm='deflation', fun='exp', n_components=19, random_state=2)
+	3: VarianceThreshold()
+	4: RandomForestClassifier(class_weight='balanced', criterion='entropy',
+                       max_features=None, min_samples_leaf=9,
+                       min_samples_split=9, n_estimators=69, random_state=2)
+) -> Fitness: 0.8704904759293489
+
+2: Pipeline(
+	0: VarianceThreshold()
+	1: LogisticRegression(C=7.643083019120739, class_weight='balanced', max_iter=1000,
+                   penalty='l2', random_state=2, solver='saga')
+) -> Fitness: 0.8696900890100847
+
+3: Pipeline(
+	0: SelectFwe(alpha=0.009231555034452055)
+	1: LogisticRegression(C=7.643083019120739, class_weight='balanced', max_iter=1000,
+                   penalty='l2', random_state=2, solver='saga')
+) -> Fitness: 0.8720098834004153
+
+4: Pipeline(
+	0: FastICA(fun='exp', n_components=19, random_state=2)
+	1: LogisticRegression(C=7.643083019120739, class_weight='balanced', max_iter=1000,
+                   penalty=None, random_state=2, solver='saga')
+) -> Fitness: 0.8729052401617924
+
+Ensemble fitness: 0.0
+Weights: [0.9994205467472342, 0.9972336467678944, 0.9963167237361162, 0.9989742795435491, 1.0]
+Prediction: [0 1 2 ... 0 0 0]

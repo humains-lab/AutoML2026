@@ -1,0 +1,90 @@
+0: Pipeline(
+	0: RobustScaler()
+	1: SelectPercentile(percentile=93.08779403059991)
+	2: VarianceThreshold()
+	3: FastICA(algorithm='deflation', fun='exp', n_components=16, random_state=6)
+	4: AdaBoostClassifier(estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    criterion='entropy',
+                                                    max_depth=19,
+                                                    max_features=0.8500692426287324,
+                                                    min_samples_leaf=8,
+                                                    min_samples_split=20,
+                                                    random_state=6),
+                   learning_rate=0.8664120932007853, n_estimators=46,
+                   random_state=6)
+) -> Fitness: 0.9431862745098039
+
+1: Pipeline(
+	0: RobustScaler()
+	1: SelectPercentile(percentile=93.08779403059991)
+	2: VarianceThreshold()
+	3: FastICA(algorithm='deflation', fun='exp', n_components=16, random_state=6)
+	4: AdaBoostClassifier(estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    criterion='entropy',
+                                                    max_depth=19,
+                                                    max_features=0.8500692426287324,
+                                                    min_samples_leaf=8,
+                                                    min_samples_split=20,
+                                                    random_state=6),
+                   learning_rate=0.8664120932007853, n_estimators=90,
+                   random_state=6)
+) -> Fitness: 0.9431862745098039
+
+2: Pipeline(
+	0: RobustScaler()
+	1: SelectPercentile(percentile=93.08779403059991)
+	2: VarianceThreshold()
+	3: FastICA(algorithm='deflation', fun='exp', n_components=16, random_state=6,
+        whiten='arbitrary-variance')
+	4: AdaBoostClassifier(estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    criterion='entropy',
+                                                    max_depth=19,
+                                                    max_features=0.8500692426287324,
+                                                    min_samples_leaf=8,
+                                                    min_samples_split=20,
+                                                    random_state=6),
+                   learning_rate=0.8664120932007853, n_estimators=90,
+                   random_state=6)
+) -> Fitness: 0.9431862745098039
+
+3: Pipeline(
+	0: RobustScaler()
+	1: SelectPercentile(percentile=93.08779403059991)
+	2: VarianceThreshold()
+	3: FastICA(algorithm='deflation', fun='exp', n_components=16, random_state=6)
+	4: AdaBoostClassifier(estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    max_depth=22,
+                                                    max_features=0.15696487430740846,
+                                                    min_samples_leaf=2,
+                                                    min_samples_split=20,
+                                                    random_state=6),
+                   learning_rate=1.0903856171653792, n_estimators=96,
+                   random_state=6)
+) -> Fitness: 0.9353186274509804
+
+4: Pipeline(
+	0: RobustScaler(with_centering=False)
+	1: SelectPercentile(percentile=93.08779403059991)
+	2: VarianceThreshold()
+	3: FastICA(algorithm='deflation', fun='exp', n_components=16, random_state=6,
+        whiten='arbitrary-variance')
+	4: AdaBoostClassifier(estimator=DecisionTreeClassifier(class_weight='balanced',
+                                                    criterion='entropy',
+                                                    max_depth=19,
+                                                    max_features=0.8500692426287324,
+                                                    min_samples_leaf=8,
+                                                    min_samples_split=20,
+                                                    random_state=6),
+                   learning_rate=0.8664120932007853, n_estimators=90,
+                   random_state=6)
+) -> Fitness: 0.9431862745098039
+
+Ensemble fitness: 0.0
+Weights: [1.0, 1.0, 1.0, 0.9916584377111377, 1.0]
+Prediction: [2 1 2 2 2 1 2 1 2 2 2 2 1 2 2 2 2 1 2 2 2 2 1 2 1 1 2 2 2 2 2 2 2 2 2 2 2
+ 1 1 2 2 2 1 2 2 2 1 2 2 2 2 2 1 1 1 2 2 1 2 2 2 1 2 2 1 1 2 2 2 2 1 2 2 2
+ 2 2 1 2 2 1 1 2 1 2 2 2 2 2 2 2 1 2 2 2 1 2 1 1 1 2 1 2 1 1 2 1 1 1 2 2 1
+ 2 2 2 2 2 2 1 1 2 2 2 2 1 2 2 2 2 1 1 2 2 2 1 2 2 1 2 2 2 2 1 2 1 2 2 2 2
+ 2 2 2 2 1 2 2 2 2 1 1 2 1 2 1 1 2 2 1 1 1 2 1 1 2 2 1 1 2 1 1 1 1 2 2 2 2
+ 1 1 2 1 2 2 2 1 1 1 1 1 1 2 2 1 1 2 1 1 2 2 1 2 1 1 2 2 2 2 1 2 2 2 2 2 2
+ 2 1 2 1 1 2 2 2 1 1 2 2]

@@ -1,0 +1,180 @@
+[
+    {
+        "id": "0b15808a-89ed-4a23-a51a-c7303311bf19",
+        "parents_id": [],
+        "pipeline": "selectPercentile(86.16784270581033);extraTreesClassifier(74,'entropy','sqrt',9,7,True,'balanced')",
+        "fitness": [
+            0.20608778303875264
+        ],
+        "runtime": 3.841989755630493,
+        "hp_number": 8,
+        "families": [
+            "0",
+            "1"
+        ]
+    },
+    {
+        "id": "5d25d35a-25f8-4c93-8748-7304d071403d",
+        "parents_id": [],
+        "pipeline": "fastICA(27,'deflation','arbitrary-variance','exp');extraTreesClassifier(74,'entropy','sqrt',9,7,True,'balanced')",
+        "fitness": [
+            0.17982822534720877
+        ],
+        "runtime": 7.415224075317383,
+        "hp_number": 11,
+        "families": [
+            "0",
+            "1"
+        ]
+    },
+    {
+        "id": "6dc88dc8-0681-495b-af11-8cee677eb323",
+        "parents_id": [],
+        "pipeline": "maxAbsScaler();adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')",
+        "fitness": [
+            0.19348871107451487
+        ],
+        "runtime": 20.851262092590332,
+        "hp_number": 10,
+        "families": [
+            "0",
+            "1"
+        ]
+    },
+    {
+        "id": "b0f31699-a16e-4d89-81e4-88f448ddc273",
+        "parents_id": [],
+        "pipeline": "pca(0.9877255525798894,False);minMaxScaler();adaBoost(decisionTree('gini',14,11,0.2343100406788743,17,'balanced'),24,0.6195418842677545,'SAMME')",
+        "fitness": [
+            0.14713260674535092
+        ],
+        "runtime": 5.620197772979736,
+        "hp_number": 12,
+        "families": [
+            "0",
+            "1",
+            "2"
+        ]
+    },
+    {
+        "id": "8d879377-4792-40d2-afc7-4f57f6e99edb",
+        "parents_id": [],
+        "pipeline": "selectPercentile(35.97359144031865);extraTreesClassifier(74,'entropy','sqrt',9,7,True,'balanced')",
+        "fitness": [
+            0.20524139793540924
+        ],
+        "runtime": 3.1974005699157715,
+        "hp_number": 8,
+        "families": [
+            "0",
+            "1"
+        ]
+    },
+    {
+        "id": "6da864bc-aeeb-4399-922d-20607ebce122",
+        "parents_id": [
+            "0b15808a-89ed-4a23-a51a-c7303311bf19"
+        ],
+        "pipeline": "extraTreesClassifier(74,'entropy','sqrt',9,7,True,'balanced')",
+        "fitness": [
+            0.17399460882106882
+        ],
+        "runtime": 3.5940983295440674,
+        "hp_number": 7,
+        "families": [
+            "1"
+        ]
+    },
+    {
+        "id": "8ba11cbb-c427-46c7-a55c-3b6eaebef943",
+        "parents_id": [
+            "5d25d35a-25f8-4c93-8748-7304d071403d"
+        ],
+        "pipeline": "extraTreesClassifier(74,'entropy','sqrt',9,7,True,'balanced')",
+        "fitness": [
+            0.17399460882106882
+        ],
+        "runtime": 3.7315547466278076,
+        "hp_number": 7,
+        "families": [
+            "1"
+        ]
+    },
+    {
+        "id": "bae6a4a0-8c1a-499c-8961-612d0143d4a8",
+        "parents_id": [
+            "6dc88dc8-0681-495b-af11-8cee677eb323"
+        ],
+        "pipeline": "adaBoost(decisionTree('entropy',7,10,0.606569398646551,5,'balanced'),76,0.011326510045998361,'SAMME')",
+        "fitness": [
+            0.1615147094025035
+        ],
+        "runtime": 13.181877613067627,
+        "hp_number": 10,
+        "families": [
+            "1"
+        ]
+    },
+    {
+        "id": "7eb77eb4-56b6-4aef-9f54-af71252eb969",
+        "parents_id": [
+            "b0f31699-a16e-4d89-81e4-88f448ddc273"
+        ],
+        "pipeline": "adaBoost(decisionTree('gini',14,11,0.2343100406788743,17,'balanced'),24,0.6195418842677545,'SAMME')",
+        "fitness": [
+            0.14395889737576234
+        ],
+        "runtime": 3.0091536045074463,
+        "hp_number": 10,
+        "families": [
+            "2"
+        ]
+    },
+    {
+        "id": "6daba596-eeeb-462e-be8f-2351cc064c08",
+        "parents_id": [
+            "b0f31699-a16e-4d89-81e4-88f448ddc273"
+        ],
+        "pipeline": "pca(0.9877255525798894,False);adaBoost(decisionTree('gini',14,11,0.2343100406788743,17,'balanced'),24,0.6195418842677545,'SAMME')",
+        "fitness": [
+            0.12157006361745815
+        ],
+        "runtime": 3.969210624694824,
+        "hp_number": 12,
+        "families": [
+            "0",
+            "2"
+        ]
+    },
+    {
+        "id": "b25ff366-0471-4d6a-b7af-34b1359b9a56",
+        "parents_id": [
+            "b0f31699-a16e-4d89-81e4-88f448ddc273"
+        ],
+        "pipeline": "minMaxScaler();adaBoost(decisionTree('gini',14,11,0.2343100406788743,17,'balanced'),24,0.6195418842677545,'SAMME')",
+        "fitness": [
+            0.14568216764135405
+        ],
+        "runtime": 3.9707353115081787,
+        "hp_number": 10,
+        "families": [
+            "1",
+            "2"
+        ]
+    },
+    {
+        "id": "89b4f18b-f6bb-4304-a081-cdf675b79f36",
+        "parents_id": [
+            "8d879377-4792-40d2-afc7-4f57f6e99edb"
+        ],
+        "pipeline": "extraTreesClassifier(74,'entropy','sqrt',9,7,True,'balanced')",
+        "fitness": [
+            0.17399460882106882
+        ],
+        "runtime": 3.441070318222046,
+        "hp_number": 7,
+        "families": [
+            "1"
+        ]
+    }
+]
